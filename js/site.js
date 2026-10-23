@@ -89,6 +89,12 @@
     if (/^(desafio|diario|egoista)/.test(q)) out.push({ e: '🕵', r: 'Desafio diário: quem é o egoísta?', s: 'jogo', h: 'egoista.html' });
     if (/^flow/.test(q)) out.push({ e: '⚡', r: 'Alternar modo Flow', s: 'ação', fn: function () { var f = document.querySelector('.flow-btn'); if (f) f.click(); } });
     PAGS.forEach(function (p) { if (norm(p[2]).indexOf(q) >= 0 || norm(p[0]).indexOf(q) === 0) out.push({ e: p[1], r: p[2], s: p[3], h: p[0] }); });
+    /* Armas (Arsenal): "metavision" → armas.html#arma-metavision */
+    if (todos && q.length >= 3 && document.querySelector('nav a[href="armas.html"]')) {
+      var vistas = {};
+      todos.forEach(function (p) { (p.armas || []).forEach(function (x) { var k = BL.chaveArma(x); if (k.indexOf(q) >= 0 && !vistas[k]) vistas[k] = x; }); });
+      Object.keys(vistas).slice(0, 3).forEach(function (k) { out.push({ e: '⚔', r: 'Arsenal: ' + vistas[k].charAt(0).toUpperCase() + vistas[k].slice(1), s: 'quem tem esta Arma', h: 'armas.html#arma-' + k.replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') }); });
+    }
     if (todos) {
       var ach = [];
       todos.forEach(function (p) {

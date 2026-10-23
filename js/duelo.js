@@ -94,7 +94,7 @@
       return '<img src="' + esc(j.p.img) + '" alt="" width="480" height="552"><h3>' + esc(j.p.nome) + '</h3><p class="x1-flow" hidden>⚡ FLOW</p>';
     }
     function setPausa(on, msg) {
-      pausado = on;
+      pausado = on; if (on && BL.voz) BL.voz.cancel();
       if (pausaBtn) { pausaBtn.setAttribute('aria-pressed', String(on)); pausaBtn.textContent = on ? '▶ Retomar' : '❚❚ Pausar'; }
       clearTimeout(timer);
       if (!on && jogo && fim.hidden) timer = setTimeout(passo, 250);
@@ -116,6 +116,7 @@
       log.innerHTML = ''; log.removeAttribute('aria-busy');
       $('.x1-arena h2').focus();
       BL.anunciar('Começa o x1: ' + sel.a.nome + ' contra ' + sel.b.nome + '. Espaço pausa.');
+      if (BL.voz) BL.voz.falar('Começa o x1: ' + sel.a.nome + ' contra ' + sel.b.nome + '.');
       timer = setTimeout(passo, espera());
     }
     /* R3: log em ordem cronológica (o CSS mostra o mais novo no topo) e sem região viva */
@@ -155,10 +156,17 @@
       var e = fila.shift();
       if (!e) return final();
       aplicar(e);
-      timer = setTimeout(passo, e.t === 'gol' ? espera() * 1.8 : (e.t === 'lance' ? espera() * 0.6 : espera()));
+      var t = e.t === 'gol' ? espera() * 1.8 : (e.t === 'lance' ? espera() * 0.6 : espera());
+      /* narrador por voz: o próximo lance espera a fala terminar (no 2× só os gols são falados, sem esperar) */
+      var V = BL.voz;
+      if (V && V.on && e.txt) {
+        if (!rapido) { V.falar(e.txt + (e.t === 'gol' ? ' ' + e.placar[0] + ' a ' + e.placar[1] + '.' : ''), function () { if (!pausado && jogo && fim.hidden) { clearTimeout(timer); timer = setTimeout(passo, 250); } }); return; }
+        if (e.t === 'gol') V.falar(e.txt);
+      }
+      timer = setTimeout(passo, t);
     }
     function pular() {
-      clearTimeout(timer); pausado = false;
+      clearTimeout(timer); pausado = false; if (BL.voz) BL.voz.cancel();
       log.setAttribute('aria-busy', 'true');
       while (fila.length) aplicar(fila.shift(), true);
       log.removeAttribute('aria-busy');
@@ -184,8 +192,9 @@
       var nova = window.BL_ALBUM ? BL_ALBUM.ganhar(J[1 - jogo.venc].p.id, 'x1', true) : false;
       if (nova) fim.querySelector('.x1-semente').insertAdjacentHTML('beforebegin', '<p class="album-nova">🃏 Figurinha nova no <a href="album.html">Álbum do Ego</a>: ' + esc(J[1 - jogo.venc].p.nome) + '</p>');
       BL.anunciar(w.p.nome + ' vence por ' + J[jogo.venc].g + ' a ' + J[1 - jogo.venc].g + extra.replace(' · ', ', ') + '.' + (nova ? ' Figurinha nova no álbum: ' + J[1 - jogo.venc].p.nome + '.' : ''));
+      if (BL.voz) BL.voz.falar(w.p.nome + ' vence o x1 por ' + J[jogo.venc].g + ' a ' + J[1 - jogo.venc].g + extra.replace(' · ', ', ') + '.');
     }
-    function voltar() { clearTimeout(timer); setPausa(false, false); fila = []; jogo = null; arena.hidden = true; fim.hidden = true; escolha.hidden = false; render(); $('.x1-comecar').focus(); }
+    function voltar() { clearTimeout(timer); if (BL.voz) BL.voz.cancel(); setPausa(false, false); fila = []; jogo = null; arena.hidden = true; fim.hidden = true; escolha.hidden = false; render(); $('.x1-comecar').focus(); }
     var linkJogo = function () { return BL.urlPublica('duelo.html', url(true) + '&auto=1'); };
 
     /* ---------- Telão de Replays: figurinha 1080×1350 ---------- */

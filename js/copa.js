@@ -159,9 +159,9 @@
       if (BL.voz && BL.voz.on) { var jj = estado.rodadas[x.r][x.i]; BL.voz.falar(jj.w.nome + ' vence ' + (jj.w === jj.a ? jj.b.nome : jj.a.nome) + ' por ' + Math.max(jj.g[0], jj.g[1]) + ' a ' + Math.min(jj.g[0], jj.g[1])); }
       timer = setTimeout(passo, x.ultimo ? 1500 : 650);
     }
-    function pular() { clearTimeout(timer); pausado = false; while (fila.length) { var x = fila.shift(); feitos[x.r + ':' + x.i] = 1; } renderChave(); campeao(); }
+    function pular() { clearTimeout(timer); pausado = false; if (BL.voz) BL.voz.cancel(); while (fila.length) { var x = fila.shift(); feitos[x.r + ':' + x.i] = 1; } renderChave(); campeao(); }
     function setPausa(on, falar) {
-      pausado = on; var b = $('[data-acao="pausar"]');
+      pausado = on; if (on && BL.voz) BL.voz.cancel(); var b = $('[data-acao="pausar"]');
       b.setAttribute('aria-pressed', String(on)); b.textContent = on ? '▶ Retomar' : '❚❚ Pausar';
       clearTimeout(timer); if (!on && estado && fila.length) timer = setTimeout(passo, 300);
       if (falar !== false) BL.anunciar(on ? 'Revelação pausada' : 'Revelação retomada');

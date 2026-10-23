@@ -463,3 +463,53 @@ kbd{background:#0d1730;border:1px solid #3a4a70;border-radius:6px;padding:1px 6p
 .busca-msg{margin:0;padding:6px 14px 10px;font-size:.78rem;color:#8a97b5}
 @media(prefers-reduced-motion:reduce){.al-pac-grade .fig{animation:none}}
 @media(max-width:400px){.busca-btn{min-width:32px}.flow-btn{min-width:40px;margin-left:2px}}
+/* ===== Ciclo 8 · lote 3: liga, vestiário, arsenal, narrador (bloco isolado para o restyle) ===== */
+.lg,.vst,.ar{max-width:1080px;margin:0 auto}
+.narr-btn[aria-pressed=true]{background:#1e6bff;color:#fff;border-color:#1e6bff}
+.narr-btn:disabled{opacity:.55;cursor:not-allowed}
+/* liga */
+.lg-ini{max-width:760px}.lg-elencos{list-style:none;padding:0;display:grid;gap:6px}
+.lg-elencos details{background:#0a1328;border:1px solid #1c2d55;border-radius:12px;padding:6px 12px}.lg-elencos summary{cursor:pointer;min-height:36px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.lg-elencos ul{list-style:none;padding:0;columns:2 220px;font-size:.85rem}.lg-elencos li li{break-inside:avoid;padding:2px 0}.lg-elencos img,.lg-art img{border-radius:50%;object-fit:cover;vertical-align:middle;margin-right:6px}
+.lg-elencos small,.lg-art small{color:#8fb0ff}
+.lg-grade{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:18px;align-items:start}
+.lg-tab-w{overflow-x:auto}.lg-tab{width:100%;border-collapse:collapse;font-size:.9rem;background:#0d1730;border:1px solid #1c2d55;border-radius:12px}
+.lg-tab caption{text-align:left;font-weight:700;color:#8fb0ff;padding:6px 2px}.lg-tab th,.lg-tab td{padding:8px 6px;text-align:center;border-bottom:1px solid #1c2d55}.lg-tab tbody th{text-align:left;white-space:nowrap}
+.lg-tab abbr{text-decoration:none}.lg-tab tr.lider{background:#1e6bff26}.lg-tab tr.lider th::before{content:"👑 "}
+.lg-art{padding-left:22px;font-size:.88rem;display:grid;gap:4px}.lg-art b{color:#ffd166;margin-left:4px}
+.lg-rodadas{list-style:none;padding:0;margin:0;display:grid;gap:10px;max-height:760px;overflow:auto}
+.lg-rodadas>li{background:#0d1730;border:1px solid #1c2d55;border-radius:12px;padding:8px 12px}.lg-rodadas h3{margin:0 0 4px;font-size:.95rem}.lg-rodadas ul{list-style:none;padding:0;margin:0;display:grid;gap:4px}
+.lg-jogo summary{cursor:pointer;min-height:36px;display:flex;align-items:center;gap:6px;flex-wrap:wrap}.lg-c.venc{font-weight:800;color:#fff}.lg-pl{background:#05070d;border-radius:8px;padding:0 8px;color:#ffd166}
+.lg-serie{font-size:.82rem;padding-left:20px;display:grid;gap:3px;color:#c9d6ff}.lg-serie small{color:#8fb0ff}.lg-folga{margin:4px 0 0;font-size:.75rem;color:#8a97b5}
+.lg-rodadas>li:first-child{border-color:#ffd16688}
+@media(prefers-reduced-motion:no-preference){.lg-rodadas>li:first-child{animation:lg-entra .45s ease-out}@keyframes lg-entra{from{opacity:0;transform:translateY(-8px)}}}
+@media(max-width:760px){.lg-grade{grid-template-columns:1fr}.lg-rodadas{max-height:none}.lg-tab{font-size:.8rem}.lg-tab th,.lg-tab td{padding:6px 3px}}
+/* vestiário */
+.vs-perg{text-align:center;color:#c9d6ff}.vs-temas{display:flex;justify-content:center}
+.vs-campo{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:14px;margin:12px 0}
+.vs-salas{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px}
+.vs-banco,.vs-sala{background:#0d1730;border:1px solid #1c2d55;border-radius:14px;padding:10px;min-height:120px}
+.vs-sala{border-style:dashed}.vs-banco h3,.vs-sala h3{margin:0 0 8px;font-size:.95rem;display:flex;gap:6px;align-items:center;flex-wrap:wrap}.vs-banco small,.vs-cnt{color:#8fb0ff;font-weight:400}
+.vs-banco.vazio{opacity:.7}.alvo{border-color:#ffd166!important;background:#1e6bff1f!important}
+.vs-banco ul,.vs-sala ul{list-style:none;padding:0;margin:0;display:grid;gap:6px;min-height:40px}
+.vs-carta{display:grid;grid-template-columns:44px minmax(0,1fr);gap:4px 8px;align-items:center;background:#0a1328;border:1px solid #2a3f78;border-radius:12px;padding:6px 8px;cursor:grab}
+.vs-carta img{grid-row:span 2;width:44px;height:44px;border-radius:50%;object-fit:cover}.vs-nome{font-weight:700;font-size:.88rem;line-height:1.2}
+.vs-carta select{min-height:34px;border-radius:8px;border:1px solid #1c2d55;background:#05070d;color:#e6ecff;font:inherit;font-size:.8rem;width:100%}
+.vs-carta.arrastando{opacity:.5}.vs-res{grid-column:1/-1;font-size:.8rem}.vs-res:empty{display:none}
+.vs-carta.certo{border-color:#2fbf71;background:#0f2a1d}.vs-carta.errado{border-color:#ff4d6d;background:#2a0f17}.vs-carta.errado .vs-res a{color:#fff}
+.vs-placar{text-align:center;font-weight:700;color:#ffe7a8;min-height:1.4em}.vs-nota{font-size:.8rem;color:#8a97b5;text-align:center}
+.vst .x1-botoes{justify-content:center}
+@media(max-width:700px){.vs-campo{grid-template-columns:1fr}}
+/* arsenal */
+.ar-resumo{text-align:center;color:#c9d6ff}.ar-resumo a{color:#8fb0ff}
+.ar-filtros{display:grid;gap:8px;margin:12px 0}.ar-grupos{display:flex;flex-wrap:wrap;gap:6px}.ar-grupos small{opacity:.75}
+.ar-linha{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center}.ar-linha label{font-size:.85rem;color:#8fb0ff;font-weight:700}.ar-linha input{flex:1;min-width:180px}
+.ar-lista{list-style:none;padding:0;margin:0;display:grid;gap:6px}
+.ar-lista details{background:#0d1730;border:1px solid #1c2d55;border-radius:12px;padding:4px 12px;scroll-margin-top:80px}.ar-lista details[open]{border-color:#1e6bff}
+.ar-lista summary{cursor:pointer;min-height:44px;display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px}.ar-nome{font-weight:800}.ar-n{color:#8fb0ff;font-size:.85rem}.ar-gs{display:flex;gap:4px;flex-wrap:wrap;margin-left:auto}.ar-gs .chip{font-size:.7rem}
+.ar-unica{background:#ffd166;color:#1a1200;border-radius:999px;padding:0 8px;font-size:.72rem;font-weight:800}
+.ar-quem{list-style:none;padding:0;margin:8px 0;display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:6px}
+.ar-quem a{display:flex;align-items:center;gap:8px;color:#e6ecff;text-decoration:none;background:#0a1328;border-radius:10px;padding:4px 8px;min-height:44px;font-size:.85rem}.ar-quem a:hover{background:#1e6bff33}.ar-quem img{border-radius:50%;object-fit:cover;flex:none}
+.ar-formas{font-size:.8rem;color:#8a97b5}.ar-vazio{color:#8a97b5;text-align:center;padding:12px}
+.ar-afin-sec{max-width:none;margin-top:18px}.ar-afin-sec .x1-busca{max-width:480px}.ar-afin h3 small{color:#8fb0ff;font-weight:400}
+.ar-afin-l{padding-left:22px;display:grid;gap:6px;font-size:.88rem}.ar-afin-l img{border-radius:50%;object-fit:cover;vertical-align:middle;margin-right:6px}.ar-afin-l a{color:#e6ecff}.ar-afin-l span{color:#b8c4e6}.ar-afin-l span a{color:#8fb0ff}.ar-x1{margin-left:6px;font-size:.8rem}
