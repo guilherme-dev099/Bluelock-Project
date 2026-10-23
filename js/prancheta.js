@@ -162,6 +162,15 @@
     }
     /* sem escalação no link: abre com o 11 "Com os dados" (todos na posição da ficha); "Limpar" persiste porque grava e=-,-,… */
     if (!qs.has('e')) esc11 = T.escalar(PRESETS.dados.lista(), f);
+    /* ?com=<id> (link "Escalar na Prancheta" das fichas): o personagem entra na vaga mais compatível do 11 */
+    var com = por[qs.get('com')];
+    if (qs.get('com') && (!com || !com.jogador)) BL.avisoUrl(raiz, 'Só jogadores entram em campo: “' + qs.get('com') + '” não é um jogador das fichas.');
+    else if (com && esc11.indexOf(com) < 0) {
+      var V = FORM[f].v, best = 0;
+      V.forEach(function (v, i) { var a = T.nota(com, v), b = T.nota(com, V[best]); var oa = esc11[i] ? T.ovr(esc11[i]) : -1, ob = esc11[best] ? T.ovr(esc11[best]) : -1; if (a < b || (a === b && oa < ob)) best = i; });
+      esc11[best] = com;
+      setTimeout(function () { BL.anunciar(com.nome + ' entrou como ' + V[best] + '.'); }, 400);
+    }
     render();
     /* link de série (?seed=…): refaz a mesma série sem roubar o foco */
     if (semente && esc11.filter(Boolean).length === 11) desafiar(false, false);

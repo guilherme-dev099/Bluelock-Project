@@ -224,3 +224,14 @@
   d.addEventListener('close', function () { opener.focus(); });
   window.BL_MAPA = { grupos: grupos, total: n, pos: pos, grupo: gAtual };
 })();
+
+/* TINTA & EGO · lote 2 · faixa de capítulo ("JOGOS · 05/15 · COPA DO EGO") acima do título das páginas de jogo e ferramentas */
+(function () {
+  'use strict';
+  var M = window.BL_MAPA, h1 = document.querySelector('main h1.duelo-h');
+  if (!M || !M.pos || !h1 || document.querySelector('.capitulo')) return;
+  var nome = ''; M.grupos.forEach(function (g) { g.itens.forEach(function (i) { if (i[0].split('/').pop() === (location.pathname.split('/').pop() || 'index.html')) nome = nome || i[1]; }); });
+  var c = document.createElement('p'); c.className = 'capitulo';
+  c.innerHTML = '<span>' + M.grupo + '</span><span><b>' + (M.pos < 10 ? '0' : '') + M.pos + '</b>/' + M.total + '</span><span>' + nome.replace(/[<>&]/g, '') + '</span>';
+  h1.parentNode.insertBefore(c, h1);
+})();
