@@ -173,3 +173,54 @@
   BL.abrirBusca = abrir;
 
 })();
+
+/* =====================================================================
+   TINTA & EGO · LOTE 1 · Menu "Mapa do Blue Lock" (tela cheia, <dialog> nativo).
+   Monta-se a partir dos links que já existem no header (menus Jogos/Explorar). Sem JS, os <details> continuam.
+   ===================================================================== */
+(function () {
+  'use strict';
+  var nav = document.querySelector('header.top nav ul'); if (!nav || !window.HTMLDialogElement || document.querySelector('.mapa')) return;
+  var aqui = location.pathname.split('/').pop() || 'index.html';
+  var limpo = function (a) { var c = a.cloneNode(true); [].forEach.call(c.querySelectorAll('.dd-selo,[aria-hidden]'), function (x) { x.remove(); }); return c.textContent.trim(); };
+  var grupos = [{ t: 'Principal', itens: [['index.html', 'Personagens', '212 fichas'], ['duelo.html', 'Duelo x1', 'jogo'], ['jogos.html', 'Tudo no site', 'hub']] }];
+  var vistos = { 'index.html': 1, 'duelo.html': 1, 'jogos.html': 1 };
+  [].forEach.call(document.querySelectorAll('nav .nav-dd'), function (dd) {
+    var g = { t: dd.querySelector('summary').textContent.trim(), itens: [] };
+    [].forEach.call(dd.querySelectorAll('.nav-dd-m a'), function (a) {
+      var h = a.getAttribute('href'), k = h.split('/').pop(); if (vistos[k]) return; vistos[k] = 1;
+      g.itens.push([h, limpo(a), '', !!a.querySelector('[data-dd-selo]')]);
+    });
+    if (g.itens.length) grupos.push(g);
+  });
+  var esc = function (s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); };
+  var n = 0, pos = 0, gAtual = '';
+  var d = document.createElement('dialog'); d.className = 'mapa'; d.setAttribute('aria-labelledby', 'mapa-t');
+  d.innerHTML = '<div class="mapa-in"><nav class="mapa-nav" aria-labelledby="mapa-t"><h2 id="mapa-t" class="sr-only">Mapa do Blue Lock: todas as seções</h2>' +
+    '<button type="button" class="mapa-btn mapa-x mapa-x-m">Fechar</button>' +
+    grupos.map(function (g) {
+      return '<section class="mapa-g"><h3 class="mapa-gt">' + esc(g.t) + '</h3><ol class="mapa-lista" style="counter-reset:v ' + n + '">' +
+        g.itens.map(function (i) {
+          n++; var cur = i[0].split('/').pop() === aqui; if (cur && !pos) { pos = n; gAtual = g.t; }
+          return '<li><a href="' + esc(i[0]) + '"' + (cur ? ' aria-current="page"' : '') + '><span class="v-n">' + esc(i[1]) + (i[3] ? '<span class="dd-selo" data-dd-selo hidden></span>' : '') + '</span>' + (i[2] ? '<span class="v-s">' + esc(i[2]) + '</span>' : '') + '</a></li>';
+        }).join('') + '</ol></section>';
+    }).join('') + '</nav><aside class="mapa-lado" aria-label="Dicas"><button type="button" class="mapa-btn mapa-x">Fechar</button><h3 aria-hidden="true">Mapa</h3>' +
+    '<p><kbd>Ctrl</kbd> + <kbd>K</kbd> busca qualquer personagem, time ou Arma. Digite <kbd>f l o w</kbd> em qualquer página para despertar.</p></aside></div>';
+  document.body.appendChild(d);
+  document.documentElement.classList.add('has-mapa');
+  /* copia o selo do desafio já calculado no header */
+  var seloH = document.querySelector('.top [data-dd-selo]');
+  [].forEach.call(d.querySelectorAll('[data-dd-selo]'), function (s) { if (seloH && !seloH.hidden) { s.textContent = seloH.textContent; s.className = seloH.className; s.setAttribute('aria-label', seloH.getAttribute('aria-label') || ''); s.hidden = false; } });
+  var li = document.createElement('li');
+  li.innerHTML = '<button type="button" class="mapa-btn" aria-haspopup="dialog" aria-label="Menu: mapa do site">Menu</button>';
+  nav.appendChild(li);
+  var opener = li.firstChild;
+  opener.addEventListener('click', function () {
+    [].forEach.call(document.querySelectorAll('.nav-dd details[open]'), function (x) { x.open = false; });
+    d.showModal(); var c = d.querySelector('[aria-current]') || d.querySelector('.mapa-lista a'); if (c) c.focus();
+  });
+  [].forEach.call(d.querySelectorAll('.mapa-x'), function (b) { b.addEventListener('click', function () { d.close(); }); });
+  d.addEventListener('click', function (e) { if (e.target === d) d.close(); });
+  d.addEventListener('close', function () { opener.focus(); });
+  window.BL_MAPA = { grupos: grupos, total: n, pos: pos, grupo: gAtual };
+})();
