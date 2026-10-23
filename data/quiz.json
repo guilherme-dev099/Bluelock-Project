@@ -1,0 +1,135 @@
+[
+ {
+  "q": "No 1×1, você prefere…",
+  "opcoes": [
+   {
+    "t": "Arrancar em velocidade",
+    "termos": [
+     "velocidade",
+     "aceleracao",
+     "conducao em arrancada"
+    ]
+   },
+   {
+    "t": "Driblar e fintar",
+    "termos": [
+     "drible",
+     "finta"
+    ]
+   },
+   {
+    "t": "Dominar qualquer bola",
+    "termos": [
+     "controle de bola",
+     "dominio"
+    ]
+   },
+   {
+    "t": "Ganhar no físico",
+    "termos": [
+     "fisico"
+    ]
+   }
+  ]
+ },
+ {
+  "q": "Na hora de finalizar…",
+  "opcoes": [
+   {
+    "t": "Chutar forte, até de longe",
+    "termos": [
+     "chute potente",
+     "chute de media distancia",
+     "drive shot",
+     "kaiser impact"
+    ]
+   },
+   {
+    "t": "Bater com precisão",
+    "termos": [
+     "precisao de chute",
+     "chute controlado",
+     "tecnica de chute"
+    ]
+   },
+   {
+    "t": "Pegar de primeira / de voleio",
+    "termos": [
+     "direct shot",
+     "voleio"
+    ]
+   },
+   {
+    "t": "Servir alguém com um passe",
+    "termos": [
+     "passe",
+     "cruzamento"
+    ]
+   }
+  ]
+ },
+ {
+  "q": "Sem a bola, você…",
+  "opcoes": [
+   {
+    "t": "Lê o campo inteiro",
+    "termos": [
+     "visao espacial",
+     "metavision",
+     "capacidade analitica"
+    ]
+   },
+   {
+    "t": "Se movimenta para achar o espaço",
+    "termos": [
+     "movimentacao sem bola"
+    ]
+   },
+   {
+    "t": "Reage mais rápido que todo mundo",
+    "termos": [
+     "reflexo",
+     "reacao explosiva"
+    ]
+   },
+   {
+    "t": "Cola no adversário",
+    "termos": [
+     "marcacao individual"
+    ]
+   }
+  ]
+ },
+ {
+  "q": "Para evoluir, você…",
+  "opcoes": [
+   {
+    "t": "Copia o que os rivais fazem",
+    "termos": [
+     "copycat",
+     "destreza"
+    ]
+   },
+   {
+    "t": "Se adapta a qualquer situação",
+    "termos": [
+     "adaptabilidade",
+     "ambidestria",
+     "flexibilidade"
+    ]
+   },
+   {
+    "t": "Fareja o gol como um predador",
+    "termos": [
+     "predator eye"
+    ]
+   },
+   {
+    "t": "Faz os outros jogarem para você",
+    "termos": [
+     "puppet control"
+    ]
+   }
+  ]
+ }
+]
