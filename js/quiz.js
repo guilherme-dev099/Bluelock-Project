@@ -29,7 +29,7 @@
         (top.bate.length ? '<p>Você escolheu <strong>' + top.bate.map(esc).join('</strong>, <strong>') + '</strong>. Na ficha de ' + esc(p.nome) + ' estão: ' + top.armas.map(function (a) { return '<span class="chip">' + esc(a) + '</span>'; }).join(' ') + '.</p>'
           : '<p>Nenhuma resposta coincidiu com as Armas das fichas; este é o primeiro do ranking entre os empatados.</p>') +
         (seg && seg.pontos ? '<p class="quiz-seg">Em 2º: <a href="' + esc(seg.p.url) + '">' + esc(seg.p.nome) + '</a></p>' : '') +
-        '<p class="quiz-acoes"><a class="btn" href="' + esc(p.url) + '">Ver ficha</a> <a class="btn btn-2" href="duelo.html?a=' + esc(p.id) + '">⚔ Duelar com ' + esc(BL.sobrenome(p)) + '</a> <button type="button" class="btn btn-2 quiz-share">Compartilhar</button> <button type="button" class="btn btn-2 quiz-reset">Refazer</button></p>' +
+        '<p class="quiz-acoes"><a class="btn" href="' + esc(p.url) + '">Ver ficha</a> <a class="btn btn-2" href="duelo.html?a=' + esc(p.id) + '">⚔ x1 contra ' + esc(BL.sobrenome(p)) + '</a> <button type="button" class="btn btn-2 quiz-share">Compartilhar</button> <button type="button" class="btn btn-2 quiz-reset">Refazer</button></p>' +
         '<p class="nota">O quiz só cruza suas respostas com as Armas listadas nas fichas; não atribui personalidade.</p></div></div>';
       res.hidden = false;
       res.querySelector('h2').focus();
