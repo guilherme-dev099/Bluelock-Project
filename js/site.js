@@ -14,6 +14,24 @@
     menus.forEach(function (d) { if (d.open) { d.open = false; d.querySelector('summary').focus(); } });
   });
 
+  /* fecha o menu quando o foco sai dele (Tab) */
+  menus.forEach(function (d) {
+    d.addEventListener('focusout', function (e) { if (d.open && e.relatedTarget && !d.contains(e.relatedTarget)) d.open = false; });
+  });
+  /* selo do desafio do dia (hub e menu Jogos): pendente / em andamento / feito */
+  (function () {
+    var selos = document.querySelectorAll('[data-dd-selo]'); if (!selos.length) return;
+    var dia; try { dia = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Sao_Paulo', year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date()); } catch (e) { return; }
+    var ler = function (k) { try { return JSON.parse(localStorage.getItem(k)); } catch (e) { return null; } };
+    var feito = ler('bl-dd-feito') === dia, pal = ler('bl-dd-' + dia), and = !feito && pal && pal.length;
+    var txt = feito ? '✓ feito hoje' : and ? 'em andamento' : 'pendente';
+    Array.prototype.forEach.call(selos, function (s) {
+      s.textContent = txt; s.hidden = false;
+      s.className = 'dd-selo ' + (feito ? 'dd-selo-ok' : 'dd-selo-pend');
+      s.setAttribute('aria-label', '(desafio de hoje: ' + txt.replace('✓ ', '') + ')');
+    });
+  })();
+
   /* ----- Álbum do Ego: figurinhas guardadas no navegador (localStorage 'bl-album') ----- */
   var CHAVE = 'bl-album';
   function ler() { try { var o = JSON.parse(localStorage.getItem(CHAVE) || '{}'); o.ids = o.ids || {}; o.esp = o.esp || {}; o.log = o.log || []; return o; } catch (e) { return { ids: {}, esp: {}, log: [] }; } }
@@ -53,7 +71,7 @@
   var PAGS = [['index.html', '🏠', 'Personagens', 'todas as fichas'], ['duelo.html', '⚔', 'Duelo x1', 'jogo']];
   [].forEach.call(document.querySelectorAll('nav .nav-dd-m a'), function (a) {
     var h = a.getAttribute('href'); if (PAGS.some(function (p) { return p[0] === h; })) return;
-    PAGS.push([h, (a.querySelector('span') || {}).textContent || '→', a.textContent.replace(/^\s*\S+\s/, '').trim(), a.closest('details').querySelector('summary').textContent.trim().toLowerCase()]);
+    PAGS.push([h, (a.querySelector('span') || {}).textContent || '→', (function () { var c = a.cloneNode(true), x = c.querySelector('.dd-selo'); if (x) x.remove(); return c.textContent.replace(/^\s*\S+\s/, '').trim(); })(), a.closest('details').querySelector('summary').textContent.trim().toLowerCase()]);
   });
   function times(p) { var s = []; (p.fases || []).forEach(function (f) { (f.times || []).forEach(function (t) { if (s.indexOf(t) < 0) s.push(t); }); }); return s; }
   /* melhor personagem para um trecho de nome */
@@ -153,4 +171,5 @@
     if ((e.ctrlKey || e.metaKey) && !e.altKey && (e.key === 'k' || e.key === 'K')) { e.preventDefault(); abrir(); }
   });
   BL.abrirBusca = abrir;
+
 })();

@@ -44,6 +44,12 @@
       for (var t = 0; t < CAL.ids.length; t++) { var id = CAL.ids[(((k - 1 + t) % CAL.ids.length) + CAL.ids.length) % CAL.ids.length]; if (por[id]) return por[id]; }
       return pool[0];
     }
+    /* P2-6: fora do calendário (antes do início ou além do fim) não repete em silêncio */
+    var foraCal = !treino && CAL && (n < 1 || n > CAL.ids.length);
+    if (foraCal) {
+      $('.dd-status').textContent = n < 1 ? 'O desafio diário começa em ' + CAL.inicio.split('-').reverse().join('/') + '. Até lá, jogue o modo treino.' : 'Os desafios desta versão do site acabaram. Jogue o modo treino enquanto o calendário é atualizado.';
+      $('#dd-palpite').disabled = true; $('.dd-n').textContent = '—'; raiz.classList.add('pronto'); return;
+    }
     var secreto = treino ? pool[hash('treino-' + treino) % pool.length] : doDia(n);
     var chave = treino ? null : 'bl-dd-' + dia;
     var palpites = (chave ? ler(chave, []) : []).filter(function (id) { return por[id]; });
@@ -114,7 +120,7 @@
         '<ol class="dd-dist" aria-label="Vitórias por número de tentativas">' + s.dist.map(function (v, i) { return '<li><span>' + (i + 1) + '</span><i style="--v:' + Math.round(v / maxD * 100) + '%"' + (ok && palpites.length === i + 1 ? ' class="hoje"' : '') + '></i><b>' + v + '</b><span class="sr-only"> vitórias em ' + (i + 1) + '</span></li>'; }).join('') + '</ol>' +
         '<p class="dd-prox">Novo egoísta à meia-noite (horário de Brasília). <span class="dd-cont"></span></p>');
       fim.hidden = false; inp.disabled = true; $('.dd-busca').hidden = true;
-      status.textContent = ok ? 'Resolvido!' : 'Fim das tentativas.';
+      status.textContent = ok ? 'Resolvido!' : 'Acabaram as tentativas.';
       if (foco) fim.querySelector('h2').focus();
       contagem();
     }
@@ -136,17 +142,18 @@
       palpites.push(g.id); if (chave) gravar(chave, palpites);
       tbody.insertAdjacentHTML('beforeend', linhaHtml(g, !BL.reduce));
       BL.anunciar(frase(g));
-      if (acabou()) { registrar(); if (venceu() && !treino && window.BL_ALBUM) albumNova = BL_ALBUM.ganhar(secreto.id, 'desafio', true); setTimeout(function () { mostrarFim(true); }, BL.reduce ? 0 : 700); }
+      if (acabou()) { if (!treino) gravar('bl-dd-feito', dia); registrar(); if (venceu() && !treino && window.BL_ALBUM) albumNova = BL_ALBUM.ganhar(secreto.id, 'desafio', true); setTimeout(function () { mostrarFim(true); }, BL.reduce ? 0 : 700); }
       else { atualizarStatus(); inp.focus(); }
     }
     if (!treino) setInterval(function () {
-      if (hoje() !== dia && !raiz.querySelector('.dd-virou')) {
-        status.insertAdjacentHTML('beforebegin', '<p class="dd-virou" role="status">Já é outro dia em São Paulo: novo desafio disponível. <button type="button" class="btn btn-2" data-acao="recarregar">Recarregar</button></p>');
+      if (hoje() !== dia && !acabou() && !raiz.querySelector('.dd-virou')) {
+        BL.anunciar('Já é outro dia em São Paulo: novo desafio disponível.');
+        status.insertAdjacentHTML('beforebegin', '<p class="dd-virou">Já é outro dia em São Paulo: novo desafio disponível. <button type="button" class="btn btn-2" data-acao="recarregar">Recarregar</button></p>');
       }
     }, 30000);
     tbody.innerHTML = palpites.map(function (id) { return linhaHtml(por[id], false); }).join('');
     atualizarStatus();
-    if (acabou()) mostrarFim(false);
+    if (acabou()) { if (!treino) gravar('bl-dd-feito', dia); mostrarFim(false); }
 
     BL.combobox(inp, $('#dd-lista'), {
       fonte: function () { return pool; },

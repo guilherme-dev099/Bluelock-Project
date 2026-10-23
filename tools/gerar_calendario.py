@@ -26,6 +26,14 @@ if not cal['ids']:
 novos = [i for i in pool if i not in cal['ids']]
 random.Random(len(cal['ids'])).shuffle(novos)
 cal['ids'] += novos
+# P2-6: o calendário nunca acaba — garante 1 ano à frente acrescentando novos ciclos embaralhados do pool (só no fim)
+import datetime
+hoje_n = (datetime.date.today() - datetime.date.fromisoformat(cal['inicio'])).days + 1
+while len(cal['ids']) < hoje_n + 365:
+    ciclo = pool[:]; random.Random('ciclo-%d' % len(cal['ids'])).shuffle(ciclo)
+    if ciclo[0] == cal['ids'][-1]: ciclo.append(ciclo.pop(0))
+    cal['ids'] += ciclo
+if len(cal['ids']) - hoje_n < 30: print('AVISO: menos de 30 dias no calendário do desafio', file=sys.stderr)
 cf.write_text(json.dumps(cal, ensure_ascii=False))
 (root / 'js/desafio-calendario.js').write_text('/* gerado por tools/gerar_calendario.py — só acrescenta no fim */\nwindow.BL_DESAFIO=' + json.dumps(cal, ensure_ascii=False) + ';\n', encoding='utf-8')
 of = root / 'tools/ordem.json'

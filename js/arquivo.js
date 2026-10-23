@@ -5,7 +5,7 @@
   if (!BL || !form) return;
   var POS = ['atacante', 'centroavante', 'meia', 'ponta', 'ala', 'lateral', 'volante', 'zagueiro', 'goleiro'];
   var CATS = { protagonistas: 'Protagonistas', bl: 'Outros do Blue Lock', sub20: 'Sub-20 Japão', nel: 'Clubes da NEL', selecoes: 'Seleções estrangeiras', staff: 'Treinadores & Staff', outros: 'Outros' };
-  var ORDENS = { final: 'Ranking final', inicio: 'Ranking inicial', salto: 'Maior salto', az: 'A–Z' };
+  var ORDENS = { final: 'Ranking final', inicio: 'Ranking de entrada', salto: 'Maior escalada', az: 'A–Z' };
   BL.personagens().then(function (dados) {
     var porId = {}; dados.forEach(function (p) { porId[p.id] = p; });
     var idDe = function (el) { return el.getAttribute('href').replace('.html', ''); };
@@ -91,7 +91,7 @@
           if (ativo) { if (!d.dataset.auto) d.dataset.auto = '1'; d.open = vis > 0 && (vis <= 40 || d.dataset.aberto === '1' || estado.categoria === d.dataset.cat); }
           else if (d.dataset.auto) { d.open = d.dataset.aberto === '1'; delete d.dataset.auto; }
         });
-        var msg = n ? n + (n === 1 ? ' personagem encontrado' : ' personagens encontrados') + (k ? ' · ordem: ' + ORDENS[k] : '') : 'Nenhum personagem com esses filtros';
+        var msg = n ? n + (n === 1 ? ' personagem encontrado' : ' personagens encontrados') + (k ? ' · ordem: ' + ORDENS[k] : '') : 'Nenhum egoísta passou nesses filtros. Limpe um deles e tente de novo.';
         cont.textContent = msg;
         var u = new URLSearchParams();
         if (q.value.trim()) u.set('q', q.value.trim());

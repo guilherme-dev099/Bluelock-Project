@@ -126,7 +126,7 @@
     }
     if (a === 'resgatar') {
       var m = $('#al-resg').value.trim().match(/^BLT1\.(([0-9a-z]+)\.([0-9a-z]+))\.([0-9a-z]+)$/i);
-      if (!m || chk(m[1].toLowerCase()) !== m[4].toLowerCase() || !ORDEM[parseInt(m[2], 36)]) return msg('.al-troca-msg', 'Código de troca inválido.');
+      if (!m || chk(m[1].toLowerCase()) !== m[4].toLowerCase() || !ORDEM[parseInt(m[2], 36)]) return msg('.al-troca-msg', 'Código de troca inválido. Confira se copiou o código inteiro.');
       var o3 = A.ler(); o3.resg = o3.resg || [];
       if (o3.resg.indexOf(m[1].toLowerCase()) >= 0) return msg('.al-troca-msg', 'Este código já foi resgatado neste navegador.');
       o3.resg.push(m[1].toLowerCase()); A.gravar(o3);

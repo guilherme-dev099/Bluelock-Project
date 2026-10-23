@@ -10,8 +10,12 @@
     var G = BL.grafo(todos), adj = G.adj;
     var ligados = todos.filter(function (p) { return Object.keys(adj[p.id]).length; });
     var qs = new URLSearchParams(location.search);
-    var sel = { de: por[qs.get('de')] || por.isagi, ate: por[qs.get('ate')] || null }, alt = 0;
+    var sel = { de: por[qs.get('de')] || por.isagi, ate: por[qs.get('ate')] || null }, alt = Math.max(0, parseInt(qs.get('c'), 10) || 0);
     raiz.classList.add('pronto');
+    var ruins = ['de', 'ate'].filter(function (k) { return qs.get(k) && !por[qs.get(k)]; });
+    if (ruins.length) BL.avisoUrl(raiz, 'Este link tem ' + (ruins.length > 1 ? 'personagens que não existem' : 'um personagem que não existe') + ' nas fichas (' + ruins.map(function (k) { return '“' + qs.get(k) + '”'; }).join(', ') + ')' + (qs.get('de') && !por[qs.get('de')] ? '; começamos pelo Isagi.' : '.'));
+    if (sel.ate) BL.avisoVersao(raiz);
+    var staff = function (id) { return !por[id].jogador; };
     var sub = function (p) { var n = Object.keys(adj[p.id]).length; return n ? n + ' companheiros nas fichas' : 'sem vínculo nas fichas'; };
     function mostrarSel() {
       ['de', 'ate'].forEach(function (k) {
@@ -28,7 +32,7 @@
       var h = '';
       c.forEach(function (id, i) {
         var p = por[id];
-        if (i) { var l = BL.melhorLaco(adj, c[i - 1], id), n = adj[c[i - 1]][id].length; h += '<li class="aresta" style="--i:' + (2 * i - 1) + '"><span class="sr-only">jogaram juntos em </span>' + esc(l.time) + ' <small>(' + esc(BL.FASE_CURTA[l.fase] || l.fase) + ')' + (n > 1 ? ' +' + (n - 1) : '') + '</small></li>'; }
+        if (i) { var l = BL.melhorLaco(adj, c[i - 1], id), n = adj[c[i - 1]][id].length; h += '<li class="aresta" style="--i:' + (2 * i - 1) + '"><span class="sr-only">' + (staff(c[i - 1]) || staff(id) ? 'estiveram juntos em' : 'jogaram juntos em') + ' </span>' + esc(l.time) + ' <small>(' + esc(BL.FASE_CURTA[l.fase] || l.fase) + ')' + (n > 1 ? ' +' + (n - 1) : '') + '</small></li>'; }
         h += '<li class="no" style="--i:' + (2 * i) + '"><a href="' + esc(p.url) + '"><img src="' + esc(BL.thumb(p)) + '" alt="" width="40" height="40"> ' + esc(p.nome) + '</a></li>';
       });
       return h;
@@ -36,7 +40,7 @@
     function ligar(foco) {
       var res = $('.gr-res'), A = sel.de, B = sel.ate;
       if (!A || !B) return;
-      try { history.replaceState(null, '', '?de=' + A.id + '&ate=' + B.id); } catch (e) {}
+      try { history.replaceState(null, '', '?de=' + A.id + '&ate=' + B.id + (alt ? '&c=' + alt : '') + (window.BL_VERSAO ? '&v=' + window.BL_VERSAO : '')); } catch (e) {}
       res.hidden = false;
       var r = BL.bfs(adj, A.id), c = null, total = 1;
       if (A.id === B.id) c = [A.id];
@@ -67,7 +71,7 @@
       var b = e.target.closest('[data-acao]'); if (!b) return;
       var a = b.dataset.acao;
       if (a === 'ligar') { if (!sel.ate) { $('#gr-ate').focus(); BL.anunciar('Escolha o personagem de destino'); return; } alt = 0; ligar(true); }
-      if (a === 'trocar') { var t = sel.de; sel.de = sel.ate || sel.de; sel.ate = t; alt = 0; mostrarSel(); ligar(); }
+      if (a === 'trocar') { if (!sel.ate) { $('#gr-ate').focus(); BL.anunciar('Escolha primeiro o personagem de destino'); return; } var t = sel.de; sel.de = sel.ate; sel.ate = t; alt = 0; mostrarSel(); ligar(); }
       if (a === 'sortear') { sel.ate = ligados[Math.floor(Math.random() * ligados.length)]; alt = 0; mostrarSel(); ligar(true); }
       if (a === 'outro') { alt++; ligar(); }
       if (a === 'copiar') BL.copiar(BL.urlPublica('graus.html', location.search), b);
@@ -85,21 +89,22 @@
         cand = Object.keys(r.dist).filter(function (k) { return r.dist[k] === 3; });
         if (cand.length) D = { a: a, b: por[cand[Math.floor(rnd() * cand.length)]], atual: a.id, passos: [a.id], erros: 0, fim: false };
       }
+      $('.gr-d-sol').hidden = true; $('.gr-d-sol ol').innerHTML = '';
       renderDesafio(); if (!foco) return; $('#gr-d-t').focus();
       BL.anunciar('Ligue ' + D.a.nome + ' a ' + D.b.nome + ' em até 3 passos.');
     }
     function renderDesafio() {
       var box = $('.gr-desafio-corpo');
-      box.innerHTML = '<p class="gr-d-alvo">Ligue <b>' + esc(D.a.nome) + '</b> a <b>' + esc(D.b.nome) + '</b> em até <b>3</b> passos, escolhendo a cada vez alguém que jogou junto com o último da corrente.</p>' +
+      box.innerHTML = '<p class="gr-d-alvo">Ligue <b>' + esc(D.a.nome) + '</b> a <b>' + esc(D.b.nome) + '</b> em até <b>3</b> passos, escolhendo a cada vez alguém que dividiu time (como jogador ou na comissão) com o último da corrente.</p>' +
         '<ol class="gr-cadeia gr-d-cadeia">' + cadeiaHtml(D.passos) + (D.fim ? '' : '<li class="no alvo"><span><img src="' + esc(BL.thumb(D.b)) + '" alt="" width="40" height="40"> ' + esc(D.b.nome) + ' ?</span></li>') + '</ol>' +
-        '<p class="gr-d-st" role="status"></p>';
+        '<p class="gr-d-st"></p>';
       $('.gr-d-busca').hidden = D.fim;
     }
-    BL.combobox($('#gr-d'), $('#gr-d-lista'), { fonte: function () { return todos; }, sub: sub,
+    BL.combobox($('#gr-d'), $('#gr-d-lista'), { fonte: function () { return todos; }, sub: sub, filtro: function (p) { return !D || D.passos.indexOf(p.id) < 0; },
       escolher: function (p) {
         if (!D || D.fim) return;
         var st = function (m) { var e = $('.gr-d-st'); if (e) e.textContent = m; BL.anunciar(m); };
-        if (!adj[D.atual][p.id]) { D.erros++; st(p.nome + ' não dividiu time com ' + por[D.atual].nome + ' nas fichas. Tente outro.'); return; }
+        if (!adj[D.atual][p.id]) { D.erros++; st(p.nome + ' não esteve no mesmo time que ' + por[D.atual].nome + ' nas fichas. Tente outro.'); return; }
         D.passos.push(p.id); D.atual = p.id;
         var n = D.passos.length - 1;
         if (p.id === D.b.id) { D.fim = true; renderDesafio(); st('🏆 Ligou em ' + n + (n === 1 ? ' passo' : ' passos') + (D.erros ? ' (' + D.erros + ' tentativa' + (D.erros > 1 ? 's' : '') + ' sem vínculo)' : '') + '!'); return; }

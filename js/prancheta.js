@@ -12,12 +12,34 @@
     var adj = BL.grafo(todos).adj;
     var qs = new URLSearchParams(location.search);
     var f = FORM[qs.get('f')] ? qs.get('f') : '433';
-    var esc11 = parseIds(qs.get('e'));
+    var problemas = [];
+    if (qs.get('f') && !FORM[qs.get('f')]) problemas.push('formação “' + qs.get('f') + '” não existe (usamos 4-3-3)');
+    var esc11 = parseIds(qs.get('e'), problemas);
     var vaga = -1, linhasAntes = {};
     raiz.classList.add('pronto'); BL.avisoVersao(raiz);
-    function parseIds(s) { var l = (s || '').split(',').slice(0, 11).map(function (id) { return por[id] && por[id].jogador ? por[id] : null; }); while (l.length < 11) l.push(null); return l; }
+    if (problemas.length) BL.avisoUrl(raiz, 'Ajustamos este link: ' + problemas.join('; ') + '.');
+    /* lê a escalação do link: ignora ids desconhecidos, de staff e repetidos (e conta o que ignorou) */
+    function parseIds(s, prob) {
+      var vistos = {}, ruim = 0, staff = 0, rep = 0;
+      var l = (s || '').split(',').slice(0, 11).map(function (id) {
+        if (!id || id === '-') return null;
+        if (!por[id]) { ruim++; return null; }
+        if (!por[id].jogador) { staff++; return null; }
+        if (vistos[id]) { rep++; return null; }
+        vistos[id] = 1; return por[id];
+      });
+      while (l.length < 11) l.push(null);
+      if (prob) {
+        if (ruim) prob.push(ruim + (ruim > 1 ? ' nomes que não existem' : ' nome que não existe') + ' nas fichas');
+        if (staff) prob.push(staff + (staff > 1 ? ' membros' : ' membro') + ' da comissão (só jogadores entram em campo)');
+        if (rep) prob.push(rep + (rep > 1 ? ' jogadores repetidos' : ' jogador repetido'));
+        if (ruim || staff || rep) prob.push('as vagas ficaram livres');
+      }
+      return l;
+    }
     var ids = function (l) { return l.map(function (p) { return p ? p.id : '-'; }).join(','); };
-    var url = function () { return '?f=' + f + '&e=' + ids(esc11) + (BL.versao() ? '&v=' + BL.versao() : ''); };
+    var semente = qs.get('seed') || null, vsLink = qs.get('vs') || '';
+    var url = function (comSerie) { return '?f=' + f + '&e=' + ids(esc11) + (comSerie !== false && semente ? '&seed=' + encodeURIComponent(semente) + (vsLink ? '&vs=' + encodeURIComponent(vsLink) : '') : '') + (BL.versao() ? '&v=' + BL.versao() : ''); };
     var curtoN = function (p) { return BL.sobrenome(p); };
     function grupoDe(re, fase) { return jog.filter(function (p) { return p.fases.some(function (x) { return x.fase === fase && re.test(x.time); }); }); }
     var PRESETS = {
@@ -74,7 +96,7 @@
     dlg.addEventListener('close', function () { var b = raiz.querySelector('.vaga[data-vaga="' + vaga + '"]'); if (b) b.focus(); });
     function colocar(i, p) {
       var antes = T.quimica(esc11.map(function (x) { return x && x.id; }), adj).total;
-      esc11[i] = p; render(true);
+      esc11[i] = p; semente = null; $('.pr-res').hidden = true; render(true);
       var depois = T.quimica(esc11.map(function (x) { return x && x.id; }), adj).total;
       if (p) {
         var lacos = []; esc11.forEach(function (o) { if (o && o !== p && adj[p.id][o.id]) adj[p.id][o.id].forEach(function (l) { var t = l.time; if (lacos.indexOf(t) < 0) lacos.push(t); }); });
@@ -85,14 +107,15 @@
       var b = e.target.closest('[data-vaga]'); if (b) { abrir(+b.dataset.vaga); return; }
       b = e.target.closest('[data-acao],[data-preset]'); if (!b) return;
       if (b.dataset.preset) {
-        var P = PRESETS[b.dataset.preset]; esc11 = T.escalar(P.lista(), f); render(true);
+        var P = PRESETS[b.dataset.preset]; esc11 = T.escalar(P.lista(), f); semente = null; $('.pr-res').hidden = true; render(true);
         BL.anunciar(P.rot + ': ' + esc11.filter(Boolean).length + ' escalados. Química estimada ' + fmt(T.quimica(esc11.map(function (x) { return x && x.id; }), adj).total) + '.');
       }
       var a = b.dataset.acao;
       if (a === 'esvaziar') { colocar(vaga, null); dlg.close(); }
       if (a === 'fechar') dlg.close();
-      if (a === 'limpar') { esc11 = new Array(11).fill(null); render(); BL.anunciar('Prancheta limpa'); }
-      if (a === 'copiar') BL.copiar(BL.urlPublica('prancheta.html', url()), b);
+      if (a === 'limpar') { esc11 = new Array(11).fill(null); semente = null; $('.pr-res').hidden = true; render(); BL.anunciar('Prancheta limpa'); }
+      if (a === 'copiar') BL.copiar(BL.urlPublica('prancheta.html', url(false)), b);
+      if (a === 'copiar-serie') BL.copiar(BL.urlPublica('prancheta.html', url()), b);
       if (a === 'desafiar') desafiar();
       if (a === 'revanche') desafiar(true);
     });
@@ -101,24 +124,25 @@
       var antigo = FORM[f].v, novo = FORM[e.target.value].v, l = esc11.filter(Boolean);
       f = e.target.value;
       /* reaproveita os escalados: cada um vai para a vaga mais compatível da nova formação */
-      esc11 = l.length ? T.escalar(l, f) : new Array(11).fill(null); render(true);
+      esc11 = l.length ? T.escalar(l, f) : new Array(11).fill(null); semente = null; $('.pr-res').hidden = true; render(true);
       BL.anunciar('Formação ' + FORM[f].rot);
       void antigo; void novo;
     });
     /* ----- Desafiar: série de 5 x1 setoriais ----- */
-    var semente = qs.get('seed') || null;
+    if (vsLink) $('#pr-vs').value = vsLink;
     function rival() {
-      var vs = $('#pr-vs').value.trim();
+      var vs = $('#pr-vs').value.trim(); vsLink = '';
       if (vs) {
-        try { var u = new URL(vs, location.href), f2 = FORM[u.searchParams.get('f')] ? u.searchParams.get('f') : '433', e2 = parseIds(u.searchParams.get('e')); if (e2.filter(Boolean).length === 11) return { nome: 'Time do link', l: e2, f: f2 }; } catch (x) {}
-        BL.anunciar('Link de prancheta inválido ou incompleto; usando um 11 sorteado.');
+        try { var u = new URL(vs, location.href), f2 = FORM[u.searchParams.get('f')] ? u.searchParams.get('f') : '433', e2 = parseIds(u.searchParams.get('e')); if (e2.filter(Boolean).length === 11) { vsLink = vs; return { nome: 'Time do link', l: e2, f: f2 }; } } catch (x) {}
+        var m = 'O link do amigo é inválido ou não tem 11 jogadores válidos; a série foi contra um 11 sorteado.';
+        BL.avisoUrl($('.pr-desafio'), m); BL.anunciar(m);
       }
       var rnd = M.rng(semente + ':rival'), meus = esc11.map(function (p) { return p.id; });
       var pool = jog.filter(function (p) { return meus.indexOf(p.id) < 0; }).map(function (p) { return { p: p, k: rnd() }; }).sort(function (a, b) { return a.k - b.k; }).slice(0, 26).map(function (x) { return x.p; });
       var fs = Object.keys(FORM), f2 = fs[Math.floor(rnd() * fs.length)];
       return { nome: '11 sorteado', l: T.escalar(pool, f2), f: f2 };
     }
-    function desafiar(nova) {
+    function desafiar(nova, foco) {
       if (esc11.filter(Boolean).length < 11) return;
       if (!semente || nova) semente = M.novaSemente();
       var R = rival(), s = T.serie(esc11, R.l.filter(Boolean), semente), va = s.filter(function (x) { return x.venc === 0; }).length;
@@ -130,12 +154,16 @@
           var link = 'duelo.html?a=' + x.a.id + '&b=' + x.b.id + '&seed=' + encodeURIComponent(x.s) + v + '&auto=1';
           return '<li class="' + (x.venc === 0 ? 'ok' : 'nao') + '"><span class="pr-s-rot">' + esc(x.rot) + '</span> <a href="' + esc(link) + '" aria-label="' + esc(x.a.nome + ' ' + x.g[0] + ' a ' + x.g[1] + ' ' + x.b.nome + '. ' + (x.venc === 0 ? 'Vitória sua' : 'Vitória do rival') + '. Abre o x1.') + '"><b>' + esc(curtoN(x.a)) + '</b> ' + x.g[0] + ' × ' + x.g[1] + ' <b>' + esc(curtoN(x.b)) + '</b>' + (x.ouro ? ' <small>(gol de ouro)</small>' : '') + '</a> <span aria-hidden="true">' + (x.venc === 0 ? '✓' : '✗') + '</span></li>';
         }).join('') + '</ol><p class="cp-aviso">Série simulada pelo site com atributos estimados (não oficiais). Semente <code>' + esc(semente) + '</code>.</p>' +
-        '<div class="x1-botoes"><button type="button" class="btn btn-2" data-acao="revanche">↻ Nova série</button></div>';
-      box.querySelector('h2').focus();
+        '<div class="x1-botoes"><button type="button" class="btn btn-2" data-acao="revanche">↻ Nova série</button><button type="button" class="btn btn-2" data-acao="copiar-serie">Copiar link da série</button></div>';
+      try { history.replaceState(null, '', url()); } catch (e) {}
+      if (foco !== false) box.querySelector('h2').focus();
       if (BL.voz && BL.voz.on) BL.voz.falar((va >= 3 ? 'Seu time vence a série por ' : 'Seu time perde a série por ') + va + ' a ' + (5 - va));
       BL.anunciar((va >= 3 ? 'Vitória' : 'Derrota') + ' na série por ' + va + ' a ' + (5 - va) + '.');
     }
-    if (!esc11.some(Boolean)) esc11 = T.escalar(PRESETS['time-z'].lista(), f);
+    /* sem escalação no link: abre com o 11 "Com os dados" (todos na posição da ficha); "Limpar" persiste porque grava e=-,-,… */
+    if (!qs.has('e')) esc11 = T.escalar(PRESETS.dados.lista(), f);
     render();
+    /* link de série (?seed=…): refaz a mesma série sem roubar o foco */
+    if (semente && esc11.filter(Boolean).length === 11) desafiar(false, false);
   }).catch(function (e) { console.warn('Prancheta indisponível:', e); });
 })();

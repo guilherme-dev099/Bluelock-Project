@@ -22,6 +22,8 @@
     var nome = function (p) { return M.curto(p, p === sel.a ? sel.b : sel.a); };
     raiz.classList.add('pronto');
     BL.avisoVersao(raiz);
+    var ruinsD = ['a', 'b'].filter(function (k) { return qs.get(k) && !por[qs.get(k)]; });
+    if (ruinsD.length) BL.avisoUrl(raiz, 'Este link tem ' + (ruinsD.length > 1 ? 'personagens que não existem' : 'um personagem que não existe') + ' nas fichas (' + ruinsD.map(function (k) { return '“' + qs.get(k) + '”'; }).join(', ') + '). O duelo abriu com ' + sel.a.nome + ' × ' + sel.b.nome + '.');
     var elite = $('.x1-elite');
     if (elite) elite.textContent = Object.keys(M.ELITE).map(function (id) { return por[id] ? por[id].nome + ' (+' + M.ELITE[id] + ')' : null; }).filter(Boolean).join(', ');
 

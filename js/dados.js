@@ -54,6 +54,13 @@
       p.textContent = 'Este link é de uma versão anterior dos dados (' + v + ' → ' + window.BL_VERSAO + '); o resultado pode ser diferente do que foi compartilhado.';
       el.insertBefore(p, el.firstChild); return true;
     },
+    /* aviso único para parâmetros de URL inválidos (mesmo visual do aviso de versão); não duplica a mesma mensagem */
+    avisoUrl: function (el, msg) {
+      if (!el || !msg) return null;
+      var ja = [].filter.call(el.querySelectorAll('.aviso-url'), function (x) { return x.textContent === msg; })[0]; if (ja) return ja;
+      var p = document.createElement('p'); p.className = 'aviso-versao aviso-url'; p.setAttribute('role', 'note'); p.textContent = msg;
+      el.insertBefore(p, el.firstChild); return p;
+    },
     thumb: function (p) { return p.thumb || p.img; },
     /* link compartilhável: em file:// usa o site publicado como base */
     PUBLICO: 'https://guilherme-dev099.github.io/Bluelock-Project/',
