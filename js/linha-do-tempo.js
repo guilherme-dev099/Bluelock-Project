@@ -10,7 +10,10 @@
     'Neo Egoist League': 'Clubes da NEL (Alemanha, Espanha, Inglaterra, Itália e França).',
     'Atual': 'Situação mais recente registrada nas fichas.'
   };
-  BL.personagens().then(function (dados) {
+  var CATS_TL = { protagonistas: 1, bl: 1, sub20: 1, nel: 1 };
+  BL.personagens().then(function (todos) {
+    /* jogadores do Blue Lock, Sub-20 e clubes da NEL + Ego (técnico) */
+    var dados = todos.filter(function (p) { return (p.jogador && CATS_TL[p.categoria]) || p.id === 'ego'; });
     var FASES = BL.FASES, lista = root.querySelector('.tl-fases'), painel = root.querySelector('.tl-painel'), nota = root.querySelector('.tl-nota');
     var playBtn = root.querySelector('.tl-play'), atual = 0, timer = null;
     FASES.forEach(function (f, i) {
@@ -45,7 +48,7 @@
       var fase = FASES[atual], r = grupos(fase);
       painel.innerHTML = r.g.map(function (t) {
         return '<section class="tl-time"><h3>' + esc(t[0]) + ' <small>' + t[1].length + '</small></h3><ul>' + t[1].map(avatar).join('') + '</ul></section>';
-      }).join('') + (r.fora.length ? '<section class="tl-time tl-fora"><h3>Sem registro nesta fase <small>' + r.fora.length + '</small></h3><ul>' + r.fora.map(avatar).join('') + '</ul></section>' : '');
+      }).join('') + (r.fora.length ? '<details class="tl-time tl-fora"><summary><h3>Sem registro nesta fase <small>' + r.fora.length + '</small></h3></summary><ul>' + r.fora.map(avatar).join('') + '</ul></details>' : '');
       nota.textContent = NOTAS[fase] || '';
       [].forEach.call(lista.children, function (t, i) { t.setAttribute('aria-selected', String(i === atual)); t.tabIndex = i === atual ? 0 : -1; });
       painel.setAttribute('aria-labelledby', 'tab-' + atual);

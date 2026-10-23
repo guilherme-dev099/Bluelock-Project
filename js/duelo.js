@@ -7,6 +7,7 @@
   /* fases em que "mesmo time" é seguro afirmar (2ª Seleção = grupos Red/White; 3ª = vários times "Blue Lock") */
   var SEGURAS = { '1ª Seleção': 1, 'Blue Lock × Sub-20': 1, 'Neo Egoist League': 1, 'Atual': 1 };
   BL.personagens().then(function (dados) {
+    dados = dados.filter(function (p) { return p.jogador; });
     var por = {}; dados.forEach(function (p) { por[p.id] = p; });
     var qs = new URLSearchParams(location.search);
     f.a.value = por[qs.get('a')] ? qs.get('a') : 'isagi';

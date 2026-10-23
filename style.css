@@ -150,3 +150,19 @@ button.btn{font:inherit;color:#fff;border:0;cursor:pointer}button.btn-2{color:#c
 .chip{display:inline-block;background:#05070d;border:1px solid #1e6bff;border-radius:999px;padding:1px 10px;font-size:.85rem;margin:2px 0}
 .quiz-seg a{color:#8fb0ff;text-decoration:underline}.quiz-acoes{display:flex;flex-wrap:wrap;gap:8px}
 @media(max-width:700px){.quiz-card{grid-template-columns:110px 1fr}}
+/* elenco completo */
+details.grupo{margin:8px 0 14px;border-top:1px solid #1c2d55}
+details.grupo>summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:10px;min-height:48px;padding:6px 4px;border-radius:10px}
+details.grupo>summary::-webkit-details-marker{display:none}
+details.grupo>summary::before{content:"▸";color:#4d8dff;font-size:1.1rem;transition:transform .2s;display:inline-block;width:1em}
+details.grupo[open]>summary::before{transform:rotate(90deg)}
+details.grupo>summary:hover h3{color:#fff}details.grupo>summary:focus-visible{outline:3px solid #4d8dff;outline-offset:2px}
+details.grupo h3.group{margin:0;display:flex;align-items:center;gap:8px}
+.group .n{background:#1e6bff;color:#fff;border-radius:999px;font-size:.8rem;padding:1px 9px;font-weight:800}
+details.grupo .grid{margin:6px 0 10px}
+.total{font-size:.9rem;color:#8fb0ff;font-weight:600;margin-left:6px}
+.cat-tag{display:inline-block;font-size:.75rem;text-transform:uppercase;letter-spacing:.1em;color:#8fb0ff;border:1px solid #1e6bff;border-radius:999px;padding:2px 10px;margin:0 0 6px}
+.src{overflow-wrap:anywhere}.crumb{overflow-wrap:anywhere}
+details.tl-fora>summary{list-style:none;cursor:pointer}details.tl-fora>summary::-webkit-details-marker{display:none}
+details.tl-fora>summary h3::after{content:" ▸";color:#4d8dff}details.tl-fora[open]>summary h3::after{content:" ▾"}
+@media(prefers-reduced-motion:reduce){details.grupo>summary::before{transition:none}}

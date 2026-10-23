@@ -3,7 +3,8 @@
   'use strict';
   var BL = window.BL, form = document.querySelector('.arquivo');
   if (!BL || !form) return;
-  var POS = ['atacante', 'meia', 'ponta', 'lateral', 'volante', 'goleiro'];
+  var POS = ['atacante', 'centroavante', 'meia', 'ponta', 'ala', 'lateral', 'volante', 'zagueiro', 'goleiro'];
+  var CATS = { protagonistas: 'Protagonistas', bl: 'Outros do Blue Lock', sub20: 'Sub-20 Japão', nel: 'Clubes da NEL', selecoes: 'Seleções estrangeiras', staff: 'Treinadores & Staff', outros: 'Outros' };
   var ORDENS = { final: 'Ranking final', inicio: 'Ranking inicial', salto: 'Maior salto', az: 'A–Z' };
   BL.personagens().then(function (dados) {
     var porId = {}; dados.forEach(function (p) { porId[p.id] = p; });
@@ -20,11 +21,12 @@
     var contagemArmas = {}, rotuloArma = {};
     dados.forEach(function (p) { p.armas.forEach(function (a) { var k = BL.chaveArma(a); contagemArmas[k] = (contagemArmas[k] || 0) + 1; rotuloArma[k] = rotuloArma[k] || cap(a.replace(/\s*\([^)]*\)/g, '')); }); });
     var opcoes = {
+      categoria: Object.keys(CATS).filter(function (k) { return dados.some(function (p) { return p.categoria === k; }); }),
       clube: dados.map(clubeNEL).filter(Boolean).filter(function (v, i, a) { return a.indexOf(v) === i; }).sort(),
       posicao: POS.filter(function (k) { return dados.some(function (p) { return posicoes(p).indexOf(k) >= 0; }); }),
-      arma: Object.keys(contagemArmas).filter(function (k) { return contagemArmas[k] >= 2; }).sort(function (a, b) { return contagemArmas[b] - contagemArmas[a]; })
+      arma: Object.keys(contagemArmas).filter(function (k) { return contagemArmas[k] >= 2; }).sort(function (a, b) { return contagemArmas[b] - contagemArmas[a]; }).slice(0, 16)
     };
-    var rotulo = { clube: function (v) { return v; }, posicao: cap, arma: function (v) { return rotuloArma[v] + ' (' + contagemArmas[v] + ')'; } };
+    var rotulo = { categoria: function (v) { return CATS[v]; }, clube: function (v) { return v; }, posicao: cap, arma: function (v) { return rotuloArma[v] + ' (' + contagemArmas[v] + ')'; } };
 
     // estado (URL usa slugs legíveis: ?clube=bastard-munchen&arma=metavision&ordem=salto&q=flow)
     var qs = new URLSearchParams(location.search), estado = {};
@@ -42,11 +44,14 @@
         box.appendChild(b);
       });
     });
-    cards.forEach(function (c) { c.el.style.viewTransitionName = 'card-' + c.p.id; });
+    function nomear(on) {
+      cards.forEach(function (c) { var g = c.el.closest('details'); c.el.style.viewTransitionName = on && !c.el.hidden && (!g || g.open) ? 'card-' + c.p.id : ''; });
+    }
 
     function passa(p) {
       var t = BL.norm(q.value);
       return (!t || BL.norm(p.nome).indexOf(t) >= 0 || armasN(p).some(function (a) { return a.indexOf(t) >= 0; }))
+        && (!estado.categoria || p.categoria === estado.categoria)
         && (!estado.clube || clubeNEL(p) === estado.clube)
         && (!estado.posicao || posicoes(p).indexOf(estado.posicao) >= 0)
         && (!estado.arma || armasN(p).indexOf(estado.arma) >= 0);
@@ -77,9 +82,14 @@
         form.querySelectorAll('[data-filtro] button').forEach(function (b) {
           b.setAttribute('aria-pressed', String(estado[b.parentNode.dataset.filtro] === b.dataset.v));
         });
-        document.querySelectorAll('.group').forEach(function (h) {
-          var g = h.nextElementSibling, vazio = ![].some.call(g.children, function (c) { return !c.hidden; });
-          h.hidden = vazio; g.hidden = vazio;
+        var ativo = !!(q.value.trim() || Object.keys(estado).some(function (t) { return estado[t]; }));
+        document.querySelectorAll('details.grupo').forEach(function (d) {
+          var vis = [].filter.call(d.querySelectorAll('a.card'), function (c) { return !c.hidden; }).length;
+          d.hidden = vis === 0;
+          var n = d.querySelector('.n'); if (n) n.textContent = vis;
+          if (d.dataset.aberto === undefined) d.dataset.aberto = d.open ? '1' : '';
+          if (ativo) { if (!d.dataset.auto) d.dataset.auto = '1'; d.open = vis > 0 && (vis <= 40 || d.dataset.aberto === '1' || estado.categoria === d.dataset.cat); }
+          else if (d.dataset.auto) { d.open = d.dataset.aberto === '1'; delete d.dataset.auto; }
         });
         var msg = n ? n + (n === 1 ? ' personagem encontrado' : ' personagens encontrados') + (k ? ' · ordem: ' + ORDENS[k] : '') : 'Nenhum personagem com esses filtros';
         cont.textContent = msg;
@@ -90,7 +100,8 @@
         var s = u.toString();
         try { history.replaceState(null, '', (s ? '?' + s : location.pathname) + location.hash); } catch (e) {}
       };
-      animar ? BL.transicao(mudar) : mudar();
+      var visiveis = cards.filter(function (c) { var g = c.el.closest('details'); return !c.el.hidden && (!g || g.open); }).length;
+      if (animar && visiveis <= 60) { nomear(true); BL.transicao(function () { mudar(); nomear(true); }); setTimeout(function () { nomear(false); }, 900); } else mudar();
     }
     q.addEventListener('input', function () { aplicar(false); });
     ordem.addEventListener('change', function () { aplicar(true); });

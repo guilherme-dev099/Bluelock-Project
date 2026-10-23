@@ -9,7 +9,7 @@
   function progresso() { var n = respondidas(); prog.textContent = n + ' de ' + sets.length + ' respondidas'; btn.disabled = n < sets.length; }
   form.addEventListener('change', progresso); progresso();
   BL.personagens().then(function (dados) {
-    var jogadores = dados.filter(function (p) { return p.rankingTexto && p.rankingTexto !== '—'; });
+    var jogadores = dados.filter(function (p) { return p.jogador && p.armas.length; });
     form.addEventListener('submit', function (e) {
       e.preventDefault();
       if (respondidas() < sets.length) { prog.textContent = 'Responda todas as perguntas.'; return; }

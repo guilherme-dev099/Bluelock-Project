@@ -43,8 +43,15 @@ for f in sorted(root.glob("*.html")):
         "rankingTexto": dl.get("Ranking Blue Lock"), "rankingInicio": ini, "rankingFinal": fim,
         "inicioOficial": "(início)" in (dl.get("Ranking Blue Lock") or ""),
         "fases": fases,
+        "categoria": (re.search(r'<meta name="bl-categoria" content="([^"]+)"', t) or [None, None])[1],
+        "jogador": bool(re.search(r'<meta name="bl-jogador" content="1"', t)),
         "fonte": (re.search(r'class="src">Fonte: <a href="([^"]+)"', t) or [None, None])[1],
+        "ordem": None,
     })
+ordem = re.findall(r'<a class="card" href="([^"]+)\.html"', (root / "index.html").read_text(encoding="utf-8"))
+pos = {k: i for i, k in enumerate(ordem)}
+out.sort(key=lambda p: pos.get(p["id"], 9999))
+for p in out: p["ordem"] = pos.get(p["id"])
 txt = json.dumps(out, ensure_ascii=False, separators=(",", ":"))
 (root / "data").mkdir(exist_ok=True)
 (root / "data" / "personagens.json").write_text(txt, encoding="utf-8")
