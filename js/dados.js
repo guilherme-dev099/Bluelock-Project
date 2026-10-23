@@ -42,6 +42,31 @@
     },
     /* chave de Arma: ignora parênteses ("Visão espacial (Spatial Awareness)" = "visão espacial") */
     chaveArma: function (a) { return BL.norm(String(a).replace(/\s*\([^)]*\)/g, '')); },
-    sobrenome: function (p) { return p.nome.split(' ').slice(-1)[0]; }
+    sobrenome: function (p) { return p.nome.split(' ').slice(-1)[0]; },
+    /* miniatura 112×112 (img/thumb) para avatares pequenos; cai para a foto grande */
+    thumb: function (p) { return p.thumb || p.img; },
+    /* link compartilhável: em file:// usa o site publicado como base */
+    PUBLICO: 'https://guilherme-dev099.github.io/Bluelock-Project/',
+    urlPublica: function (pagina, busca) {
+      pagina = pagina || (location.pathname.split('/').pop() || 'index.html');
+      busca = busca == null ? location.search : busca;
+      if (location.protocol === 'file:') return BL.PUBLICO + pagina + busca;
+      return new URL(pagina + busca, location.href).href;
+    },
+    copiar: function (texto, botao, rotulo) {
+      var ok = function () {
+        BL.anunciar(rotulo || 'Link copiado');
+        if (!botao) return;
+        var o = botao.textContent; botao.textContent = (rotulo || 'Link copiado') + ' ✓';
+        setTimeout(function () { botao.textContent = o; }, 2000);
+      };
+      var fb = function () {
+        var t = document.createElement('textarea'); t.value = texto; t.setAttribute('readonly', ''); t.style.position = 'fixed'; t.style.opacity = '0';
+        document.body.appendChild(t); t.select();
+        var deu = false; try { deu = document.execCommand('copy'); } catch (x) {}
+        t.remove(); deu ? ok() : prompt('Copie:', texto);
+      };
+      if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(texto).then(ok, fb); else fb();
+    }
   };
 })();

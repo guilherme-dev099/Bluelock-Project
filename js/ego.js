@@ -45,17 +45,20 @@
   function pagina(url) { try { return new URL(url).pathname.split('/').pop() || 'index.html'; } catch (e) { return ''; } }
   addEventListener('pageswap', function (e) {
     if (!e.viewTransition || !e.activation) return;
+    var nada = function () {}; e.viewTransition.ready.catch(nada); e.viewTransition.finished.catch(nada);
     var destino = pagina(e.activation.entry.url);
     var img = document.querySelector('a.card[href="' + destino + '"] img') || document.querySelector('.char > img');
     if (img) { img.style.viewTransitionName = 'foto'; }
   });
   addEventListener('pagereveal', function (e) {
-    if (!e.viewTransition || !window.navigation || !navigation.activation || !navigation.activation.from) return;
+    if (!e.viewTransition) return;
+    var nada = function () {}; e.viewTransition.ready.catch(nada); e.viewTransition.finished.catch(nada);
+    if (!window.navigation || !navigation.activation || !navigation.activation.from) return;
     var origem = pagina(navigation.activation.from.url);
     var img = document.querySelector('.char > img') || document.querySelector('a.card[href="' + origem + '"] img');
     if (img) {
       img.style.viewTransitionName = 'foto';
-      e.viewTransition.finished.finally(function () { img.style.viewTransitionName = ''; });
+      var limpa = function () { img.style.viewTransitionName = ''; }; e.viewTransition.finished.then(limpa, limpa);
     }
   });
   addEventListener('pageshow', function () {

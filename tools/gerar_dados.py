@@ -9,7 +9,7 @@ def rank(txt):
     m = re.findall(r"(\d+)º", txt or "")
     return (int(m[0]), int(m[-1])) if m else (None, None)
 for f in sorted(root.glob("*.html")):
-    if f.name in ("index.html", "historia.html", "duelo.html", "quiz.html"): continue
+    if f.name in ("index.html", "historia.html", "duelo.html", "quiz.html", "egoista.html", "copa.html"): continue
     t = f.read_text(encoding="utf-8")
     dl = {strip(k): strip(v) for k, v in re.findall(r"<dt>(.*?)</dt><dd>(.*?)</dd>", t, re.S)}
     ini, fim = rank(dl.get("Ranking Blue Lock"))
@@ -37,6 +37,7 @@ for f in sorted(root.glob("*.html")):
     out.append({
         "id": f.stem, "nome": strip(re.search(r"<h1>(.*?)</h1>", t)[1]),
         "url": f.name, "img": img,
+        "thumb": ("img/thumb/" + img.split("/")[-1]) if (root / "img" / "thumb" / img.split("/")[-1]).exists() else None,
         "resumo": strip(re.search(r'<p class="desc">(.*?)</p>', t, re.S)[1]),
         "posicao": dl.get("Posição"), "posicoes": [p.strip() for p in re.split(r"[;,/]", dl.get("Posição", "")) if p.strip()],
         "armas": [a.strip() for a in re.split(r",", dl.get("Arma", "")) if a.strip()],

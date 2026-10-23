@@ -39,7 +39,7 @@
     function avatar(x) {
       var p = x.p, f = x.f;
       return '<li><a href="' + esc(p.url) + '" class="av" style="view-transition-name:av-' + esc(p.id) + '">' +
-        '<img src="' + esc(p.img) + '" alt="" width="56" height="56" loading="lazy">' +
+        '<img src="' + esc(BL.thumb(p)) + '" alt="" width="56" height="56" loading="lazy">' +
         '<span class="av-n">' + esc(p.nome) + '</span>' +
         (f && f.numero ? '<span class="av-num">nº ' + esc(f.numero) + '</span>' : '') +
         (f && f.papel ? '<span class="av-papel">' + esc(f.papel) + '</span>' : '') + '</a></li>';
