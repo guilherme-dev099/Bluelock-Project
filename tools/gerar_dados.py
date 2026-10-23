@@ -11,6 +11,7 @@ def rank(txt):
 for f in sorted(root.glob("*.html")):
     if f.name in ("index.html", "historia.html", "duelo.html", "quiz.html", "egoista.html", "copa.html"): continue
     t = f.read_text(encoding="utf-8")
+    if '<section class="char">' not in t: continue   # só fichas de personagem
     dl = {strip(k): strip(v) for k, v in re.findall(r"<dt>(.*?)</dt><dd>(.*?)</dd>", t, re.S)}
     ini, fim = rank(dl.get("Ranking Blue Lock"))
     fases = []

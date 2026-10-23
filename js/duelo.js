@@ -21,6 +21,7 @@
     /* R4: nome curto desambiguado (Rin × Sae, gêmeos Wanima…) */
     var nome = function (p) { return M.curto(p, p === sel.a ? sel.b : sel.a); };
     raiz.classList.add('pronto');
+    BL.avisoVersao(raiz);
     var elite = $('.x1-elite');
     if (elite) elite.textContent = Object.keys(M.ELITE).map(function (id) { return por[id] ? por[id].nome + ' (+' + M.ELITE[id] + ')' : null; }).filter(Boolean).join(', ');
 
@@ -50,7 +51,7 @@
         (linhas ? '<table class="traj"><thead><tr><th scope="col">Fase</th><th scope="col">' + esc(A.nome) + '</th><th scope="col">' + esc(B.nome) + '</th></tr></thead><tbody>' + linhas + '</tbody></table>' : '');
     }
     function url(comSemente) {
-      return '?a=' + sel.a.id + '&b=' + sel.b.id + (staff.checked ? '&staff=1' : '') + (puro && puro.checked ? '&puro=1' : '') + (comSemente && semente ? '&seed=' + encodeURIComponent(semente) : '');
+      return '?a=' + sel.a.id + '&b=' + sel.b.id + (staff.checked ? '&staff=1' : '') + (puro && puro.checked ? '&puro=1' : '') + (comSemente && semente ? '&seed=' + encodeURIComponent(semente) + (BL.versao() ? '&v=' + BL.versao() : '') : '');
     }
     function render() {
       cartao('a'); cartao('b'); ficha();
@@ -64,37 +65,13 @@
       sel[lado] = p; mudou(); BL.anunciar(nome(sel.a) + ' contra ' + nome(sel.b));
     }
 
-    /* busca com fotos (combobox) — miniaturas 112px */
+    /* busca com fotos: BL.combobox compartilhado (miniaturas 112px) */
     ['a', 'b'].forEach(function (lado) {
-      var inp = $('#x1-busca-' + lado), ul = $('#x1-lista-' + lado), ativo = -1, res = [];
-      function abrir(q) {
-        q = norm(q);
-        res = lista().filter(function (p) { return !q || norm(p.nome).indexOf(q) >= 0 || norm(timeAtual(p)).indexOf(q) >= 0 || norm(p.posicao).indexOf(q) >= 0; }).slice(0, 60);
-        ativo = -1; inp.removeAttribute('aria-activedescendant');
-        ul.innerHTML = res.length ? res.map(function (p, i) {
-          return '<li role="option" id="x1-op-' + lado + '-' + i + '" data-i="' + i + '" aria-selected="false"><img src="' + esc(BL.thumb(p)) + '" alt="" width="40" height="40" loading="lazy"><span><b>' + esc(p.nome) + '</b><small>' + esc((p.posicoes && p.posicoes[0]) || (p.jogador ? '' : 'Staff')) + (timeAtual(p) ? ' · ' + esc(timeAtual(p)) : '') + '</small></span><em title="Geral estimado">' + atributos(p).ovr + '</em></li>';
-        }).join('') : '<li class="x1-vazio">Ninguém encontrado</li>';
-        ul.hidden = false; inp.setAttribute('aria-expanded', 'true');
-      }
-      function fechar() { ul.hidden = true; inp.setAttribute('aria-expanded', 'false'); inp.removeAttribute('aria-activedescendant'); }
-      function mover(d) {
-        if (!res.length) return;
-        ativo = (ativo + d + res.length) % res.length;
-        [].forEach.call(ul.children, function (li, i) { li.setAttribute('aria-selected', String(i === ativo)); });
-        var li = ul.children[ativo]; inp.setAttribute('aria-activedescendant', li.id); li.scrollIntoView({ block: 'nearest' });
-      }
-      inp.addEventListener('input', function () { abrir(inp.value); });
-      inp.addEventListener('focus', function () { abrir(inp.value); });
-      inp.addEventListener('blur', function () { setTimeout(fechar, 150); });
-      inp.addEventListener('keydown', function (e) {
-        if (e.key === 'ArrowDown') { e.preventDefault(); if (ul.hidden) abrir(inp.value); mover(1); }
-        else if (e.key === 'ArrowUp') { e.preventDefault(); mover(-1); }
-        else if (e.key === 'Enter') { e.preventDefault(); var p = res[ativo < 0 ? 0 : ativo]; if (p) { escolher(lado, p); fechar(); } }
-        else if (e.key === 'Escape') { fechar(); inp.value = ''; }
-      });
-      ul.addEventListener('mousedown', function (e) {
-        var li = e.target.closest('li[data-i]'); if (!li) return;
-        e.preventDefault(); escolher(lado, res[+li.dataset.i]); fechar(); inp.blur();
+      BL.combobox($('#x1-busca-' + lado), $('#x1-lista-' + lado), {
+        fonte: lista, prefixo: 'x1-op-' + lado + '-', abrirNoFoco: true, blurAoEscolher: true,
+        sub: function (p) { return ((p.posicoes && p.posicoes[0]) || (p.jogador ? '' : 'Staff')) + (timeAtual(p) ? ' · ' + timeAtual(p) : ''); },
+        extra: function (p) { return '<em title="Geral estimado">' + atributos(p).ovr + '</em>'; },
+        escolher: function (p) { escolher(lado, p); }
       });
     });
 
@@ -204,7 +181,9 @@
       fim.hidden = false; $('.x1-ctrl').hidden = true;
       $('.x1-n').textContent = 'Fim de jogo';
       fim.querySelector('h2').focus();
-      BL.anunciar(w.p.nome + ' vence por ' + J[jogo.venc].g + ' a ' + J[1 - jogo.venc].g + extra.replace(' · ', ', ') + '.');
+      var nova = window.BL_ALBUM ? BL_ALBUM.ganhar(J[1 - jogo.venc].p.id, 'x1', true) : false;
+      if (nova) fim.querySelector('.x1-semente').insertAdjacentHTML('beforebegin', '<p class="album-nova">🃏 Figurinha nova no <a href="album.html">Álbum do Ego</a>: ' + esc(J[1 - jogo.venc].p.nome) + '</p>');
+      BL.anunciar(w.p.nome + ' vence por ' + J[jogo.venc].g + ' a ' + J[1 - jogo.venc].g + extra.replace(' · ', ', ') + '.' + (nova ? ' Figurinha nova no álbum: ' + J[1 - jogo.venc].p.nome + '.' : ''));
     }
     function voltar() { clearTimeout(timer); setPausa(false, false); fila = []; jogo = null; arena.hidden = true; fim.hidden = true; escolha.hidden = false; render(); $('.x1-comecar').focus(); }
     var linkJogo = function () { return BL.urlPublica('duelo.html', url(true) + '&auto=1'); };
@@ -252,7 +231,7 @@
         g.fillStyle = '#a9b4cc'; g.font = '900 120px system-ui, Arial, sans-serif'; g.fillText('×', 540, 990);
         g.font = 'italic 900 200px system-ui, Arial, sans-serif'; g.fillStyle = '#ff8fa3'; g.fillText(String(J[1].g), 700, 1010);
         g.fillStyle = '#ffd166'; g.font = 'italic 900 52px system-ui, Arial, sans-serif';
-        g.fillText('🏆 ' + nome(w.p) + ' vence' + (jogo.penalti ? ' nos pênaltis' : (jogo.ouro ? ' no gol de ouro' : '')) + '!', 540, 1100);
+        g.fillText('🏆 ' + nome(w.p) + ' vence' + (jogo.penalti ? ' no pênalti' : (jogo.ouro ? ' no gol de ouro' : '')) + '!', 540, 1100);
         g.fillStyle = '#e6ecff'; g.font = '500 36px system-ui, Arial, sans-serif';
         quebrar(g, jogo.frase, 900).slice(0, 2).forEach(function (l, k) { g.fillText(l, 540, 1165 + k * 46); });
         g.fillStyle = '#8a97b5'; g.font = '500 24px system-ui, Arial, sans-serif';
@@ -262,12 +241,14 @@
         c.toBlob(function (blob) {
           btn.disabled = false;
           if (!blob) { box.innerHTML = '<p class="x1-telao-nota">Não foi possível gerar o PNG neste navegador.</p>'; return; }
-          var u = URL.createObjectURL(blob), arq = 'x1-' + sel.a.id + '-' + sel.b.id + '-' + semente + '.png';
+          if (box._url) URL.revokeObjectURL(box._url);
+          var u = URL.createObjectURL(blob); box._url = u; var arq = 'x1-' + sel.a.id + '-' + sel.b.id + '-' + semente + '.png';
           var file = null; try { file = new File([blob], arq, { type: 'image/png' }); } catch (x) {}
           var podeShare = file && navigator.canShare && navigator.canShare({ files: [file] });
           box.innerHTML = '<img class="x1-fig" src="' + u + '" alt="' + esc(altTxt) + '" width="1080" height="1350"><div class="x1-botoes"><a class="btn" href="' + u + '" download="' + esc(arq) + '">⬇ Baixar PNG</a>' +
             (podeShare ? '<button type="button" class="btn btn-2" data-acao="compartilhar-fig">Compartilhar</button>' : '') + '<button type="button" class="btn btn-2" data-acao="copiar-jogo">Copiar link do replay</button></div>';
           box._file = file; box._alt = altTxt;
+          var dl = box.querySelector('a[download]'); if (dl) dl.focus();
           BL.anunciar('Figurinha pronta. Use Baixar PNG.');
         }, 'image/png');
       });

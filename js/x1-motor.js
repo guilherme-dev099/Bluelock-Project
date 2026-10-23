@@ -99,8 +99,8 @@
     var rnd = typeof semente === 'function' ? semente : M.rng(semente == null ? M.novaSemente() : semente);
     var pick = function (l) { return l[Math.floor(rnd() * l.length)]; };
     var nome = function (p) { return curto(p, p === A ? B : A); };
-    var J = [{ p: A, s: atributos(A, op.puro), g: 0, flow: 0, acordou: false, st: { chutes: 0, dribles: 0, desarmes: 0, defesas: 0 } },
-             { p: B, s: atributos(B, op.puro), g: 0, flow: 0, acordou: false, st: { chutes: 0, dribles: 0, desarmes: 0, defesas: 0 } }];
+    var J = [{ p: A, s: op.sA || atributos(A, op.puro), g: 0, flow: 0, acordou: false, st: { chutes: 0, dribles: 0, desarmes: 0, defesas: 0 } },
+             { p: B, s: op.sB || atributos(B, op.puro), g: 0, flow: 0, acordou: false, st: { chutes: 0, dribles: 0, desarmes: 0, defesas: 0 } }];
     var ev = [], quem = rnd() < sig((J[0].s.vel - J[1].s.vel) / 20) ? 0 : 1, n = 0, ouro = false, teveOuro = false;
     var v = function (j, k) { return j.s[k] + (j.flow > 0 ? 12 : 0); };
     ev.push({ t: 'narra', txt: '🪙 ' + nome(J[quem].p) + ' ganha o cara ou coroa e começa com a bola.' });

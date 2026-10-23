@@ -27,6 +27,7 @@
     var custom = (qs.get('ids') || '').split(',').filter(function (id) { return por[id] && por[id].jogador; });
     var estado = null, timer = null, pausado = false, fila = [];
     raiz.classList.add('pronto');
+    BL.avisoVersao(raiz);
     if (qs.get('p') && PRESETS[qs.get('p')]) form.querySelector('input[name=p][value="' + qs.get('p') + '"]').checked = true;
     if (/^(8|16|32)$/.test(qs.get('t') || '')) tamSel.value = qs.get('t');
     if (qs.get('puro') === '1') puro.checked = true;
@@ -93,9 +94,9 @@
       return { pid: pid, tam: tam, seed: seed, rodadas: rodadas, campeao: vivos[0] };
     }
     function urlCopa(st) {
-      return '?p=' + st.pid + '&t=' + st.tam + '&seed=' + encodeURIComponent(st.seed) + (st.pid === 'custom' ? '&ids=' + custom.join(',') : '') + (puro.checked ? '&puro=1' : '');
+      return '?p=' + st.pid + '&t=' + st.tam + '&seed=' + encodeURIComponent(st.seed) + (st.pid === 'custom' ? '&ids=' + custom.join(',') : '') + (puro.checked ? '&puro=1' : '') + (BL.versao() ? '&v=' + BL.versao() : '');
     }
-    var linkX1 = function (j) { return 'duelo.html?a=' + j.a.id + '&b=' + j.b.id + '&seed=' + encodeURIComponent(j.s) + (puro.checked ? '&puro=1' : '') + '&auto=1'; };
+    var linkX1 = function (j) { return 'duelo.html?a=' + j.a.id + '&b=' + j.b.id + '&seed=' + encodeURIComponent(j.s) + (puro.checked ? '&puro=1' : '') + (BL.versao() ? '&v=' + BL.versao() : '') + '&auto=1'; };
     function lado(p, cls, g) {
       return '<span class="cp-l ' + cls + '"><img src="' + esc(BL.thumb(p)) + '" alt="" width="32" height="32"><span class="cp-nome">' + esc(p.nome) + '</span><b class="cp-g">' + (g == null ? '' : g) + '</b></span>';
     }
@@ -117,11 +118,21 @@
         }).join('') + '</ol></section>';
       }).join('');
     }
+    /* B2: troca só o <li> revelado (e a vaga da rodada seguinte), sem refazer a chave: o foco não se perde */
+    var liDe = function (r, i) { var rs = $('.copa').querySelectorAll('.rodada')[r]; return rs ? rs.querySelectorAll('.jogo')[i] : null; };
+    function trocar(r, i, html, animar) {
+      var velho = liDe(r, i); if (!velho) return;
+      var tinhaFoco = velho.contains(document.activeElement);
+      var tmp = document.createElement('ol'); tmp.innerHTML = html; var novo = tmp.firstChild;
+      if (animar && !BL.reduce) novo.classList.add('revelando');
+      velho.replaceWith(novo);
+      if (tinhaFoco) { var alvo = novo.querySelector('a.cp-cx') || novo.querySelector('.cp-cx'); if (alvo) { if (!alvo.matches('a')) alvo.tabIndex = -1; alvo.focus(); } }
+    }
     function revelar(r, i) {
       feitos[r + ':' + i] = 1;
-      renderChave();
-      var li = $('.copa').querySelectorAll('.rodada')[r].querySelectorAll('.jogo')[i];
-      if (li && !BL.reduce) li.classList.add('revelando');
+      trocar(r, i, jogoHtml(estado.rodadas[r][i], true), true);
+      var j = Math.floor(i / 2);
+      if (estado.rodadas[r + 1] && feitos[r + ':' + (2 * j)] && feitos[r + ':' + (2 * j + 1)]) trocar(r + 1, j, jogoHtml(estado.rodadas[r + 1][j], false), false);
     }
     function comecar(st, instantaneo) {
       estado = st; feitos = {}; clearTimeout(timer); setPausa(false, false);
@@ -145,6 +156,7 @@
       var x = fila.shift(); if (!x) return campeao();
       revelar(x.r, x.i);
       if (x.ultimo) anunciarRodada(x.r);
+      if (BL.voz && BL.voz.on) { var jj = estado.rodadas[x.r][x.i]; BL.voz.falar(jj.w.nome + ' vence ' + (jj.w === jj.a ? jj.b.nome : jj.a.nome) + ' por ' + Math.max(jj.g[0], jj.g[1]) + ' a ' + Math.min(jj.g[0], jj.g[1])); }
       timer = setTimeout(passo, x.ultimo ? 1500 : 650);
     }
     function pular() { clearTimeout(timer); pausado = false; while (fila.length) { var x = fila.shift(); feitos[x.r + ':' + x.i] = 1; } renderChave(); campeao(); }
@@ -170,9 +182,13 @@
         '<ul class="dd-est"><li><b>' + gols + '</b> gols</li><li><b>' + Math.max(golea.g[0], golea.g[1]) + '×' + Math.min(golea.g[0], golea.g[1]) + '</b> maior goleada <small>(' + esc(M.curto(golea.w, golea.w === golea.a ? golea.b : golea.a)) + ' sobre ' + esc(M.curto(golea.w === golea.a ? golea.b : golea.a, golea.w)) + ')</small></li><li><b>' + ouros + '</b> gols de ouro</li><li><b>' + flows + '</b> despertares do ego</li></ul>' +
         '<p class="cp-aviso">Torneio simulado pelo site com atributos estimados (não oficiais). O link reproduz exatamente esta Copa.</p>' +
         '<div class="x1-botoes"><button type="button" class="btn" data-acao="copiar">Copiar link da Copa</button><button type="button" class="btn btn-2" data-acao="nova">↻ Nova Copa (mesma chave)</button><a class="btn btn-2" href="duelo.html?a=' + esc(c.id) + '">⚔ Desafiar o campeão</a><button type="button" class="btn btn-2" data-acao="editar">Mudar chave</button></div></div></div>';
+      var novas = 0;
+      if (window.BL_ALBUM) estado.rodadas[0].forEach(function (j) { if (BL_ALBUM.ganhar(j.a.id, 'copa', true)) novas++; if (BL_ALBUM.ganhar(j.b.id, 'copa', true)) novas++; });
+      if (novas) el.querySelector('.cp-aviso').insertAdjacentHTML('beforebegin', '<p class="album-nova">🃏 ' + novas + (novas === 1 ? ' figurinha nova' : ' figurinhas novas') + ' no <a href="album.html">Álbum do Ego</a> (participantes da Copa)</p>');
       el.hidden = false; $('.cp-ctrl').hidden = true;
       el.querySelector('h2').focus();
-      BL.anunciar(c.nome + ' é o campeão da Copa do Ego!');
+      if (BL.voz) BL.voz.falar(c.nome + ' é o campeão da Copa do Ego!');
+      BL.anunciar(c.nome + ' é o campeão da Copa do Ego!' + (novas ? ' ' + novas + ' figurinhas novas no álbum.' : ''));
     }
     form.addEventListener('submit', function (e) {
       e.preventDefault(); var pid = preset();

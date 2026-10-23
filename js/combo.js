@@ -4,7 +4,7 @@
   'use strict';
   var BL = window.BL; if (!BL) return;
   BL.combobox = function (inp, ul, op) {
-    var ativo = -1, res = [], pref = ul.id + '-op-', esc = BL.esc, norm = BL.norm;
+    var ativo = -1, res = [], pref = (op.prefixo || ul.id + '-op-'), esc = BL.esc, norm = BL.norm;
     function abrir(q) {
       q = norm(q);
       res = op.fonte().filter(function (p) {
@@ -12,7 +12,7 @@
       }).slice(0, op.limite || 60);
       ativo = -1; inp.removeAttribute('aria-activedescendant');
       ul.innerHTML = res.length ? res.map(function (p, i) {
-        return '<li role="option" id="' + pref + i + '" data-i="' + i + '" aria-selected="false"><img src="' + esc(BL.thumb(p)) + '" alt="" width="40" height="40" loading="lazy"><span><b>' + esc(p.nome) + '</b><small>' + esc(op.sub ? op.sub(p) : '') + '</small></span></li>';
+        return '<li role="option" id="' + pref + i + '" data-i="' + i + '" aria-selected="false"><img src="' + esc(BL.thumb(p)) + '" alt="" width="40" height="40" loading="lazy"><span><b>' + esc(p.nome) + '</b><small>' + esc(op.sub ? op.sub(p) : '') + '</small></span>' + (op.extra ? op.extra(p) : '') + '</li>';
       }).join('') : '<li class="x1-vazio">Ninguém encontrado</li>';
       ul.hidden = false; inp.setAttribute('aria-expanded', 'true');
     }
@@ -25,7 +25,7 @@
     }
     function pegar(p) { if (!p) return; fechar(); inp.value = ''; op.escolher(p); }
     inp.addEventListener('input', function () { abrir(inp.value); });
-    inp.addEventListener('focus', function () { if (inp.value) abrir(inp.value); });
+    inp.addEventListener('focus', function () { if (inp.value || op.abrirNoFoco) abrir(inp.value); });
     inp.addEventListener('blur', function () { setTimeout(fechar, 150); });
     inp.addEventListener('keydown', function (e) {
       if (e.key === 'ArrowDown') { e.preventDefault(); if (ul.hidden) abrir(inp.value); mover(1); }
@@ -35,7 +35,7 @@
     });
     ul.addEventListener('mousedown', function (e) {
       var li = e.target.closest('li[data-i]'); if (!li) return;
-      e.preventDefault(); pegar(res[+li.dataset.i]);
+      e.preventDefault(); pegar(res[+li.dataset.i]); if (op.blurAoEscolher) inp.blur();
     });
     return { fechar: fechar, abrir: abrir };
   };
