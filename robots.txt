@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://guilherme-dev099.github.io/Bluelock-Project/sitemap.xml

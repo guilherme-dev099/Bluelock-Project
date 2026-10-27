@@ -1,0 +1,6059 @@
+{
+ "isagi": {
+  "estilo": "Isagi não é o mais rápido nem o mais forte: ele vence porque lê o campo meio segundo antes e chega no espaço certo para finalizar.",
+  "fundamentos": [
+   {
+    "t": "Leitura de campo (Visão espacial / Metavision)",
+    "txt": "Olhe o jogo inteiro, não só a bola. Antes de receber, já saiba onde estão companheiros, adversários e o ângulo de chute."
+   },
+   {
+    "t": "Direct Shot",
+    "txt": "Finalize de primeira quando a bola chegar no espaço. Pratique voleios e batidas limpas sem ajeitar demais."
+   },
+   {
+    "t": "Movimentação sem bola",
+    "txt": "Desmarcações curtas e diagonais. Chegue no ponto cego do zagueiro no momento do passe."
+   },
+   {
+    "t": "Adaptabilidade",
+    "txt": "Depois de cada lance, pergunte: o que funcionou no rival? Roube o princípio e use no próximo ataque."
+   },
+   {
+    "t": "Two Gun / voleio",
+    "txt": "Finalização com os dois pés e de bolas aéreas laterais, sem parar a bola."
+   }
+  ],
+  "exercicios": [
+   "Rondo 5×2 olhando por cima do ombro antes de receber.",
+   "Finalizações de primeira após passe raso: 20 de cada pé, mirando o canto.",
+   "Jogo 4×4 em que você só marca se chegou em desmarcação (sem driblar o marcador)."
+  ],
+  "mentalidade": "Devore o jogo. Cada rival é um manual: adapte, imponha sua expectativa e finalize.",
+  "videogame": {
+   "posicao": "ST / CAM / RW",
+   "papel": "Falso 9 ou ponta que invade a área",
+   "atributos": [
+    "Visão de jogo",
+    "Posicionamento",
+    "Finalização",
+    "Reação"
+   ]
+  },
+  "bespoke": true
+ },
+ "bachira": {
+  "estilo": "Bachira joga soltando o monstro: drible criativo, ritmo imprevisível e Bee Shot quando sobra o ângulo.",
+  "fundamentos": [
+   {
+    "t": "Drible 1×1",
+    "txt": "Mude ritmo e direção. Esconda a bola com o corpo e saia em aceleração curta."
+   },
+   {
+    "t": "Bee Shot",
+    "txt": "Finalize em corrida após o drible, sem travar o corpo."
+   },
+   {
+    "t": "Passe após finta",
+    "txt": "Nem todo drible vira chute: sirva o parceiro que entendeu o timing."
+   },
+   {
+    "t": "Improvisação",
+    "txt": "Em treino livre, proíba padrões repetidos: cada ataque pede uma finta nova."
+   }
+  ],
+  "exercicios": [
+   "Cone zigzag com mudança de ritmo a cada 3 toques, finalizando no último.",
+   "1×1 contínuo em corredor estreito (drible + finalização).",
+   "Jogo 3×3 em que gols após drible valem o dobro."
+  ],
+  "mentalidade": "Confie no monstro. Se o campo pedir caos, você é o caos — com intenção de gol.",
+  "videogame": {
+   "posicao": "LW / CAM / LM",
+   "papel": "Ponta driblador / meia criativo",
+   "atributos": [
+    "Drible",
+    "Agilidade",
+    "Finalização",
+    "Passe curto"
+   ]
+  },
+  "bespoke": true
+ },
+ "chigiri": {
+  "estilo": "Chigiri é velocidade com coragem: estica a linha, cruza ou finaliza com chute controlado depois da arrancada.",
+  "fundamentos": [
+   {
+    "t": "Arrancada",
+    "txt": "Explosão nos primeiros 10 m e bola colada na manutenção da velocidade."
+   },
+   {
+    "t": "Controle em alta velocidade",
+    "txt": "Receba em corrida; o primeiro toque já direciona o ataque."
+   },
+   {
+    "t": "Cruzamento / chute controlado",
+    "txt": "Na linha de fundo, escolha cruzamento rasteiro ou finalização no primeiro pau."
+   },
+   {
+    "t": "Freio e corte",
+    "txt": "Velocidade sem freio é lesão: treine desacelerar e cortar para dentro."
+   }
+  ],
+  "exercicios": [
+   "Tiros de 20–30 m com bola, finalizando ou cruzando.",
+   "Recebimento em profundidade + 1 toque para dentro + chute.",
+   "Cortes para dentro a partir da linha lateral (12 por lado)."
+  ],
+  "mentalidade": "Corra como se o joelho nunca tivesse falhado. Velocidade só vira Arma quando você a usa até o fim.",
+  "videogame": {
+   "posicao": "LW / LM / RB",
+   "papel": "Ponta de profundidade",
+   "atributos": [
+    "Velocidade",
+    "Aceleração",
+    "Cruzamento",
+    "Controle"
+   ]
+  },
+  "bespoke": true
+ },
+ "kunigami": {
+  "estilo": "Kunigami é o super-herói de área: chute potente, físico e, pós–Wild Card, marcação dura e ambidestria fria.",
+  "fundamentos": [
+   {
+    "t": "Chute potente",
+    "txt": "Média/longa distância com plantio firme. Força com direção."
+   },
+   {
+    "t": "Ambidestria",
+    "txt": "Finalize e conduza com os dois pés — o marcador não pode fechar o lado bom."
+   },
+   {
+    "t": "Jogo de corpo",
+    "txt": "Segure de costas, gire e finalize. Use o físico sem falta à toa."
+   },
+   {
+    "t": "Marcação individual",
+    "txt": "Sem a bola, cole no homem e dispute cada segundo bola."
+   }
+  ],
+  "exercicios": [
+   "Chutes de 18–25 m: 15 com cada pé, mirando cantos.",
+   "Disputas 1×1 de ombro + finalização.",
+   "Circuito de finalização ambidestra (direita/esquerda)."
+  ],
+  "mentalidade": "Seja o herói do lance decisivo — e, se precisar, o marcador que não larga até o apito.",
+  "videogame": {
+   "posicao": "ST / CF / CDM",
+   "papel": "Centroavante de área ou volante",
+   "atributos": [
+    "Finalização",
+    "Força",
+    "Chute de longe",
+    "Marcação"
+   ]
+  },
+  "bespoke": true
+ },
+ "nagi": {
+  "estilo": "Nagi faz o impossível parecer preguiça: domínio absurdo e voleios fingidos que matam o goleiro.",
+  "fundamentos": [
+   {
+    "t": "Domínio (trap)",
+    "txt": "Mate bolas altas e tensas no peito, coxa e peito do pé, no espaço útil."
+   },
+   {
+    "t": "Controle em espaço mínimo",
+    "txt": "2 toques no máximo, sempre com intenção."
+   },
+   {
+    "t": "Voleios / semi-voleios",
+    "txt": "Finalize sem deixar cair; treine ângulos estranhos."
+   },
+   {
+    "t": "Timing de chegada",
+    "txt": "Chegue atrasado no cruzamento para finalizar de primeira."
+   }
+  ],
+  "exercicios": [
+   "30 domínios orientados (peito → chão → condução).",
+   "Voleios de cruzamento: 20 por sessão, contato limpo.",
+   "Quadra reduzida em que só voleio vale gol."
+  ],
+  "mentalidade": "Menos corrida, mais precisão. Se a bola chega, ela é sua — e o gol também.",
+  "videogame": {
+   "posicao": "ST / RF / CAM",
+   "papel": "Finalizador técnico",
+   "atributos": [
+    "Controle",
+    "Equilíbrio",
+    "Finalização",
+    "Reação"
+   ]
+  },
+  "bespoke": true
+ },
+ "reo": {
+  "estilo": "Reo é o camaleão: destreza, Copycat e Metavision para copiar o que funciona em qualquer posição.",
+  "fundamentos": [
+   {
+    "t": "Copycat consciente",
+    "txt": "Isole 1 gesto de um parceiro (corte, passe, finalização) e repita 20 vezes no mesmo treino."
+   },
+   {
+    "t": "Destreza multi-posição",
+    "txt": "15 min como zagueiro, 15 como meia, 15 como atacante no mesmo dia."
+   },
+   {
+    "t": "Metavision",
+    "txt": "Antes de cada passe, conte opções: progresso, segurança, ruptura."
+   },
+   {
+    "t": "Comunicação",
+    "txt": "Organize a linha enquanto copia: entra, segura, troca."
+   }
+  ],
+  "exercicios": [
+   "Estação copie o vídeo: 3 gestos diferentes por semana.",
+   "Rondo trocando de função a cada 90 segundos.",
+   "Jogo 7×7 com 1 tempo em cada terço do campo."
+  ],
+  "mentalidade": "Seja o sistema inteiro. Se o time precisa de uma Arma, você vira essa Arma.",
+  "videogame": {
+   "posicao": "CM / CB / CAM",
+   "papel": "Versátil total",
+   "atributos": [
+    "Visão",
+    "Passe",
+    "Drible",
+    "Defesa"
+   ]
+  },
+  "bespoke": true
+ },
+ "barou": {
+  "estilo": "Barou é o Rei: físico, condução em arrancada, chop e Predator Eye — o mundo gira ao redor do gol dele.",
+  "fundamentos": [
+   {
+    "t": "Condução em arrancada",
+    "txt": "Acelere em linha protegendo a bola; o primeiro toque já abre espaço."
+   },
+   {
+    "t": "Finta chop",
+    "txt": "Corte seco na entrada da área e finalize sem ajeitar."
+   },
+   {
+    "t": "Chute de média distância",
+    "txt": "16–22 m com o peito do pé, mirando ângulo."
+   },
+   {
+    "t": "Predator Eye",
+    "txt": "No último instante, leia o goleiro e escolha o canto oposto ao peso dele."
+   },
+   {
+    "t": "Ego de finalização",
+    "txt": "Peça a bola na área. Treine lances em que só você finaliza."
+   }
+  ],
+  "exercicios": [
+   "Corrida + chop + chute: 12 por lado.",
+   "Finalizações sob pressão de um marcador nas costas.",
+   "Jogo 5×5: só média distância ou chop valem."
+  ],
+  "mentalidade": "Você é o Rei do lance. Não peça licença para finalizar.",
+  "videogame": {
+   "posicao": "ST / RW / LW",
+   "papel": "Centroavante egoísta",
+   "atributos": [
+    "Finalização",
+    "Força",
+    "Drible",
+    "Compostura"
+   ]
+  },
+  "bespoke": true
+ },
+ "rin": {
+  "estilo": "Rin une precisão, visão espacial, Puppet Control e Predator Eye: desenha o gol antes do passe sair.",
+  "fundamentos": [
+   {
+    "t": "Precisão de chute",
+    "txt": "Menos força, mais canto. Rede interna com os dois pés."
+   },
+   {
+    "t": "Puppet Control",
+    "txt": "Fintas e passes para mover marcadores e abrir o corredor que você quer."
+   },
+   {
+    "t": "Movimentação sem bola",
+    "txt": "Segundo pau e intervalo zaga–volante no timing do passe."
+   },
+   {
+    "t": "Drible objetivo",
+    "txt": "Drible só para criar o ângulo de finalização."
+   },
+   {
+    "t": "Predator Eye",
+    "txt": "Finalize onde a defesa não cobre a tempo."
+   }
+  ],
+  "exercicios": [
+   "Chutes com alvo nos cantos: 25 por pé.",
+   "Ataques 3×2 em que você só finaliza após mover dois defensores.",
+   "Finalizações após desmarcação em profundidade."
+  ],
+  "mentalidade": "Frio, preciso, absoluto. A régua é o irmão — a lâmina é você.",
+  "videogame": {
+   "posicao": "ST / CF",
+   "papel": "Finalizador completo",
+   "atributos": [
+    "Finalização",
+    "Posicionamento",
+    "Drible",
+    "Visão"
+   ]
+  },
+  "bespoke": true
+ },
+ "gagamaru": {
+  "estilo": "Gagamaru virou goleiro pelo corpo de mola: reação explosiva e defesas impossíveis.",
+  "fundamentos": [
+   {
+    "t": "Reação explosiva",
+    "txt": "Quedas curtas e recuperação imediata para o segundo rebote."
+   },
+   {
+    "t": "Flexibilidade",
+    "txt": "Alongamento dinâmico + defesas em extensão extrema."
+   },
+   {
+    "t": "Jogo com os pés",
+    "txt": "Como ex-atacante, saia jogando limpo sob pressão."
+   },
+   {
+    "t": "Ângulos",
+    "txt": "Reduza o ângulo avançando no momento certo."
+   }
+  ],
+  "exercicios": [
+   "Reação com 2 bolas em sequência.",
+   "Defesas em pé e queda lateral em blocos de 6.",
+   "Saídas com os pés em rondo atrás da área."
+  ],
+  "mentalidade": "Elástico e ousado. Se a bola é impossível, você fica mais impossível.",
+  "videogame": {
+   "posicao": "GK",
+   "papel": "Goleiro reativo",
+   "atributos": [
+    "Reflexos",
+    "Agilidade",
+    "Alongamento",
+    "Jogo com os pés"
+   ]
+  },
+  "bespoke": true
+ },
+ "shidou": {
+  "estilo": "Shidou é caos ofensivo: físico, Drive Shot e gols de ângulos que não existem.",
+  "fundamentos": [
+   {
+    "t": "Drive Shot",
+    "txt": "Finalize em corrida com batida seca de qualquer lado da área."
+   },
+   {
+    "t": "Ângulos mortos",
+    "txt": "Ataque primeiro pau, segundo pau e linha de fundo invertida."
+   },
+   {
+    "t": "Aceleração + físico",
+    "txt": "Arrancadas curtas e bolas aéreas com agressividade legal."
+   },
+   {
+    "t": "Movimentação sem bola",
+    "txt": "Diagonais imprevisíveis até a zona de finalização."
+   },
+   {
+    "t": "Reflexo de finalização",
+    "txt": "Quanto mais estranha a bola, mais rápido o contato."
+   }
+  ],
+  "exercicios": [
+   "Finalizações de 8 ângulos ao redor da área.",
+   "Cruzamentos cegos: finalize de primeira.",
+   "1×1 de profundidade com liberdade total."
+  ],
+  "mentalidade": "Marque de onde quiser. O gol não pede licença.",
+  "videogame": {
+   "posicao": "ST / RW",
+   "papel": "Finalizador caótico",
+   "atributos": [
+    "Finalização",
+    "Aceleração",
+    "Força",
+    "Reação"
+   ]
+  },
+  "bespoke": true
+ },
+ "karasu": {
+  "estilo": "Karasu é o Assassino cerebral: analisa o fraco do rival, finta seca e Metavision para anular e criar.",
+  "fundamentos": [
+   {
+    "t": "Capacidade analítica",
+    "txt": "No aquecimento, escolha 1 adversário e liste 3 hábitos dele."
+   },
+   {
+    "t": "Controle + fintas",
+    "txt": "Receba, engate uma finta curta e progresse ou desarme o timing do rival."
+   },
+   {
+    "t": "Metavision",
+    "txt": "Alterne foco perto/longe: quem pressiona, quem sobra, quem é o passe de ruptura."
+   },
+   {
+    "t": "Jogo de volante",
+    "txt": "Cubra a transição e saia jogando no primeiro toque limpo."
+   }
+  ],
+  "exercicios": [
+   "Vídeo + campo: explore a falha de um marcador 10 vezes.",
+   "Rondo 4×2 com obrigação de ler antes de tocar.",
+   "Transições 6×6: só progresse após um desarme."
+  ],
+  "mentalidade": "Mate o lance com a cabeça antes do pé. O assassino vê o erro — e executa.",
+  "videogame": {
+   "posicao": "CDM / CM / CAM",
+   "papel": "Volante analítico",
+   "atributos": [
+    "Visão",
+    "Controle",
+    "Drible",
+    "Intercepção"
+   ]
+  },
+  "bespoke": true
+ },
+ "hiori": {
+  "estilo": "Hiori é o parceiro silencioso: controle, passe e Metavision para servir o gol certo no timing certo.",
+  "fundamentos": [
+   {
+    "t": "Passe de ruptura",
+    "txt": "Linha entre zaga e volante; peso de bola para o atacante não ajeitar."
+   },
+   {
+    "t": "Controle orientado",
+    "txt": "O primeiro toque já abre o ângulo do próximo passe."
+   },
+   {
+    "t": "Metavision de construção",
+    "txt": "Conte 3 opções antes de receber; escolha a que quebra a linha."
+   },
+   {
+    "t": "Reflexo defensivo",
+    "txt": "Como lateral/meia, cubra a transição e volte rápido."
+   }
+  ],
+  "exercicios": [
+   "Passes em profundidade com alvos móveis (20 por pé).",
+   "Construção 7×7: você só marca assistência (não finaliza).",
+   "1 toque máximo no terço médio."
+  ],
+  "mentalidade": "Faça o outro brilhar no seu tempo. O passe certo é um gol disfarçado.",
+  "videogame": {
+   "posicao": "LB / CAM / LM",
+   "papel": "Lateral/meia criador",
+   "atributos": [
+    "Passe",
+    "Controle",
+    "Visão",
+    "Cruzamento"
+   ]
+  },
+  "bespoke": true
+ },
+ "aiki-himizu": {
+  "estilo": "Atacante de área e ruptura: peça a bola no espaço e finalize sem pedir licença. Na ficha, suas Armas apontam para Fintas, Detecção de mentiras, Pressão.",
+  "fundamentos": [
+   {
+    "t": "Drible alinhado à sua Arma",
+    "txt": "Treine 1×1 com mudança de ritmo e saída clara (passe ou chute)."
+   },
+   {
+    "t": "Corpo e duelo",
+    "txt": "Transforme o atributo físico da ficha em hábito: duelo, salto, resistência ou desarme limpo."
+   },
+   {
+    "t": "Flow",
+    "txt": "Quando o lance cola, acelere a decisão: menos freio, mais intenção de gol."
+   },
+   {
+    "t": "Desmarcação",
+    "txt": "Ataque o espaço no timing do passe."
+   }
+  ],
+  "exercicios": [
+   "Slalom + 1×1 em corredor + finalização.",
+   "Circuitos de duelo + segundo lance (rebote ou transição).",
+   "Sequências livres de 45 s em que você não pode repetir o mesmo gesto."
+  ],
+  "mentalidade": "Se cansou, ainda dá para marcar. Resistência também é Arma. Suas Armas de referência na ficha: Fintas, Detecção de mentiras, Pressão.",
+  "videogame": {
+   "posicao": "ST / CF",
+   "papel": "Atacante",
+   "atributos": [
+    "Finalização",
+    "Posicionamento",
+    "Compostura"
+   ]
+  },
+  "bespoke": false
+ },
+ "akira-endoji": {
+  "estilo": "Atacante de área e ruptura: peça a bola no espaço e finalize sem pedir licença.",
+  "fundamentos": [
+   {
+    "t": "Desmarcação",
+    "txt": "Ataque o espaço no timing do passe."
+   },
+   {
+    "t": "Finalização",
+    "txt": "1 ou 2 toques no máximo dentro da área."
+   },
+   {
+    "t": "Pressão na zaga",
+    "txt": "Não deixe o zagueiro sair fácil."
+   }
+  ],
+  "exercicios": [
+   "Finalizações de primeira após passe raso (20).",
+   "Finalizações de primeira após passe raso (20)."
+  ],
+  "mentalidade": "Se cansou, ainda dá para marcar. Resistência também é Arma.",
+  "videogame": {
+   "posicao": "ST / CF",
+   "papel": "Atacante",
+   "atributos": [
+    "Finalização",
+    "Posicionamento",
+    "Compostura"
+   ]
+  },
+  "bespoke": false
+ },
+ "aoshi-tokimitsu": {
+  "estilo": "Tokimitsu luta contra o próprio medo com agilidade, físico e resistência de quem não para de correr.",
+  "fundamentos": [
+   {
+    "t": "Resistência",
+    "txt": "Seja o último a cansar: pressione o jogo inteiro."
+   },
+   {
+    "t": "Físico + agilidade",
+    "txt": "Mudanças de direção curtas sem perder o duelo de corpo."
+   },
+   {
+    "t": "Pressing alto",
+    "txt": "Feche o portador da bola em 2 segundos após a perda."
+   },
+   {
+    "t": "Chegada na área",
+    "txt": "Box-to-box: chegue para finalizar o segundo lance."
+   }
+  ],
+  "exercicios": [
+   "Tiros de 40–60 m intercalados com finalização.",
+   "Pressing 4×4: recuperação em menos de 3 s.",
+   "Circuito de agilidade + chute."
+  ],
+  "mentalidade": "O medo corre com você — e você corre mais. Não pare.",
+  "videogame": {
+   "posicao": "CM / ST / CDM",
+   "papel": "Box-to-box incansável",
+   "atributos": [
+    "Resistência",
+    "Força",
+    "Agilidade",
+    "Pressão"
+   ]
+  },
+  "bespoke": true
+ },
+ "asahi-naruhaya": {
+  "estilo": "Atacante de área e ruptura: peça a bola no espaço e finalize sem pedir licença. Na ficha, suas Armas apontam para Movimentação sem bola.",
+  "fundamentos": [
+   {
+    "t": "Movimentação sem bola",
+    "txt": "Desmarque no timing do passe; apareça no ponto cego."
+   },
+   {
+    "t": "Desmarcação",
+    "txt": "Ataque o espaço no timing do passe."
+   },
+   {
+    "t": "Finalização",
+    "txt": "1 ou 2 toques no máximo dentro da área."
+   },
+   {
+    "t": "Pressão na zaga",
+    "txt": "Não deixe o zagueiro sair fácil."
+   }
+  ],
+  "exercicios": [
+   "Ataques em que você só toca se chegou em desmarcação.",
+   "Finalizações de primeira após passe raso (20)."
+  ],
+  "mentalidade": "Finalize a decisão. Hesitação não entra no Flow. Suas Armas de referência na ficha: Movimentação sem bola.",
+  "videogame": {
+   "posicao": "ST / CF",
+   "papel": "Atacante",
+   "atributos": [
+    "Finalização",
+    "Posicionamento",
+    "Compostura"
+   ]
+  },
+  "bespoke": false
+ },
+ "ashime-suzuki": {
+  "estilo": "Atacante de área e ruptura: peça a bola no espaço e finalize sem pedir licença.",
+  "fundamentos": [
+   {
+    "t": "Desmarcação",
+    "txt": "Ataque o espaço no timing do passe."
+   },
+   {
+    "t": "Finalização",
+    "txt": "1 ou 2 toques no máximo dentro da área."
+   },
+   {
+    "t": "Pressão na zaga",
+    "txt": "Não deixe o zagueiro sair fácil."
+   }
+  ],
+  "exercicios": [
+   "Finalizações de primeira após passe raso (20).",
+   "Finalizações de primeira após passe raso (20)."
+  ],
+  "mentalidade": "Roube 1 detalhe de um rival por semana e torne seu.",
+  "videogame": {
+   "posicao": "ST / CF",
+   "papel": "Atacante",
+   "atributos": [
+    "Finalização",
+    "Posicionamento",
+    "Compostura"
+   ]
+  },
+  "bespoke": false
+ },
+ "burai-daido": {
+  "estilo": "Atacante de área e ruptura: peça a bola no espaço e finalize sem pedir licença.",
+  "fundamentos": [
+   {
+    "t": "Desmarcação",
+    "txt": "Ataque o espaço no timing do passe."
+   },
+   {
+    "t": "Finalização",
+    "txt": "1 ou 2 toques no máximo dentro da área."
+   },
+   {
+    "t": "Pressão na zaga",
+    "txt": "Não deixe o zagueiro sair fácil."
+   }
+  ],
+  "exercicios": [
+   "Finalizações de primeira após passe raso (20).",
+   "Finalizações de primeira após passe raso (20)."
+  ],
+  "mentalidade": "Não espere o lance perfeito — fabrique o seu.",
+  "videogame": {
+   "posicao": "ST / CF",
+   "papel": "Atacante",
+   "atributos": [
+    "Finalização",
+    "Posicionamento",
+    "Compostura"
+   ]
+  },
+  "bespoke": false
+ },
+ "chihiro-ezaki": {
+  "estilo": "Atacante de área e ruptura: peça a bola no espaço e finalize sem pedir licença.",
+  "fundamentos": [
+   {
+    "t": "Desmarcação",
+    "txt": "Ataque o espaço no timing do passe."
+   },
+   {
+    "t": "Finalização",
+    "txt": "1 ou 2 toques no máximo dentro da área."
+   },
+   {
+    "t": "Pressão na zaga",
+    "txt": "Não deixe o zagueiro sair fácil."
+   }
+  ],
+  "exercicios": [
+   "Finalizações de primeira após passe raso (20).",
+   "Finalizações de primeira após passe raso (20)."
+  ],
+  "mentalidade": "Finalize a decisão. Hesitação não entra no Flow.",
+  "videogame": {
+   "posicao": "ST / CF",
+   "papel": "Atacante",
+   "atributos": [
+    "Finalização",
+    "Posicionamento",
+    "Compostura"
+   ]
+  },
+  "bespoke": false
+ },
+ "daiya-morinaga": {
+  "estilo": "Atacante de área e ruptura: peça a bola no espaço e finalize sem pedir licença.",
+  "fundamentos": [
+   {
+    "t": "Desmarcação",
+    "txt": "Ataque o espaço no timing do passe."
+   },
+   {
+    "t": "Finalização",
+    "txt": "1 ou 2 toques no máximo dentro da área."
+   },
+   {
+    "t": "Pressão na zaga",
+    "txt": "Não deixe o zagueiro sair fácil."
+   }
+  ],
+  "exercicios": [
+   "Finalizações de primeira após passe raso (20).",
+   "Finalizações de primeira após passe raso (20)."
+  ],
+  "mentalidade": "Finalize a decisão. Hesitação não entra no Flow.",
+  "videogame": {
+   "posicao": "ST / CF",
+   "papel": "Atacante",
+   "atributos": [
+    "Finalização",
+    "Posicionamento",
+    "Compostura"
+   ]
+  },
+  "bespoke": false
+ },
+ "eita-otoya": {
+  "estilo": "Otoya é o ninja ofensivo: velocidade e movimentação sem bola para aparecer onde a zaga não olhou.",
+  "fundamentos": [
+   {
+    "t": "Velocidade de ruptura",
+    "txt": "Arrancadas curtas nas costas da linha."
+   },
+   {
+    "t": "Movimentação sem bola",
+    "txt": "Troque de lado sem a bola; apareça no ponto cego."
+   },
+   {
+    "t": "Finalização em corrida",
+    "txt": "Primeiro toque já é o chute ou o cruzamento."
+   },
+   {
+    "t": "Leitura com o parceiro",
+    "txt": "Combine diagonais com o meia para abrir o corredor."
+   }
+  ],
+  "exercicios": [
+   "Tiros de 15 m sem bola + finalização após passe raso.",
+   "Trocas de lado em ataque 4×3.",
+   "Jogo em que você só pode tocar se chegou em desmarcação."
+  ],
+  "mentalidade": "Invisível até o gol. Quando a zaga pisca, você já finalizou.",
+  "videogame": {
+   "posicao": "RW / ST / RB",
+   "papel": "Ponta de ruptura",
+   "atributos": [
+    "Velocidade",
+    "Posicionamento",
+    "Finalização",
+    "Aceleração"
+   ]
+  },
+  "bespoke": true
+ },
+ "fuma-rokkaku": {
+  "estilo": "Atacante de área e ruptura: peça a bola no espaço e finalize sem pedir licença.",
+  "fundamentos": [
+   {
+    "t": "Desmarcação",
+    "txt": "Ataque o espaço no timing do passe."
+   },
+   {
+    "t": "Finalização",
+    "txt": "1 ou 2 toques no máximo dentro da área."
+   },
+   {
+    "t": "Pressão na zaga",
+    "txt": "Não deixe o zagueiro sair fácil."
+   }
+  ],
+  "exercicios": [
+   "Finalizações de primeira após passe raso (20).",
+   "Finalizações de primeira após passe raso (20)."
+  ],
+  "mentalidade": "Não espere o lance perfeito — fabrique o seu.",
+  "videogame": {
+   "posicao": "ST / CF",
+   "papel": "Atacante",
+   "atributos": [
+    "Finalização",
+    "Posicionamento",
+    "Compostura"
+   ]
+  },
+  "bespoke": false
+ },
+ "gurimu-igarashi": {
+  "estilo": "Igarashi sobrevive no chão: o mergulho de goleiro virado desarme/bloqueio desesperado que prolonga o sonho.",
+  "fundamentos": [
+   {
+    "t": "Mergulho / bloqueio",
+    "txt": "Tire a bola com o corpo em lances de área, como um goleiro de linha."
+   },
+   {
+    "t": "Garra defensiva",
+    "txt": "Dispute rebotes e segundas bolas sem desistir."
+   },
+   {
+    "t": "Posicionamento de lateral/atacante",
+    "txt": "Cubra a linha e apareça no ataque no momento certo."
+   },
+   {
+    "t": "Espírito de sobrevivência",
+    "txt": "Cada treino é mais um dia no Blue Lock."
+   }
+  ],
+  "exercicios": [
+   "Bloqueios baixos tipo goleiro em finalizações rasteiras.",
+   "Segundas bolas em área (3×3).",
+   "Circuitos de intensidade com disputa constante."
+  ],
+  "mentalidade": "Você pode não ser o mais talentoso — mas é o último a largar a bola.",
+  "videogame": {
+   "posicao": "LB / ST",
+   "papel": "Coringa de luta",
+   "atributos": [
+    "Agressividade",
+    "Bloqueio",
+    "Resistência",
+    "Posicionamento"
+   ]
+  },
+  "bespoke": true
+ },
+ "haato-meiji": {
+  "estilo": "Atacante de área e ruptura: peça a bola no espaço e finalize sem pedir licença.",
+  "fundamentos": [
+   {
+    "t": "Desmarcação",
+    "txt": "Ataque o espaço no timing do passe."
+   },
+   {
+    "t": "Finalização",
+    "txt": "1 ou 2 toques no máximo dentro da área."
+   },
+   {
+    "t": "Pressão na zaga",
+    "txt": "Não deixe o zagueiro sair fácil."
+   }
+  ],
+  "exercicios": [
+   "Finalizações de primeira após passe raso (20).",
+   "Finalizações de primeira após passe raso (20)."
+  ],
+  "mentalidade": "Roube 1 detalhe de um rival por semana e torne seu.",
+  "videogame": {
+   "posicao": "ST / CF",
+   "papel": "Atacante",
+   "atributos": [
+    "Finalização",
+    "Posicionamento",
+    "Compostura"
+   ]
+  },
+  "bespoke": false
+ },
+ "haneru-shindo": {
+  "estilo": "Atacante de área e ruptura: peça a bola no espaço e finalize sem pedir licença. Na ficha, suas Armas apontam para Impulsão, Chute de perna direita.",
+  "fundamentos": [
+   {
+    "t": "Finalização da sua Arma",
+    "txt": "Repita o tipo de chute da ficha (potente, colocado, de efeito ou de primeira) até ficar automático."
+   },
+   {
+    "t": "Corpo e duelo",
+    "txt": "Transforme o atributo físico da ficha em hábito: duelo, salto, resistência ou desarme limpo."
+   },
+   {
+    "t": "Desmarcação",
+    "txt": "Ataque o espaço no timing do passe."
+   },
+   {
+    "t": "Finalização",
+    "txt": "1 ou 2 toques no máximo dentro da área."
+   }
+  ],
+  "exercicios": [
+   "20 finalizações mirando cantos, no estilo da sua Arma.",
+   "Circuitos de duelo + segundo lance (rebote ou transição)."
+  ],
+  "mentalidade": "Finalize a decisão. Hesitação não entra no Flow. Suas Armas de referência na ficha: Impulsão, Chute de perna direita.",
+  "videogame": {
+   "posicao": "ST / CF",
+   "papel": "Atacante",
+   "atributos": [
+    "Finalização",
+    "Posicionamento",
+    "Compostura"
+   ]
+  },
+  "bespoke": false
+ },
+ "haruhiko-yuzu": {
+  "estilo": "Atacante de área e ruptura: peça a bola no espaço e finalize sem pedir licença.",
+  "fundamentos": [
+   {
+    "t": "Desmarcação",
+    "txt": "Ataque o espaço no timing do passe."
+   },
+   {
+    "t": "Finalização",
+    "txt": "1 ou 2 toques no máximo dentro da área."
+   },
+   {
+    "t": "Pressão na zaga",
+    "txt": "Não deixe o zagueiro sair fácil."
+   }
+  ],
+  "exercicios": [
+   "Finalizações de primeira após passe raso (20).",
+   "Finalizações de primeira após passe raso (20)."
+  ],
+  "mentalidade": "Olhe o placar e o próximo passe. O Blue Lock não espera.",
+  "videogame": {
+   "posicao": "ST / CF",
+   "papel": "Atacante",
+   "atributos": [
+    "Finalização",
+    "Posicionamento",
+    "Compostura"
+   ]
+  },
+  "bespoke": false
+ },
+ "hazime-nishioka": {
+  "estilo": "Atacante de área e ruptura: peça a bola no espaço e finalize sem pedir licença. Na ficha, suas Armas apontam para Quebra de linhas.",
+  "fundamentos": [
+   {
+    "t": "Desmarcação",
+    "txt": "Ataque o espaço no timing do passe."
+   },
+   {
+    "t": "Finalização",
+    "txt": "1 ou 2 toques no máximo dentro da área."
+   },
+   {
+    "t": "Pressão na zaga",
+    "txt": "Não deixe o zagueiro sair fácil."
+   }
+  ],
+  "exercicios": [
+   "Finalizações de primeira após passe raso (20).",
+   "Finalizações de primeira após passe raso (20)."
+  ],
+  "mentalidade": "Olhe o placar e o próximo passe. O Blue Lock não espera. Suas Armas de referência na ficha: Quebra de linhas.",
+  "videogame": {
+   "posicao": "ST / CF",
+   "papel": "Atacante",
+   "atributos": [
+    "Finalização",
+    "Posicionamento",
+    "Compostura"
+   ]
+  },
+  "bespoke": false
+ },
+ "hibiki-okawa": {
+  "estilo": "Atacante de área e ruptura: peça a bola no espaço e finalize sem pedir licença. Na ficha, suas Armas apontam para Superchute, Chute por cobertura.",
+  "fundamentos": [
+   {
+    "t": "Finalização da sua Arma",
+    "txt": "Repita o tipo de chute da ficha (potente, colocado, de efeito ou de primeira) até ficar automático."
+   },
+   {
+    "t": "Desmarcação",
+    "txt": "Ataque o espaço no timing do passe."
+   },
+   {
+    "t": "Finalização",
+    "txt": "1 ou 2 toques no máximo dentro da área."
+   },
+   {
+    "t": "Pressão na zaga",
+    "txt": "Não deixe o zagueiro sair fácil."
+   }
+  ],
+  "exercicios": [
+   "20 finalizações mirando cantos, no estilo da sua Arma.",
+   "Finalizações de primeira após passe raso (20)."
+  ],
+  "mentalidade": "Se cansou, ainda dá para marcar. Resistência também é Arma. Suas Armas de referência na ficha: Superchute, Chute por cobertura.",
+  "videogame": {
+   "posicao": "ST / CF",
+   "papel": "Atacante",
+   "atributos": [
+    "Finalização",
+    "Posicionamento",
+    "Compostura"
+   ]
+  },
+  "bespoke": false
+ },
+ "hirakazu-midorikawa": {
+  "estilo": "Atacante de área e ruptura: peça a bola no espaço e finalize sem pedir licença.",
+  "fundamentos": [
+   {
+    "t": "Desmarcação",
+    "txt": "Ataque o espaço no timing do passe."
+   },
+   {
+    "t": "Finalização",
+    "txt": "1 ou 2 toques no máximo dentro da área."
+   },
+   {
+    "t": "Pressão na zaga",
+    "txt": "Não deixe o zagueiro sair fácil."
+   }
+  ],
+  "exercicios": [
+   "Finalizações de primeira após passe raso (20).",
+   "Finalizações de primeira após passe raso (20)."
+  ],
+  "mentalidade": "Roube 1 detalhe de um rival por semana e torne seu.",
+  "videogame": {
+   "posicao": "ST / CF",
+   "papel": "Atacante",
+   "atributos": [
+    "Finalização",
+    "Posicionamento",
+    "Compostura"
+   ]
+  },
+  "bespoke": false
+ },
+ "hiromu-munakata": {
+  "estilo": "Atacante de área e ruptura: peça a bola no espaço e finalize sem pedir licença.",
+  "fundamentos": [
+   {
+    "t": "Desmarcação",
+    "txt": "Ataque o espaço no timing do passe."
+   },
+   {
+    "t": "Finalização",
+    "txt": "1 ou 2 toques no máximo dentro da área."
+   },
+   {
+    "t": "Pressão na zaga",
+    "txt": "Não deixe o zagueiro sair fácil."
+   }
+  ],
+  "exercicios": [
+   "Finalizações de primeira após passe raso (20).",
+   "Finalizações de primeira após passe raso (20)."
+  ],
+  "mentalidade": "Roube 1 detalhe de um rival por semana e torne seu.",
+  "videogame": {
+   "posicao": "ST / CF",
+   "papel": "Atacante",
+   "atributos": [
+    "Finalização",
+    "Posicionamento",
+    "Compostura"
+   ]
+  },
+  "bespoke": false
+ },
+ "hyuga-koshiba": {
+  "estilo": "Atacante de área e ruptura: peça a bola no espaço e finalize sem pedir licença.",
+  "fundamentos": [
+   {
+    "t": "Desmarcação",
+    "txt": "Ataque o espaço no timing do passe."
+   },
+   {
+    "t": "Finalização",
+    "txt": "1 ou 2 toques no máximo dentro da área."
+   },
+   {
+    "t": "Pressão na zaga",
+    "txt": "Não deixe o zagueiro sair fácil."
+   }
+  ],
+  "exercicios": [
+   "Finalizações de primeira após passe raso (20).",
+   "Finalizações de primeira após passe raso (20)."
+  ],
+  "mentalidade": "Não espere o lance perfeito — fabrique o seu.",
+  "videogame": {
+   "posicao": "ST / CF",
+   "papel": "Atacante",
+   "atributos": [
+    "Finalização",
+    "Posicionamento",
+    "Compostura"
+   ]
+  },
+  "bespoke": false
+ },
+ "ikki-niko": {
+  "estilo": "Niko lê o jogo como zaga-cérebro: visão espacial, roubo de bola e Metavision para sair jogando.",
+  "fundamentos": [
+   {
+    "t": "Visão espacial / Metavision",
+    "txt": "Antecipe o passe adversário e intercepte antes do recebimento."
+   },
+   {
+    "t": "Roubo de bola",
+    "txt": "Tempo o bote; não se jogue — corte a linha de passe."
+   },
+   {
+    "t": "Saída limpa",
+    "txt": "Após recuperar, primeiro passe para frente ou troca de lado."
+   },
+   {
+    "t": "Físico posicional",
+    "txt": "Ganhe o corpo no duelo sem sair da linha."
+   }
+  ],
+  "exercicios": [
+   "Antecipações em ataque 6×5 (você só intercepta).",
+   "Saídas de 3 toques após desarme.",
+   "Linha defensiva coordenada + cobertura."
+  ],
+  "mentalidade": "Veja o passe antes dele nascer. O roubo inteligente é o primeiro ataque.",
+  "videogame": {
+   "posicao": "CB / CDM / CM",
+   "papel": "Zagueiro/volante leitor",
+   "atributos": [
+    "Visão",
+    "Intercepção",
+    "Passe",
+    "Força"
+   ]
+  },
+  "bespoke": true
+ },
+ "iori-sato": {
+  "estilo": "Atacante de área e ruptura: peça a bola no espaço e finalize sem pedir licença.",
+  "fundamentos": [
+   {
+    "t": "Desmarcação",
+    "txt": "Ataque o espaço no timing do passe."
+   },
+   {
+    "t": "Finalização",
+    "txt": "1 ou 2 toques no máximo dentro da área."
+   },
+   {
+    "t": "Pressão na zaga",
+    "txt": "Não deixe o zagueiro sair fácil."
+   }
+  ],
+  "exercicios": [
+   "Finalizações de primeira após passe raso (20).",
+   "Finalizações de primeira após passe raso (20)."
+  ],
+  "mentalidade": "Se cansou, ainda dá para marcar. Resistência também é Arma.",
+  "videogame": {
+   "posicao": "ST / CF",
+   "papel": "Atacante",
+   "atributos": [
+    "Finalização",
+    "Posicionamento",
+    "Compostura"
+   ]
+  },
+  "bespoke": false
+ },
+ "jin-kiyora": {
+  "estilo": "Kiyora equilibra o core: físico, drible estável e chutes rasteiros que rasgam o primeiro pau.",
+  "fundamentos": [
+   {
+    "t": "Equilíbrio do core",
+    "txt": "Conduza sob contato sem cair; base baixa e estável."
+   },
+   {
+    "t": "Drible sob pressão",
+    "txt": "Saia do pressing com toques curtos e mudança de direção."
+   },
+   {
+    "t": "Chutes rasteiros",
+    "txt": "Finalize rasteiro no primeiro pau / cantos baixos."
+   },
+   {
+    "t": "Lateral ofensivo",
+    "txt": "Suba a linha, mas volte na primeira perda."
+   }
+  ],
+  "exercicios": [
+   "Condução com contato de ombro + finalização rasteira.",
+   "Chutes rasteiros de 12–16 m: 20 por pé.",
+   "Subidas de lateral em 7×7 com obrigação de cruzar ou finalizar baixo."
+  ],
+  "mentalidade": "Estável como um poste, afiado como um corte rasteiro. Não caia — finalize.",
+  "videogame": {
+   "posicao": "LB / RB / ST",
+   "papel": "Lateral ofensivo",
+   "atributos": [
+    "Equilíbrio",
+    "Drible",
+    "Finalização",
+    "Força"
+   ]
+  },
+  "bespoke": true
+ },
+ "jingo-raichi": {
+  "estilo": "Raichi é motor e latido: resistência, físico e marcação individual que sufoca o criativo adversário.",
+  "fundamentos": [
+   {
+    "t": "Marcação individual",
+    "txt": "Cole no meia/atacante; negue o giro e o passe fácil."
+   },
+   {
+    "t": "Resistência",
+    "txt": "Mantenha intensidade nos 90 minutos."
+   },
+   {
+    "t": "Físico limpo",
+    "txt": "Desarmes com tempo; use o corpo sem ser expulso."
+   },
+   {
+    "t": "Transição",
+    "txt": "Após o desarme, 3 toques para progressão ou segurança."
+   }
+  ],
+  "exercicios": [
+   "Marcação homem-a-homem em jogo reduzido (você só marca um).",
+   "Desarmes laterais + saída curta.",
+   "Corridas de pressão repetidas (10×20 m)."
+  ],
+  "mentalidade": "Você é o barulho que o egoísta odeia. Sufoca, recupera, repete.",
+  "videogame": {
+   "posicao": "CDM / CM",
+   "papel": "Volante marcador",
+   "atributos": [
+    "Resistência",
+    "Marcação",
+    "Força",
+    "Agressividade"
+   ]
+  },
+  "bespoke": true
+ },
+ "junichi-wanima": {
+  "estilo": "Atacante de área e ruptura: peça a bola no espaço e finalize sem pedir licença. Na ficha, suas Armas apontam para Contato visual.",
+  "fundamentos": [
+   {
+    "t": "Desmarcação",
+    "txt": "Ataque o espaço no timing do passe."
+   },
+   {
+    "t": "Finalização",
+    "txt": "1 ou 2 toques no máximo dentro da área."
+   },
+   {
+    "t": "Pressão na zaga",
+    "txt": "Não deixe o zagueiro sair fácil."
+   }
+  ],
+  "exercicios": [
+   "Finalizações de primeira após passe raso (20).",
+   "Finalizações de primeira após passe raso (20)."
+  ],
+  "mentalidade": "Não espere o lance perfeito — fabrique o seu. Suas Armas de referência na ficha: Contato visual.",
+  "videogame": {
+   "posicao": "ST / CF",
+   "papel": "Atacante",
+   "atributos": [
+    "Finalização",
+    "Posicionamento",
+    "Compostura"
+   ]
+  },
+  "bespoke": false
+ },
+ "juraki-ito": {
+  "estilo": "Goleiro de presença: feche ângulos, reaja rápido e devolva o ataque com a mão ou os pés.",
+  "fundamentos": [
+   {
+    "t": "Reação e ângulos",
+    "txt": "Feche o ângulo e treine o segundo rebote."
+   },
+   {
+    "t": "Jogo com os pés",
+    "txt": "Saia jogando sob pressão em 2 toques."
+   },
+   {
+    "t": "Comando",
+    "txt": "Comunique a zaga em bolas aéreas."
+   }
+  ],
+  "exercicios": [
+   "1×1 de goleiro (12 lances) + reposição rápida.",
+   "1×1 de goleiro (12 lances) + reposição rápida."
+  ],
+  "mentalidade": "Ego com método: cada treino precisa ter um duelo que você escolheu ganhar.",
+  "videogame": {
+   "posicao": "GK",
+   "papel": "Goleiro",
+   "atributos": [
+    "Reflexos",
+    "Posicionamento",
+    "Jogo com os pés"
+   ]
+  },
+  "bespoke": false
+ },
+ "jyubei-aryu": {
+  "estilo": "Aryu domina o alto: impulsão, alcance e cabeceio, ocupando o espaço aéreo como um posto avançado.",
+  "fundamentos": [
+   {
+    "t": "Impulsão e timing",
+    "txt": "Salte no tempo do cruzamento, não antes."
+   },
+   {
+    "t": "Cabeceio ofensivo e defensivo",
+    "txt": "Ataque a bola com a testa; na defesa, afaste com direção."
+   },
+   {
+    "t": "Ocupação de espaço",
+    "txt": "Trave o primeiro pau e dispute o rebote."
+   },
+   {
+    "t": "Alcance longo",
+    "txt": "Use a envergadura para interceptar cruzamentos e passes altos."
+   }
+  ],
+  "exercicios": [
+   "Cruzamentos + cabeceio: 20 ofensivos, 20 defensivos.",
+   "Saltos com oposição (ombro a ombro).",
+   "Bolas paradas: você é o alvo número 1."
+  ],
+  "mentalidade": "O céu é seu território. Quem cruza, encontra a sua cabeça.",
+  "videogame": {
+   "posicao": "CB / ST",
+   "papel": "Zagueiro aéreo / alvo de área",
+   "atributos": [
+    "Impulsão",
+    "Cabeceio",
+    "Força",
+    "Posicionamento"
+   ]
+  },
+  "bespoke": true
+ },
+ "kai-tokita": {
+  "estilo": "Atacante de área e ruptura: peça a bola no espaço e finalize sem pedir licença.",
+  "fundamentos": [
+   {
+    "t": "Desmarcação",
+    "txt": "Ataque o espaço no timing do passe."
+   },
+   {
+    "t": "Finalização",
+    "txt": "1 ou 2 toques no máximo dentro da área."
+   },
+   {
+    "t": "Pressão na zaga",
+    "txt": "Não deixe o zagueiro sair fácil."
+   }
+  ],
+  "exercicios": [
+   "Finalizações de primeira após passe raso (20).",
+   "Finalizações de primeira após passe raso (20)."
+  ],
+  "mentalidade": "Olhe o placar e o próximo passe. O Blue Lock não espera.",
+  "videogame": {
+   "posicao": "ST / CF",
+   "papel": "Atacante",
+   "atributos": [
+    "Finalização",
+    "Posicionamento",
+    "Compostura"
+   ]
+  },
+  "bespoke": false
+ },
+ "kairu-saramadara": {
+  "estilo": "Atacante de área e ruptura: peça a bola no espaço e finalize sem pedir licença.",
+  "fundamentos": [
+   {
+    "t": "Desmarcação",
+    "txt": "Ataque o espaço no timing do passe."
+   },
+   {
+    "t": "Finalização",
+    "txt": "1 ou 2 toques no máximo dentro da área."
+   },
+   {
+    "t": "Pressão na zaga",
+    "txt": "Não deixe o zagueiro sair fácil."
+   }
+  ],
+  "exercicios": [
+   "Finalizações de primeira após passe raso (20).",
+   "Finalizações de primeira após passe raso (20)."
+  ],
+  "mentalidade": "Não espere o lance perfeito — fabrique o seu.",
+  "videogame": {
+   "posicao": "ST / CF",
+   "papel": "Atacante",
+   "atributos": [
+    "Finalização",
+    "Posicionamento",
+    "Compostura"
+   ]
+  },
+  "bespoke": false
+ },
+ "kanji-torikai": {
+  "estilo": "Atacante de área e ruptura: peça a bola no espaço e finalize sem pedir licença.",
+  "fundamentos": [
+   {
+    "t": "Desmarcação",
+    "txt": "Ataque o espaço no timing do passe."
+   },
+   {
+    "t": "Finalização",
+    "txt": "1 ou 2 toques no máximo dentro da área."
+   },
+   {
+    "t": "Pressão na zaga",
+    "txt": "Não deixe o zagueiro sair fácil."
+   }
+  ],
+  "exercicios": [
+   "Finalizações de primeira após passe raso (20).",
+   "Finalizações de primeira após passe raso (20)."
+  ],
+  "mentalidade": "Ego com método: cada treino precisa ter um duelo que você escolheu ganhar.",
+  "videogame": {
+   "posicao": "ST / CF",
+   "papel": "Atacante",
+   "atributos": [
+    "Finalização",
+    "Posicionamento",
+    "Compostura"
+   ]
+  },
+  "bespoke": false
+ },
+ "kei-shishiya": {
+  "estilo": "Atacante de área e ruptura: peça a bola no espaço e finalize sem pedir licença.",
+  "fundamentos": [
+   {
+    "t": "Desmarcação",
+    "txt": "Ataque o espaço no timing do passe."
+   },
+   {
+    "t": "Finalização",
+    "txt": "1 ou 2 toques no máximo dentro da área."
+   },
+   {
+    "t": "Pressão na zaga",
+    "txt": "Não deixe o zagueiro sair fácil."
+   }
+  ],
+  "exercicios": [
+   "Finalizações de primeira após passe raso (20).",
+   "Finalizações de primeira após passe raso (20)."
+  ],
+  "mentalidade": "Se cansou, ainda dá para marcar. Resistência também é Arma.",
+  "videogame": {
+   "posicao": "ST / CF",
+   "papel": "Atacante",
+   "atributos": [
+    "Finalização",
+    "Posicionamento",
+    "Compostura"
+   ]
+  },
+  "bespoke": false
+ },
+ "keisuke-wanima": {
+  "estilo": "Atacante de área e ruptura: peça a bola no espaço e finalize sem pedir licença. Na ficha, suas Armas apontam para Contato visual.",
+  "fundamentos": [
+   {
+    "t": "Desmarcação",
+    "txt": "Ataque o espaço no timing do passe."
+   },
+   {
+    "t": "Finalização",
+    "txt": "1 ou 2 toques no máximo dentro da área."
+   },
+   {
+    "t": "Pressão na zaga",
+    "txt": "Não deixe o zagueiro sair fácil."
+   }
+  ],
+  "exercicios": [
+   "Finalizações de primeira após passe raso (20).",
+   "Finalizações de primeira após passe raso (20)."
+  ],
+  "mentalidade": "Finalize a decisão. Hesitação não entra no Flow. Suas Armas de referência na ficha: Contato visual.",
+  "videogame": {
+   "posicao": "ST / CF",
+   "papel": "Atacante",
+   "atributos": [
+    "Finalização",
+    "Posicionamento",
+    "Compostura"
+   ]
+  },
+  "bespoke": false
+ },
+ "kenyu-yukimiya": {
+  "estilo": "Yukimiya mistura drible elegante, velocidade e chutes especiais (Gyro Shot / Sword Screw) com olhar de predador.",
+  "fundamentos": [
+   {
+    "t": "Drible + velocidade",
+    "txt": "Engate o 1×1 em meio campo e acelere para o terço final."
+   },
+   {
+    "t": "Gyro Shot / efeito",
+    "txt": "Treine batidas com efeito (interna/externa) mirando o canto oposto."
+   },
+   {
+    "t": "Sword Screw",
+    "txt": "Finalizações em curva a partir da diagonal da área."
+   },
+   {
+    "t": "Predator Eye",
+    "txt": "No último passo, leia o goleiro e mude o canto se ele adivinhar."
+   }
+  ],
+  "exercicios": [
+   "Diagonais da ponta + chute com efeito: 15 por lado.",
+   "1×1 em corredor largo, finalizando ou cruzando.",
+   "Chutes livres e de média distância com alvo nos ângulos."
+  ],
+  "mentalidade": "Beleza que mata. O drible abre; o efeito enterra.",
+  "videogame": {
+   "posicao": "LW / LM / ST",
+   "papel": "Ponta técnico",
+   "atributos": [
+    "Drible",
+    "Efeito",
+    "Velocidade",
+    "Finalização"
+   ]
+  },
+  "bespoke": true
+ },
+ "kevin-iehitori": {
+  "estilo": "Atacante de área e ruptura: peça a bola no espaço e finalize sem pedir licença.",
+  "fundamentos": [
+   {
+    "t": "Desmarcação",
+    "txt": "Ataque o espaço no timing do passe."
+   },
+   {
+    "t": "Finalização",
+    "txt": "1 ou 2 toques no máximo dentro da área."
+   },
+   {
+    "t": "Pressão na zaga",
+    "txt": "Não deixe o zagueiro sair fácil."
+   }
+  ],
+  "exercicios": [
+   "Finalizações de primeira após passe raso (20).",
+   "Finalizações de primeira após passe raso (20)."
+  ],
+  "mentalidade": "Olhe o placar e o próximo passe. O Blue Lock não espera.",
+  "videogame": {
+   "posicao": "ST / CF",
+   "papel": "Atacante",
+   "atributos": [
+    "Finalização",
+    "Posicionamento",
+    "Compostura"
+   ]
+  },
+  "bespoke": false
+ },
+ "kisaburo-hijikata": {
+  "estilo": "Goleiro de presença: feche ângulos, reaja rápido e devolva o ataque com a mão ou os pés.",
+  "fundamentos": [
+   {
+    "t": "Reação e ângulos",
+    "txt": "Feche o ângulo e treine o segundo rebote."
+   },
+   {
+    "t": "Jogo com os pés",
+    "txt": "Saia jogando sob pressão em 2 toques."
+   },
+   {
+    "t": "Comando",
+    "txt": "Comunique a zaga em bolas aéreas."
+   }
+  ],
+  "exercicios": [
+   "1×1 de goleiro (12 lances) + reposição rápida.",
+   "1×1 de goleiro (12 lances) + reposição rápida."
+  ],
+  "mentalidade": "Finalize a decisão. Hesitação não entra no Flow.",
+  "videogame": {
+   "posicao": "GK",
+   "papel": "Goleiro",
+   "atributos": [
+    "Reflexos",
+    "Posicionamento",
+    "Jogo com os pés"
+   ]
+  },
+  "bespoke": false
+ },
+ "koki-mera": {
+  "estilo": "Atacante de área e ruptura: peça a bola no espaço e finalize sem pedir licença.",
+  "fundamentos": [
+   {
+    "t": "Desmarcação",
+    "txt": "Ataque o espaço no timing do passe."
+   },
+   {
+    "t": "Finalização",
+    "txt": "1 ou 2 toques no máximo dentro da área."
+   },
+   {
+    "t": "Pressão na zaga",
+    "txt": "Não deixe o zagueiro sair fácil."
+   }
+  ],
+  "exercicios": [
+   "Finalizações de primeira após passe raso (20).",
+   "Finalizações de primeira após passe raso (20)."
+  ],
+  "mentalidade": "Não espere o lance perfeito — fabrique o seu.",
+  "videogame": {
+   "posicao": "ST / CF",
+   "papel": "Atacante",
+   "atributos": [
+    "Finalização",
+    "Posicionamento",
+    "Compostura"
+   ]
+  },
+  "bespoke": false
+ },
+ "kosei-otsuka": {
+  "estilo": "Atacante de área e ruptura: peça a bola no espaço e finalize sem pedir licença.",
+  "fundamentos": [
+   {
+    "t": "Desmarcação",
+    "txt": "Ataque o espaço no timing do passe."
+   },
+   {
+    "t": "Finalização",
+    "txt": "1 ou 2 toques no máximo dentro da área."
+   },
+   {
+    "t": "Pressão na zaga",
+    "txt": "Não deixe o zagueiro sair fácil."
+   }
+  ],
+  "exercicios": [
+   "Finalizações de primeira após passe raso (20).",
+   "Finalizações de primeira após passe raso (20)."
+  ],
+  "mentalidade": "Não espere o lance perfeito — fabrique o seu.",
+  "videogame": {
+   "posicao": "ST / CF",
+   "papel": "Atacante",
+   "atributos": [
+    "Finalização",
+    "Posicionamento",
+    "Compostura"
+   ]
+  },
+  "bespoke": false
+ },
+ "kyohei-shiguma": {
+  "estilo": "Atacante de área e ruptura: peça a bola no espaço e finalize sem pedir licença.",
+  "fundamentos": [
+   {
+    "t": "Desmarcação",
+    "txt": "Ataque o espaço no timing do passe."
+   },
+   {
+    "t": "Finalização",
+    "txt": "1 ou 2 toques no máximo dentro da área."
+   },
+   {
+    "t": "Pressão na zaga",
+    "txt": "Não deixe o zagueiro sair fácil."
+   }
+  ],
+  "exercicios": [
+   "Finalizações de primeira após passe raso (20).",
+   "Finalizações de primeira após passe raso (20)."
+  ],
+  "mentalidade": "Roube 1 detalhe de um rival por semana e torne seu.",
+  "videogame": {
+   "posicao": "ST / CF",
+   "papel": "Atacante",
+   "atributos": [
+    "Finalização",
+    "Posicionamento",
+    "Compostura"
+   ]
+  },
+  "bespoke": false
+ },
+ "mareto-takeyama": {
+  "estilo": "Atacante de área e ruptura: peça a bola no espaço e finalize sem pedir licença.",
+  "fundamentos": [
+   {
+    "t": "Desmarcação",
+    "txt": "Ataque o espaço no timing do passe."
+   },
+   {
+    "t": "Finalização",
+    "txt": "1 ou 2 toques no máximo dentro da área."
+   },
+   {
+    "t": "Pressão na zaga",
+    "txt": "Não deixe o zagueiro sair fácil."
+   }
+  ],
+  "exercicios": [
+   "Finalizações de primeira após passe raso (20).",
+   "Finalizações de primeira após passe raso (20)."
+  ],
+  "mentalidade": "Olhe o placar e o próximo passe. O Blue Lock não espera.",
+  "videogame": {
+   "posicao": "ST / CF",
+   "papel": "Atacante",
+   "atributos": [
+    "Finalização",
+    "Posicionamento",
+    "Compostura"
+   ]
+  },
+  "bespoke": false
+ },
+ "masumi-atatame": {
+  "estilo": "Atacante de área e ruptura: peça a bola no espaço e finalize sem pedir licença.",
+  "fundamentos": [
+   {
+    "t": "Desmarcação",
+    "txt": "Ataque o espaço no timing do passe."
+   },
+   {
+    "t": "Finalização",
+    "txt": "1 ou 2 toques no máximo dentro da área."
+   },
+   {
+    "t": "Pressão na zaga",
+    "txt": "Não deixe o zagueiro sair fácil."
+   }
+  ],
+  "exercicios": [
+   "Finalizações de primeira após passe raso (20).",
+   "Finalizações de primeira após passe raso (20)."
+  ],
+  "mentalidade": "Roube 1 detalhe de um rival por semana e torne seu.",
+  "videogame": {
+   "posicao": "ST / CF",
+   "papel": "Atacante",
+   "atributos": [
+    "Finalização",
+    "Posicionamento",
+    "Compostura"
+   ]
+  },
+  "bespoke": false
+ },
+ "nijiro-nanase": {
+  "estilo": "Nanase é ambidestria pura e movimentação: ataca pelos dois lados sem lado fraco.",
+  "fundamentos": [
+   {
+    "t": "Ambidestria",
+    "txt": "Tudo o que faz com um pé, repita com o outro no mesmo treino."
+   },
+   {
+    "t": "Movimentação sem bola",
+    "txt": "Troque de flanco; apareça onde a marcação está em superioridade."
+   },
+   {
+    "t": "Finalização dos dois lados",
+    "txt": "Diagonais da esquerda e da direita com o pé de fora."
+   },
+   {
+    "t": "Versatilidade de ala",
+    "txt": "Ora estica, ora invade — varie o padrão."
+   }
+  ],
+  "exercicios": [
+   "Série espelhada: 15 gestos com cada pé.",
+   "Ataques alternando flanco a cada jogada.",
+   "Finalizações em ângulo fechado com o pé fraco."
+  ],
+  "mentalidade": "Não existe pé ruim. Existe o lado que a zaga não esperava.",
+  "videogame": {
+   "posicao": "LW / LM / ST",
+   "papel": "Ala ambidestro",
+   "atributos": [
+    "Ambidestria",
+    "Posicionamento",
+    "Finalização",
+    "Aceleração"
+   ]
+  },
+  "bespoke": true
+ },
+ "noboru-jigen": {
+  "estilo": "Atacante de área e ruptura: peça a bola no espaço e finalize sem pedir licença.",
+  "fundamentos": [
+   {
+    "t": "Desmarcação",
+    "txt": "Ataque o espaço no timing do passe."
+   },
+   {
+    "t": "Finalização",
+    "txt": "1 ou 2 toques no máximo dentro da área."
+   },
+   {
+    "t": "Pressão na zaga",
+    "txt": "Não deixe o zagueiro sair fácil."
+   }
+  ],
+  "exercicios": [
+   "Finalizações de primeira após passe raso (20).",
+   "Finalizações de primeira após passe raso (20)."
+  ],
+  "mentalidade": "Se cansou, ainda dá para marcar. Resistência também é Arma.",
+  "videogame": {
+   "posicao": "ST / CF",
+   "papel": "Atacante",
+   "atributos": [
+    "Finalização",
+    "Posicionamento",
+    "Compostura"
+   ]
+  },
+  "bespoke": false
+ },
+ "okuhito-iemon": {
+  "estilo": "Goleiro de presença: feche ângulos, reaja rápido e devolva o ataque com a mão ou os pés. Na ficha, suas Armas apontam para Completo (all-rounder).",
+  "fundamentos": [
+   {
+    "t": "Reação e ângulos",
+    "txt": "Feche o ângulo e treine o segundo rebote."
+   },
+   {
+    "t": "Jogo com os pés",
+    "txt": "Saia jogando sob pressão em 2 toques."
+   },
+   {
+    "t": "Comando",
+    "txt": "Comunique a zaga em bolas aéreas."
+   }
+  ],
+  "exercicios": [
+   "1×1 de goleiro (12 lances) + reposição rápida.",
+   "1×1 de goleiro (12 lances) + reposição rápida."
+  ],
+  "mentalidade": "Roube 1 detalhe de um rival por semana e torne seu. Suas Armas de referência na ficha: Completo (all-rounder).",
+  "videogame": {
+   "posicao": "GK",
+   "papel": "Goleiro",
+   "atributos": [
+    "Reflexos",
+    "Posicionamento",
+    "Jogo com os pés"
+   ]
+  },
+  "bespoke": false
+ },
+ "raito-fuwa": {
+  "estilo": "Goleiro de presença: feche ângulos, reaja rápido e devolva o ataque com a mão ou os pés.",
+  "fundamentos": [
+   {
+    "t": "Reação e ângulos",
+    "txt": "Feche o ângulo e treine o segundo rebote."
+   },
+   {
+    "t": "Jogo com os pés",
+    "txt": "Saia jogando sob pressão em 2 toques."
+   },
+   {
+    "t": "Comando",
+    "txt": "Comunique a zaga em bolas aéreas."
+   }
+  ],
+  "exercicios": [
+   "1×1 de goleiro (12 lances) + reposição rápida.",
+   "1×1 de goleiro (12 lances) + reposição rápida."
+  ],
+  "mentalidade": "Roube 1 detalhe de um rival por semana e torne seu.",
+  "videogame": {
+   "posicao": "GK",
+   "papel": "Goleiro",
+   "atributos": [
+    "Reflexos",
+    "Posicionamento",
+    "Jogo com os pés"
+   ]
+  },
+  "bespoke": false
+ },
+ "ranze-kurona": {
+  "estilo": "Kurona é o tubarão de suporte: velocidade, movimentação sem bola, passe e marcação para circular o ataque.",
+  "fundamentos": [
+   {
+    "t": "Velocidade de apoio",
+    "txt": "Chegue como terceira opção no lado da bola."
+   },
+   {
+    "t": "Passe de continuidade",
+    "txt": "1–2 toques para manter o ritmo do ataque (give and go)."
+   },
+   {
+    "t": "Movimentação sem bola",
+    "txt": "Triangule com o atacante central; ofereça linha constante."
+   },
+   {
+    "t": "Marcação individual",
+    "txt": "Na perda, vire o primeiro pressionante."
+   }
+  ],
+  "exercicios": [
+   "Triângulos em velocidade (3 jogadores, 1 toque).",
+   "Apoios laterais em ataque 5×4.",
+   "Pressing imediato após perda (regra dos 2 s)."
+  ],
+  "mentalidade": "Circule, sirva, morda. O tubarão não precisa do holofote para matar o lance.",
+  "videogame": {
+   "posicao": "CM / RM / ST",
+   "papel": "Meia de circulação",
+   "atributos": [
+    "Velocidade",
+    "Passe",
+    "Posicionamento",
+    "Pressão"
+   ]
+  },
+  "bespoke": true
+ },
+ "reiji-hiiragi": {
+  "estilo": "Atacante de área e ruptura: peça a bola no espaço e finalize sem pedir licença. Na ficha, suas Armas apontam para Domínio (trap), Previsões.",
+  "fundamentos": [
+   {
+    "t": "Leitura de campo",
+    "txt": "Antes de receber, conte 3 opções (progresso, segurança, ruptura)."
+   },
+   {
+    "t": "Primeiro toque",
+    "txt": "Mate a bola no espaço útil e já oriente o próximo lance."
+   },
+   {
+    "t": "Desmarcação",
+    "txt": "Ataque o espaço no timing do passe."
+   },
+   {
+    "t": "Finalização",
+    "txt": "1 ou 2 toques no máximo dentro da área."
+   }
+  ],
+  "exercicios": [
+   "Rondo com obrigação de olhar por cima do ombro.",
+   "Serviços tensos: domínio + condução em 2 toques."
+  ],
+  "mentalidade": "Se cansou, ainda dá para marcar. Resistência também é Arma. Suas Armas de referência na ficha: Domínio (trap), Previsões.",
+  "videogame": {
+   "posicao": "ST / CF",
+   "papel": "Atacante",
+   "atributos": [
+    "Finalização",
+    "Posicionamento",
+    "Compostura"
+   ]
+  },
+  "bespoke": false
+ },
+ "retsu-nerima": {
+  "estilo": "Atacante de área e ruptura: peça a bola no espaço e finalize sem pedir licença.",
+  "fundamentos": [
+   {
+    "t": "Desmarcação",
+    "txt": "Ataque o espaço no timing do passe."
+   },
+   {
+    "t": "Finalização",
+    "txt": "1 ou 2 toques no máximo dentro da área."
+   },
+   {
+    "t": "Pressão na zaga",
+    "txt": "Não deixe o zagueiro sair fácil."
+   }
+  ],
+  "exercicios": [
+   "Finalizações de primeira após passe raso (20).",
+   "Finalizações de primeira após passe raso (20)."
+  ],
+  "mentalidade": "Ego com método: cada treino precisa ter um duelo que você escolheu ganhar.",
+  "videogame": {
+   "posicao": "ST / CF",
+   "papel": "Atacante",
+   "atributos": [
+    "Finalização",
+    "Posicionamento",
+    "Compostura"
+   ]
+  },
+  "bespoke": false
+ },
+ "rian-sanga": {
+  "estilo": "Atacante de área e ruptura: peça a bola no espaço e finalize sem pedir licença.",
+  "fundamentos": [
+   {
+    "t": "Desmarcação",
+    "txt": "Ataque o espaço no timing do passe."
+   },
+   {
+    "t": "Finalização",
+    "txt": "1 ou 2 toques no máximo dentro da área."
+   },
+   {
+    "t": "Pressão na zaga",
+    "txt": "Não deixe o zagueiro sair fácil."
+   }
+  ],
+  "exercicios": [
+   "Finalizações de primeira após passe raso (20).",
+   "Finalizações de primeira após passe raso (20)."
+  ],
+  "mentalidade": "Se cansou, ainda dá para marcar. Resistência também é Arma.",
+  "videogame": {
+   "posicao": "ST / CF",
+   "papel": "Atacante",
+   "atributos": [
+    "Finalização",
+    "Posicionamento",
+    "Compostura"
+   ]
+  },
+  "bespoke": false
+ },
+ "rikiya-hohai": {
+  "estilo": "Atacante de área e ruptura: peça a bola no espaço e finalize sem pedir licença.",
+  "fundamentos": [
+   {
+    "t": "Desmarcação",
+    "txt": "Ataque o espaço no timing do passe."
+   },
+   {
+    "t": "Finalização",
+    "txt": "1 ou 2 toques no máximo dentro da área."
+   },
+   {
+    "t": "Pressão na zaga",
+    "txt": "Não deixe o zagueiro sair fácil."
+   }
+  ],
+  "exercicios": [
+   "Finalizações de primeira após passe raso (20).",
+   "Finalizações de primeira após passe raso (20)."
+  ],
+  "mentalidade": "Ego com método: cada treino precisa ter um duelo que você escolheu ganhar.",
+  "videogame": {
+   "posicao": "ST / CF",
+   "papel": "Atacante",
+   "atributos": [
+    "Finalização",
+    "Posicionamento",
+    "Compostura"
+   ]
+  },
+  "bespoke": false
+ },
+ "ringo-pondemizu": {
+  "estilo": "Atacante de área e ruptura: peça a bola no espaço e finalize sem pedir licença. Na ficha, suas Armas apontam para Cabeceio.",
+  "fundamentos": [
+   {
+    "t": "Corpo e duelo",
+    "txt": "Transforme o atributo físico da ficha em hábito: duelo, salto, resistência ou desarme limpo."
+   },
+   {
+    "t": "Desmarcação",
+    "txt": "Ataque o espaço no timing do passe."
+   },
+   {
+    "t": "Finalização",
+    "txt": "1 ou 2 toques no máximo dentro da área."
+   },
+   {
+    "t": "Pressão na zaga",
+    "txt": "Não deixe o zagueiro sair fácil."
+   }
+  ],
+  "exercicios": [
+   "Circuitos de duelo + segundo lance (rebote ou transição).",
+   "Finalizações de primeira após passe raso (20)."
+  ],
+  "mentalidade": "Ego com método: cada treino precisa ter um duelo que você escolheu ganhar. Suas Armas de referência na ficha: Cabeceio.",
+  "videogame": {
+   "posicao": "ST / CF",
+   "papel": "Atacante",
+   "atributos": [
+    "Finalização",
+    "Posicionamento",
+    "Compostura"
+   ]
+  },
+  "bespoke": false
+ },
+ "ruto-kora": {
+  "estilo": "Atacante de área e ruptura: peça a bola no espaço e finalize sem pedir licença.",
+  "fundamentos": [
+   {
+    "t": "Desmarcação",
+    "txt": "Ataque o espaço no timing do passe."
+   },
+   {
+    "t": "Finalização",
+    "txt": "1 ou 2 toques no máximo dentro da área."
+   },
+   {
+    "t": "Pressão na zaga",
+    "txt": "Não deixe o zagueiro sair fácil."
+   }
+  ],
+  "exercicios": [
+   "Finalizações de primeira após passe raso (20).",
+   "Finalizações de primeira após passe raso (20)."
+  ],
+  "mentalidade": "Finalize a decisão. Hesitação não entra no Flow.",
+  "videogame": {
+   "posicao": "ST / CF",
+   "papel": "Atacante",
+   "atributos": [
+    "Finalização",
+    "Posicionamento",
+    "Compostura"
+   ]
+  },
+  "bespoke": false
+ },
+ "ryo-nameoka": {
+  "estilo": "Atacante de área e ruptura: peça a bola no espaço e finalize sem pedir licença. Na ficha, suas Armas apontam para Físico.",
+  "fundamentos": [
+   {
+    "t": "Corpo e duelo",
+    "txt": "Transforme o atributo físico da ficha em hábito: duelo, salto, resistência ou desarme limpo."
+   },
+   {
+    "t": "Desmarcação",
+    "txt": "Ataque o espaço no timing do passe."
+   },
+   {
+    "t": "Finalização",
+    "txt": "1 ou 2 toques no máximo dentro da área."
+   },
+   {
+    "t": "Pressão na zaga",
+    "txt": "Não deixe o zagueiro sair fácil."
+   }
+  ],
+  "exercicios": [
+   "Circuitos de duelo + segundo lance (rebote ou transição).",
+   "Finalizações de primeira após passe raso (20)."
+  ],
+  "mentalidade": "Roube 1 detalhe de um rival por semana e torne seu. Suas Armas de referência na ficha: Físico.",
+  "videogame": {
+   "posicao": "ST / CF",
+   "papel": "Atacante",
+   "atributos": [
+    "Finalização",
+    "Posicionamento",
+    "Compostura"
+   ]
+  },
+  "bespoke": false
+ },
+ "ryosuke-kira": {
+  "estilo": "Atacante de área e ruptura: peça a bola no espaço e finalize sem pedir licença.",
+  "fundamentos": [
+   {
+    "t": "Desmarcação",
+    "txt": "Ataque o espaço no timing do passe."
+   },
+   {
+    "t": "Finalização",
+    "txt": "1 ou 2 toques no máximo dentro da área."
+   },
+   {
+    "t": "Pressão na zaga",
+    "txt": "Não deixe o zagueiro sair fácil."
+   }
+  ],
+  "exercicios": [
+   "Finalizações de primeira após passe raso (20).",
+   "Finalizações de primeira após passe raso (20)."
+  ],
+  "mentalidade": "Não espere o lance perfeito — fabrique o seu.",
+  "videogame": {
+   "posicao": "ST / CF",
+   "papel": "Atacante",
+   "atributos": [
+    "Finalização",
+    "Posicionamento",
+    "Compostura"
+   ]
+  },
+  "bespoke": false
+ },
+ "shigeo-mizuki": {
+  "estilo": "Atacante de área e ruptura: peça a bola no espaço e finalize sem pedir licença. Na ficha, suas Armas apontam para Resistência, Cruzamento.",
+  "fundamentos": [
+   {
+    "t": "Passe / cruzamento",
+    "txt": "Peso de bola para o atacante não ajeitar; treine raso e alto."
+   },
+   {
+    "t": "Corpo e duelo",
+    "txt": "Transforme o atributo físico da ficha em hábito: duelo, salto, resistência ou desarme limpo."
+   },
+   {
+    "t": "Desmarcação",
+    "txt": "Ataque o espaço no timing do passe."
+   },
+   {
+    "t": "Finalização",
+    "txt": "1 ou 2 toques no máximo dentro da área."
+   }
+  ],
+  "exercicios": [
+   "Assistências em jogo reduzido (você não finaliza).",
+   "Circuitos de duelo + segundo lance (rebote ou transição)."
+  ],
+  "mentalidade": "Olhe o placar e o próximo passe. O Blue Lock não espera. Suas Armas de referência na ficha: Resistência, Cruzamento.",
+  "videogame": {
+   "posicao": "ST / CF",
+   "papel": "Atacante",
+   "atributos": [
+    "Finalização",
+    "Posicionamento",
+    "Compostura"
+   ]
+  },
+  "bespoke": false
+ },
+ "shingen-tanaka": {
+  "estilo": "Atacante de área e ruptura: peça a bola no espaço e finalize sem pedir licença.",
+  "fundamentos": [
+   {
+    "t": "Desmarcação",
+    "txt": "Ataque o espaço no timing do passe."
+   },
+   {
+    "t": "Finalização",
+    "txt": "1 ou 2 toques no máximo dentro da área."
+   },
+   {
+    "t": "Pressão na zaga",
+    "txt": "Não deixe o zagueiro sair fácil."
+   }
+  ],
+  "exercicios": [
+   "Finalizações de primeira após passe raso (20).",
+   "Finalizações de primeira após passe raso (20)."
+  ],
+  "mentalidade": "Finalize a decisão. Hesitação não entra no Flow.",
+  "videogame": {
+   "posicao": "ST / CF",
+   "papel": "Atacante",
+   "atributos": [
+    "Finalização",
+    "Posicionamento",
+    "Compostura"
+   ]
+  },
+  "bespoke": false
+ },
+ "shinichi-konan": {
+  "estilo": "Atacante de área e ruptura: peça a bola no espaço e finalize sem pedir licença.",
+  "fundamentos": [
+   {
+    "t": "Desmarcação",
+    "txt": "Ataque o espaço no timing do passe."
+   },
+   {
+    "t": "Finalização",
+    "txt": "1 ou 2 toques no máximo dentro da área."
+   },
+   {
+    "t": "Pressão na zaga",
+    "txt": "Não deixe o zagueiro sair fácil."
+   }
+  ],
+  "exercicios": [
+   "Finalizações de primeira após passe raso (20).",
+   "Finalizações de primeira após passe raso (20)."
+  ],
+  "mentalidade": "Não espere o lance perfeito — fabrique o seu.",
+  "videogame": {
+   "posicao": "ST / CF",
+   "papel": "Atacante",
+   "atributos": [
+    "Finalização",
+    "Posicionamento",
+    "Compostura"
+   ]
+  },
+  "bespoke": false
+ },
+ "shizuka-haiji": {
+  "estilo": "Atacante de área e ruptura: peça a bola no espaço e finalize sem pedir licença.",
+  "fundamentos": [
+   {
+    "t": "Desmarcação",
+    "txt": "Ataque o espaço no timing do passe."
+   },
+   {
+    "t": "Finalização",
+    "txt": "1 ou 2 toques no máximo dentro da área."
+   },
+   {
+    "t": "Pressão na zaga",
+    "txt": "Não deixe o zagueiro sair fácil."
+   }
+  ],
+  "exercicios": [
+   "Finalizações de primeira após passe raso (20).",
+   "Finalizações de primeira após passe raso (20)."
+  ],
+  "mentalidade": "Ego com método: cada treino precisa ter um duelo que você escolheu ganhar.",
+  "videogame": {
+   "posicao": "ST / CF",
+   "papel": "Atacante",
+   "atributos": [
+    "Finalização",
+    "Posicionamento",
+    "Compostura"
+   ]
+  },
+  "bespoke": false
+ },
+ "shuhei-ebina": {
+  "estilo": "Atacante de área e ruptura: peça a bola no espaço e finalize sem pedir licença.",
+  "fundamentos": [
+   {
+    "t": "Desmarcação",
+    "txt": "Ataque o espaço no timing do passe."
+   },
+   {
+    "t": "Finalização",
+    "txt": "1 ou 2 toques no máximo dentro da área."
+   },
+   {
+    "t": "Pressão na zaga",
+    "txt": "Não deixe o zagueiro sair fácil."
+   }
+  ],
+  "exercicios": [
+   "Finalizações de primeira após passe raso (20).",
+   "Finalizações de primeira após passe raso (20)."
+  ],
+  "mentalidade": "Olhe o placar e o próximo passe. O Blue Lock não espera.",
+  "videogame": {
+   "posicao": "ST / CF",
+   "papel": "Atacante",
+   "atributos": [
+    "Finalização",
+    "Posicionamento",
+    "Compostura"
+   ]
+  },
+  "bespoke": false
+ },
+ "soshi-kagura": {
+  "estilo": "Atacante de área e ruptura: peça a bola no espaço e finalize sem pedir licença.",
+  "fundamentos": [
+   {
+    "t": "Desmarcação",
+    "txt": "Ataque o espaço no timing do passe."
+   },
+   {
+    "t": "Finalização",
+    "txt": "1 ou 2 toques no máximo dentro da área."
+   },
+   {
+    "t": "Pressão na zaga",
+    "txt": "Não deixe o zagueiro sair fácil."
+   }
+  ],
+  "exercicios": [
+   "Finalizações de primeira após passe raso (20).",
+   "Finalizações de primeira após passe raso (20)."
+  ],
+  "mentalidade": "Ego com método: cada treino precisa ter um duelo que você escolheu ganhar.",
+  "videogame": {
+   "posicao": "ST / CF",
+   "papel": "Atacante",
+   "atributos": [
+    "Finalização",
+    "Posicionamento",
+    "Compostura"
+   ]
+  },
+  "bespoke": false
+ },
+ "sota-nemoto": {
+  "estilo": "Atacante de área e ruptura: peça a bola no espaço e finalize sem pedir licença.",
+  "fundamentos": [
+   {
+    "t": "Desmarcação",
+    "txt": "Ataque o espaço no timing do passe."
+   },
+   {
+    "t": "Finalização",
+    "txt": "1 ou 2 toques no máximo dentro da área."
+   },
+   {
+    "t": "Pressão na zaga",
+    "txt": "Não deixe o zagueiro sair fácil."
+   }
+  ],
+  "exercicios": [
+   "Finalizações de primeira após passe raso (20).",
+   "Finalizações de primeira após passe raso (20)."
+  ],
+  "mentalidade": "Finalize a decisão. Hesitação não entra no Flow.",
+  "videogame": {
+   "posicao": "ST / CF",
+   "papel": "Atacante",
+   "atributos": [
+    "Finalização",
+    "Posicionamento",
+    "Compostura"
+   ]
+  },
+  "bespoke": false
+ },
+ "taiga-tsunzaki": {
+  "estilo": "Atacante de área e ruptura: peça a bola no espaço e finalize sem pedir licença.",
+  "fundamentos": [
+   {
+    "t": "Desmarcação",
+    "txt": "Ataque o espaço no timing do passe."
+   },
+   {
+    "t": "Finalização",
+    "txt": "1 ou 2 toques no máximo dentro da área."
+   },
+   {
+    "t": "Pressão na zaga",
+    "txt": "Não deixe o zagueiro sair fácil."
+   }
+  ],
+  "exercicios": [
+   "Finalizações de primeira após passe raso (20).",
+   "Finalizações de primeira após passe raso (20)."
+  ],
+  "mentalidade": "Não espere o lance perfeito — fabrique o seu.",
+  "videogame": {
+   "posicao": "ST / CF",
+   "papel": "Atacante",
+   "atributos": [
+    "Finalização",
+    "Posicionamento",
+    "Compostura"
+   ]
+  },
+  "bespoke": false
+ },
+ "takashi-nishiyama": {
+  "estilo": "Atacante de área e ruptura: peça a bola no espaço e finalize sem pedir licença.",
+  "fundamentos": [
+   {
+    "t": "Desmarcação",
+    "txt": "Ataque o espaço no timing do passe."
+   },
+   {
+    "t": "Finalização",
+    "txt": "1 ou 2 toques no máximo dentro da área."
+   },
+   {
+    "t": "Pressão na zaga",
+    "txt": "Não deixe o zagueiro sair fácil."
+   }
+  ],
+  "exercicios": [
+   "Finalizações de primeira após passe raso (20).",
+   "Finalizações de primeira após passe raso (20)."
+  ],
+  "mentalidade": "Ego com método: cada treino precisa ter um duelo que você escolheu ganhar.",
+  "videogame": {
+   "posicao": "ST / CF",
+   "papel": "Atacante",
+   "atributos": [
+    "Finalização",
+    "Posicionamento",
+    "Compostura"
+   ]
+  },
+  "bespoke": false
+ },
+ "takuma-isezaki": {
+  "estilo": "Atacante de área e ruptura: peça a bola no espaço e finalize sem pedir licença.",
+  "fundamentos": [
+   {
+    "t": "Desmarcação",
+    "txt": "Ataque o espaço no timing do passe."
+   },
+   {
+    "t": "Finalização",
+    "txt": "1 ou 2 toques no máximo dentro da área."
+   },
+   {
+    "t": "Pressão na zaga",
+    "txt": "Não deixe o zagueiro sair fácil."
+   }
+  ],
+  "exercicios": [
+   "Finalizações de primeira após passe raso (20).",
+   "Finalizações de primeira após passe raso (20)."
+  ],
+  "mentalidade": "Se cansou, ainda dá para marcar. Resistência também é Arma.",
+  "videogame": {
+   "posicao": "ST / CF",
+   "papel": "Atacante",
+   "atributos": [
+    "Finalização",
+    "Posicionamento",
+    "Compostura"
+   ]
+  },
+  "bespoke": false
+ },
+ "tetsu-sokura": {
+  "estilo": "Atacante de área e ruptura: peça a bola no espaço e finalize sem pedir licença.",
+  "fundamentos": [
+   {
+    "t": "Desmarcação",
+    "txt": "Ataque o espaço no timing do passe."
+   },
+   {
+    "t": "Finalização",
+    "txt": "1 ou 2 toques no máximo dentro da área."
+   },
+   {
+    "t": "Pressão na zaga",
+    "txt": "Não deixe o zagueiro sair fácil."
+   }
+  ],
+  "exercicios": [
+   "Finalizações de primeira após passe raso (20).",
+   "Finalizações de primeira após passe raso (20)."
+  ],
+  "mentalidade": "Olhe o placar e o próximo passe. O Blue Lock não espera.",
+  "videogame": {
+   "posicao": "ST / CF",
+   "papel": "Atacante",
+   "atributos": [
+    "Finalização",
+    "Posicionamento",
+    "Compostura"
+   ]
+  },
+  "bespoke": false
+ },
+ "tobio-madoka": {
+  "estilo": "Atacante de área e ruptura: peça a bola no espaço e finalize sem pedir licença.",
+  "fundamentos": [
+   {
+    "t": "Desmarcação",
+    "txt": "Ataque o espaço no timing do passe."
+   },
+   {
+    "t": "Finalização",
+    "txt": "1 ou 2 toques no máximo dentro da área."
+   },
+   {
+    "t": "Pressão na zaga",
+    "txt": "Não deixe o zagueiro sair fácil."
+   }
+  ],
+  "exercicios": [
+   "Finalizações de primeira após passe raso (20).",
+   "Finalizações de primeira após passe raso (20)."
+  ],
+  "mentalidade": "Olhe o placar e o próximo passe. O Blue Lock não espera.",
+  "videogame": {
+   "posicao": "ST / CF",
+   "papel": "Atacante",
+   "atributos": [
+    "Finalização",
+    "Posicionamento",
+    "Compostura"
+   ]
+  },
+  "bespoke": false
+ },
+ "tsukoteru-eiyu": {
+  "estilo": "Atacante de área e ruptura: peça a bola no espaço e finalize sem pedir licença.",
+  "fundamentos": [
+   {
+    "t": "Desmarcação",
+    "txt": "Ataque o espaço no timing do passe."
+   },
+   {
+    "t": "Finalização",
+    "txt": "1 ou 2 toques no máximo dentro da área."
+   },
+   {
+    "t": "Pressão na zaga",
+    "txt": "Não deixe o zagueiro sair fácil."
+   }
+  ],
+  "exercicios": [
+   "Finalizações de primeira após passe raso (20).",
+   "Finalizações de primeira após passe raso (20)."
+  ],
+  "mentalidade": "Olhe o placar e o próximo passe. O Blue Lock não espera.",
+  "videogame": {
+   "posicao": "ST / CF",
+   "papel": "Atacante",
+   "atributos": [
+    "Finalização",
+    "Posicionamento",
+    "Compostura"
+   ]
+  },
+  "bespoke": false
+ },
+ "wataru-kuon": {
+  "estilo": "Atacante de área e ruptura: peça a bola no espaço e finalize sem pedir licença. Na ficha, suas Armas apontam para Salto vertical, Cabeceio.",
+  "fundamentos": [
+   {
+    "t": "Corpo e duelo",
+    "txt": "Transforme o atributo físico da ficha em hábito: duelo, salto, resistência ou desarme limpo."
+   },
+   {
+    "t": "Desmarcação",
+    "txt": "Ataque o espaço no timing do passe."
+   },
+   {
+    "t": "Finalização",
+    "txt": "1 ou 2 toques no máximo dentro da área."
+   },
+   {
+    "t": "Pressão na zaga",
+    "txt": "Não deixe o zagueiro sair fácil."
+   }
+  ],
+  "exercicios": [
+   "Circuitos de duelo + segundo lance (rebote ou transição).",
+   "Finalizações de primeira após passe raso (20)."
+  ],
+  "mentalidade": "Finalize a decisão. Hesitação não entra no Flow. Suas Armas de referência na ficha: Salto vertical, Cabeceio.",
+  "videogame": {
+   "posicao": "ST / CF",
+   "papel": "Atacante",
+   "atributos": [
+    "Finalização",
+    "Posicionamento",
+    "Compostura"
+   ]
+  },
+  "bespoke": false
+ },
+ "yawara-banku": {
+  "estilo": "Atacante de área e ruptura: peça a bola no espaço e finalize sem pedir licença.",
+  "fundamentos": [
+   {
+    "t": "Desmarcação",
+    "txt": "Ataque o espaço no timing do passe."
+   },
+   {
+    "t": "Finalização",
+    "txt": "1 ou 2 toques no máximo dentro da área."
+   },
+   {
+    "t": "Pressão na zaga",
+    "txt": "Não deixe o zagueiro sair fácil."
+   }
+  ],
+  "exercicios": [
+   "Finalizações de primeira após passe raso (20).",
+   "Finalizações de primeira após passe raso (20)."
+  ],
+  "mentalidade": "Roube 1 detalhe de um rival por semana e torne seu.",
+  "videogame": {
+   "posicao": "ST / CF",
+   "papel": "Atacante",
+   "atributos": [
+    "Finalização",
+    "Posicionamento",
+    "Compostura"
+   ]
+  },
+  "bespoke": false
+ },
+ "yudai-imamura": {
+  "estilo": "Atacante de área e ruptura: peça a bola no espaço e finalize sem pedir licença. Na ficha, suas Armas apontam para Velocidade.",
+  "fundamentos": [
+   {
+    "t": "Explosão com bola",
+    "txt": "0–10 m com bola colada; o primeiro toque já ganha a frente."
+   },
+   {
+    "t": "Desmarcação",
+    "txt": "Ataque o espaço no timing do passe."
+   },
+   {
+    "t": "Finalização",
+    "txt": "1 ou 2 toques no máximo dentro da área."
+   },
+   {
+    "t": "Pressão na zaga",
+    "txt": "Não deixe o zagueiro sair fácil."
+   }
+  ],
+  "exercicios": [
+   "Tiros curtos com bola + decisão em 3 toques.",
+   "Finalizações de primeira após passe raso (20)."
+  ],
+  "mentalidade": "Finalize a decisão. Hesitação não entra no Flow. Suas Armas de referência na ficha: Velocidade.",
+  "videogame": {
+   "posicao": "ST / CF",
+   "papel": "Atacante",
+   "atributos": [
+    "Finalização",
+    "Posicionamento",
+    "Compostura"
+   ]
+  },
+  "bespoke": false
+ },
+ "yujin-koshinaka": {
+  "estilo": "Atacante de área e ruptura: peça a bola no espaço e finalize sem pedir licença.",
+  "fundamentos": [
+   {
+    "t": "Desmarcação",
+    "txt": "Ataque o espaço no timing do passe."
+   },
+   {
+    "t": "Finalização",
+    "txt": "1 ou 2 toques no máximo dentro da área."
+   },
+   {
+    "t": "Pressão na zaga",
+    "txt": "Não deixe o zagueiro sair fácil."
+   }
+  ],
+  "exercicios": [
+   "Finalizações de primeira após passe raso (20).",
+   "Finalizações de primeira após passe raso (20)."
+  ],
+  "mentalidade": "Não espere o lance perfeito — fabrique o seu.",
+  "videogame": {
+   "posicao": "ST / CF",
+   "papel": "Atacante",
+   "atributos": [
+    "Finalização",
+    "Posicionamento",
+    "Compostura"
+   ]
+  },
+  "bespoke": false
+ },
+ "yukio-ishikari": {
+  "estilo": "Ishikari vive no alto: salto vertical e cabeceio como Arma principal de área.",
+  "fundamentos": [
+   {
+    "t": "Salto vertical",
+    "txt": "Treine impulsão (pliometria) e timing de voo."
+   },
+   {
+    "t": "Cabeceio",
+    "txt": "Ataque a bola com a testa, olhos abertos, pescoço firme."
+   },
+   {
+    "t": "Posicionamento de área",
+    "txt": "Ganhe o primeiro pau e dispute o rebote."
+   },
+   {
+    "t": "Aterrissagem",
+    "txt": "Caia estável para o segundo lance."
+   }
+  ],
+  "exercicios": [
+   "Pliometria + cabeceio (blocos de 8 saltos).",
+   "Cruzamentos variados: 25 cabeceios ofensivos.",
+   "Segundas bolas após o primeiro desvio."
+  ],
+  "mentalidade": "O chão é só o impulso. O gol está no ar.",
+  "videogame": {
+   "posicao": "ST",
+   "papel": "Alvo aéreo",
+   "atributos": [
+    "Impulsão",
+    "Cabeceio",
+    "Força",
+    "Posicionamento"
+   ]
+  },
+  "bespoke": true
+ },
+ "yusei-amazora": {
+  "estilo": "Atacante de área e ruptura: peça a bola no espaço e finalize sem pedir licença.",
+  "fundamentos": [
+   {
+    "t": "Desmarcação",
+    "txt": "Ataque o espaço no timing do passe."
+   },
+   {
+    "t": "Finalização",
+    "txt": "1 ou 2 toques no máximo dentro da área."
+   },
+   {
+    "t": "Pressão na zaga",
+    "txt": "Não deixe o zagueiro sair fácil."
+   }
+  ],
+  "exercicios": [
+   "Finalizações de primeira após passe raso (20).",
+   "Finalizações de primeira após passe raso (20)."
+  ],
+  "mentalidade": "Olhe o placar e o próximo passe. O Blue Lock não espera.",
+  "videogame": {
+   "posicao": "ST / CF",
+   "papel": "Atacante",
+   "atributos": [
+    "Finalização",
+    "Posicionamento",
+    "Compostura"
+   ]
+  },
+  "bespoke": false
+ },
+ "yuza-dokomo": {
+  "estilo": "Goleiro de presença: feche ângulos, reaja rápido e devolva o ataque com a mão ou os pés.",
+  "fundamentos": [
+   {
+    "t": "Reação e ângulos",
+    "txt": "Feche o ângulo e treine o segundo rebote."
+   },
+   {
+    "t": "Jogo com os pés",
+    "txt": "Saia jogando sob pressão em 2 toques."
+   },
+   {
+    "t": "Comando",
+    "txt": "Comunique a zaga em bolas aéreas."
+   }
+  ],
+  "exercicios": [
+   "1×1 de goleiro (12 lances) + reposição rápida.",
+   "1×1 de goleiro (12 lances) + reposição rápida."
+  ],
+  "mentalidade": "Finalize a decisão. Hesitação não entra no Flow.",
+  "videogame": {
+   "posicao": "GK",
+   "papel": "Goleiro",
+   "atributos": [
+    "Reflexos",
+    "Posicionamento",
+    "Jogo com os pés"
+   ]
+  },
+  "bespoke": false
+ },
+ "zantetsu-tsurugi": {
+  "estilo": "Zantetsu explode em aceleração e finaliza forte com o pé esquerdo.",
+  "fundamentos": [
+   {
+    "t": "Aceleração",
+    "txt": "0–10 m com bola: o primeiro toque já ganha a frente do marcador."
+   },
+   {
+    "t": "Chute de pé esquerdo",
+    "txt": "Bata em corrida e parado; o esquerdo é a Arma, não o plano B."
+   },
+   {
+    "t": "Ala / ponta",
+    "txt": "Estique o campo e invada na diagonal para finalizar."
+   },
+   {
+    "t": "Decisão rápida",
+    "txt": "Em 1 s: chute, passe ou novo drible — sem frear o ataque."
+   }
+  ],
+  "exercicios": [
+   "Arrancadas + chute esquerdo: 20 repetições.",
+   "Diagonais da direita para dentro + finalização.",
+   "1×1 em velocidade com meta de finalizar em 4 s."
+  ],
+  "mentalidade": "Exploda primeiro. Quem pensa demais já ficou para trás.",
+  "videogame": {
+   "posicao": "RW / RM / ST",
+   "papel": "Ponta explosivo",
+   "atributos": [
+    "Aceleração",
+    "Finalização (PE)",
+    "Velocidade",
+    "Drible"
+   ]
+  },
+  "bespoke": true
+ },
+ "sae": {
+  "estilo": "Sae é técnica absoluta: passe e finalização perfeitos, drible limpo, reflexo e Metavision de elite.",
+  "fundamentos": [
+   {
+    "t": "Técnica de chute (passe e finalização)",
+    "txt": "Mesmo gesto, intenções diferentes: raso tensionado, cavadinha, batida colocada."
+   },
+   {
+    "t": "Drible sob controle",
+    "txt": "Conduza em espaço apertado sem perder a cabeça erguida."
+   },
+   {
+    "t": "Metavision",
+    "txt": "Domine o ritmo do meio: acelere ou pause o ataque com um toque."
+   },
+   {
+    "t": "Reflexo",
+    "txt": "Antecipe a interceptação e já tenha o plano B no pé."
+   }
+  ],
+  "exercicios": [
+   "20 passes longos + 20 finalizações colocadas por sessão.",
+   "Rondo elite: 1 toque, cabeça erguida.",
+   "Transições em que você decide se é passe ou chute em menos de 1 s."
+  ],
+  "mentalidade": "Perfeição fria. O campo é um tabuleiro — e você já leu o xeque-mate.",
+  "videogame": {
+   "posicao": "CAM / CM",
+   "papel": "Meia clássico de elite",
+   "atributos": [
+    "Passe",
+    "Visão",
+    "Drible",
+    "Finalização"
+   ]
+  },
+  "bespoke": true
+ },
+ "beita-tsuru": {
+  "staff": true,
+  "nota": "Beita Tsuru não tem registro de jogo em campo nas fichas deste site. Sem Arma de campo para treinar, o foco é entender o papel na história do Blue Lock.",
+  "bespoke": false
+ },
+ "gen-fukaku": {
+  "estilo": "Fukaku é goleiro de reação e físico: presença na área e respostas rápidas no mano a mano.",
+  "fundamentos": [
+   {
+    "t": "Reação",
+    "txt": "Treine defesas de curta distância e rebotes."
+   },
+   {
+    "t": "Físico",
+    "txt": "1×1 com o atacante: feche o ângulo com o corpo."
+   },
+   {
+    "t": "Comando da área",
+    "txt": "Peça a bola aérea; comunique a zaga."
+   },
+   {
+    "t": "Distribuição",
+    "txt": "Reposição rápida para contra-ataque."
+   }
+  ],
+  "exercicios": [
+   "Reação com bolas laterais e centrais em sequência.",
+   "1×1 de goleiro (atacante vs você) em 12 lances.",
+   "Saídas aéreas com oposição."
+  ],
+  "mentalidade": "Ocupe o gol como um muro que se mexe. Reaja — e devolva o ataque.",
+  "videogame": {
+   "posicao": "GK",
+   "papel": "Goleiro de reação",
+   "atributos": [
+    "Reflexos",
+    "Força",
+    "Posicionamento",
+    "Jogo aéreo"
+   ]
+  },
+  "bespoke": true
+ },
+ "haru-hayate": {
+  "estilo": "Volante de equilíbrio: recupere, cubra e dê o primeiro passe que respira o time.",
+  "fundamentos": [
+   {
+    "t": "Cobertura",
+    "txt": "Seja a sobra do zagueiro e do meia."
+   },
+   {
+    "t": "Desarme no tempo",
+    "txt": "Corte a linha de passe antes do bote."
+   },
+   {
+    "t": "Primeiro passe",
+    "txt": "Progressão ou segurança — decida em 1 s."
+   }
+  ],
+  "exercicios": [
+   "Rondo 5×3 recuperando e saindo em 3 toques.",
+   "Rondo 5×3 recuperando e saindo em 3 toques."
+  ],
+  "mentalidade": "Não espere o lance perfeito — fabrique o seu.",
+  "videogame": {
+   "posicao": "CDM",
+   "papel": "Volante",
+   "atributos": [
+    "Intercepção",
+    "Passe",
+    "Resistência"
+   ]
+  },
+  "bespoke": false
+ },
+ "iito-morita": {
+  "staff": true,
+  "nota": "Iito Morita não tem registro de jogo em campo nas fichas deste site. Sem Arma de campo para treinar, o foco é entender o papel na história do Blue Lock.",
+  "bespoke": false
+ },
+ "imaru-akashi": {
+  "staff": true,
+  "nota": "Imaru Akashi não tem registro de jogo em campo nas fichas deste site. Sem Arma de campo para treinar, o foco é entender o papel na história do Blue Lock.",
+  "bespoke": false
+ },
+ "itsuki-wakatsuki": {
+  "estilo": "Volante de equilíbrio: recupere, cubra e dê o primeiro passe que respira o time.",
+  "fundamentos": [
+   {
+    "t": "Cobertura",
+    "txt": "Seja a sobra do zagueiro e do meia."
+   },
+   {
+    "t": "Desarme no tempo",
+    "txt": "Corte a linha de passe antes do bote."
+   },
+   {
+    "t": "Primeiro passe",
+    "txt": "Progressão ou segurança — decida em 1 s."
+   }
+  ],
+  "exercicios": [
+   "Rondo 5×3 recuperando e saindo em 3 toques.",
+   "Rondo 5×3 recuperando e saindo em 3 toques."
+  ],
+  "mentalidade": "Ego com método: cada treino precisa ter um duelo que você escolheu ganhar.",
+  "videogame": {
+   "posicao": "CDM",
+   "papel": "Volante",
+   "atributos": [
+    "Intercepção",
+    "Passe",
+    "Resistência"
+   ]
+  },
+  "bespoke": false
+ },
+ "kazuma-nio": {
+  "estilo": "Nio é muro: físico e pressão constante para engolir o ataque rival.",
+  "fundamentos": [
+   {
+    "t": "Físico",
+    "txt": "Duelos de corpo no primeiro contato."
+   },
+   {
+    "t": "Pressão",
+    "txt": "Não dê tempo de giro ao atacante; feche o ângulo."
+   },
+   {
+    "t": "Cobertura",
+    "txt": "Ajude o parceiro de zaga; seja a segunda sobra."
+   },
+   {
+    "t": "Jogo aéreo",
+    "txt": "Afaste cruzamentos com direção."
+   }
+  ],
+  "exercicios": [
+   "1×1 defensivo em área reduzida.",
+   "Pressão a dois (você + lateral) em corredor.",
+   "Bolas paradas defensivas."
+  ],
+  "mentalidade": "Sem espaço, sem giro, sem gol. Você é a parede.",
+  "videogame": {
+   "posicao": "CB",
+   "papel": "Zagueiro de contenção",
+   "atributos": [
+    "Força",
+    "Marcação",
+    "Agressividade",
+    "Cabeceio"
+   ]
+  },
+  "bespoke": true
+ },
+ "ken-andatte-shimura": {
+  "staff": true,
+  "nota": "Ken Andatte Shimura não tem registro de jogo em campo nas fichas deste site. Sem Arma de campo para treinar, o foco é entender o papel na história do Blue Lock.",
+  "bespoke": false
+ },
+ "kento-cho": {
+  "estilo": "Ponta de desequilíbrio: ganhe a linha ou invada na diagonal para finalizar. Na ficha, suas Armas apontam para Altura.",
+  "fundamentos": [
+   {
+    "t": "1×1 de lado",
+    "txt": "Ganhe a linha ou corte para dentro."
+   },
+   {
+    "t": "Decisão no fim",
+    "txt": "Cruzar, finalizar ou fintar — em 1 s."
+   },
+   {
+    "t": "Recuo",
+    "txt": "Na perda, vire o primeiro pressionante."
+   }
+  ],
+  "exercicios": [
+   "1×1 em corredor + finalização ou cruzamento.",
+   "1×1 em corredor + finalização ou cruzamento."
+  ],
+  "mentalidade": "Não espere o lance perfeito — fabrique o seu. Suas Armas de referência na ficha: Altura.",
+  "videogame": {
+   "posicao": "LW / RW",
+   "papel": "Ponta",
+   "atributos": [
+    "Aceleração",
+    "Drible",
+    "Finalização"
+   ]
+  },
+  "bespoke": false
+ },
+ "kiyoshi-yasushi": {
+  "staff": true,
+  "nota": "Kiyoshi Yasushi não tem registro de jogo em campo nas fichas deste site. Sem Arma de campo para treinar, o foco é entender o papel na história do Blue Lock.",
+  "bespoke": false
+ },
+ "miroku-darai": {
+  "estilo": "Darai antecipa: movimentação sem bola e previsões para estar onde o lance ainda vai nascer.",
+  "fundamentos": [
+   {
+    "t": "Previsões",
+    "txt": "Leia a intenção do passe e ocupe o espaço 1 s antes."
+   },
+   {
+    "t": "Movimentação sem bola",
+    "txt": "Subidas e coberturas de lateral no timing certo."
+   },
+   {
+    "t": "Cruzamentos",
+    "txt": "Chegue na linha e sirva o primeiro/segundo pau."
+   },
+   {
+    "t": "Recuperação",
+    "txt": "Errou a previsão? Volte em sprint imediato."
+   }
+  ],
+  "exercicios": [
+   "Exercícios de antecipação (ler o gesto do passador).",
+   "Subidas de lateral + cruzamento (15).",
+   "Coberturas em 4×4 no setor esquerdo."
+  ],
+  "mentalidade": "Chegue antes do futuro. Quem prevê, não corre atrás.",
+  "videogame": {
+   "posicao": "LB",
+   "papel": "Lateral leitor",
+   "atributos": [
+    "Posicionamento",
+    "Cruzamento",
+    "Velocidade",
+    "Visão"
+   ]
+  },
+  "bespoke": true
+ },
+ "oliver-aiku": {
+  "estilo": "Aiku é o capitão da zaga: físico, visão espacial, reflexo e Metavision para comandar a linha.",
+  "fundamentos": [
+   {
+    "t": "Metavision defensiva",
+    "txt": "Organize a linha: impedimento, cobertura e quem sai na pressão."
+   },
+   {
+    "t": "Duelos físicos",
+    "txt": "Ganhe o primeiro contato e limpe o segundo."
+   },
+   {
+    "t": "Reflexo",
+    "txt": "Antecipe o drible e o passe rasgado na área."
+   },
+   {
+    "t": "Saída de bola",
+    "txt": "Primeiro passe limpo após o corte; comece o ataque."
+   }
+  ],
+  "exercicios": [
+   "Linha defensiva 4×4 com regra de impedimento.",
+   "Duelos 1×1 de área + cobertura do parceiro.",
+   "Saídas ofensivas em 3 toques após desarme."
+  ],
+  "mentalidade": "O ego também defende. Comande a área como quem comanda um país.",
+  "videogame": {
+   "posicao": "CB",
+   "papel": "Zagueiro líder",
+   "atributos": [
+    "Marcação",
+    "Visão",
+    "Força",
+    "Passe"
+   ]
+  },
+  "bespoke": true
+ },
+ "ryu-kamioka": {
+  "staff": true,
+  "nota": "Ryu Kamioka não tem registro de jogo em campo nas fichas deste site. Sem Arma de campo para treinar, o foco é entender o papel na história do Blue Lock.",
+  "bespoke": false
+ },
+ "ryuhei-osuna": {
+  "staff": true,
+  "nota": "Ryuhei Osuna não tem registro de jogo em campo nas fichas deste site. Sem Arma de campo para treinar, o foco é entender o papel na história do Blue Lock.",
+  "bespoke": false
+ },
+ "shinsuke-hekisa": {
+  "staff": true,
+  "nota": "Shinsuke Hekisa não tem registro de jogo em campo nas fichas deste site. Sem Arma de campo para treinar, o foco é entender o papel na história do Blue Lock.",
+  "bespoke": false
+ },
+ "shuto-sendo": {
+  "estilo": "Sendo vive de resistência e chegada: o motor que aparece no terço final quando outros já cansaram.",
+  "fundamentos": [
+   {
+    "t": "Resistência",
+    "txt": "Mantenha sprints no fim do treino, quando as pernas pedem arrego."
+   },
+   {
+    "t": "Chegada na área",
+    "txt": "Ataque o segundo pau nos últimos 20 min do jogo."
+   },
+   {
+    "t": "Pressing atrasado",
+    "txt": "Feche o portador mesmo cansado — intensidade mental."
+   },
+   {
+    "t": "Finalização simples",
+    "txt": "1 toque limpo; não complique no fim do lance."
+   }
+  ],
+  "exercicios": [
+   "Séries de 10 sprints curtos no fim da sessão + chute.",
+   "Jogos longos (2×20 min) com meta de envolvimento nos gols finais.",
+   "Pressing em fadiga (após corrida)."
+  ],
+  "mentalidade": "Quando o campo pesa, você fica mais leve. Resistência é a sua Arma.",
+  "videogame": {
+   "posicao": "ST / CAM",
+   "papel": "Atacante de fôlego",
+   "atributos": [
+    "Resistência",
+    "Posicionamento",
+    "Finalização",
+    "Pressão"
+   ]
+  },
+  "bespoke": true
+ },
+ "taisho-hagimoto": {
+  "staff": true,
+  "nota": "Taisho Hagimoto não tem registro de jogo em campo nas fichas deste site. Sem Arma de campo para treinar, o foco é entender o papel na história do Blue Lock.",
+  "bespoke": false
+ },
+ "takayuki-tokorojoji": {
+  "staff": true,
+  "nota": "Takayuki Tokorojoji não tem registro de jogo em campo nas fichas deste site. Sem Arma de campo para treinar, o foco é entender o papel na história do Blue Lock.",
+  "bespoke": false
+ },
+ "takeshi-bito": {
+  "staff": true,
+  "nota": "Takeshi Bito não tem registro de jogo em campo nas fichas deste site. Sem Arma de campo para treinar, o foco é entender o papel na história do Blue Lock.",
+  "bespoke": false
+ },
+ "teppei-neru": {
+  "estilo": "Lateral de vai-e-volta: estique a linha no ataque e recupere em sprint na perda. Na ficha, suas Armas apontam para Aceleração.",
+  "fundamentos": [
+   {
+    "t": "Explosão com bola",
+    "txt": "0–10 m com bola colada; o primeiro toque já ganha a frente."
+   },
+   {
+    "t": "Subida e volta",
+    "txt": "Ataque a linha e recupere em sprint."
+   },
+   {
+    "t": "Cruzamento",
+    "txt": "Sirva primeiro e segundo pau com peso certo."
+   },
+   {
+    "t": "1×1 defensivo",
+    "txt": "Negue o giro do ponta."
+   }
+  ],
+  "exercicios": [
+   "Tiros curtos com bola + decisão em 3 toques.",
+   "Subida + cruzamento (15) e volta em sprint."
+  ],
+  "mentalidade": "Olhe o placar e o próximo passe. O Blue Lock não espera. Suas Armas de referência na ficha: Aceleração.",
+  "videogame": {
+   "posicao": "LB / RB",
+   "papel": "Lateral",
+   "atributos": [
+    "Velocidade",
+    "Cruzamento",
+    "Resistência"
+   ]
+  },
+  "bespoke": false
+ },
+ "teru-kitsunezato": {
+  "estilo": "Ponta de desequilíbrio: ganhe a linha ou invada na diagonal para finalizar.",
+  "fundamentos": [
+   {
+    "t": "1×1 de lado",
+    "txt": "Ganhe a linha ou corte para dentro."
+   },
+   {
+    "t": "Decisão no fim",
+    "txt": "Cruzar, finalizar ou fintar — em 1 s."
+   },
+   {
+    "t": "Recuo",
+    "txt": "Na perda, vire o primeiro pressionante."
+   }
+  ],
+  "exercicios": [
+   "1×1 em corredor + finalização ou cruzamento.",
+   "1×1 em corredor + finalização ou cruzamento."
+  ],
+  "mentalidade": "Olhe o placar e o próximo passe. O Blue Lock não espera.",
+  "videogame": {
+   "posicao": "LW / RW",
+   "papel": "Ponta",
+   "atributos": [
+    "Aceleração",
+    "Drible",
+    "Finalização"
+   ]
+  },
+  "bespoke": false
+ },
+ "kaiser": {
+  "estilo": "Kaiser é o imperador: movimentação sem bola, Metavision, Predator Eye e o Kaiser Impact que rasga o ângulo.",
+  "fundamentos": [
+   {
+    "t": "Movimentação sem bola",
+    "txt": "Ataque o espaço nas costas no timing do passe — sumir e reaparecer."
+   },
+   {
+    "t": "Kaiser Impact",
+    "txt": "Batida explosiva com a parte superior do peito do pé; potência sem perder a mira."
+   },
+   {
+    "t": "Metavision + Predator Eye",
+    "txt": "Leia a linha defensiva e o goleiro juntos; finalize no ponto cego."
+   },
+   {
+    "t": "Jogo de ponta de lança",
+    "txt": "Exija a bola na área. Seja o fim da jogada, não o meio."
+   }
+  ],
+  "exercicios": [
+   "Arrancadas em profundidade + finalização em corrida (15).",
+   "Chutes de impacto de 12–18 m em ângulo fechado.",
+   "Ataques ensaiados em que você só toca para finalizar."
+  ],
+  "mentalidade": "Nasça para ser escolhido. O Impacto é seu — o mundo só precisa assistir.",
+  "videogame": {
+   "posicao": "ST / CF",
+   "papel": "Centroavante de elite",
+   "atributos": [
+    "Finalização",
+    "Posicionamento",
+    "Aceleração",
+    "Compostura"
+   ]
+  },
+  "bespoke": true
+ },
+ "abdi": {
+  "estilo": "Lateral de vai-e-volta: estique a linha no ataque e recupere em sprint na perda.",
+  "fundamentos": [
+   {
+    "t": "Subida e volta",
+    "txt": "Ataque a linha e recupere em sprint."
+   },
+   {
+    "t": "Cruzamento",
+    "txt": "Sirva primeiro e segundo pau com peso certo."
+   },
+   {
+    "t": "1×1 defensivo",
+    "txt": "Negue o giro do ponta."
+   }
+  ],
+  "exercicios": [
+   "Subida + cruzamento (15) e volta em sprint.",
+   "Subida + cruzamento (15) e volta em sprint."
+  ],
+  "mentalidade": "Ego com método: cada treino precisa ter um duelo que você escolheu ganhar.",
+  "videogame": {
+   "posicao": "LB / RB",
+   "papel": "Lateral",
+   "atributos": [
+    "Velocidade",
+    "Cruzamento",
+    "Resistência"
+   ]
+  },
+  "bespoke": false
+ },
+ "agi": {
+  "estilo": "Atacante de área e ruptura: peça a bola no espaço e finalize sem pedir licença. Na ficha, suas Armas apontam para Salto vertical, Físico, Alcance longo.",
+  "fundamentos": [
+   {
+    "t": "Corpo e duelo",
+    "txt": "Transforme o atributo físico da ficha em hábito: duelo, salto, resistência ou desarme limpo."
+   },
+   {
+    "t": "Desmarcação",
+    "txt": "Ataque o espaço no timing do passe."
+   },
+   {
+    "t": "Finalização",
+    "txt": "1 ou 2 toques no máximo dentro da área."
+   },
+   {
+    "t": "Pressão na zaga",
+    "txt": "Não deixe o zagueiro sair fácil."
+   }
+  ],
+  "exercicios": [
+   "Circuitos de duelo + segundo lance (rebote ou transição).",
+   "Finalizações de primeira após passe raso (20)."
+  ],
+  "mentalidade": "Roube 1 detalhe de um rival por semana e torne seu. Suas Armas de referência na ficha: Salto vertical, Físico, Alcance longo.",
+  "videogame": {
+   "posicao": "ST / CF",
+   "papel": "Atacante",
+   "atributos": [
+    "Finalização",
+    "Posicionamento",
+    "Compostura"
+   ]
+  },
+  "bespoke": false
+ },
+ "alexis-ness": {
+  "estilo": "Ness é o mago dos tornozelos: drible flexível, passe milimétrico e o elo que alimenta o Imperador.",
+  "fundamentos": [
+   {
+    "t": "Tornozelos flexíveis",
+    "txt": "Toques curtos com mudança brusca de ângulo; a bola cola no peito do pé."
+   },
+   {
+    "t": "Drible em espaço reduzido",
+    "txt": "Vire o corpo sem perder o contato; saia do pressing com 1 toque criativo."
+   },
+   {
+    "t": "Passe de serviço",
+    "txt": "Peso e timing para o atacante finalizar sem ajeitar."
+   },
+   {
+    "t": "Conexão com o finalizador",
+    "txt": "Treine combinações de 2–3 toques até o chute."
+   }
+  ],
+  "exercicios": [
+   "Slalom de tornozelo entre cones baixos + passe final.",
+   "Duplas ofensivas: só valem gols de assistência sua.",
+   "Rondo 3×3+2 com passe entre linhas obrigatório."
+  ],
+  "mentalidade": "Você não precisa do holofote. O passe que acende o Imperador já é o seu gol.",
+  "videogame": {
+   "posicao": "CAM / CM",
+   "papel": "Meia de ligação",
+   "atributos": [
+    "Drible",
+    "Passe",
+    "Agilidade",
+    "Visão"
+   ]
+  },
+  "bespoke": true
+ },
+ "ali": {
+  "estilo": "Volante de equilíbrio: recupere, cubra e dê o primeiro passe que respira o time.",
+  "fundamentos": [
+   {
+    "t": "Cobertura",
+    "txt": "Seja a sobra do zagueiro e do meia."
+   },
+   {
+    "t": "Desarme no tempo",
+    "txt": "Corte a linha de passe antes do bote."
+   },
+   {
+    "t": "Primeiro passe",
+    "txt": "Progressão ou segurança — decida em 1 s."
+   }
+  ],
+  "exercicios": [
+   "Rondo 5×3 recuperando e saindo em 3 toques.",
+   "Rondo 5×3 recuperando e saindo em 3 toques."
+  ],
+  "mentalidade": "Ego com método: cada treino precisa ter um duelo que você escolheu ganhar.",
+  "videogame": {
+   "posicao": "CDM",
+   "papel": "Volante",
+   "atributos": [
+    "Intercepção",
+    "Passe",
+    "Resistência"
+   ]
+  },
+  "bespoke": false
+ },
+ "arthur": {
+  "estilo": "Ponta de desequilíbrio: ganhe a linha ou invada na diagonal para finalizar.",
+  "fundamentos": [
+   {
+    "t": "1×1 de lado",
+    "txt": "Ganhe a linha ou corte para dentro."
+   },
+   {
+    "t": "Decisão no fim",
+    "txt": "Cruzar, finalizar ou fintar — em 1 s."
+   },
+   {
+    "t": "Recuo",
+    "txt": "Na perda, vire o primeiro pressionante."
+   }
+  ],
+  "exercicios": [
+   "1×1 em corredor + finalização ou cruzamento.",
+   "1×1 em corredor + finalização ou cruzamento."
+  ],
+  "mentalidade": "Não espere o lance perfeito — fabrique o seu.",
+  "videogame": {
+   "posicao": "LW / RW",
+   "papel": "Ponta",
+   "atributos": [
+    "Aceleração",
+    "Drible",
+    "Finalização"
+   ]
+  },
+  "bespoke": false
+ },
+ "bachman": {
+  "estilo": "Goleiro de presença: feche ângulos, reaja rápido e devolva o ataque com a mão ou os pés.",
+  "fundamentos": [
+   {
+    "t": "Reação e ângulos",
+    "txt": "Feche o ângulo e treine o segundo rebote."
+   },
+   {
+    "t": "Jogo com os pés",
+    "txt": "Saia jogando sob pressão em 2 toques."
+   },
+   {
+    "t": "Comando",
+    "txt": "Comunique a zaga em bolas aéreas."
+   }
+  ],
+  "exercicios": [
+   "1×1 de goleiro (12 lances) + reposição rápida.",
+   "1×1 de goleiro (12 lances) + reposição rápida."
+  ],
+  "mentalidade": "Olhe o placar e o próximo passe. O Blue Lock não espera.",
+  "videogame": {
+   "posicao": "GK",
+   "papel": "Goleiro",
+   "atributos": [
+    "Reflexos",
+    "Posicionamento",
+    "Jogo com os pés"
+   ]
+  },
+  "bespoke": false
+ },
+ "benedict-grim": {
+  "estilo": "Meia de ligação: receba entre linhas, escolha o tempo e sirva a ruptura. Na ficha, suas Armas apontam para Físico, Drible, Cruzamento.",
+  "fundamentos": [
+   {
+    "t": "Drible alinhado à sua Arma",
+    "txt": "Treine 1×1 com mudança de ritmo e saída clara (passe ou chute)."
+   },
+   {
+    "t": "Passe / cruzamento",
+    "txt": "Peso de bola para o atacante não ajeitar; treine raso e alto."
+   },
+   {
+    "t": "Corpo e duelo",
+    "txt": "Transforme o atributo físico da ficha em hábito: duelo, salto, resistência ou desarme limpo."
+   },
+   {
+    "t": "Entre linhas",
+    "txt": "Receba de costas e vire o jogo."
+   }
+  ],
+  "exercicios": [
+   "Slalom + 1×1 em corredor + finalização.",
+   "Assistências em jogo reduzido (você não finaliza).",
+   "Circuitos de duelo + segundo lance (rebote ou transição)."
+  ],
+  "mentalidade": "Finalize a decisão. Hesitação não entra no Flow. Suas Armas de referência na ficha: Físico, Drible, Cruzamento.",
+  "videogame": {
+   "posicao": "CM / CAM",
+   "papel": "Meia",
+   "atributos": [
+    "Visão",
+    "Passe",
+    "Drible"
+   ]
+  },
+  "bespoke": false
+ },
+ "birkenstock": {
+  "estilo": "Zagueiro de duelo e leitura: ganhe o primeiro contato e saia jogando limpo.",
+  "fundamentos": [
+   {
+    "t": "Duelo",
+    "txt": "Ganhe o primeiro contato e limpe o segundo."
+   },
+   {
+    "t": "Linha",
+    "txt": "Segure a linha de impedimento com o parceiro."
+   },
+   {
+    "t": "Saída",
+    "txt": "Primeiro passe limpo após o corte."
+   }
+  ],
+  "exercicios": [
+   "Linha 4×4 + duelos aéreos.",
+   "Linha 4×4 + duelos aéreos."
+  ],
+  "mentalidade": "Olhe o placar e o próximo passe. O Blue Lock não espera.",
+  "videogame": {
+   "posicao": "CB",
+   "papel": "Zagueiro",
+   "atributos": [
+    "Marcação",
+    "Força",
+    "Visão"
+   ]
+  },
+  "bespoke": false
+ },
+ "bos": {
+  "estilo": "Atacante de área e ruptura: peça a bola no espaço e finalize sem pedir licença.",
+  "fundamentos": [
+   {
+    "t": "Desmarcação",
+    "txt": "Ataque o espaço no timing do passe."
+   },
+   {
+    "t": "Finalização",
+    "txt": "1 ou 2 toques no máximo dentro da área."
+   },
+   {
+    "t": "Pressão na zaga",
+    "txt": "Não deixe o zagueiro sair fácil."
+   }
+  ],
+  "exercicios": [
+   "Finalizações de primeira após passe raso (20).",
+   "Finalizações de primeira após passe raso (20)."
+  ],
+  "mentalidade": "Olhe o placar e o próximo passe. O Blue Lock não espera.",
+  "videogame": {
+   "posicao": "ST / CF",
+   "papel": "Atacante",
+   "atributos": [
+    "Finalização",
+    "Posicionamento",
+    "Compostura"
+   ]
+  },
+  "bespoke": false
+ },
+ "bunny-iglesias": {
+  "estilo": "Atacante de área e ruptura: peça a bola no espaço e finalize sem pedir licença. Na ficha, suas Armas apontam para Impulsão, Voleio aéreo.",
+  "fundamentos": [
+   {
+    "t": "Corpo e duelo",
+    "txt": "Transforme o atributo físico da ficha em hábito: duelo, salto, resistência ou desarme limpo."
+   },
+   {
+    "t": "Desmarcação",
+    "txt": "Ataque o espaço no timing do passe."
+   },
+   {
+    "t": "Finalização",
+    "txt": "1 ou 2 toques no máximo dentro da área."
+   },
+   {
+    "t": "Pressão na zaga",
+    "txt": "Não deixe o zagueiro sair fácil."
+   }
+  ],
+  "exercicios": [
+   "Circuitos de duelo + segundo lance (rebote ou transição).",
+   "Finalizações de primeira após passe raso (20)."
+  ],
+  "mentalidade": "Se cansou, ainda dá para marcar. Resistência também é Arma. Suas Armas de referência na ficha: Impulsão, Voleio aéreo.",
+  "videogame": {
+   "posicao": "ST / CF",
+   "papel": "Atacante",
+   "atributos": [
+    "Finalização",
+    "Posicionamento",
+    "Compostura"
+   ]
+  },
+  "bespoke": false
+ },
+ "busby": {
+  "estilo": "Zagueiro de duelo e leitura: ganhe o primeiro contato e saia jogando limpo.",
+  "fundamentos": [
+   {
+    "t": "Duelo",
+    "txt": "Ganhe o primeiro contato e limpe o segundo."
+   },
+   {
+    "t": "Linha",
+    "txt": "Segure a linha de impedimento com o parceiro."
+   },
+   {
+    "t": "Saída",
+    "txt": "Primeiro passe limpo após o corte."
+   }
+  ],
+  "exercicios": [
+   "Linha 4×4 + duelos aéreos.",
+   "Linha 4×4 + duelos aéreos."
+  ],
+  "mentalidade": "Ego com método: cada treino precisa ter um duelo que você escolheu ganhar.",
+  "videogame": {
+   "posicao": "CB",
+   "papel": "Zagueiro",
+   "atributos": [
+    "Marcação",
+    "Força",
+    "Visão"
+   ]
+  },
+  "bespoke": false
+ },
+ "canali": {
+  "estilo": "Goleiro de presença: feche ângulos, reaja rápido e devolva o ataque com a mão ou os pés.",
+  "fundamentos": [
+   {
+    "t": "Reação e ângulos",
+    "txt": "Feche o ângulo e treine o segundo rebote."
+   },
+   {
+    "t": "Jogo com os pés",
+    "txt": "Saia jogando sob pressão em 2 toques."
+   },
+   {
+    "t": "Comando",
+    "txt": "Comunique a zaga em bolas aéreas."
+   }
+  ],
+  "exercicios": [
+   "1×1 de goleiro (12 lances) + reposição rápida.",
+   "1×1 de goleiro (12 lances) + reposição rápida."
+  ],
+  "mentalidade": "Não espere o lance perfeito — fabrique o seu.",
+  "videogame": {
+   "posicao": "GK",
+   "papel": "Goleiro",
+   "atributos": [
+    "Reflexos",
+    "Posicionamento",
+    "Jogo com os pés"
+   ]
+  },
+  "bespoke": false
+ },
+ "chapa": {
+  "estilo": "Zagueiro de duelo e leitura: ganhe o primeiro contato e saia jogando limpo.",
+  "fundamentos": [
+   {
+    "t": "Duelo",
+    "txt": "Ganhe o primeiro contato e limpe o segundo."
+   },
+   {
+    "t": "Linha",
+    "txt": "Segure a linha de impedimento com o parceiro."
+   },
+   {
+    "t": "Saída",
+    "txt": "Primeiro passe limpo após o corte."
+   }
+  ],
+  "exercicios": [
+   "Linha 4×4 + duelos aéreos.",
+   "Linha 4×4 + duelos aéreos."
+  ],
+  "mentalidade": "Não espere o lance perfeito — fabrique o seu.",
+  "videogame": {
+   "posicao": "CB",
+   "papel": "Zagueiro",
+   "atributos": [
+    "Marcação",
+    "Força",
+    "Visão"
+   ]
+  },
+  "bespoke": false
+ },
+ "charles-chevalier": {
+  "estilo": "Charles é o gremlin criativo: movimentação sem bola, passe, Metavision e o Gremlin Shot fora do script.",
+  "fundamentos": [
+   {
+    "t": "Movimentação sem bola",
+    "txt": "Apareça entre linhas; peça no pé e de costas."
+   },
+   {
+    "t": "Passe filtrado",
+    "txt": "Quebre a última linha com peso milimétrico."
+   },
+   {
+    "t": "Metavision",
+    "txt": "Leia o caos e escolha o passe errado que é o certo."
+   },
+   {
+    "t": "Gremlin Shot",
+    "txt": "Finalize de onde ninguém espera — ângulo fechado, efeito, primeira intenção."
+   }
+  ],
+  "exercicios": [
+   "Recebimentos entre linhas + giro + passe/chute.",
+   "Assistências em jogo 6×6 (você não finaliza).",
+   "Finalizações impossíveis de ângulo fechado (10 por lado)."
+  ],
+  "mentalidade": "Caos com propósito. Se o lance parece bagunça, é porque você já viu o gol.",
+  "videogame": {
+   "posicao": "CAM / CM",
+   "papel": "Meia livre / 10 moderno",
+   "atributos": [
+    "Visão",
+    "Passe",
+    "Drible",
+    "Finalização"
+   ]
+  },
+  "bespoke": true
+ },
+ "damon": {
+  "estilo": "Zagueiro de duelo e leitura: ganhe o primeiro contato e saia jogando limpo.",
+  "fundamentos": [
+   {
+    "t": "Duelo",
+    "txt": "Ganhe o primeiro contato e limpe o segundo."
+   },
+   {
+    "t": "Linha",
+    "txt": "Segure a linha de impedimento com o parceiro."
+   },
+   {
+    "t": "Saída",
+    "txt": "Primeiro passe limpo após o corte."
+   }
+  ],
+  "exercicios": [
+   "Linha 4×4 + duelos aéreos.",
+   "Linha 4×4 + duelos aéreos."
+  ],
+  "mentalidade": "Roube 1 detalhe de um rival por semana e torne seu.",
+  "videogame": {
+   "posicao": "CB",
+   "papel": "Zagueiro",
+   "atributos": [
+    "Marcação",
+    "Força",
+    "Visão"
+   ]
+  },
+  "bespoke": false
+ },
+ "don-lorenzo": {
+  "estilo": "Lorenzo é o canibal da zaga: marca individual, físico bruto e ainda dribla para sair jogando.",
+  "fundamentos": [
+   {
+    "t": "Marcação individual",
+    "txt": "Engula o atacante; negue o giro e o ângulo de chute."
+   },
+   {
+    "t": "Físico",
+    "txt": "Duelos de ombro e antecipação no alto e no baixo."
+   },
+   {
+    "t": "Drible de saída",
+    "txt": "Após recuperar, conduza e quebre a primeira pressão."
+   },
+   {
+    "t": "Leitura de área",
+    "txt": "Cubra o centro; force o rival para fora."
+   }
+  ],
+  "exercicios": [
+   "1×1 defensivo contínuo (você só defende).",
+   "Saídas driblando após desarme em corredor.",
+   "Bolas aéreas e segundas bolas na área."
+  ],
+  "mentalidade": "Devore o ataque rival. A zaga também pode ser egoísta.",
+  "videogame": {
+   "posicao": "CB / CDM",
+   "papel": "Zagueiro canibal",
+   "atributos": [
+    "Marcação",
+    "Força",
+    "Drible",
+    "Agressividade"
+   ]
+  },
+  "bespoke": true
+ },
+ "drago": {
+  "estilo": "Volante de equilíbrio: recupere, cubra e dê o primeiro passe que respira o time.",
+  "fundamentos": [
+   {
+    "t": "Cobertura",
+    "txt": "Seja a sobra do zagueiro e do meia."
+   },
+   {
+    "t": "Desarme no tempo",
+    "txt": "Corte a linha de passe antes do bote."
+   },
+   {
+    "t": "Primeiro passe",
+    "txt": "Progressão ou segurança — decida em 1 s."
+   }
+  ],
+  "exercicios": [
+   "Rondo 5×3 recuperando e saindo em 3 toques.",
+   "Rondo 5×3 recuperando e saindo em 3 toques."
+  ],
+  "mentalidade": "Roube 1 detalhe de um rival por semana e torne seu.",
+  "videogame": {
+   "posicao": "CDM",
+   "papel": "Volante",
+   "atributos": [
+    "Intercepção",
+    "Passe",
+    "Resistência"
+   ]
+  },
+  "bespoke": false
+ },
+ "driver": {
+  "estilo": "Volante de equilíbrio: recupere, cubra e dê o primeiro passe que respira o time.",
+  "fundamentos": [
+   {
+    "t": "Cobertura",
+    "txt": "Seja a sobra do zagueiro e do meia."
+   },
+   {
+    "t": "Desarme no tempo",
+    "txt": "Corte a linha de passe antes do bote."
+   },
+   {
+    "t": "Primeiro passe",
+    "txt": "Progressão ou segurança — decida em 1 s."
+   }
+  ],
+  "exercicios": [
+   "Rondo 5×3 recuperando e saindo em 3 toques.",
+   "Rondo 5×3 recuperando e saindo em 3 toques."
+  ],
+  "mentalidade": "Ego com método: cada treino precisa ter um duelo que você escolheu ganhar.",
+  "videogame": {
+   "posicao": "CDM",
+   "papel": "Volante",
+   "atributos": [
+    "Intercepção",
+    "Passe",
+    "Resistência"
+   ]
+  },
+  "bespoke": false
+ },
+ "erik-gesner": {
+  "estilo": "Meia de ligação: receba entre linhas, escolha o tempo e sirva a ruptura. Na ficha, suas Armas apontam para Domínio (trap), Controle de bola, Drible.",
+  "fundamentos": [
+   {
+    "t": "Drible alinhado à sua Arma",
+    "txt": "Treine 1×1 com mudança de ritmo e saída clara (passe ou chute)."
+   },
+   {
+    "t": "Passe / cruzamento",
+    "txt": "Peso de bola para o atacante não ajeitar; treine raso e alto."
+   },
+   {
+    "t": "Primeiro toque",
+    "txt": "Mate a bola no espaço útil e já oriente o próximo lance."
+   },
+   {
+    "t": "Entre linhas",
+    "txt": "Receba de costas e vire o jogo."
+   }
+  ],
+  "exercicios": [
+   "Slalom + 1×1 em corredor + finalização.",
+   "Assistências em jogo reduzido (você não finaliza).",
+   "Serviços tensos: domínio + condução em 2 toques."
+  ],
+  "mentalidade": "Ego com método: cada treino precisa ter um duelo que você escolheu ganhar. Suas Armas de referência na ficha: Domínio (trap), Controle de bola, Drible.",
+  "videogame": {
+   "posicao": "CM / CAM",
+   "papel": "Meia",
+   "atributos": [
+    "Visão",
+    "Passe",
+    "Drible"
+   ]
+  },
+  "bespoke": false
+ },
+ "espesso": {
+  "estilo": "Volante de equilíbrio: recupere, cubra e dê o primeiro passe que respira o time.",
+  "fundamentos": [
+   {
+    "t": "Cobertura",
+    "txt": "Seja a sobra do zagueiro e do meia."
+   },
+   {
+    "t": "Desarme no tempo",
+    "txt": "Corte a linha de passe antes do bote."
+   },
+   {
+    "t": "Primeiro passe",
+    "txt": "Progressão ou segurança — decida em 1 s."
+   }
+  ],
+  "exercicios": [
+   "Rondo 5×3 recuperando e saindo em 3 toques.",
+   "Rondo 5×3 recuperando e saindo em 3 toques."
+  ],
+  "mentalidade": "Finalize a decisão. Hesitação não entra no Flow.",
+  "videogame": {
+   "posicao": "CDM",
+   "papel": "Volante",
+   "atributos": [
+    "Intercepção",
+    "Passe",
+    "Resistência"
+   ]
+  },
+  "bespoke": false
+ },
+ "gabin": {
+  "estilo": "Zagueiro de duelo e leitura: ganhe o primeiro contato e saia jogando limpo.",
+  "fundamentos": [
+   {
+    "t": "Duelo",
+    "txt": "Ganhe o primeiro contato e limpe o segundo."
+   },
+   {
+    "t": "Linha",
+    "txt": "Segure a linha de impedimento com o parceiro."
+   },
+   {
+    "t": "Saída",
+    "txt": "Primeiro passe limpo após o corte."
+   }
+  ],
+  "exercicios": [
+   "Linha 4×4 + duelos aéreos.",
+   "Linha 4×4 + duelos aéreos."
+  ],
+  "mentalidade": "Não espere o lance perfeito — fabrique o seu.",
+  "videogame": {
+   "posicao": "CB",
+   "papel": "Zagueiro",
+   "atributos": [
+    "Marcação",
+    "Força",
+    "Visão"
+   ]
+  },
+  "bespoke": false
+ },
+ "gomez": {
+  "estilo": "Meia de ligação: receba entre linhas, escolha o tempo e sirva a ruptura.",
+  "fundamentos": [
+   {
+    "t": "Entre linhas",
+    "txt": "Receba de costas e vire o jogo."
+   },
+   {
+    "t": "Último passe",
+    "txt": "Peso para o atacante finalizar sem ajeitar."
+   },
+   {
+    "t": "Pressing",
+    "txt": "Feche o portador em 2 s após a perda."
+   }
+  ],
+  "exercicios": [
+   "Construção 7×7 com só assistências suas valendo.",
+   "Construção 7×7 com só assistências suas valendo."
+  ],
+  "mentalidade": "Finalize a decisão. Hesitação não entra no Flow.",
+  "videogame": {
+   "posicao": "CM / CAM",
+   "papel": "Meia",
+   "atributos": [
+    "Visão",
+    "Passe",
+    "Drible"
+   ]
+  },
+  "bespoke": false
+ },
+ "ignacio-lara": {
+  "estilo": "Ponta de desequilíbrio: ganhe a linha ou invada na diagonal para finalizar.",
+  "fundamentos": [
+   {
+    "t": "1×1 de lado",
+    "txt": "Ganhe a linha ou corte para dentro."
+   },
+   {
+    "t": "Decisão no fim",
+    "txt": "Cruzar, finalizar ou fintar — em 1 s."
+   },
+   {
+    "t": "Recuo",
+    "txt": "Na perda, vire o primeiro pressionante."
+   }
+  ],
+  "exercicios": [
+   "1×1 em corredor + finalização ou cruzamento.",
+   "1×1 em corredor + finalização ou cruzamento."
+  ],
+  "mentalidade": "Se cansou, ainda dá para marcar. Resistência também é Arma.",
+  "videogame": {
+   "posicao": "LW / RW",
+   "papel": "Ponta",
+   "atributos": [
+    "Aceleração",
+    "Drible",
+    "Finalização"
+   ]
+  },
+  "bespoke": false
+ },
+ "igor-schneider": {
+  "estilo": "Meia de ligação: receba entre linhas, escolha o tempo e sirva a ruptura.",
+  "fundamentos": [
+   {
+    "t": "Entre linhas",
+    "txt": "Receba de costas e vire o jogo."
+   },
+   {
+    "t": "Último passe",
+    "txt": "Peso para o atacante finalizar sem ajeitar."
+   },
+   {
+    "t": "Pressing",
+    "txt": "Feche o portador em 2 s após a perda."
+   }
+  ],
+  "exercicios": [
+   "Construção 7×7 com só assistências suas valendo.",
+   "Construção 7×7 com só assistências suas valendo."
+  ],
+  "mentalidade": "Se cansou, ainda dá para marcar. Resistência também é Arma.",
+  "videogame": {
+   "posicao": "CM / CAM",
+   "papel": "Meia",
+   "atributos": [
+    "Visão",
+    "Passe",
+    "Drible"
+   ]
+  },
+  "bespoke": false
+ },
+ "mensah": {
+  "estilo": "Zagueiro de duelo e leitura: ganhe o primeiro contato e saia jogando limpo.",
+  "fundamentos": [
+   {
+    "t": "Duelo",
+    "txt": "Ganhe o primeiro contato e limpe o segundo."
+   },
+   {
+    "t": "Linha",
+    "txt": "Segure a linha de impedimento com o parceiro."
+   },
+   {
+    "t": "Saída",
+    "txt": "Primeiro passe limpo após o corte."
+   }
+  ],
+  "exercicios": [
+   "Linha 4×4 + duelos aéreos.",
+   "Linha 4×4 + duelos aéreos."
+  ],
+  "mentalidade": "Olhe o placar e o próximo passe. O Blue Lock não espera.",
+  "videogame": {
+   "posicao": "CB",
+   "papel": "Zagueiro",
+   "atributos": [
+    "Marcação",
+    "Força",
+    "Visão"
+   ]
+  },
+  "bespoke": false
+ },
+ "michelin": {
+  "estilo": "Zagueiro de duelo e leitura: ganhe o primeiro contato e saia jogando limpo.",
+  "fundamentos": [
+   {
+    "t": "Duelo",
+    "txt": "Ganhe o primeiro contato e limpe o segundo."
+   },
+   {
+    "t": "Linha",
+    "txt": "Segure a linha de impedimento com o parceiro."
+   },
+   {
+    "t": "Saída",
+    "txt": "Primeiro passe limpo após o corte."
+   }
+  ],
+  "exercicios": [
+   "Linha 4×4 + duelos aéreos.",
+   "Linha 4×4 + duelos aéreos."
+  ],
+  "mentalidade": "Olhe o placar e o próximo passe. O Blue Lock não espera.",
+  "videogame": {
+   "posicao": "CB",
+   "papel": "Zagueiro",
+   "atributos": [
+    "Marcação",
+    "Força",
+    "Visão"
+   ]
+  },
+  "bespoke": false
+ },
+ "moro": {
+  "estilo": "Goleiro de presença: feche ângulos, reaja rápido e devolva o ataque com a mão ou os pés.",
+  "fundamentos": [
+   {
+    "t": "Reação e ângulos",
+    "txt": "Feche o ângulo e treine o segundo rebote."
+   },
+   {
+    "t": "Jogo com os pés",
+    "txt": "Saia jogando sob pressão em 2 toques."
+   },
+   {
+    "t": "Comando",
+    "txt": "Comunique a zaga em bolas aéreas."
+   }
+  ],
+  "exercicios": [
+   "1×1 de goleiro (12 lances) + reposição rápida.",
+   "1×1 de goleiro (12 lances) + reposição rápida."
+  ],
+  "mentalidade": "Olhe o placar e o próximo passe. O Blue Lock não espera.",
+  "videogame": {
+   "posicao": "GK",
+   "papel": "Goleiro",
+   "atributos": [
+    "Reflexos",
+    "Posicionamento",
+    "Jogo com os pés"
+   ]
+  },
+  "bespoke": false
+ },
+ "ndiaye": {
+  "estilo": "Lateral de vai-e-volta: estique a linha no ataque e recupere em sprint na perda.",
+  "fundamentos": [
+   {
+    "t": "Subida e volta",
+    "txt": "Ataque a linha e recupere em sprint."
+   },
+   {
+    "t": "Cruzamento",
+    "txt": "Sirva primeiro e segundo pau com peso certo."
+   },
+   {
+    "t": "1×1 defensivo",
+    "txt": "Negue o giro do ponta."
+   }
+  ],
+  "exercicios": [
+   "Subida + cruzamento (15) e volta em sprint.",
+   "Subida + cruzamento (15) e volta em sprint."
+  ],
+  "mentalidade": "Ego com método: cada treino precisa ter um duelo que você escolheu ganhar.",
+  "videogame": {
+   "posicao": "LB / RB",
+   "papel": "Lateral",
+   "atributos": [
+    "Velocidade",
+    "Cruzamento",
+    "Resistência"
+   ]
+  },
+  "bespoke": false
+ },
+ "peron": {
+  "estilo": "Volante de equilíbrio: recupere, cubra e dê o primeiro passe que respira o time.",
+  "fundamentos": [
+   {
+    "t": "Cobertura",
+    "txt": "Seja a sobra do zagueiro e do meia."
+   },
+   {
+    "t": "Desarme no tempo",
+    "txt": "Corte a linha de passe antes do bote."
+   },
+   {
+    "t": "Primeiro passe",
+    "txt": "Progressão ou segurança — decida em 1 s."
+   }
+  ],
+  "exercicios": [
+   "Rondo 5×3 recuperando e saindo em 3 toques.",
+   "Rondo 5×3 recuperando e saindo em 3 toques."
+  ],
+  "mentalidade": "Ego com método: cada treino precisa ter um duelo que você escolheu ganhar.",
+  "videogame": {
+   "posicao": "CDM",
+   "papel": "Volante",
+   "atributos": [
+    "Intercepção",
+    "Passe",
+    "Resistência"
+   ]
+  },
+  "bespoke": false
+ },
+ "picasso": {
+  "estilo": "Meia de ligação: receba entre linhas, escolha o tempo e sirva a ruptura.",
+  "fundamentos": [
+   {
+    "t": "Entre linhas",
+    "txt": "Receba de costas e vire o jogo."
+   },
+   {
+    "t": "Último passe",
+    "txt": "Peso para o atacante finalizar sem ajeitar."
+   },
+   {
+    "t": "Pressing",
+    "txt": "Feche o portador em 2 s após a perda."
+   }
+  ],
+  "exercicios": [
+   "Construção 7×7 com só assistências suas valendo.",
+   "Construção 7×7 com só assistências suas valendo."
+  ],
+  "mentalidade": "Se cansou, ainda dá para marcar. Resistência também é Arma.",
+  "videogame": {
+   "posicao": "CM / CAM",
+   "papel": "Meia",
+   "atributos": [
+    "Visão",
+    "Passe",
+    "Drible"
+   ]
+  },
+  "bespoke": false
+ },
+ "renoir": {
+  "estilo": "Goleiro de presença: feche ângulos, reaja rápido e devolva o ataque com a mão ou os pés. Na ficha, suas Armas apontam para Reação.",
+  "fundamentos": [
+   {
+    "t": "Corpo e duelo",
+    "txt": "Transforme o atributo físico da ficha em hábito: duelo, salto, resistência ou desarme limpo."
+   },
+   {
+    "t": "Reação e ângulos",
+    "txt": "Feche o ângulo e treine o segundo rebote."
+   },
+   {
+    "t": "Jogo com os pés",
+    "txt": "Saia jogando sob pressão em 2 toques."
+   },
+   {
+    "t": "Comando",
+    "txt": "Comunique a zaga em bolas aéreas."
+   }
+  ],
+  "exercicios": [
+   "Circuitos de duelo + segundo lance (rebote ou transição).",
+   "1×1 de goleiro (12 lances) + reposição rápida."
+  ],
+  "mentalidade": "Não espere o lance perfeito — fabrique o seu. Suas Armas de referência na ficha: Reação.",
+  "videogame": {
+   "posicao": "GK",
+   "papel": "Goleiro",
+   "atributos": [
+    "Reflexos",
+    "Posicionamento",
+    "Jogo com os pés"
+   ]
+  },
+  "bespoke": false
+ },
+ "rico": {
+  "estilo": "Lateral de vai-e-volta: estique a linha no ataque e recupere em sprint na perda. Na ficha, suas Armas apontam para Aceleração.",
+  "fundamentos": [
+   {
+    "t": "Explosão com bola",
+    "txt": "0–10 m com bola colada; o primeiro toque já ganha a frente."
+   },
+   {
+    "t": "Subida e volta",
+    "txt": "Ataque a linha e recupere em sprint."
+   },
+   {
+    "t": "Cruzamento",
+    "txt": "Sirva primeiro e segundo pau com peso certo."
+   },
+   {
+    "t": "1×1 defensivo",
+    "txt": "Negue o giro do ponta."
+   }
+  ],
+  "exercicios": [
+   "Tiros curtos com bola + decisão em 3 toques.",
+   "Subida + cruzamento (15) e volta em sprint."
+  ],
+  "mentalidade": "Ego com método: cada treino precisa ter um duelo que você escolheu ganhar. Suas Armas de referência na ficha: Aceleração.",
+  "videogame": {
+   "posicao": "LB / RB",
+   "papel": "Lateral",
+   "atributos": [
+    "Velocidade",
+    "Cruzamento",
+    "Resistência"
+   ]
+  },
+  "bespoke": false
+ },
+ "rooke": {
+  "estilo": "Goleiro de presença: feche ângulos, reaja rápido e devolva o ataque com a mão ou os pés. Na ficha, suas Armas apontam para Reação.",
+  "fundamentos": [
+   {
+    "t": "Corpo e duelo",
+    "txt": "Transforme o atributo físico da ficha em hábito: duelo, salto, resistência ou desarme limpo."
+   },
+   {
+    "t": "Reação e ângulos",
+    "txt": "Feche o ângulo e treine o segundo rebote."
+   },
+   {
+    "t": "Jogo com os pés",
+    "txt": "Saia jogando sob pressão em 2 toques."
+   },
+   {
+    "t": "Comando",
+    "txt": "Comunique a zaga em bolas aéreas."
+   }
+  ],
+  "exercicios": [
+   "Circuitos de duelo + segundo lance (rebote ou transição).",
+   "1×1 de goleiro (12 lances) + reposição rápida."
+  ],
+  "mentalidade": "Ego com método: cada treino precisa ter um duelo que você escolheu ganhar. Suas Armas de referência na ficha: Reação.",
+  "videogame": {
+   "posicao": "GK",
+   "papel": "Goleiro",
+   "atributos": [
+    "Reflexos",
+    "Posicionamento",
+    "Jogo com os pés"
+   ]
+  },
+  "bespoke": false
+ },
+ "ruiz": {
+  "estilo": "Zagueiro de duelo e leitura: ganhe o primeiro contato e saia jogando limpo.",
+  "fundamentos": [
+   {
+    "t": "Duelo",
+    "txt": "Ganhe o primeiro contato e limpe o segundo."
+   },
+   {
+    "t": "Linha",
+    "txt": "Segure a linha de impedimento com o parceiro."
+   },
+   {
+    "t": "Saída",
+    "txt": "Primeiro passe limpo após o corte."
+   }
+  ],
+  "exercicios": [
+   "Linha 4×4 + duelos aéreos.",
+   "Linha 4×4 + duelos aéreos."
+  ],
+  "mentalidade": "Roube 1 detalhe de um rival por semana e torne seu.",
+  "videogame": {
+   "posicao": "CB",
+   "papel": "Zagueiro",
+   "atributos": [
+    "Marcação",
+    "Força",
+    "Visão"
+   ]
+  },
+  "bespoke": false
+ },
+ "so": {
+  "estilo": "Lateral de vai-e-volta: estique a linha no ataque e recupere em sprint na perda.",
+  "fundamentos": [
+   {
+    "t": "Subida e volta",
+    "txt": "Ataque a linha e recupere em sprint."
+   },
+   {
+    "t": "Cruzamento",
+    "txt": "Sirva primeiro e segundo pau com peso certo."
+   },
+   {
+    "t": "1×1 defensivo",
+    "txt": "Negue o giro do ponta."
+   }
+  ],
+  "exercicios": [
+   "Subida + cruzamento (15) e volta em sprint.",
+   "Subida + cruzamento (15) e volta em sprint."
+  ],
+  "mentalidade": "Roube 1 detalhe de um rival por semana e torne seu.",
+  "videogame": {
+   "posicao": "LB / RB",
+   "papel": "Lateral",
+   "atributos": [
+    "Velocidade",
+    "Cruzamento",
+    "Resistência"
+   ]
+  },
+  "bespoke": false
+ },
+ "swift": {
+  "estilo": "Ponta de desequilíbrio: ganhe a linha ou invada na diagonal para finalizar.",
+  "fundamentos": [
+   {
+    "t": "1×1 de lado",
+    "txt": "Ganhe a linha ou corte para dentro."
+   },
+   {
+    "t": "Decisão no fim",
+    "txt": "Cruzar, finalizar ou fintar — em 1 s."
+   },
+   {
+    "t": "Recuo",
+    "txt": "Na perda, vire o primeiro pressionante."
+   }
+  ],
+  "exercicios": [
+   "1×1 em corredor + finalização ou cruzamento.",
+   "1×1 em corredor + finalização ou cruzamento."
+  ],
+  "mentalidade": "Roube 1 detalhe de um rival por semana e torne seu.",
+  "videogame": {
+   "posicao": "LW / RW",
+   "papel": "Ponta",
+   "atributos": [
+    "Aceleração",
+    "Drible",
+    "Finalização"
+   ]
+  },
+  "bespoke": false
+ },
+ "theo-sachs": {
+  "estilo": "Lateral de vai-e-volta: estique a linha no ataque e recupere em sprint na perda.",
+  "fundamentos": [
+   {
+    "t": "Subida e volta",
+    "txt": "Ataque a linha e recupere em sprint."
+   },
+   {
+    "t": "Cruzamento",
+    "txt": "Sirva primeiro e segundo pau com peso certo."
+   },
+   {
+    "t": "1×1 defensivo",
+    "txt": "Negue o giro do ponta."
+   }
+  ],
+  "exercicios": [
+   "Subida + cruzamento (15) e volta em sprint.",
+   "Subida + cruzamento (15) e volta em sprint."
+  ],
+  "mentalidade": "Olhe o placar e o próximo passe. O Blue Lock não espera.",
+  "videogame": {
+   "posicao": "LB / RB",
+   "papel": "Lateral",
+   "atributos": [
+    "Velocidade",
+    "Cruzamento",
+    "Resistência"
+   ]
+  },
+  "bespoke": false
+ },
+ "urzaiz": {
+  "estilo": "Zagueiro de duelo e leitura: ganhe o primeiro contato e saia jogando limpo.",
+  "fundamentos": [
+   {
+    "t": "Duelo",
+    "txt": "Ganhe o primeiro contato e limpe o segundo."
+   },
+   {
+    "t": "Linha",
+    "txt": "Segure a linha de impedimento com o parceiro."
+   },
+   {
+    "t": "Saída",
+    "txt": "Primeiro passe limpo após o corte."
+   }
+  ],
+  "exercicios": [
+   "Linha 4×4 + duelos aéreos.",
+   "Linha 4×4 + duelos aéreos."
+  ],
+  "mentalidade": "Roube 1 detalhe de um rival por semana e torne seu.",
+  "videogame": {
+   "posicao": "CB",
+   "papel": "Zagueiro",
+   "atributos": [
+    "Marcação",
+    "Força",
+    "Visão"
+   ]
+  },
+  "bespoke": false
+ },
+ "young": {
+  "estilo": "Zagueiro de duelo e leitura: ganhe o primeiro contato e saia jogando limpo.",
+  "fundamentos": [
+   {
+    "t": "Duelo",
+    "txt": "Ganhe o primeiro contato e limpe o segundo."
+   },
+   {
+    "t": "Linha",
+    "txt": "Segure a linha de impedimento com o parceiro."
+   },
+   {
+    "t": "Saída",
+    "txt": "Primeiro passe limpo após o corte."
+   }
+  ],
+  "exercicios": [
+   "Linha 4×4 + duelos aéreos.",
+   "Linha 4×4 + duelos aéreos."
+  ],
+  "mentalidade": "Finalize a decisão. Hesitação não entra no Flow.",
+  "videogame": {
+   "posicao": "CB",
+   "papel": "Zagueiro",
+   "atributos": [
+    "Marcação",
+    "Força",
+    "Visão"
+   ]
+  },
+  "bespoke": false
+ },
+ "achanpong": {
+  "estilo": "Meia de ligação: receba entre linhas, escolha o tempo e sirva a ruptura. Na ficha, suas Armas apontam para Passe.",
+  "fundamentos": [
+   {
+    "t": "Passe / cruzamento",
+    "txt": "Peso de bola para o atacante não ajeitar; treine raso e alto."
+   },
+   {
+    "t": "Entre linhas",
+    "txt": "Receba de costas e vire o jogo."
+   },
+   {
+    "t": "Último passe",
+    "txt": "Peso para o atacante finalizar sem ajeitar."
+   },
+   {
+    "t": "Pressing",
+    "txt": "Feche o portador em 2 s após a perda."
+   }
+  ],
+  "exercicios": [
+   "Assistências em jogo reduzido (você não finaliza).",
+   "Construção 7×7 com só assistências suas valendo."
+  ],
+  "mentalidade": "Se cansou, ainda dá para marcar. Resistência também é Arma. Suas Armas de referência na ficha: Passe.",
+  "videogame": {
+   "posicao": "CM / CAM",
+   "papel": "Meia",
+   "atributos": [
+    "Visão",
+    "Passe",
+    "Drible"
+   ]
+  },
+  "bespoke": false
+ },
+ "adam-blake": {
+  "estilo": "Atacante de área e ruptura: peça a bola no espaço e finalize sem pedir licença. Na ficha, suas Armas apontam para Físico extremo.",
+  "fundamentos": [
+   {
+    "t": "Corpo e duelo",
+    "txt": "Transforme o atributo físico da ficha em hábito: duelo, salto, resistência ou desarme limpo."
+   },
+   {
+    "t": "Desmarcação",
+    "txt": "Ataque o espaço no timing do passe."
+   },
+   {
+    "t": "Finalização",
+    "txt": "1 ou 2 toques no máximo dentro da área."
+   },
+   {
+    "t": "Pressão na zaga",
+    "txt": "Não deixe o zagueiro sair fácil."
+   }
+  ],
+  "exercicios": [
+   "Circuitos de duelo + segundo lance (rebote ou transição).",
+   "Finalizações de primeira após passe raso (20)."
+  ],
+  "mentalidade": "Ego com método: cada treino precisa ter um duelo que você escolheu ganhar. Suas Armas de referência na ficha: Físico extremo.",
+  "videogame": {
+   "posicao": "ST / CF",
+   "papel": "Atacante",
+   "atributos": [
+    "Finalização",
+    "Posicionamento",
+    "Compostura"
+   ]
+  },
+  "bespoke": false
+ },
+ "agbim": {
+  "estilo": "Goleiro de presença: feche ângulos, reaja rápido e devolva o ataque com a mão ou os pés.",
+  "fundamentos": [
+   {
+    "t": "Reação e ângulos",
+    "txt": "Feche o ângulo e treine o segundo rebote."
+   },
+   {
+    "t": "Jogo com os pés",
+    "txt": "Saia jogando sob pressão em 2 toques."
+   },
+   {
+    "t": "Comando",
+    "txt": "Comunique a zaga em bolas aéreas."
+   }
+  ],
+  "exercicios": [
+   "1×1 de goleiro (12 lances) + reposição rápida.",
+   "1×1 de goleiro (12 lances) + reposição rápida."
+  ],
+  "mentalidade": "Ego com método: cada treino precisa ter um duelo que você escolheu ganhar.",
+  "videogame": {
+   "posicao": "GK",
+   "papel": "Goleiro",
+   "atributos": [
+    "Reflexos",
+    "Posicionamento",
+    "Jogo com os pés"
+   ]
+  },
+  "bespoke": false
+ },
+ "bats": {
+  "estilo": "Volante de equilíbrio: recupere, cubra e dê o primeiro passe que respira o time. Na ficha, suas Armas apontam para Físico.",
+  "fundamentos": [
+   {
+    "t": "Corpo e duelo",
+    "txt": "Transforme o atributo físico da ficha em hábito: duelo, salto, resistência ou desarme limpo."
+   },
+   {
+    "t": "Cobertura",
+    "txt": "Seja a sobra do zagueiro e do meia."
+   },
+   {
+    "t": "Desarme no tempo",
+    "txt": "Corte a linha de passe antes do bote."
+   },
+   {
+    "t": "Primeiro passe",
+    "txt": "Progressão ou segurança — decida em 1 s."
+   }
+  ],
+  "exercicios": [
+   "Circuitos de duelo + segundo lance (rebote ou transição).",
+   "Rondo 5×3 recuperando e saindo em 3 toques."
+  ],
+  "mentalidade": "Se cansou, ainda dá para marcar. Resistência também é Arma. Suas Armas de referência na ficha: Físico.",
+  "videogame": {
+   "posicao": "CDM",
+   "papel": "Volante",
+   "atributos": [
+    "Intercepção",
+    "Passe",
+    "Resistência"
+   ]
+  },
+  "bespoke": false
+ },
+ "bello": {
+  "estilo": "Meia de ligação: receba entre linhas, escolha o tempo e sirva a ruptura. Na ficha, suas Armas apontam para Drible.",
+  "fundamentos": [
+   {
+    "t": "Drible alinhado à sua Arma",
+    "txt": "Treine 1×1 com mudança de ritmo e saída clara (passe ou chute)."
+   },
+   {
+    "t": "Entre linhas",
+    "txt": "Receba de costas e vire o jogo."
+   },
+   {
+    "t": "Último passe",
+    "txt": "Peso para o atacante finalizar sem ajeitar."
+   },
+   {
+    "t": "Pressing",
+    "txt": "Feche o portador em 2 s após a perda."
+   }
+  ],
+  "exercicios": [
+   "Slalom + 1×1 em corredor + finalização.",
+   "Construção 7×7 com só assistências suas valendo."
+  ],
+  "mentalidade": "Se cansou, ainda dá para marcar. Resistência também é Arma. Suas Armas de referência na ficha: Drible.",
+  "videogame": {
+   "posicao": "CM / CAM",
+   "papel": "Meia",
+   "atributos": [
+    "Visão",
+    "Passe",
+    "Drible"
+   ]
+  },
+  "bespoke": false
+ },
+ "camus": {
+  "estilo": "Ponta de desequilíbrio: ganhe a linha ou invada na diagonal para finalizar. Na ficha, suas Armas apontam para Velocidade.",
+  "fundamentos": [
+   {
+    "t": "Explosão com bola",
+    "txt": "0–10 m com bola colada; o primeiro toque já ganha a frente."
+   },
+   {
+    "t": "1×1 de lado",
+    "txt": "Ganhe a linha ou corte para dentro."
+   },
+   {
+    "t": "Decisão no fim",
+    "txt": "Cruzar, finalizar ou fintar — em 1 s."
+   },
+   {
+    "t": "Recuo",
+    "txt": "Na perda, vire o primeiro pressionante."
+   }
+  ],
+  "exercicios": [
+   "Tiros curtos com bola + decisão em 3 toques.",
+   "1×1 em corredor + finalização ou cruzamento."
+  ],
+  "mentalidade": "Roube 1 detalhe de um rival por semana e torne seu. Suas Armas de referência na ficha: Velocidade.",
+  "videogame": {
+   "posicao": "LW / RW",
+   "papel": "Ponta",
+   "atributos": [
+    "Aceleração",
+    "Drible",
+    "Finalização"
+   ]
+  },
+  "bespoke": false
+ },
+ "childs": {
+  "estilo": "Atacante de área e ruptura: peça a bola no espaço e finalize sem pedir licença. Na ficha, suas Armas apontam para Salto vertical.",
+  "fundamentos": [
+   {
+    "t": "Corpo e duelo",
+    "txt": "Transforme o atributo físico da ficha em hábito: duelo, salto, resistência ou desarme limpo."
+   },
+   {
+    "t": "Desmarcação",
+    "txt": "Ataque o espaço no timing do passe."
+   },
+   {
+    "t": "Finalização",
+    "txt": "1 ou 2 toques no máximo dentro da área."
+   },
+   {
+    "t": "Pressão na zaga",
+    "txt": "Não deixe o zagueiro sair fácil."
+   }
+  ],
+  "exercicios": [
+   "Circuitos de duelo + segundo lance (rebote ou transição).",
+   "Finalizações de primeira após passe raso (20)."
+  ],
+  "mentalidade": "Ego com método: cada treino precisa ter um duelo que você escolheu ganhar. Suas Armas de referência na ficha: Salto vertical.",
+  "videogame": {
+   "posicao": "ST / CF",
+   "papel": "Atacante",
+   "atributos": [
+    "Finalização",
+    "Posicionamento",
+    "Compostura"
+   ]
+  },
+  "bespoke": false
+ },
+ "dada-silva": {
+  "estilo": "Atacante de área e ruptura: peça a bola no espaço e finalize sem pedir licença. Na ficha, suas Armas apontam para Físico extremo, Impulsão, Cabeceio.",
+  "fundamentos": [
+   {
+    "t": "Corpo e duelo",
+    "txt": "Transforme o atributo físico da ficha em hábito: duelo, salto, resistência ou desarme limpo."
+   },
+   {
+    "t": "Desmarcação",
+    "txt": "Ataque o espaço no timing do passe."
+   },
+   {
+    "t": "Finalização",
+    "txt": "1 ou 2 toques no máximo dentro da área."
+   },
+   {
+    "t": "Pressão na zaga",
+    "txt": "Não deixe o zagueiro sair fácil."
+   }
+  ],
+  "exercicios": [
+   "Circuitos de duelo + segundo lance (rebote ou transição).",
+   "Finalizações de primeira após passe raso (20)."
+  ],
+  "mentalidade": "Se cansou, ainda dá para marcar. Resistência também é Arma. Suas Armas de referência na ficha: Físico extremo, Impulsão, Cabeceio.",
+  "videogame": {
+   "posicao": "ST / CF",
+   "papel": "Atacante",
+   "atributos": [
+    "Finalização",
+    "Posicionamento",
+    "Compostura"
+   ]
+  },
+  "bespoke": false
+ },
+ "delon": {
+  "estilo": "Lateral de vai-e-volta: estique a linha no ataque e recupere em sprint na perda.",
+  "fundamentos": [
+   {
+    "t": "Subida e volta",
+    "txt": "Ataque a linha e recupere em sprint."
+   },
+   {
+    "t": "Cruzamento",
+    "txt": "Sirva primeiro e segundo pau com peso certo."
+   },
+   {
+    "t": "1×1 defensivo",
+    "txt": "Negue o giro do ponta."
+   }
+  ],
+  "exercicios": [
+   "Subida + cruzamento (15) e volta em sprint.",
+   "Subida + cruzamento (15) e volta em sprint."
+  ],
+  "mentalidade": "Roube 1 detalhe de um rival por semana e torne seu.",
+  "videogame": {
+   "posicao": "LB / RB",
+   "papel": "Lateral",
+   "atributos": [
+    "Velocidade",
+    "Cruzamento",
+    "Resistência"
+   ]
+  },
+  "bespoke": false
+ },
+ "ekpo": {
+  "estilo": "Zagueiro de duelo e leitura: ganhe o primeiro contato e saia jogando limpo.",
+  "fundamentos": [
+   {
+    "t": "Duelo",
+    "txt": "Ganhe o primeiro contato e limpe o segundo."
+   },
+   {
+    "t": "Linha",
+    "txt": "Segure a linha de impedimento com o parceiro."
+   },
+   {
+    "t": "Saída",
+    "txt": "Primeiro passe limpo após o corte."
+   }
+  ],
+  "exercicios": [
+   "Linha 4×4 + duelos aéreos.",
+   "Linha 4×4 + duelos aéreos."
+  ],
+  "mentalidade": "Ego com método: cada treino precisa ter um duelo que você escolheu ganhar.",
+  "videogame": {
+   "posicao": "CB",
+   "papel": "Zagueiro",
+   "atributos": [
+    "Marcação",
+    "Força",
+    "Visão"
+   ]
+  },
+  "bespoke": false
+ },
+ "ezekiel": {
+  "estilo": "Volante de equilíbrio: recupere, cubra e dê o primeiro passe que respira o time.",
+  "fundamentos": [
+   {
+    "t": "Cobertura",
+    "txt": "Seja a sobra do zagueiro e do meia."
+   },
+   {
+    "t": "Desarme no tempo",
+    "txt": "Corte a linha de passe antes do bote."
+   },
+   {
+    "t": "Primeiro passe",
+    "txt": "Progressão ou segurança — decida em 1 s."
+   }
+  ],
+  "exercicios": [
+   "Rondo 5×3 recuperando e saindo em 3 toques.",
+   "Rondo 5×3 recuperando e saindo em 3 toques."
+  ],
+  "mentalidade": "Finalize a decisão. Hesitação não entra no Flow.",
+  "videogame": {
+   "posicao": "CDM",
+   "papel": "Volante",
+   "atributos": [
+    "Intercepção",
+    "Passe",
+    "Resistência"
+   ]
+  },
+  "bespoke": false
+ },
+ "gabriel": {
+  "estilo": "Atacante de área e ruptura: peça a bola no espaço e finalize sem pedir licença.",
+  "fundamentos": [
+   {
+    "t": "Desmarcação",
+    "txt": "Ataque o espaço no timing do passe."
+   },
+   {
+    "t": "Finalização",
+    "txt": "1 ou 2 toques no máximo dentro da área."
+   },
+   {
+    "t": "Pressão na zaga",
+    "txt": "Não deixe o zagueiro sair fácil."
+   }
+  ],
+  "exercicios": [
+   "Finalizações de primeira após passe raso (20).",
+   "Finalizações de primeira após passe raso (20)."
+  ],
+  "mentalidade": "Não espere o lance perfeito — fabrique o seu.",
+  "videogame": {
+   "posicao": "ST / CF",
+   "papel": "Atacante",
+   "atributos": [
+    "Finalização",
+    "Posicionamento",
+    "Compostura"
+   ]
+  },
+  "bespoke": false
+ },
+ "godwin-kuso": {
+  "estilo": "Meia de ligação: receba entre linhas, escolha o tempo e sirva a ruptura. Na ficha, suas Armas apontam para Drible, Passe.",
+  "fundamentos": [
+   {
+    "t": "Drible alinhado à sua Arma",
+    "txt": "Treine 1×1 com mudança de ritmo e saída clara (passe ou chute)."
+   },
+   {
+    "t": "Passe / cruzamento",
+    "txt": "Peso de bola para o atacante não ajeitar; treine raso e alto."
+   },
+   {
+    "t": "Entre linhas",
+    "txt": "Receba de costas e vire o jogo."
+   },
+   {
+    "t": "Último passe",
+    "txt": "Peso para o atacante finalizar sem ajeitar."
+   }
+  ],
+  "exercicios": [
+   "Slalom + 1×1 em corredor + finalização.",
+   "Assistências em jogo reduzido (você não finaliza)."
+  ],
+  "mentalidade": "Se cansou, ainda dá para marcar. Resistência também é Arma. Suas Armas de referência na ficha: Drible, Passe.",
+  "videogame": {
+   "posicao": "CM / CAM",
+   "papel": "Meia",
+   "atributos": [
+    "Visão",
+    "Passe",
+    "Drible"
+   ]
+  },
+  "bespoke": false
+ },
+ "goodman": {
+  "estilo": "Zagueiro de duelo e leitura: ganhe o primeiro contato e saia jogando limpo. Na ficha, suas Armas apontam para Bloqueio.",
+  "fundamentos": [
+   {
+    "t": "Duelo",
+    "txt": "Ganhe o primeiro contato e limpe o segundo."
+   },
+   {
+    "t": "Linha",
+    "txt": "Segure a linha de impedimento com o parceiro."
+   },
+   {
+    "t": "Saída",
+    "txt": "Primeiro passe limpo após o corte."
+   }
+  ],
+  "exercicios": [
+   "Linha 4×4 + duelos aéreos.",
+   "Linha 4×4 + duelos aéreos."
+  ],
+  "mentalidade": "Finalize a decisão. Hesitação não entra no Flow. Suas Armas de referência na ficha: Bloqueio.",
+  "videogame": {
+   "posicao": "CB",
+   "papel": "Zagueiro",
+   "atributos": [
+    "Marcação",
+    "Força",
+    "Visão"
+   ]
+  },
+  "bespoke": false
+ },
+ "hermes": {
+  "estilo": "Zagueiro de duelo e leitura: ganhe o primeiro contato e saia jogando limpo.",
+  "fundamentos": [
+   {
+    "t": "Duelo",
+    "txt": "Ganhe o primeiro contato e limpe o segundo."
+   },
+   {
+    "t": "Linha",
+    "txt": "Segure a linha de impedimento com o parceiro."
+   },
+   {
+    "t": "Saída",
+    "txt": "Primeiro passe limpo após o corte."
+   }
+  ],
+  "exercicios": [
+   "Linha 4×4 + duelos aéreos.",
+   "Linha 4×4 + duelos aéreos."
+  ],
+  "mentalidade": "Se cansou, ainda dá para marcar. Resistência também é Arma.",
+  "videogame": {
+   "posicao": "CB",
+   "papel": "Zagueiro",
+   "atributos": [
+    "Marcação",
+    "Força",
+    "Visão"
+   ]
+  },
+  "bespoke": false
+ },
+ "innocent-onazi": {
+  "estilo": "Atacante de área e ruptura: peça a bola no espaço e finalize sem pedir licença. Na ficha, suas Armas apontam para Impulsão, Mobilidade, Predator Eye.",
+  "fundamentos": [
+   {
+    "t": "Predator Eye",
+    "txt": "No último instante, leia o goleiro e mude o canto se ele adivinhar."
+   },
+   {
+    "t": "Corpo e duelo",
+    "txt": "Transforme o atributo físico da ficha em hábito: duelo, salto, resistência ou desarme limpo."
+   },
+   {
+    "t": "Flow",
+    "txt": "Quando o lance cola, acelere a decisão: menos freio, mais intenção de gol."
+   },
+   {
+    "t": "Desmarcação",
+    "txt": "Ataque o espaço no timing do passe."
+   }
+  ],
+  "exercicios": [
+   "Finalizações com goleiro mostrando um lado de propósito.",
+   "Circuitos de duelo + segundo lance (rebote ou transição).",
+   "Sequências livres de 45 s em que você não pode repetir o mesmo gesto."
+  ],
+  "mentalidade": "Roube 1 detalhe de um rival por semana e torne seu. Suas Armas de referência na ficha: Impulsão, Mobilidade, Predator Eye.",
+  "videogame": {
+   "posicao": "ST / CF",
+   "papel": "Atacante",
+   "atributos": [
+    "Finalização",
+    "Posicionamento",
+    "Compostura"
+   ]
+  },
+  "bespoke": false
+ },
+ "kaita": {
+  "estilo": "Lateral de vai-e-volta: estique a linha no ataque e recupere em sprint na perda.",
+  "fundamentos": [
+   {
+    "t": "Subida e volta",
+    "txt": "Ataque a linha e recupere em sprint."
+   },
+   {
+    "t": "Cruzamento",
+    "txt": "Sirva primeiro e segundo pau com peso certo."
+   },
+   {
+    "t": "1×1 defensivo",
+    "txt": "Negue o giro do ponta."
+   }
+  ],
+  "exercicios": [
+   "Subida + cruzamento (15) e volta em sprint.",
+   "Subida + cruzamento (15) e volta em sprint."
+  ],
+  "mentalidade": "Ego com método: cada treino precisa ter um duelo que você escolheu ganhar.",
+  "videogame": {
+   "posicao": "LB / RB",
+   "papel": "Lateral",
+   "atributos": [
+    "Velocidade",
+    "Cruzamento",
+    "Resistência"
+   ]
+  },
+  "bespoke": false
+ },
+ "leonardo-luna": {
+  "estilo": "Atacante de área e ruptura: peça a bola no espaço e finalize sem pedir licença. Na ficha, suas Armas apontam para Drible, Destreza, Adaptabilidade.",
+  "fundamentos": [
+   {
+    "t": "Drible alinhado à sua Arma",
+    "txt": "Treine 1×1 com mudança de ritmo e saída clara (passe ou chute)."
+   },
+   {
+    "t": "Primeiro toque",
+    "txt": "Mate a bola no espaço útil e já oriente o próximo lance."
+   },
+   {
+    "t": "Desmarcação",
+    "txt": "Ataque o espaço no timing do passe."
+   },
+   {
+    "t": "Finalização",
+    "txt": "1 ou 2 toques no máximo dentro da área."
+   }
+  ],
+  "exercicios": [
+   "Slalom + 1×1 em corredor + finalização.",
+   "Serviços tensos: domínio + condução em 2 toques."
+  ],
+  "mentalidade": "Se cansou, ainda dá para marcar. Resistência também é Arma. Suas Armas de referência na ficha: Drible, Destreza, Adaptabilidade.",
+  "videogame": {
+   "posicao": "ST / CF",
+   "papel": "Atacante",
+   "atributos": [
+    "Finalização",
+    "Posicionamento",
+    "Compostura"
+   ]
+  },
+  "bespoke": false
+ },
+ "leyden": {
+  "estilo": "Ponta de desequilíbrio: ganhe a linha ou invada na diagonal para finalizar. Na ficha, suas Armas apontam para Velocidade.",
+  "fundamentos": [
+   {
+    "t": "Explosão com bola",
+    "txt": "0–10 m com bola colada; o primeiro toque já ganha a frente."
+   },
+   {
+    "t": "1×1 de lado",
+    "txt": "Ganhe a linha ou corte para dentro."
+   },
+   {
+    "t": "Decisão no fim",
+    "txt": "Cruzar, finalizar ou fintar — em 1 s."
+   },
+   {
+    "t": "Recuo",
+    "txt": "Na perda, vire o primeiro pressionante."
+   }
+  ],
+  "exercicios": [
+   "Tiros curtos com bola + decisão em 3 toques.",
+   "1×1 em corredor + finalização ou cruzamento."
+  ],
+  "mentalidade": "Não espere o lance perfeito — fabrique o seu. Suas Armas de referência na ficha: Velocidade.",
+  "videogame": {
+   "posicao": "LW / RW",
+   "papel": "Ponta",
+   "atributos": [
+    "Aceleração",
+    "Drible",
+    "Finalização"
+   ]
+  },
+  "bespoke": false
+ },
+ "lockhart": {
+  "estilo": "Atacante de área e ruptura: peça a bola no espaço e finalize sem pedir licença. Na ficha, suas Armas apontam para Físico, Impulsão, Cabeceio.",
+  "fundamentos": [
+   {
+    "t": "Corpo e duelo",
+    "txt": "Transforme o atributo físico da ficha em hábito: duelo, salto, resistência ou desarme limpo."
+   },
+   {
+    "t": "Desmarcação",
+    "txt": "Ataque o espaço no timing do passe."
+   },
+   {
+    "t": "Finalização",
+    "txt": "1 ou 2 toques no máximo dentro da área."
+   },
+   {
+    "t": "Pressão na zaga",
+    "txt": "Não deixe o zagueiro sair fácil."
+   }
+  ],
+  "exercicios": [
+   "Circuitos de duelo + segundo lance (rebote ou transição).",
+   "Finalizações de primeira após passe raso (20)."
+  ],
+  "mentalidade": "Não espere o lance perfeito — fabrique o seu. Suas Armas de referência na ficha: Físico, Impulsão, Cabeceio.",
+  "videogame": {
+   "posicao": "ST / CF",
+   "papel": "Atacante",
+   "atributos": [
+    "Finalização",
+    "Posicionamento",
+    "Compostura"
+   ]
+  },
+  "bespoke": false
+ },
+ "momodu": {
+  "estilo": "Lateral de vai-e-volta: estique a linha no ataque e recupere em sprint na perda.",
+  "fundamentos": [
+   {
+    "t": "Subida e volta",
+    "txt": "Ataque a linha e recupere em sprint."
+   },
+   {
+    "t": "Cruzamento",
+    "txt": "Sirva primeiro e segundo pau com peso certo."
+   },
+   {
+    "t": "1×1 defensivo",
+    "txt": "Negue o giro do ponta."
+   }
+  ],
+  "exercicios": [
+   "Subida + cruzamento (15) e volta em sprint.",
+   "Subida + cruzamento (15) e volta em sprint."
+  ],
+  "mentalidade": "Olhe o placar e o próximo passe. O Blue Lock não espera.",
+  "videogame": {
+   "posicao": "LB / RB",
+   "papel": "Lateral",
+   "atributos": [
+    "Velocidade",
+    "Cruzamento",
+    "Resistência"
+   ]
+  },
+  "bespoke": false
+ },
+ "niang": {
+  "estilo": "Meia de ligação: receba entre linhas, escolha o tempo e sirva a ruptura. Na ficha, suas Armas apontam para Velocidade.",
+  "fundamentos": [
+   {
+    "t": "Explosão com bola",
+    "txt": "0–10 m com bola colada; o primeiro toque já ganha a frente."
+   },
+   {
+    "t": "Entre linhas",
+    "txt": "Receba de costas e vire o jogo."
+   },
+   {
+    "t": "Último passe",
+    "txt": "Peso para o atacante finalizar sem ajeitar."
+   },
+   {
+    "t": "Pressing",
+    "txt": "Feche o portador em 2 s após a perda."
+   }
+  ],
+  "exercicios": [
+   "Tiros curtos com bola + decisão em 3 toques.",
+   "Construção 7×7 com só assistências suas valendo."
+  ],
+  "mentalidade": "Não espere o lance perfeito — fabrique o seu. Suas Armas de referência na ficha: Velocidade.",
+  "videogame": {
+   "posicao": "CM / CAM",
+   "papel": "Meia",
+   "atributos": [
+    "Visão",
+    "Passe",
+    "Drible"
+   ]
+  },
+  "bespoke": false
+ },
+ "oboabona": {
+  "estilo": "Zagueiro de duelo e leitura: ganhe o primeiro contato e saia jogando limpo. Na ficha, suas Armas apontam para Cabeceio, Salto vertical.",
+  "fundamentos": [
+   {
+    "t": "Corpo e duelo",
+    "txt": "Transforme o atributo físico da ficha em hábito: duelo, salto, resistência ou desarme limpo."
+   },
+   {
+    "t": "Duelo",
+    "txt": "Ganhe o primeiro contato e limpe o segundo."
+   },
+   {
+    "t": "Linha",
+    "txt": "Segure a linha de impedimento com o parceiro."
+   },
+   {
+    "t": "Saída",
+    "txt": "Primeiro passe limpo após o corte."
+   }
+  ],
+  "exercicios": [
+   "Circuitos de duelo + segundo lance (rebote ou transição).",
+   "Linha 4×4 + duelos aéreos."
+  ],
+  "mentalidade": "Não espere o lance perfeito — fabrique o seu. Suas Armas de referência na ficha: Cabeceio, Salto vertical.",
+  "videogame": {
+   "posicao": "CB",
+   "papel": "Zagueiro",
+   "atributos": [
+    "Marcação",
+    "Força",
+    "Visão"
+   ]
+  },
+  "bespoke": false
+ },
+ "pablo-cavasoz": {
+  "estilo": "Atacante de área e ruptura: peça a bola no espaço e finalize sem pedir licença. Na ficha, suas Armas apontam para Precisão de chute perfeita, Metavision.",
+  "fundamentos": [
+   {
+    "t": "Leitura de campo",
+    "txt": "Antes de receber, conte 3 opções (progresso, segurança, ruptura)."
+   },
+   {
+    "t": "Finalização da sua Arma",
+    "txt": "Repita o tipo de chute da ficha (potente, colocado, de efeito ou de primeira) até ficar automático."
+   },
+   {
+    "t": "Desmarcação",
+    "txt": "Ataque o espaço no timing do passe."
+   },
+   {
+    "t": "Finalização",
+    "txt": "1 ou 2 toques no máximo dentro da área."
+   }
+  ],
+  "exercicios": [
+   "Rondo com obrigação de olhar por cima do ombro.",
+   "20 finalizações mirando cantos, no estilo da sua Arma."
+  ],
+  "mentalidade": "Olhe o placar e o próximo passe. O Blue Lock não espera. Suas Armas de referência na ficha: Precisão de chute perfeita, Metavision.",
+  "videogame": {
+   "posicao": "ST / CF",
+   "papel": "Atacante",
+   "atributos": [
+    "Finalização",
+    "Posicionamento",
+    "Compostura"
+   ]
+  },
+  "bespoke": false
+ },
+ "sadiq": {
+  "estilo": "Volante de equilíbrio: recupere, cubra e dê o primeiro passe que respira o time.",
+  "fundamentos": [
+   {
+    "t": "Cobertura",
+    "txt": "Seja a sobra do zagueiro e do meia."
+   },
+   {
+    "t": "Desarme no tempo",
+    "txt": "Corte a linha de passe antes do bote."
+   },
+   {
+    "t": "Primeiro passe",
+    "txt": "Progressão ou segurança — decida em 1 s."
+   }
+  ],
+  "exercicios": [
+   "Rondo 5×3 recuperando e saindo em 3 toques.",
+   "Rondo 5×3 recuperando e saindo em 3 toques."
+  ],
+  "mentalidade": "Não espere o lance perfeito — fabrique o seu.",
+  "videogame": {
+   "posicao": "CDM",
+   "papel": "Volante",
+   "atributos": [
+    "Intercepção",
+    "Passe",
+    "Resistência"
+   ]
+  },
+  "bespoke": false
+ },
+ "skelton": {
+  "estilo": "Meia de ligação: receba entre linhas, escolha o tempo e sirva a ruptura. Na ficha, suas Armas apontam para Passe.",
+  "fundamentos": [
+   {
+    "t": "Passe / cruzamento",
+    "txt": "Peso de bola para o atacante não ajeitar; treine raso e alto."
+   },
+   {
+    "t": "Entre linhas",
+    "txt": "Receba de costas e vire o jogo."
+   },
+   {
+    "t": "Último passe",
+    "txt": "Peso para o atacante finalizar sem ajeitar."
+   },
+   {
+    "t": "Pressing",
+    "txt": "Feche o portador em 2 s após a perda."
+   }
+  ],
+  "exercicios": [
+   "Assistências em jogo reduzido (você não finaliza).",
+   "Construção 7×7 com só assistências suas valendo."
+  ],
+  "mentalidade": "Ego com método: cada treino precisa ter um duelo que você escolheu ganhar. Suas Armas de referência na ficha: Passe.",
+  "videogame": {
+   "posicao": "CM / CAM",
+   "papel": "Meia",
+   "atributos": [
+    "Visão",
+    "Passe",
+    "Drible"
+   ]
+  },
+  "bespoke": false
+ },
+ "teddy-knight": {
+  "estilo": "Ponta de desequilíbrio: ganhe a linha ou invada na diagonal para finalizar. Na ficha, suas Armas apontam para Drible, Agilidade, Velocidade.",
+  "fundamentos": [
+   {
+    "t": "Drible alinhado à sua Arma",
+    "txt": "Treine 1×1 com mudança de ritmo e saída clara (passe ou chute)."
+   },
+   {
+    "t": "Predator Eye",
+    "txt": "No último instante, leia o goleiro e mude o canto se ele adivinhar."
+   },
+   {
+    "t": "Explosão com bola",
+    "txt": "0–10 m com bola colada; o primeiro toque já ganha a frente."
+   },
+   {
+    "t": "Corpo e duelo",
+    "txt": "Transforme o atributo físico da ficha em hábito: duelo, salto, resistência ou desarme limpo."
+   }
+  ],
+  "exercicios": [
+   "Slalom + 1×1 em corredor + finalização.",
+   "Finalizações com goleiro mostrando um lado de propósito.",
+   "Tiros curtos com bola + decisão em 3 toques."
+  ],
+  "mentalidade": "Não espere o lance perfeito — fabrique o seu. Suas Armas de referência na ficha: Drible, Agilidade, Velocidade.",
+  "videogame": {
+   "posicao": "LW / RW",
+   "papel": "Ponta",
+   "atributos": [
+    "Aceleração",
+    "Drible",
+    "Finalização"
+   ]
+  },
+  "bespoke": false
+ },
+ "umaru": {
+  "estilo": "Meia de ligação: receba entre linhas, escolha o tempo e sirva a ruptura.",
+  "fundamentos": [
+   {
+    "t": "Entre linhas",
+    "txt": "Receba de costas e vire o jogo."
+   },
+   {
+    "t": "Último passe",
+    "txt": "Peso para o atacante finalizar sem ajeitar."
+   },
+   {
+    "t": "Pressing",
+    "txt": "Feche o portador em 2 s após a perda."
+   }
+  ],
+  "exercicios": [
+   "Construção 7×7 com só assistências suas valendo.",
+   "Construção 7×7 com só assistências suas valendo."
+  ],
+  "mentalidade": "Roube 1 detalhe de um rival por semana e torne seu.",
+  "videogame": {
+   "posicao": "CM / CAM",
+   "papel": "Meia",
+   "atributos": [
+    "Visão",
+    "Passe",
+    "Drible"
+   ]
+  },
+  "bespoke": false
+ },
+ "vivien-hugo": {
+  "estilo": "Meia de ligação: receba entre linhas, escolha o tempo e sirva a ruptura. Na ficha, suas Armas apontam para Leitura de jogo, Passe, Metavision.",
+  "fundamentos": [
+   {
+    "t": "Leitura de campo",
+    "txt": "Antes de receber, conte 3 opções (progresso, segurança, ruptura)."
+   },
+   {
+    "t": "Passe / cruzamento",
+    "txt": "Peso de bola para o atacante não ajeitar; treine raso e alto."
+   },
+   {
+    "t": "Entre linhas",
+    "txt": "Receba de costas e vire o jogo."
+   },
+   {
+    "t": "Último passe",
+    "txt": "Peso para o atacante finalizar sem ajeitar."
+   }
+  ],
+  "exercicios": [
+   "Rondo com obrigação de olhar por cima do ombro.",
+   "Assistências em jogo reduzido (você não finaliza)."
+  ],
+  "mentalidade": "Finalize a decisão. Hesitação não entra no Flow. Suas Armas de referência na ficha: Leitura de jogo, Passe, Metavision.",
+  "videogame": {
+   "posicao": "CM / CAM",
+   "papel": "Meia",
+   "atributos": [
+    "Visão",
+    "Passe",
+    "Drible"
+   ]
+  },
+  "bespoke": false
+ },
+ "ego": {
+  "staff": true,
+  "nota": "Jinpachi Ego não joga em campo no Blue Lock: o impacto dele é no método, na leitura e nas decisões fora das quatro linhas. Estude o jogo como quem monta o próximo egoísta — assista partidas inteiras, anote padrões e cobre intensidade no treino.",
+  "bespoke": false
+ },
+ "anri-teieri": {
+  "staff": true,
+  "nota": "Anri Teieri não joga em campo no Blue Lock: o impacto dele é no método, na leitura e nas decisões fora das quatro linhas. Estude o jogo como quem monta o próximo egoísta — assista partidas inteiras, anote padrões e cobre intensidade no treino.",
+  "bespoke": false
+ },
+ "atsuto-tereasa": {
+  "staff": true,
+  "nota": "Atsuto Tereasa não joga em campo no Blue Lock: o impacto dele é no método, na leitura e nas decisões fora das quatro linhas. Estude o jogo como quem monta o próximo egoísta — assista partidas inteiras, anote padrões e cobre intensidade no treino.",
+  "bespoke": false
+ },
+ "chris-prince": {
+  "estilo": "Chris Prince é o corpo perfeito e o chute sem rotação (knuckleball) que dança na frente do goleiro.",
+  "fundamentos": [
+   {
+    "t": "Físico perfeito",
+    "txt": "Força, estabilidade e explosão — treino completo, não só bola."
+   },
+   {
+    "t": "Knuckleball",
+    "txt": "Bata com a parte lisa do peito do pé, sem passar o efeito; a bola voa instável."
+   },
+   {
+    "t": "Finalização de média distância",
+    "txt": "Chute de fora da área como Arma principal."
+   },
+   {
+    "t": "Presença de área",
+    "txt": "Ocupe espaço, segure a zaga e libere colegas."
+   }
+  ],
+  "exercicios": [
+   "Séries de knuckleball de 20–25 m (foco em contato limpo).",
+   "Circuito de força + finalização.",
+   "Jogo em que gols de fora da área valem 2."
+  ],
+  "mentalidade": "Corpo de capa, chute de truque. Seja o espetáculo — e o placar.",
+  "videogame": {
+   "posicao": "ST",
+   "papel": "Centroavante físico",
+   "atributos": [
+    "Força",
+    "Chute de longe",
+    "Finalização",
+    "Equilíbrio"
+   ]
+  },
+  "bespoke": true
+ },
+ "fox": {
+  "staff": true,
+  "nota": "Fox não joga em campo no Blue Lock: o impacto dele é no método, na leitura e nas decisões fora das quatro linhas. Estude o jogo como quem monta o próximo egoísta — assista partidas inteiras, anote padrões e cobre intensidade no treino.",
+  "bespoke": false
+ },
+ "gambari": {
+  "staff": true,
+  "nota": "Gambari não joga em campo no Blue Lock: o impacto dele é no método, na leitura e nas decisões fora das quatro linhas. Estude o jogo como quem monta o próximo egoísta — assista partidas inteiras, anote padrões e cobre intensidade no treino.",
+  "bespoke": false
+ },
+ "girolan-dabadie": {
+  "staff": true,
+  "nota": "Girolan Dabadie não joga em campo no Blue Lock: o impacto dele é no método, na leitura e nas decisões fora das quatro linhas. Estude o jogo como quem monta o próximo egoísta — assista partidas inteiras, anote padrões e cobre intensidade no treino.",
+  "bespoke": false
+ },
+ "harutaro-natsuki": {
+  "staff": true,
+  "nota": "Harutaro Natsuki não joga em campo no Blue Lock: o impacto dele é no método, na leitura e nas decisões fora das quatro linhas. Estude o jogo como quem monta o próximo egoísta — assista partidas inteiras, anote padrões e cobre intensidade no treino.",
+  "bespoke": false
+ },
+ "hirotoshi-buratsuta": {
+  "staff": true,
+  "nota": "Hirotoshi Buratsuta não joga em campo no Blue Lock: o impacto dele é no método, na leitura e nas decisões fora das quatro linhas. Estude o jogo como quem monta o próximo egoísta — assista partidas inteiras, anote padrões e cobre intensidade no treino.",
+  "bespoke": false
+ },
+ "julien-loki": {
+  "estilo": "Loki é Godspeed: velocidade divina, agilidade e Predator Eye para matar o lance antes da zaga reagir.",
+  "fundamentos": [
+   {
+    "t": "Godspeed",
+    "txt": "Arrancadas máximas com e sem bola; o primeiro passo decide."
+   },
+   {
+    "t": "Agilidade",
+    "txt": "Cortes em alta velocidade sem perder o controle."
+   },
+   {
+    "t": "Predator Eye",
+    "txt": "Finalize no instante em que o goleiro hesita."
+   },
+   {
+    "t": "Profundidade",
+    "txt": "Ataque as costas da linha o jogo inteiro."
+   }
+  ],
+  "exercicios": [
+   "Tiros de 30 m + finalização em menos de 3 toques.",
+   "Mudanças de direção em velocidade (escada + bola).",
+   "Contra-ataques 3×2 cronometrados."
+  ],
+  "mentalidade": "Se eles piscaram, você já passou. Velocidade é respeito — e gol.",
+  "videogame": {
+   "posicao": "ST / RW",
+   "papel": "Ponta/atacante Godspeed",
+   "atributos": [
+    "Velocidade",
+    "Aceleração",
+    "Agilidade",
+    "Finalização"
+   ]
+  },
+  "bespoke": true
+ },
+ "lavinho": {
+  "estilo": "Lavinho é arte em movimento: drible perfeito e Flow que transforma 1×1 em espetáculo e gol.",
+  "fundamentos": [
+   {
+    "t": "Drible perfeito",
+    "txt": "Toque curto, cintura solta, mudança de direção sem perder a bola."
+   },
+   {
+    "t": "1×1 decisivo",
+    "txt": "Cada drible tem saída: chute, passe ou novo desequilíbrio."
+   },
+   {
+    "t": "Flow",
+    "txt": "Quando o lance cola, acelere o ritmo e não pense — execute."
+   },
+   {
+    "t": "Finalização após finta",
+    "txt": "O gol vem no fim do drible, não no meio."
+   }
+  ],
+  "exercicios": [
+   "1×1 livre em círculo (só sai com drible limpo).",
+   "Slalom + finalização em velocidade.",
+   "Jogo 3×3 com gols após drible valendo 2."
+  ],
+  "mentalidade": "Dance até a área. Se ficou bonito e não foi gol, ainda falta o último toque.",
+  "videogame": {
+   "posicao": "ST / LW",
+   "papel": "Atacante driblador",
+   "atributos": [
+    "Drible",
+    "Agilidade",
+    "Finalização",
+    "Equilíbrio"
+   ]
+  },
+  "bespoke": true
+ },
+ "marc-snuffy": {
+  "estilo": "Snuffy une Metavision, físico, impulsão e controle: o cérebro que também ganha no corpo.",
+  "fundamentos": [
+   {
+    "t": "Metavision",
+    "txt": "Organize o ataque como quem vê o mapa inteiro."
+   },
+   {
+    "t": "Controle de bola",
+    "txt": "Receba sob pressão e vire o jogo no primeiro toque."
+   },
+   {
+    "t": "Impulsão / jogo aéreo",
+    "txt": "Dispute o alto no ataque e na defesa."
+   },
+   {
+    "t": "Movimentação sem bola",
+    "txt": "Chegue como segunda onda na área."
+   },
+   {
+    "t": "Box-to-box",
+    "txt": "Alterne ciclo defensivo e ofensivo sem perder a leitura."
+   }
+  ],
+  "exercicios": [
+   "Construção 8×8 com você como quarterback.",
+   "Finalizações de segunda onda.",
+   "Duelos aéreos + domínio imediato."
+  ],
+  "mentalidade": "Pense como técnico, execute como atacante. O mapa e o músculo no mesmo corpo.",
+  "videogame": {
+   "posicao": "ST / CM",
+   "papel": "Atacante-cérebro",
+   "atributos": [
+    "Visão",
+    "Controle",
+    "Força",
+    "Impulsão"
+   ]
+  },
+  "bespoke": true
+ },
+ "noel-noa": {
+  "estilo": "Noa é a máquina absoluta: físico, ambidestria, Machine Dribble e aceleração de ponta mundial.",
+  "fundamentos": [
+   {
+    "t": "Machine Dribble",
+    "txt": "Condução retilínea sob contato, ritmo constante, saída limpa."
+   },
+   {
+    "t": "Ambidestria",
+    "txt": "Finalize e passe com os dois pés no mesmo padrão."
+   },
+   {
+    "t": "Movimentação sem bola",
+    "txt": "Ataque espaços como um centroavante clássico de elite."
+   },
+   {
+    "t": "Aceleração + físico",
+    "txt": "Ganhe o duelo curto e abra o campo."
+   },
+   {
+    "t": "Versatilidade",
+    "txt": "Treine também como volante/lateral: o melhor do mundo se adapta."
+   }
+  ],
+  "exercicios": [
+   "Condução sob pressão de 2 marcadores + finalização.",
+   "Séries ambidestras espelhadas (passe/chute).",
+   "Ataques de área com timing de cruzamento."
+  ],
+  "mentalidade": "Seja o padrão-ouro. Menos drama, mais eficiência — gol é gol.",
+  "videogame": {
+   "posicao": "ST / CM / FB",
+   "papel": "Atacante completo / Machine",
+   "atributos": [
+    "Finalização",
+    "Drible",
+    "Força",
+    "Aceleração"
+   ]
+  },
+  "bespoke": true
+ },
+ "ray-dark": {
+  "staff": true,
+  "nota": "Ray Dark não joga em campo no Blue Lock: o impacto dele é no método, na leitura e nas decisões fora das quatro linhas. Estude o jogo como quem monta o próximo egoísta — assista partidas inteiras, anote padrões e cobre intensidade no treino.",
+  "bespoke": false
+ },
+ "rodin": {
+  "staff": true,
+  "nota": "Rodin não joga em campo no Blue Lock: o impacto dele é no método, na leitura e nas decisões fora das quatro linhas. Estude o jogo como quem monta o próximo egoísta — assista partidas inteiras, anote padrões e cobre intensidade no treino.",
+  "bespoke": false
+ },
+ "shusaku-nihei": {
+  "staff": true,
+  "nota": "Shusaku Nihei não joga em campo no Blue Lock: o impacto dele é no método, na leitura e nas decisões fora das quatro linhas. Estude o jogo como quem monta o próximo egoísta — assista partidas inteiras, anote padrões e cobre intensidade no treino.",
+  "bespoke": false
+ },
+ "yasumori-hoichi": {
+  "staff": true,
+  "nota": "Yasumori Hoichi não joga em campo no Blue Lock: o impacto dele é no método, na leitura e nas decisões fora das quatro linhas. Estude o jogo como quem monta o próximo egoísta — assista partidas inteiras, anote padrões e cobre intensidade no treino.",
+  "bespoke": false
+ },
+ "alice-love": {
+  "staff": true,
+  "nota": "Alice Love aparece na história fora do elenco principal de campo. Não há guia de fundamentos de jogador aqui — explore a ficha e as conexões com quem joga.",
+  "bespoke": false
+ },
+ "frederick-kaiser": {
+  "staff": true,
+  "nota": "Frederick Kaiser aparece na história fora do elenco principal de campo. Não há guia de fundamentos de jogador aqui — explore a ficha e as conexões com quem joga.",
+  "bespoke": false
+ },
+ "ginji-hiori": {
+  "staff": true,
+  "nota": "Ginji Hiori aparece na história fora do elenco principal de campo. Não há guia de fundamentos de jogador aqui — explore a ficha e as conexões com quem joga.",
+  "bespoke": false
+ },
+ "gran": {
+  "staff": true,
+  "nota": "Gran aparece na história fora do elenco principal de campo. Não há guia de fundamentos de jogador aqui — explore a ficha e as conexões com quem joga.",
+  "bespoke": false
+ },
+ "issei-isagi": {
+  "staff": true,
+  "nota": "Issei Isagi aparece na história fora do elenco principal de campo. Não há guia de fundamentos de jogador aqui — explore a ficha e as conexões com quem joga.",
+  "bespoke": false
+ },
+ "iyo-isagi": {
+  "staff": true,
+  "nota": "Iyo Isagi aparece na história fora do elenco principal de campo. Não há guia de fundamentos de jogador aqui — explore a ficha e as conexões com quem joga.",
+  "bespoke": false
+ },
+ "junko-hiori": {
+  "staff": true,
+  "nota": "Junko Hiori aparece na história fora do elenco principal de campo. Não há guia de fundamentos de jogador aqui — explore a ficha e as conexões com quem joga.",
+  "bespoke": false
+ },
+ "katsuta-ikirita": {
+  "staff": true,
+  "nota": "Katsuta Ikirita aparece na história fora do elenco principal de campo. Não há guia de fundamentos de jogador aqui — explore a ficha e as conexões com quem joga.",
+  "bespoke": false
+ },
+ "koyuki-chigiri": {
+  "staff": true,
+  "nota": "Koyuki Chigiri aparece na história fora do elenco principal de campo. Não há guia de fundamentos de jogador aqui — explore a ficha e as conexões com quem joga.",
+  "bespoke": false
+ },
+ "mahiru-naruhaya": {
+  "staff": true,
+  "nota": "Mahiru Naruhaya aparece na história fora do elenco principal de campo. Não há guia de fundamentos de jogador aqui — explore a ficha e as conexões com quem joga.",
+  "bespoke": false
+ },
+ "mick-moon": {
+  "staff": true,
+  "nota": "Mick Moon aparece na história fora do elenco principal de campo. Não há guia de fundamentos de jogador aqui — explore a ficha e as conexões com quem joga.",
+  "bespoke": false
+ },
+ "neneko-chigiri": {
+  "staff": true,
+  "nota": "Neneko Chigiri aparece na história fora do elenco principal de campo. Não há guia de fundamentos de jogador aqui — explore a ficha e as conexões com quem joga.",
+  "bespoke": false
+ },
+ "seina-naruhaya": {
+  "staff": true,
+  "nota": "Seina Naruhaya aparece na história fora do elenco principal de campo. Não há guia de fundamentos de jogador aqui — explore a ficha e as conexões com quem joga.",
+  "bespoke": false
+ },
+ "shohei-inaba": {
+  "staff": true,
+  "nota": "Shohei Inaba aparece na história fora do elenco principal de campo. Não há guia de fundamentos de jogador aqui — explore a ficha e as conexões com quem joga.",
+  "bespoke": false
+ },
+ "tenka-naruhaya": {
+  "staff": true,
+  "nota": "Tenka Naruhaya aparece na história fora do elenco principal de campo. Não há guia de fundamentos de jogador aqui — explore a ficha e as conexões com quem joga.",
+  "bespoke": false
+ },
+ "tomonori-tada": {
+  "staff": true,
+  "nota": "Tomonori Tada aparece na história fora do elenco principal de campo. Não há guia de fundamentos de jogador aqui — explore a ficha e as conexões com quem joga.",
+  "bespoke": false
+ },
+ "yota-naruhaya": {
+  "staff": true,
+  "nota": "Yota Naruhaya aparece na história fora do elenco principal de campo. Não há guia de fundamentos de jogador aqui — explore a ficha e as conexões com quem joga.",
+  "bespoke": false
+ },
+ "yu-bachira": {
+  "staff": true,
+  "nota": "Yu Bachira aparece na história fora do elenco principal de campo. Não há guia de fundamentos de jogador aqui — explore a ficha e as conexões com quem joga.",
+  "bespoke": false
+ },
+ "yuya-naruhaya": {
+  "staff": true,
+  "nota": "Yuya Naruhaya aparece na história fora do elenco principal de campo. Não há guia de fundamentos de jogador aqui — explore a ficha e as conexões com quem joga.",
+  "bespoke": false
+ }
+}

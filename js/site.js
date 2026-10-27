@@ -211,10 +211,10 @@
   /* copia o selo do desafio já calculado no header */
   var seloH = document.querySelector('.top [data-dd-selo]');
   [].forEach.call(d.querySelectorAll('[data-dd-selo]'), function (s) { if (seloH && !seloH.hidden) { s.textContent = seloH.textContent; s.className = seloH.className; s.setAttribute('aria-label', seloH.getAttribute('aria-label') || ''); s.hidden = false; } });
-  var li = document.createElement('li');
-  li.innerHTML = '<button type="button" class="mapa-btn" aria-haspopup="dialog" aria-label="Menu: mapa do site">Menu</button>';
-  nav.appendChild(li);
-  var opener = li.firstChild;
+  /* o botão já vem no HTML (c9/perf.py) para não empurrar o layout; cria só se faltar */
+  var li = nav.querySelector('.mapa-li');
+  if (!li) { li = document.createElement('li'); li.className = 'mapa-li'; li.innerHTML = '<button type="button" class="mapa-btn" aria-haspopup="dialog" aria-label="Menu: mapa do site">Menu</button>'; nav.appendChild(li); }
+  var opener = li.querySelector('.mapa-btn');
   opener.addEventListener('click', function () {
     [].forEach.call(document.querySelectorAll('.nav-dd details[open]'), function (x) { x.open = false; });
     d.showModal(); var c = d.querySelector('[aria-current]') || d.querySelector('.mapa-lista a'); if (c) c.focus();
@@ -234,4 +234,111 @@
   var c = document.createElement('p'); c.className = 'capitulo';
   c.innerHTML = '<span>' + M.grupo + '</span><span><b>' + (M.pos < 10 ? '0' : '') + M.pos + '</b>/' + M.total + '</span><span>' + nome.replace(/[<>&]/g, '') + '</span>';
   h1.parentNode.insertBefore(c, h1);
+})();
+
+/* =====================================================================
+   TINTA & EGO · LOTE 3 · transição de cortina (file:// e sem View Transitions), cursor "Mira do Ego" + magnetismo, revelação no scroll
+   ===================================================================== */
+/* LOTE 3 · Cortina de tinta entre páginas quando NÃO há View Transitions (ex.: file://, Firefox).
+   Clássico, ~0.8 KB. Respeita Ctrl/Cmd/Shift-clique, target, download, âncoras e bfcache. */
+(function () {
+  'use strict';
+  var html = document.documentElement;
+  var temVT = location.protocol !== 'file:' && 'onpagereveal' in window && CSS.supports && CSS.supports('view-transition-name: a');
+  if (temVT || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var c = document.createElement('div'); c.className = 'cortina'; c.setAttribute('aria-hidden', 'true');
+  document.body.appendChild(c);
+  /* entrada: a cortina "abre" ao carregar */
+  html.classList.add('saindo');
+  requestAnimationFrame(function () { requestAnimationFrame(function () { html.classList.remove('saindo'); html.classList.add('entrando'); setTimeout(function () { html.classList.remove('entrando'); }, 450); }); });
+  /* saída */
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[href]');
+    if (!a || e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+    if (a.target && a.target !== '_self' || a.hasAttribute('download')) return;
+    var u = new URL(a.href, location.href);
+    if (u.origin !== location.origin && location.protocol !== 'file:') return;
+    if (u.pathname === location.pathname && u.hash) return; /* âncora na mesma página */
+    e.preventDefault();
+    html.classList.add('saindo');
+    setTimeout(function () { location.href = a.href; }, 300);
+  });
+  /* voltar pelo histórico (bfcache) não pode ficar com a tela preta */
+  addEventListener('pageshow', function (e) { if (e.persisted) html.classList.remove('saindo', 'entrando'); });
+})();
+
+/* LOTE 3 · Cursor "Mira do Ego" + botões magnéticos. Script clássico, ~1.3 KB min. Zero lib.
+   Só liga em mouse/trackpad (pointer:fine + hover:hover) e sem prefers-reduced-motion.
+   Rótulo opcional: data-cursor="x1" em qualquer link/botão; cards de personagem recebem "Ver ficha". */
+(function () {
+  'use strict';
+  var mq = matchMedia('(pointer:fine) and (hover:hover)'), rm = matchMedia('(prefers-reduced-motion: reduce)');
+  if (!mq.matches || rm.matches) return;
+  var html = document.documentElement;
+  var m = document.createElement('div'); m.className = 'mira'; m.setAttribute('aria-hidden', 'true');
+  m.innerHTML = '<span class="mira-r"></span><span class="mira-p"></span><span class="mira-t"></span>';
+  document.body.appendChild(m);
+  var anel = m.querySelector('.mira-r'), txt = m.querySelector('.mira-t');
+  var x = innerWidth / 2, y = innerHeight / 2, ax = x, ay = y, alvo = null, vis = false;
+  var LINK = 'a,button,summary,[role=button],label,select,.card';
+  var TEXTO = 'input:not([type=checkbox]):not([type=radio]):not([type=range]),textarea,[contenteditable]';
+
+  addEventListener('pointermove', function (e) {
+    if (e.pointerType !== 'mouse') return;
+    x = e.clientX; y = e.clientY;
+    if (!vis) { vis = true; html.classList.add('has-mira'); ax = x; ay = y; }
+  }, { passive: true });
+  document.addEventListener('pointerleave', function () { m.style.opacity = 0; });
+  document.addEventListener('pointerenter', function () { m.style.opacity = 1; });
+  addEventListener('pointerdown', function () { m.classList.add('is-down'); });
+  addEventListener('pointerup', function () { m.classList.remove('is-down'); });
+
+  document.addEventListener('pointerover', function (e) {
+    var t = e.target.closest ? e.target : null; if (!t) return;
+    var ed = t.closest(TEXTO), l = !ed && t.closest(LINK);
+    m.classList.toggle('is-text', !!ed);
+    m.classList.toggle('is-link', !!l);
+    alvo = l && l.matches('.btn,.flow-btn,.busca-btn,.x1-comecar,[data-magnet]') ? l : null;
+    var r = l && (l.getAttribute('data-cursor') || (l.matches('.card') ? 'Ver ficha' : ''));
+    txt.textContent = r || ''; m.classList.toggle('is-label', !!r);
+  });
+
+  /* loop: o pontinho segue colado; o anel com atraso (lerp). Magnetismo: o botão puxa o anel e se mexe 6px. */
+  var magAnt = null;
+  (function loop() {
+    var tx = x, ty = y;
+    if (alvo) {
+      /* centro "de repouso": desconta o deslocamento já aplicado (senão realimenta e o botão nunca para) */
+      var b = alvo.getBoundingClientRect(), cx = b.left + b.width / 2 - (alvo._mx || 0), cy = b.top + b.height / 2 - (alvo._my || 0);
+      tx = cx + (x - cx) * .35; ty = cy + (y - cy) * .35;
+      var mx = Math.round((x - cx) * .12), my = Math.round((y - cy) * .18);
+      mx = Math.max(-8, Math.min(8, mx)); my = Math.max(-6, Math.min(6, my));
+      if (mx !== alvo._mx || my !== alvo._my) { alvo._mx = mx; alvo._my = my; alvo.style.translate = mx + 'px ' + my + 'px'; }
+    }
+    if (magAnt && magAnt !== alvo) { magAnt.style.translate = ''; magAnt._mx = magAnt._my = 0; }
+    magAnt = alvo;
+    ax += (tx - ax) * .22; ay += (ty - ay) * .22;
+    m.style.transform = 'translate3d(' + x + 'px,' + y + 'px,0)';
+    anel.style.translate = (ax - x).toFixed(1) + 'px ' + (ay - y).toFixed(1) + 'px';
+    requestAnimationFrame(loop);
+  })();
+  /* se o usuário ligar reduced-motion com a página aberta, desliga tudo */
+  rm.addEventListener && rm.addEventListener('change', function () { if (rm.matches) { m.remove(); html.classList.remove('has-mira'); } });
+})();
+
+/* revelação no scroll: marca títulos de seção (CSS scroll-driven; fallback IntersectionObserver) */
+(function () {
+  'use strict';
+  [].forEach.call(document.querySelectorAll('main h2:not(.sr-only):not(.mapa h2), .abertura, .gl-item, .dd-est, .al-grade'), function (el) { el.classList.add('rv'); });
+})();
+/* LOTE 3 · Fallback de revelação (Firefox/Safari antigos). Clássico, ~0.4 KB. */
+(function () {
+  'use strict';
+  if (CSS.supports && CSS.supports('animation-timeline: view()')) return;
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches || !('IntersectionObserver' in window)) return;
+  document.documentElement.classList.add('rv-js');
+  var io = new IntersectionObserver(function (es) {
+    es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); } });
+  }, { rootMargin: '0px 0px -10% 0px' });
+  [].forEach.call(document.querySelectorAll('.rv'), function (el, i) { el.style.setProperty('--i', i % 6); io.observe(el); });
 })();
