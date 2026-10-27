@@ -1193,3 +1193,39 @@ html.js .gr-desafio-corpo:empty{min-height:238px}html.js .gr-num:empty{min-heigh
 .x1-radar .radar-leg i{display:inline-block;width:1.4rem;height:0;border-top:3px solid var(--text,#f2f2f2);vertical-align:middle;margin-right:.35rem}
 .x1-radar .radar-leg .b i{border-top:3px dashed var(--accent,#2f7bff)}
 @media (max-width:560px){.radar{padding:var(--s-4,1rem)}.radar-tab{width:100%}}
+
+/* HOME · vários olhares (rotação em faixa de mangá) + responsividade do hero */
+.hx-olhares .hx-o{position:absolute;inset:0;overflow:hidden;opacity:0}
+.hx-olhares .hx-o:first-child{opacity:1}
+.hx-olhares .hx-o img{position:absolute;left:50%;top:50%;width:calc(100% * var(--z,1));height:auto;max-width:none;
+  transform:translate(calc(var(--x,50%) * -1),calc(var(--y,45%) * -1)) translate3d(0,var(--py,0px),0);filter:grayscale(1) contrast(1.25)}
+.js .hx-olhares[data-rodando] .hx-o{opacity:0;clip-path:inset(0 100% 0 0);transition:clip-path 520ms var(--ease-inout),opacity 0s 520ms}
+.js .hx-olhares[data-rodando] .hx-o.on{opacity:1;clip-path:inset(0 0 0 0);transition:clip-path 520ms var(--ease-inout);z-index:1}
+.js .hx-olhares[data-rodando] .hx-o.sai{opacity:1;z-index:0}
+.hx-olhares:not([data-ativo="0"]) .hx-glint{opacity:0}
+.hx-quem{position:absolute;right:var(--gutter);bottom:6px;z-index:4;margin:0;padding:2px 8px;background:var(--ink-950);color:var(--paper-50);
+  font-family:var(--ff-display);font-size:clamp(.8rem,1.4vw,1.1rem);letter-spacing:.08em;text-transform:uppercase;transform:skewX(-8deg)}
+.hx-olhares.is-mosaico{display:grid;grid-template-columns:repeat(4,1fr)}
+.hx-olhares.is-mosaico .hx-o{position:relative;opacity:1;border-left:var(--stroke-heavy) solid var(--paper-50)}
+.hx-olhares.is-mosaico .hx-o:first-child{border-left:0}
+.hx-olhares.is-mosaico .hx-o:nth-child(n+5){display:none}
+.hx-olhares.is-mosaico .hx-o img{width:calc(160% * var(--z,1))}
+.hx-olhares.is-mosaico .hx-glint,.hx-olhares.is-mosaico .hx-quem{display:none}
+@media (min-width:900px){.hx-olhares.is-mosaico{grid-template-columns:repeat(8,1fr)}.hx-olhares.is-mosaico .hx-o:nth-child(n+5){display:block}.hx-olhares.is-mosaico .hx-o img{width:calc(190% * var(--z,1))}}
+/* responsividade: o rodapé do hero nunca fica absoluto por cima do LOCK; título e faixa cabem na altura */
+.hx{display:flex;flex-direction:column;justify-content:center}
+.hx-kicker{position:static;margin:0 0 var(--s-4)}
+.hx-foot{position:static;margin-top:var(--s-5)}
+.hx-t{font-size:min(var(--fs-mega),20svh)}
+.hx{--eye-h:clamp(110px,min(22vw,26svh),260px)}
+@media (max-width:700px){.hx-t{font-size:min(clamp(4.2rem,22vw,8rem),17svh)}.hx{--eye-h:clamp(110px,34vw,200px)}}
+@media (max-height:540px) and (orientation:landscape){
+  .hx{min-height:0;padding-top:var(--s-5);padding-bottom:var(--s-5);--eye-h:clamp(90px,24svh,130px)}
+  .hx-t{font-size:clamp(3.2rem,22svh,6rem)}
+  .hx-sfx{font-size:2rem}
+  .hx-tag{font-size:1.5rem}
+  .hx-ctas{width:auto}
+}
+@media (max-width:360px){.hx-stats{gap:var(--s-3)}.hx-kicker{letter-spacing:.12em}}
+.hx-olhares .hx-glint{display:none}
+@media (max-width:700px){.hx{padding-top:var(--s-5)}}

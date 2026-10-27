@@ -82,7 +82,7 @@
     var C = 130, R = 88, n = 5, f = function (n) { return n.toFixed(1); };
     function pt(i, r) { var a = -Math.PI / 2 + i * 2 * Math.PI / n; return [C + Math.cos(a) * r, C + Math.sin(a) * r]; }
     function poly(r) { return EIXOS.map(function (_, i) { return pt(i, r).map(f).join(','); }).join(' '); }
-    var o = '<svg class="radar-svg" viewBox="-55 -8 370 280" role="img" aria-label="' + titulo + '">';
+    var o = '<svg class="radar-svg" viewBox="-68 -8 396 280" role="img" aria-label="' + titulo + '">';
     [1, 0.75, 0.5, 0.25].forEach(function (k) { o += '<polygon class="radar-grade" points="' + poly(R * k) + '"/>'; });
     EIXOS.forEach(function (_, i) { var p = pt(i, R); o += '<line class="radar-eixo" x1="130" y1="130" x2="' + f(p[0]) + '" y2="' + f(p[1]) + '"/>'; });
     series.forEach(function (sr, j) {

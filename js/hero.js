@@ -17,6 +17,7 @@
   else if (document.fonts && document.fonts.ready) Promise.race([document.fonts.ready, new Promise(function (r) { setTimeout(r, 600); })]).then(go);
   else go();
   var eye = hx.querySelector('.hx-eye'), img = eye && eye.querySelector('img');
+  olhares(eye, reduce);
   function alinhar() {
     if (!img || !img.naturalWidth) return;
     var fr = eye.getBoundingClientRect(), ir = img.getBoundingClientRect(); if (!fr.height) return;
@@ -37,6 +38,23 @@
   if ('IntersectionObserver' in window) new IntersectionObserver(function (e) { visivel = e[0].isIntersecting; }).observe(hx);
   addEventListener('scroll', function () {
     if (tick || !visivel) return; tick = true;
-    requestAnimationFrame(function () { img.style.setProperty('--py', (scrollY * 0.18).toFixed(1) + 'px'); alinhar(); tick = false; });
+    requestAnimationFrame(function () { eye.style.setProperty('--py', (scrollY * 0.18).toFixed(1) + 'px'); alinhar(); tick = false; });
   }, { passive: true });
+  /* vários olhares: troca a faixa a cada 3,2s (pausa fora da tela/aba oculta); reduced-motion vira mosaico estático */
+  function olhares(fig, red) {
+    if (!fig || !fig.classList.contains('hx-olhares')) return;
+    var cs = fig.querySelectorAll('.hx-o'), quem = fig.querySelector('.hx-quem'); if (cs.length < 2) return;
+    if (red) { fig.classList.add('is-mosaico'); [].forEach.call(cs, function (c) { var im = c.querySelector('img'); if (im) im.loading = 'eager'; }); return; }
+    var at = 0, vis = true; fig.setAttribute('data-rodando', ''); cs[0].classList.add('on');
+    if ('IntersectionObserver' in window) new IntersectionObserver(function (e) { vis = e[0].isIntersecting; }).observe(fig);
+    setInterval(function () {
+      if (!vis || document.hidden) return;
+      var prox = (at + 1) % cs.length, im = cs[prox].querySelector('img');
+      if (im && !im.complete) { im.loading = 'eager'; return; }
+      [].forEach.call(cs, function (c) { c.classList.remove('sai'); });
+      cs[at].classList.remove('on'); cs[at].classList.add('sai'); cs[prox].classList.add('on'); at = prox;
+      fig.setAttribute('data-ativo', String(at)); if (quem) quem.textContent = cs[at].getAttribute('data-nome');
+    }, 3200);
+    setTimeout(function () { [].forEach.call(cs, function (c) { var i = c.querySelector('img'); if (i) i.loading = 'eager'; }); }, 1500);
+  }
 })();
