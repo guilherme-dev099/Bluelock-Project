@@ -37,6 +37,12 @@
           return '<li' + cls + '><span>' + a[1] + '</span><i style="--v:' + s[k] + '%"></i><b>' + s[k] + '</b></li>';
         }).join('') + '</ul><p class="x1-nota-atr">Atributos de jogo <b>estimados pelo site</b> · não oficiais' + (!(puro && puro.checked) && M.ELITE[p.id] ? ' · inclui ajuste de fã +' + M.ELITE[p.id] : '') + '</p>' +
         ((p.armas || []).length ? '<p class="x1-armas">' + p.armas.slice(0, 4).map(function (x) { return '<span class="chip">' + esc(x.replace(/\s*\([^)]*\)/, '')) + '</span>'; }).join(' ') + '</p>' : '');
+      var rd = $('.x1-radar');
+      if (rd && M.radarSVG && sel.a && sel.b) {
+        var va = M.cinco(atributos(sel.a)), vb = M.cinco(atributos(sel.b)), lin = function (p, v) { return esc(p.nome) + ': ' + M.EIXOS.map(function (e) { return e[1] + ' ' + v[e[0]]; }).join(', '); };
+        rd.innerHTML = M.radarSVG([{ v: va }, { v: vb }], 'Pentágonos comparados. ' + lin(sel.a, va) + '. ' + lin(sel.b, vb)) +
+          '<figcaption class="radar-leg"><span><i></i>' + esc(sel.a.nome) + '</span><span class="b"><i></i>' + esc(sel.b.nome) + '</span></figcaption>';
+      }
       $('#x1-busca-' + lado).value = '';
       $('#x1-busca-' + lado).placeholder = nome(p) + ' · trocar…';
     }

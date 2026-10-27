@@ -73,6 +73,30 @@
     return (cacheAtr[ck] = s);
   }
   M.atributos = atributos;
+
+  /* Pentágono de status (5 eixos). Leitura = média de Ego/visão e Defesa/leitura. Mesma função usada no build das fichas. */
+  var EIXOS = M.EIXOS = [['chu', 'Finalização'], ['vel', 'Velocidade'], ['fis', 'Físico'], ['lei', 'Leitura'], ['dri', 'Drible']];
+  function cinco(s) { return { chu: s.chu, vel: s.vel, fis: s.fis, dri: s.dri, lei: Math.round((s.ego + s.def) / 2) }; }
+  M.cinco = cinco;
+  M.radarSVG = function (series, titulo) {
+    var C = 130, R = 88, n = 5, f = function (n) { return n.toFixed(1); };
+    function pt(i, r) { var a = -Math.PI / 2 + i * 2 * Math.PI / n; return [C + Math.cos(a) * r, C + Math.sin(a) * r]; }
+    function poly(r) { return EIXOS.map(function (_, i) { return pt(i, r).map(f).join(','); }).join(' '); }
+    var o = '<svg class="radar-svg" viewBox="-55 -8 370 280" role="img" aria-label="' + titulo + '">';
+    [1, 0.75, 0.5, 0.25].forEach(function (k) { o += '<polygon class="radar-grade" points="' + poly(R * k) + '"/>'; });
+    EIXOS.forEach(function (_, i) { var p = pt(i, R); o += '<line class="radar-eixo" x1="130" y1="130" x2="' + f(p[0]) + '" y2="' + f(p[1]) + '"/>'; });
+    series.forEach(function (sr, j) {
+      var pts = EIXOS.map(function (e, i) { return pt(i, R * Math.max(0, sr.v[e[0]] - 30) / 69).map(f).join(','); }).join(' ');
+      o += '<polygon class="radar-area radar-s' + j + '" pathLength="1" points="' + pts + '"/>';
+    });
+    EIXOS.forEach(function (e, i) {
+      var p = pt(i, R + 30), anc = Math.abs(p[0] - C) < 5 ? 'middle' : (p[0] > C ? 'start' : 'end');
+      if (anc !== 'middle') p[0] += anc === 'start' ? -14 : 14;
+      o += '<text class="radar-rot" x="' + f(p[0]) + '" y="' + f(p[1] - 4) + '" text-anchor="' + anc + '">' + e[1] + '</text>';
+      o += '<text class="radar-val" x="' + f(p[0]) + '" y="' + f(p[1] + 17) + '" text-anchor="' + anc + '">' + series.map(function (sr) { return sr.v[e[0]]; }).join(' · ') + '</text>';
+    });
+    return o + '</svg>';
+  };
   /* Arma da ficha que combina com o tipo de lance (para a narração) */
   function golpe(p, k) {
     var a = (p.armas || []).filter(function (x) { return CHAVES[k].test(norm(x)) && !/^(fisico|velocidade|drible|passe|chute)$/.test(norm(x)); })[0];
