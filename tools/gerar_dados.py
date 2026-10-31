@@ -34,12 +34,12 @@ for f in sorted(root.glob("*.html")):
           fases.append({"fase": fase, "time": meio, "times": times,
                       "papel": papel[1] if papel else None,
                       "numero": num[1].strip() if num and num[1].strip() != "—" else None})
-    img = re.search(r'<img src="([^"]+)"', t)[1]
+    img = re.search(r'<img [^>]*?src="([^"]+)"', t)[1]
     out.append({
         "id": f.stem, "nome": strip(re.search(r"<h1>(.*?)</h1>", t)[1]),
         "url": f.name, "img": img,
         "thumb": ("img/thumb/" + img.split("/")[-1]) if (root / "img" / "thumb" / img.split("/")[-1]).exists() else None,
-        "resumo": strip(re.search(r'<p class="desc">(.*?)</p>', t, re.S)[1]),
+        "resumo": strip(re.search(r'<p class="desc"[^>]*>(.*?)</p>', t, re.S)[1]),
         "posicao": dl.get("Posição"), "posicoes": [p.strip() for p in re.split(r"[;,/]", dl.get("Posição", "")) if p.strip()],
         "armas": [a.strip() for a in re.split(r",", dl.get("Arma", "")) if a.strip()],
         "rankingTexto": dl.get("Ranking Blue Lock"), "rankingInicio": ini, "rankingFinal": fim,

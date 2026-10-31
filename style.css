@@ -1229,3 +1229,79 @@ html.js .gr-desafio-corpo:empty{min-height:238px}html.js .gr-num:empty{min-heigh
 @media (max-width:360px){.hx-stats{gap:var(--s-3)}.hx-kicker{letter-spacing:.12em}}
 .hx-olhares .hx-glint{display:none}
 @media (max-width:700px){.hx{padding-top:var(--s-5)}}
+
+/* ideias:inicio */
+/* #8 ajustes de leitura */
+html[data-texto=lg]{font-size:115%}html[data-texto=xl]{font-size:130%}
+html[data-textura=off] body::after,html[data-textura=off] body::before{display:none!important}
+html[data-corpo=larga] body{letter-spacing:.02em;word-spacing:.08em;line-height:1.75}
+html[data-mov=reduzir] *,html[data-mov=reduzir] *::before,html[data-mov=reduzir] *::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important;scroll-behavior:auto!important}
+.leitura-li{position:relative}
+.leitura-btn{font:700 1rem/1 var(--ff-display,Anton,sans-serif);background:transparent;color:inherit;border:1px solid currentColor;padding:6px 9px;cursor:pointer;min-width:36px;min-height:36px}
+.leitura-btn[aria-expanded=true]{background:#fff;color:#07090f}
+.leitura-p{position:absolute;right:0;top:calc(100% + 8px);z-index:60;width:min(300px,calc(100vw - 24px));background:#f3efe6;color:#0b0d12;border:2px solid #0b0d12;box-shadow:6px 6px 0 #0b0d12;padding:14px;text-align:left}
+.leitura-t{font:400 1.2rem var(--ff-display,Anton,sans-serif);margin:0 0 8px;text-transform:uppercase}
+.leitura-p fieldset{border:0;border-top:1px solid #0b0d1233;margin:0;padding:8px 0}
+.leitura-p legend{font-weight:700;font-size:.85rem;padding:0}
+.leitura-p label{display:inline-flex;gap:4px;align-items:center;margin:4px 12px 0 0;font-size:.9rem;cursor:pointer}
+.leitura-p input{accent-color:#1d5fe0;width:18px;height:18px}
+.leitura-nota{font-size:.8rem;margin:6px 0 0;color:#3a3f4a}
+/* #1 navegação entre fichas */
+.char .pn{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;align-items:center}
+.char .pn .pn-aleat{border:1px dashed currentColor;padding:6px 12px}
+/* #4 comparar */
+.cmp-com{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:14px 0 6px;padding:12px;border:1px solid var(--line,#1f2838)}
+.cmp-com label{font-weight:700}
+.cmp-com select{font:inherit;min-height:40px;max-width:100%;padding:6px 8px;background:#0c1018;color:#fff;border:1px solid #5b6680}
+.cmp-com .btn{padding:8px 18px}
+.btn-imprimir,.spoiler-btn{font:inherit;cursor:pointer;background:transparent;color:inherit;border:1px solid currentColor;padding:6px 12px;min-height:36px}
+.spoiler-btn{margin:8px 0 4px;font-size:.9rem}.spoiler-btn[aria-pressed=true]{background:#fff;color:#07090f}
+/* #5 glossário inline */
+button.termo{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:help;text-decoration:underline dotted 2px;text-underline-offset:3px;text-decoration-color:#7fb0ff}
+button.termo[aria-expanded=true]{background:#2f7bff33}
+.termo-pop{position:absolute;z-index:70;width:min(320px,calc(100vw - 24px));background:#f3efe6;color:#0b0d12;border:2px solid #0b0d12;box-shadow:5px 5px 0 #0b0d12;padding:12px 14px;font-size:.92rem}
+.termo-pop p{margin:0 0 8px}.termo-pop a{color:#0b3fb0;font-weight:700}
+/* #10 folha de atalhos */
+.atalhos-dlg{max-width:min(440px,calc(100vw - 24px));background:#f3efe6;color:#0b0d12;border:2px solid #0b0d12;box-shadow:8px 8px 0 #0b0d12;padding:18px 22px}
+.atalhos-dlg::backdrop{background:#000a}
+.atalhos-dlg h2{font:400 1.6rem var(--ff-display,Anton,sans-serif);margin:0 0 10px;text-transform:uppercase}
+.atalhos-dlg dl{display:grid;grid-template-columns:auto 1fr;gap:6px 14px;margin:0 0 12px}.atalhos-dlg dd{margin:0}
+kbd{font:700 .85em var(--ff-mono,monospace);border:1px solid currentColor;border-bottom-width:3px;padding:1px 6px;border-radius:3px}
+/* #2 Meu Ego */
+.me-grade{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:14px;margin:18px 0}
+.me-card{border:1px solid var(--line,#1f2838);padding:14px 16px;background:#0c1018}
+.me-card h2{font:400 1.1rem var(--ff-display,Anton,sans-serif);text-transform:uppercase;margin:0 0 6px;letter-spacing:.02em}
+.me-v{font:400 2rem/1.1 var(--ff-display,Anton,sans-serif);margin:0 0 6px}.me-s{margin:0;font-size:.9rem}
+.me-card meter{width:100%;height:10px}
+.me-dist{list-style:none;padding:0;margin:8px 0 0}.me-dist li{display:grid;grid-template-columns:2.2em 1fr 2em;gap:6px;align-items:center;font-size:.8rem}
+.me-bar{height:8px;background:var(--ego-500,#2f7bff);min-width:2px}
+.me-backup textarea{display:block;width:100%;max-width:100%;box-sizing:border-box;font:.85rem var(--ff-mono,monospace);background:#0c1018;color:#fff;border:1px solid #5b6680;padding:8px;margin:6px 0}
+#me-dlg{max-width:min(420px,calc(100vw - 24px));background:#f3efe6;color:#0b0d12;border:2px solid #0b0d12;padding:18px}
+.hub-me{margin:10px 0 0}.sobre p{max-width:68ch}
+/* #9 alto contraste */
+@media (forced-colors:active){
+  .btn,.hub-card,.cmp-com,.me-card,.leitura-p,.termo-pop,.atalhos-dlg,.char .pn a,.cmp a{border:1px solid CanvasText!important}
+  [aria-pressed=true],[aria-expanded=true],[aria-current]{outline:2px solid Highlight!important;outline-offset:2px}
+  [aria-pressed=true]::after{content:" ✓"}
+  .radar-svg *{stroke:CanvasText!important}.radar-area{fill:none!important;stroke-width:3!important}
+  .radar-svg text{fill:CanvasText!important;stroke:none!important}
+  .me-bar{background:CanvasText!important;forced-color-adjust:none}
+  button.termo{text-decoration-color:LinkText}
+}
+/* #11 pôster imprimível */
+@media print{
+  @page{size:A4;margin:12mm}
+  html,body{background:#fff!important;color:#000!important}
+  body::before,body::after,header.top,footer,.pular,.crumb,.cmp,.cmp-com,.pn,.src,.spoiler-btn,.leitura-p,.termo-pop,.como-jogar,dialog{display:none!important}
+  *{box-shadow:none!important;text-shadow:none!important;animation:none!important;transition:none!important}
+  .char{display:block!important}
+  .char img{max-height:55vh;width:auto;display:block;margin:0 auto 6mm;filter:grayscale(1) contrast(1.15)}
+  .char h1{font-size:15vw!important;line-height:.9;color:#000!important;-webkit-text-stroke:0!important}
+  .char .info::before{color:#000!important}
+  .radar,.phases li,dl{break-inside:avoid}
+  .radar-svg *{stroke:#000!important}.radar-svg text{fill:#000!important;stroke:none!important}.radar-area{fill:#0003!important}
+  button.termo{text-decoration:none}
+  .char ol.phases li[hidden]{display:list-item!important}
+  main::after{content:"guilherme-dev099.github.io/Bluelock-Project · fã-site não oficial";display:block;margin-top:6mm;font-size:9pt;border-top:1px solid #000;padding-top:2mm}
+}
+/* ideias:fim */

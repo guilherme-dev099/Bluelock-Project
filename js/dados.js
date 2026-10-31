@@ -15,7 +15,7 @@
   }
   var BL = window.BL = {
     FASES: ['1ª Seleção', '2ª Seleção', '3ª Seleção', 'Blue Lock × Sub-20', 'Neo Egoist League', 'Atual'],
-    reduce: matchMedia('(prefers-reduced-motion: reduce)').matches,
+    reduce: matchMedia('(prefers-reduced-motion: reduce)').matches || document.documentElement.getAttribute('data-mov') === 'reduzir',
     /* http(s): busca data/personagens.json; file:// (ou falha): usa js/dados-embed.js */
     personagens: function () {
       if (cache) return cache;
