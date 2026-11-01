@@ -1711,5 +1711,16 @@ main label:not([class]):has(> select,> input:not([type=checkbox]):not([type=radi
 .tr-ctrl input[type=text],.tr-ctrl select,.tr-ctrl input[type=search]{min-height:44px;box-sizing:border-box}
 .tr-add .x1-busca{margin:0}
 .tr-pre-l{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem}.tr-pre-l label{flex-basis:100%;margin:0}.tr-pre-l select{flex:1 1 0;min-width:0;width:auto;min-height:44px}.tr-pre-l{flex-wrap:wrap}.tr-pre-l>*:not(label){flex-shrink:1}.tr-pre-l .btn{margin:0;min-height:44px}
+/* aviso "+Ego" da Temporada: em telas baixas (celular deitado) fica compacto no canto, sem cobrir a ficha */
+@media (max-height:500px){.tp-toasts{left:auto;right:12px;bottom:10px;transform:none;width:min(320px,60vw)}.tp-toast{padding:6px 10px;font-size:.82rem}}
+/* revelação no scroll: em blocos de texto só desliza (sem esmaecer), para o texto nunca ficar abaixo do contraste AA parado na borda da tela */
+@keyframes rv-mov{from{transform:translateY(24px)}}
+@supports (animation-timeline:view()){
+  @media (prefers-reduced-motion:no-preference){
+    .char .phases li{animation-name:rv-mov}
+    .gl-item.rv,.al-grade.rv{animation-name:rv-mov}
+  }
+}
+.rv-js .gl-item.rv:not(.is-in),.rv-js .al-grade.rv:not(.is-in){opacity:1}
 
 /* lapida:fim */
