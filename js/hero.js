@@ -53,8 +53,8 @@
       if (im && !im.complete) { im.loading = 'eager'; return; }
       [].forEach.call(cs, function (c) { c.classList.remove('sai'); });
       cs[at].classList.remove('on'); cs[at].classList.add('sai'); cs[prox].classList.add('on'); at = prox;
-      fig.setAttribute('data-ativo', String(at)); if (quem) quem.textContent = cs[at].getAttribute('data-nome');
+      fig.setAttribute('data-ativo', String(at)); pre(at + 1); if (quem) quem.textContent = cs[at].getAttribute('data-nome');
     }, 3200);
-    setTimeout(function () { [].forEach.call(cs, function (c) { var i = c.querySelector('img'); if (i) i.loading = 'eager'; }); }, 1500);
+    function pre(k) { var i = cs[k % cs.length].querySelector('img'); if (i) i.loading = 'eager'; } setTimeout(function () { pre(1); }, 1500); /*lapida-pre*/
   }
 })();

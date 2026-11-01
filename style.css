@@ -1701,5 +1701,15 @@ html[data-mov=reduzir] .sil-cor{transition:none}
 .pr-quim-box{max-height:220px;overflow:auto}.pr-quim-box .pr-quim{max-height:none;overflow:visible}
 @media (max-width:700px){.pr-quim-box{max-height:11em}}
 .phases:focus-visible,.pr-quim-box:focus-visible{outline:3px solid var(--ego-400);outline-offset:3px}
+/* olhares da home: foto ainda não pedida não ocupa banda (vira eager na vez dela) */
+.hx-olhares:not(.is-mosaico) .hx-o img[loading="lazy"]{display:none}
+/* formulários: rótulo de campo com o mesmo estilo do Duelo em todas as páginas (Tier, Fábrica, Meu Ego, Temporada…) */
+main label:not([class]):is(:has(+ input:not([type=checkbox]):not([type=radio])),:has(+ select),:has(+ textarea),:has(> select),:has(> input:not([type=checkbox]):not([type=radio])),:has(> textarea)){display:block;font-size:.8rem;color:var(--ego-300);text-transform:uppercase;letter-spacing:.08em;font-weight:700;margin-bottom:4px}
+main label:not([class]):has(> select,> input:not([type=checkbox]):not([type=radio])) :is(select,input){display:block;margin-top:4px;text-transform:none;letter-spacing:0;font-weight:400}
+/* Tier list: controles alinhados na mesma linha de base e altura */
+.tr-ctrl{align-items:end}.tr-ctrl>p,.tr-add p{margin:0}
+.tr-ctrl input[type=text],.tr-ctrl select,.tr-ctrl input[type=search]{min-height:44px;box-sizing:border-box}
+.tr-add .x1-busca{margin:0}
+.tr-pre-l{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem}.tr-pre-l label{flex-basis:100%;margin:0}.tr-pre-l select{flex:1 1 0;min-width:0;width:auto;min-height:44px}.tr-pre-l{flex-wrap:wrap}.tr-pre-l>*:not(label){flex-shrink:1}.tr-pre-l .btn{margin:0;min-height:44px}
 
 /* lapida:fim */
