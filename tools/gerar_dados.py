@@ -9,13 +9,13 @@ def rank(txt):
     m = re.findall(r"(\d+)º", txt or "")
     return (int(m[0]), int(m[-1])) if m else (None, None)
 for f in sorted(root.glob("*.html")):
-    if f.name in ("index.html", "historia.html", "duelo.html", "quiz.html", "egoista.html", "copa.html"): continue
+    if f.name in ("index.html", "personagens.html", "historia.html", "duelo.html", "quiz.html", "egoista.html", "copa.html"): continue
     t = f.read_text(encoding="utf-8")
     if '<section class="char">' not in t: continue   # só fichas de personagem
     dl = {strip(k): strip(v) for k, v in re.findall(r"<dt>(.*?)</dt><dd>(.*?)</dd>", t, re.S)}
     ini, fim = rank(dl.get("Ranking Blue Lock"))
     fases = []
-    ol = re.search(r'<ol class="phases">(.*?)</ol>', t, re.S)
+    ol = re.search(r'<ol class="phases"[^>]*>(.*?)</ol>', t, re.S)
     for li in re.findall(r"<li>(.*?)</li>", ol[1] if ol else "", re.S):
         fase = strip(re.search(r"<b>(.*?)</b>", li)[1])
         num = re.search(r"<span>nº\s*([^<]+)</span>", li)
@@ -50,7 +50,9 @@ for f in sorted(root.glob("*.html")):
         "fonte": (re.search(r'class="src">Fonte: <a href="([^"]+)"', t) or [None, None])[1],
         "ordem": None,
     })
-ordem = re.findall(r'<a class="card" href="([^"]+)\.html"', (root / "index.html").read_text(encoding="utf-8"))
+# ordem dos cards: personagens.html (desde a Sala de Controle); index.html só como fallback antigo
+_lista = next((root / n for n in ("personagens.html", "index.html") if (root / n).exists() and '<a class="card"' in (root / n).read_text(encoding="utf-8")), root / "index.html")
+ordem = re.findall(r'<a class="card" href="([^"]+)\.html"', _lista.read_text(encoding="utf-8"))
 pos = {k: i for i, k in enumerate(ordem)}
 out.sort(key=lambda p: pos.get(p["id"], 9999))
 for p in out: p["ordem"] = pos.get(p["id"])

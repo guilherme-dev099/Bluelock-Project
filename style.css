@@ -1680,3 +1680,26 @@ html[data-mov=reduzir] .sil-cor{transition:none}
 @media (forced-colors:active){.dr-svg{forced-color-adjust:none}.dossie-sum a:focus-visible{outline:3px solid Highlight}}
 
 /* dossie:fim */
+
+/* lapida:inicio */
+/* ===== LAPIDA (polimento geral) ===== */
+/* nav celular: Personagens volta ao topo; Duelo x1 fica no Menu/Jogos */
+@media (max-width:420px){
+  html.has-mapa .top nav li:first-child{display:list-item}
+  html.has-mapa .top nav li:nth-child(2):not(.nav-dd){display:none}
+  .top nav ul{gap:0}
+  .top{padding-left:10px;padding-right:10px}
+  nav li a{padding:0 4px;font-size:.8rem}
+  .top .busca-btn,.top .flow-btn,.top .leitura-li button{min-width:34px;width:34px;padding:0;margin-left:0}
+  .mapa-btn{padding:0 9px;margin-left:2px}
+}
+@media (max-width:350px){.top{padding:6px 8px}.mapa-btn{padding:0 8px;margin-left:2px;font-size:.85rem}.logo{font-size:1rem;letter-spacing:0}nav li a{padding:0 4px;font-size:.8rem}.busca-btn,.flow-btn{min-width:34px}}
+/* a11y: contraste mínimo AA em textos atenuados */
+.fig.falta .fig-n{color:#8a97bd}
+.tr-vazia{color:#55575c}
+.gl-item dt small{opacity:1;color:#8fa6e8}
+.pr-quim-box{max-height:220px;overflow:auto}.pr-quim-box .pr-quim{max-height:none;overflow:visible}
+@media (max-width:700px){.pr-quim-box{max-height:11em}}
+.phases:focus-visible,.pr-quim-box:focus-visible{outline:3px solid var(--ego-400);outline-offset:3px}
+
+/* lapida:fim */

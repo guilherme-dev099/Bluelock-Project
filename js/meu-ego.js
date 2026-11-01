@@ -18,6 +18,8 @@
     } else h += card('Desafio do dia', '—', '<a href="egoista.html">Jogue o desafio de hoje</a>');
     h += card('Sobreviva ao Blue Lock', car ? car.passos + ' de 10' : '—', car && por[car.j] ? 'Recorde com ' + esc(por[car.j].nome) : '<a href="carreira.html">Comece uma carreira</a>');
     h += card('Vestiário', ves && n(ves) ? n(ves) + ' registro(s)' : '—', '<a href="vestiario.html">Abrir o Vestiário</a>');
+    var mg = J('bl-manga') || {}, nMg = n(mg.lidos); /*lapida-mg*/
+    h += card('Modo Mangá', nMg + ' / 5', '<meter min="0" max="5" value="' + nMg + '">' + nMg + '</meter> capítulos lidos · ' + (mg.ult && mg.ult.cap ? '<a href="' + esc(mg.ult.cap) + '.html' + (mg.ult.pag ? '#p' + (mg.ult.pag + 1) : '') + '">Continuar lendo</a>' : '<a href="ler.html">Começar a ler</a>'));
     h += card('Preferências', (localStorage.getItem('bl-flow') === '1' ? 'Flow ligado' : 'Flow desligado'), (localStorage.getItem('bl-voz-on') === '1' ? 'Narração ligada' : 'Narração desligada') + ' · ' + chaves().length + ' item(ns) salvos');
     $('#me-stats').innerHTML = h;
   }

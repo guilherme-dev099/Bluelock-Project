@@ -46,13 +46,14 @@
   function atalho(tecla, desc, fn) { mapaT[tecla] = fn; atalhos.push([tecla.toUpperCase().replace('ARROWLEFT', '←').replace('ARROWRIGHT', '→'), desc]); }
   function porAcao(a) { return $('[data-acao="' + a + '"]'); }
   function ligar(tecla, acao, desc) {
-    var b = porAcao(acao); if (!b) return;
-    b.setAttribute('aria-keyshortcuts', tecla.toUpperCase());
+    var b = porAcao(acao); if (!b && !document.querySelector('.x1-arena')) return; /*lapida-ligar*/
+    if (b) b.setAttribute('aria-keyshortcuts', tecla.toUpperCase());
     atalho(tecla, desc, function () { var x = porAcao(acao); if (x && !x.disabled && x.offsetParent) x.click(); });
   }
   ligar('s', 'sortear', 'Sortear dupla'); ligar('j', 'comecar', 'Começar o x1');
   ligar('p', 'pausar', 'Pausar / continuar'); ligar('r', 'revanche', 'Revanche'); ligar('n', 'pular', 'Pular para o resultado');
 
+  if ($('.mg-livro')) atalhos.push(['← / →', 'Virar a página do mangá (invertido no sentido japonês)']); /*lapida-mg*/
   /* ---- fichas */
   var ficha = $('section.char'), pnav = $('.char .pn');
   var id = (location.pathname.split('/').pop() || '').replace(/\.html$/, '');

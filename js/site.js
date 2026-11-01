@@ -183,8 +183,8 @@
   var nav = document.querySelector('header.top nav ul'); if (!nav || !window.HTMLDialogElement || document.querySelector('.mapa')) return;
   var aqui = location.pathname.split('/').pop() || 'index.html';
   var limpo = function (a) { var c = a.cloneNode(true); [].forEach.call(c.querySelectorAll('.dd-selo,[aria-hidden]'), function (x) { x.remove(); }); return c.textContent.trim(); };
-  var grupos = [{ t: 'Principal', itens: [['index.html', 'Personagens', '212 fichas'], ['duelo.html', 'Duelo x1', 'jogo'], ['jogos.html', 'Tudo no site', 'hub']] }];
-  var vistos = { 'index.html': 1, 'duelo.html': 1, 'jogos.html': 1 };
+  var grupos = [{ t: 'Principal', itens: [['index.html', 'Sala de controle', 'início'], ['personagens.html', 'Personagens', '212 fichas'], ['duelo.html', 'Duelo x1', 'jogo'], ['jogos.html', 'Tudo no site', 'hub']] }];
+  var vistos = { 'index.html': 1, 'personagens.html': 1, 'duelo.html': 1, 'jogos.html': 1 };
   [].forEach.call(document.querySelectorAll('nav .nav-dd'), function (dd) {
     var g = { t: dd.querySelector('summary').textContent.trim(), itens: [] };
     [].forEach.call(dd.querySelectorAll('.nav-dd-m a'), function (a) {
