@@ -1,0 +1,17 @@
+{"n":5,"slug":"cap-05","titulo":"Neo Egoist League","arco":"NEL","spoiler":true,
+"resumo":"Cinco clubes europeus, cinco Master Strikers e um leilão que põe preço em cada ego.",
+"jogar":[["liga.html","🏟 Liga NEL simulada"],["copa.html?p=nel","🏆 Copa do Ego: clubes da NEL"]],
+"paginas":[
+{"layout":"b","quadros":[
+ {"narr":"Os jogadores se espalham por cinco clubes de elite da Europa, cada um treinado por um Master Striker.","linhas":true},
+ {"p":["noel-noa","isagi"],"narr":"Isagi escolhe o Bastard München, de Noel Noa.","fala":[["Noel Noa","Aqui, ninguém vira protagonista sem provar."]]},
+ {"p":["kaiser","alexis-ness"],"fala":[["Kaiser","Você é só figurante no meu palco."]],"tom":"rival"},
+ {"narr":"Cada partida sobe ou derruba o valor de cada jogador no Leilão.","sfx":"PLIM"}
+]},
+{"layout":"a","quadros":[
+ {"p":["isagi"],"narr":"Isagi passa a usar o próprio rival como peça do seu jogo.","tom":"flow"},
+ {"p":["kaiser"],"sfx":"KRAK","tom":"rival"},
+ {"p":["barou","bachira","chigiri"],"narr":"Barou, Bachira, Chigiri e os outros brigam em seus clubes pelo mesmo prêmio."},
+ {"narr":"No fim, os 23 maiores lances do Leilão formam a nova Sub-20 do Japão.","linhas":true},
+ {"p":["ego"],"fala":[["Ego","Quem vai ser o melhor atacante do mundo?"]],"link":["liga.html","Liga NEL simulada"]}
+]}]}

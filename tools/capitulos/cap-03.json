@@ -1,0 +1,16 @@
+{"n":3,"slug":"cap-03","titulo":"Devorar","arco":"2ª Seleção","spoiler":false,
+"resumo":"Times que se desmancham a cada jogo: quem vence escolhe quem leva do derrotado.",
+"jogar":[["carreira.html","🧗 Sobreviva ao Blue Lock"],["duelo.html?a=isagi&b=rin","⚔ Duelo Isagi × Rin"]],
+"paginas":[
+{"layout":"d","quadros":[
+ {"narr":"Para entrar na 2ª Seleção, cada um precisa marcar sozinho contra robôs defensores.","sfx":"BIP BIP","linhas":true},
+ {"p":["isagi","bachira"],"narr":"Depois vêm duplas, trios, quartetos e quintetos. Quem vence rouba um jogador do time derrotado."},
+ {"p":["rin"],"narr":"Rin Itoshi, o primeiro do ranking, trata os outros como peças.","fala":[["Rin","Vocês só estão me atrasando."]],"tom":"rival"},
+ {"p":["isagi"],"fala":[["Isagi","Não basta copiar. Eu tenho que devorar o que eles têm.",true]],"tom":"flow"}
+]},
+{"layout":"b","quadros":[
+ {"p":["nagi","reo"],"narr":"Numa escolha que deixa Reo sem chão, Nagi decide seguir Isagi.","fala":[["Reo","Nagi…?"]]},
+ {"p":["barou"],"narr":"Até o rei Barou percebe que, se não mudar, fica para trás."},
+ {"p":["rin"],"narr":"Isagi, Bachira e Rin estão entre os que formam o primeiro quinteto a passar.","sfx":"CLEAR","linhas":true},
+ {"p":["isagi"],"narr":"Cada derrota vira ingrediente. O ego de Isagi cresce a cada jogo.","link":["carreira.html","Jogue a carreira"]}
+]}]}

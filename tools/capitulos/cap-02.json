@@ -1,0 +1,17 @@
+{"n":2,"slug":"cap-02","titulo":"Time Z","arco":"1ª Seleção","spoiler":false,
+"resumo":"O quarto dos últimos do ranking descobre que, no Blue Lock, só o gol convence.",
+"jogar":[["copa.html?p=time-z","🏆 Copa do Ego: Time Z"],["vestiario.html","🚪 Vestiário"]],
+"paginas":[
+{"layout":"b","quadros":[
+ {"p":["isagi","bachira"],"narr":"Time Z: os onze piores do prédio. Isagi começa em 299º. Ali ele conhece Bachira, que dribla como se obedecesse a um monstro interior.","fala":[["Bachira","Quer conhecer o meu monstro?"]]},
+ {"p":["barou"],"narr":"O Time X tem um rei: Barou decide os jogos sozinho.","fala":[["Barou","Em campo, o resto é plateia."]],"tom":"rival"},
+ {"p":["wataru-kuon"],"narr":"Kuon quebra a confiança do grupo. O Time Z aprende, na pele, que no Blue Lock ninguém joga para os outros."},
+ {"p":["chigiri"],"narr":"Chigiri, travado pelo medo de uma lesão antiga, volta a correr com tudo.","fala":[["Chigiri","Ninguém aqui é mais rápido do que eu!"]],"sfx":"VUUUSH","tom":"flow","linhas":true}
+]},
+{"layout":"a","quadros":[
+ {"p":["nagi"],"narr":"Último jogo do grupo: o Time V, do gênio Nagi e de Reo, o herdeiro que o descobriu."},
+ {"p":["nagi"],"fala":[["Nagi","Que preguiça… mas, tá, isso aqui ficou divertido."]],"sfx":"TOC"},
+ {"p":["isagi"],"narr":"Isagi lê o campo inteiro e acha o próprio jeito de matar o lance: estar no lugar certo para o chute direto."},
+ {"p":["isagi"],"fala":[["Isagi","Esse gol é meu."]],"sfx":"GOOOL","tom":"flow","linhas":true},
+ {"p":["kunigami","gagamaru"],"narr":"O Time Z vence e avança. A 1ª Seleção acaba, mas o ranking continua.","link":["copa.html?p=time-z","Jogue a Copa do Time Z"]}
+]}]}
