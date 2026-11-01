@@ -104,7 +104,7 @@
         s.vitorias++; s.seq = s.ultimaVitoria === ontem ? s.seq + 1 : 1; s.melhor = Math.max(s.melhor, s.seq); s.ultimaVitoria = dia;
         s.dist[palpites.length - 1]++;
       } else s.seq = 0;
-      gravar('bl-dd-stats', s);
+      window.blEv&&blEv('desafio',{ok:venceu(),seq:s.seq});gravar('bl-dd-stats', s);
     }
     function mostrarFim(foco) {
       var s = stats(), ok = venceu(), maxD = Math.max.apply(null, s.dist.concat([1]));

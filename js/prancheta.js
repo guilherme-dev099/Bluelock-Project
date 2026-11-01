@@ -148,7 +148,7 @@
       var R = rival(), s = T.serie(esc11, R.l.filter(Boolean), semente), va = s.filter(function (x) { return x.venc === 0; }).length;
       var box = $('.pr-res'), v = BL.versao() ? '&v=' + BL.versao() : '';
       box.hidden = false;
-      box.innerHTML = '<h2 tabindex="-1">' + (va >= 3 ? '🏆 Seu 11 vence a série por ' : 'Derrota na série por ') + va + ' × ' + (5 - va) + '</h2>' +
+      window.blEv&&blEv('prancheta',{v:va>=3});box.innerHTML = '<h2 tabindex="-1">' + (va >= 3 ? '🏆 Seu 11 vence a série por ' : 'Derrota na série por ') + va + ' × ' + (5 - va) + '</h2>' +
         '<p class="pr-rival">Contra: <b>' + esc(R.nome) + '</b> (' + esc(FORM[R.f].rot) + '): ' + R.l.filter(Boolean).map(function (p) { return esc(curtoN(p)); }).join(', ') + '</p>' +
         '<ol class="pr-serie">' + s.map(function (x) {
           var link = 'duelo.html?a=' + x.a.id + '&b=' + x.b.id + '&seed=' + encodeURIComponent(x.s) + v + '&auto=1';

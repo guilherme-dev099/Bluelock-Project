@@ -31,7 +31,7 @@
   /* Seu progresso (no lugar da Temporada, que ainda não existe) */
   mon('progresso', function (el) {
     var a = ler('bl-album', {}), fig = Object.keys(a.ids || {}).length, st = ler('bl-dd-stats', {}), m = ler('bl-manga', {}), lidos = Object.keys(m.lidos || {}).length;
-    var ul = $('.m-nums', el);
+    var ul = $('.m-nums', el); if (!ul) return;
     ul.innerHTML = '<li><b>' + fig + '</b> figurinhas</li><li><b>' + (st.vitorias || 0) + '</b> desafios vencidos</li><li><b>' + lidos + '</b> capítulos lidos</li>';
   });
   /* Ego fala (frases do site) */

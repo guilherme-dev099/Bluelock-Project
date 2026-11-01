@@ -63,7 +63,7 @@
         t.textContent = g === 0 ? 'É a mesma pessoa: 0 graus' : g + (g === 1 ? ' grau' : ' graus') + ' entre ' + A.nome + ' e ' + B.nome + (total > 1 ? ' · caminho ' + (alt % total + 1) + ' de ' + total + ' mínimos' : '');
         ol.innerHTML = cadeiaHtml(c);
         $('[data-acao="outro"]').hidden = total < 2;
-        BL.anunciar(g + (g === 1 ? ' grau: ' : ' graus: ') + c.map(function (id) { return por[id].nome; }).join(', '));
+        window.blEv&&blEv('graus',{g:g});BL.anunciar(g + (g === 1 ? ' grau: ' : ' graus: ') + c.map(function (id) { return por[id].nome; }).join(', '));
       }
       if (foco) t.focus();
     }

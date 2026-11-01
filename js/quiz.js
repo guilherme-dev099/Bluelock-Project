@@ -24,7 +24,7 @@
       }).sort(function (a, b) { return b.pontos - a.pontos || (a.p.rankingFinal || 999) - (b.p.rankingFinal || 999); });
       var top = ranking[0], seg = ranking[1], p = top.p;
       var url = new URL(p.url, location.href).href;
-      res.innerHTML = '<h2 tabindex="-1">Sua Arma combina com <a href="' + esc(p.url) + '">' + esc(p.nome) + '</a></h2>' +
+      window.blEv&&blEv('quiz',{p:p.id});res.innerHTML = '<h2 tabindex="-1">Sua Arma combina com <a href="' + esc(p.url) + '">' + esc(p.nome) + '</a></h2>' +
         '<div class="quiz-card"><img src="' + esc(p.img) + '" alt="" width="480" height="552"><div>' +
         (top.bate.length ? '<p>Você escolheu <strong>' + top.bate.map(esc).join('</strong>, <strong>') + '</strong>. Na ficha de ' + esc(p.nome) + ' estão: ' + top.armas.map(function (a) { return '<span class="chip">' + esc(a) + '</span>'; }).join(' ') + '.</p>'
           : '<p>Nenhuma resposta coincidiu com as Armas das fichas; este é o primeiro do ranking entre os empatados.</p>') +

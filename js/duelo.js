@@ -199,7 +199,7 @@
       fim.querySelector('h2').focus();
       var nova = window.BL_ALBUM ? BL_ALBUM.ganhar(J[1 - jogo.venc].p.id, 'x1', true) : false;
       if (nova) fim.querySelector('.x1-semente').insertAdjacentHTML('beforebegin', '<p class="album-nova">🃏 Figurinha nova no <a href="album.html">Álbum do Ego</a>: ' + esc(J[1 - jogo.venc].p.nome) + '</p>');
-      BL.anunciar(w.p.nome + ' vence por ' + J[jogo.venc].g + ' a ' + J[1 - jogo.venc].g + extra.replace(' · ', ', ') + '.' + (nova ? ' Figurinha nova no álbum: ' + J[1 - jogo.venc].p.nome + '.' : ''));
+      window.blEv&&blEv('x1',{a:J[0].p.id,b:J[1].p.id,w:w.p.id});BL.anunciar(w.p.nome + ' vence por ' + J[jogo.venc].g + ' a ' + J[1 - jogo.venc].g + extra.replace(' · ', ', ') + '.' + (nova ? ' Figurinha nova no álbum: ' + J[1 - jogo.venc].p.nome + '.' : ''));
       if (BL.voz) BL.voz.falar(w.p.nome + ' vence o x1 por ' + J[jogo.venc].g + ' a ' + J[1 - jogo.venc].g + extra.replace(' · ', ', ') + '.');
     }
     function voltar() { clearTimeout(timer); if (BL.voz) BL.voz.cancel(); setPausa(false, false); fila = []; jogo = null; arena.hidden = true; fim.hidden = true; escolha.hidden = false; render(); $('.x1-comecar').focus(); }

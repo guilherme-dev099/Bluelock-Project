@@ -99,7 +99,7 @@
         li.querySelector('.vs-res').innerHTML = certo ? '✓ Certo' : '✗ ' + (v ? 'Não: ' : 'Sem resposta: ') + 'era <b>' + esc(c.certo) + '</b> · <a href="' + esc(p.url) + '">ficha</a>';
       });
       var n = rodada.cartas.length;
-      $('.vs-placar').textContent = ok + ' de ' + n + ' certos' + (ok === n ? ' — vestiário perfeito! 🏆' : '.');
+      if(!restaurado)window.blEv&&blEv('vestiario',{ok:ok,n:n});$('.vs-placar').textContent = ok + ' de ' + n + ' certos' + (ok === n ? ' — vestiário perfeito! 🏆' : '.');
       $('[data-acao=conferir]').disabled = true;
       var fim = $('.vs-fim'); fim.hidden = false;
       var est = ler(), nota = '';

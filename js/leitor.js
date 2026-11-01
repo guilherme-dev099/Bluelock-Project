@@ -49,7 +49,7 @@
       try { history.replaceState(null, '', '#p' + (i + 1)); } catch (e) {}
     } else pos.textContent = 'Lendo tudo em sequência';
     var o = ler(); o.lidos = o.lidos || {}; o.ult = { cap: slug, pag: i };
-    if (rolar || i + p >= pags.length) o.lidos[slug] = 1;
+    if (rolar || i + p >= pags.length) if(!o.lidos[slug])window.blEv&&blEv('manga',{cap:slug});o.lidos[slug] = 1;
     gravar(o);
   }
   function ir(d) {

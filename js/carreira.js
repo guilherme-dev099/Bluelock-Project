@@ -116,13 +116,13 @@
     var nova = venceu && window.BL_ALBUM ? BL_ALBUM.ganhar(q.id, 'carreira', true) : false;
     var link = 'duelo.html?a=' + est.j + '&b=' + q.id + '&seed=' + encodeURIComponent(est.seed + ':' + est.i);
     if (!venceu) {
-      est.fim = 'perdeu'; salvar(); recorde(est.i);
+      est.fim = 'perdeu'; salvar(); window.blEv&&blEv('carreira',{v:0,passos:est.i}); recorde(est.i);
       fim('<h3 tabindex="-1">💥 Eliminado no degrau ' + (est.i + 1) + '</h3><p>' + esc(txt) + '</p><p>' + esc(eu().nome) + ' sobreviveu a <b>' + est.i + ' de ' + PASSOS + '</b> x1.</p>', link);
       return;
     }
     est.i++;
     if (est.i >= PASSOS) {
-      est.fim = 'venceu'; salvar(); recorde(PASSOS);
+      est.fim = 'venceu'; salvar(); window.blEv&&blEv('carreira',{v:1,passos:10}); recorde(PASSOS);
       fim('<h3 tabindex="-1">🏆 ' + esc(eu().nome) + ' sobreviveu ao Blue Lock!</h3><p>' + esc(txt) + '</p><p>10 x1 seguidos, ' + est.armas.length + ' Armas devoradas. De ' + eu().rankingInicio + 'º a número 1 (na simulação).</p>' + albumNota(nova), link);
       return;
     }

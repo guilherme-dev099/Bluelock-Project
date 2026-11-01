@@ -96,7 +96,7 @@
         '<div class="x1-botoes"><button type="button" class="btn" data-acao="nova">↻ Nova temporada</button><button type="button" class="btn btn-2" data-acao="copiar">Copiar link da temporada</button></div>';
       el.hidden = false; $('.lg-ctrl').hidden = true;
       el.querySelector('h2').focus();
-      BL.anunciar(c.c + ' é campeão da Liga NEL simulada com ' + c.p + ' pontos.');
+      window.blEv&&blEv('liga',{c:c.c});BL.anunciar(c.c + ' é campeão da Liga NEL simulada com ' + c.p + ' pontos.');
       if (BL.voz) BL.voz.falar(c.c + ' é campeão da Liga NEL simulada, com ' + c.p + ' pontos. Artilheiro: ' + art.p.nome + ', ' + art.g + ' gols.');
     }
     function passo() {

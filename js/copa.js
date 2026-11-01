@@ -173,7 +173,7 @@
       var golea = todosJ.slice().sort(function (x, y) { return Math.abs(y.g[0] - y.g[1]) - Math.abs(x.g[0] - x.g[1]) || (y.g[0] + y.g[1]) - (x.g[0] + x.g[1]); })[0];
       var ouros = todosJ.filter(function (j) { return j.ouro; }).length, flows = todosJ.reduce(function (s, j) { return s + j.flow; }, 0), gols = todosJ.reduce(function (s, j) { return s + j.g[0] + j.g[1]; }, 0);
       [].forEach.call($('.copa').querySelectorAll('.jogo.feito[data-ids~="' + c.id + '"]'), function (li) { li.classList.add('caminho'); });
-      var el = $('.cp-campeao');
+      window.blEv&&blEv('copa',{c:c.id,n:st.tam});var el = $('.cp-campeao');
       el.innerHTML = '<h2 tabindex="-1">🏆 ' + esc(c.nome) + ' é o campeão da Copa do Ego!</h2><div class="x1-campeao"><img src="' + esc(c.img) + '" alt="" width="480" height="552"><div>' +
         '<h3>Caminho até o título</h3><ol class="cp-caminho">' + caminho.map(function (j) {
           var eA = j.a === c, adv = eA ? j.b : j.a, gc = eA ? j.g[0] : j.g[1], ga = eA ? j.g[1] : j.g[0];
