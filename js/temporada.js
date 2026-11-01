@@ -31,7 +31,7 @@
     seq7: function (d) { return d.seq >= 7; },
     timez: function (d, por) { return tem(por[d.c], 'Time Z'); },
     nel: function (d, por) { var p = por[d.c]; return !!p && (p.fases || []).some(function (f) { return f.fase === 'Neo Egoist League'; }); },
-    final: function (d) { return !!d.final; }, s1: function (d) { return d.erros === 0; }
+    final: function (d) { return !!d.final; }, final1: function (d) { return d.final === 'um'; }, todos: function (d) { return d.n >= (D.finais || 6); }, s1: function (d) { return d.erros === 0; }
   };
   function tem(p, time) { return !!p && (p.fases || []).some(function (f) { return (f.times || [f.time]).indexOf(time) >= 0; }); }
   var por = {}, todos = [];
