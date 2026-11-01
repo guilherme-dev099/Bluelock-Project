@@ -1,0 +1,2 @@
+/* frases do site (autorais, não oficiais) — gerado por /workspace/sala/build.py */
+window.BL_FRASES=["Quem passa a bola por medo já perdeu o lance.", "O gol não pede licença. Você também não deveria.", "Talento sem fome é só estatística.", "Copie, adapte, devore. Depois crie.", "O campo é um tabuleiro. Seja quem decide a jogada.", "Perder hoje é dado. Repetir o erro amanhã é escolha.", "Seu ego é o motor. Treine para ele não engasgar.", "Ninguém lembra do passe que quase virou gol.", "Leia o jogo antes que o jogo leia você.", "Um sobrevive. Trabalhe para ser o motivo."];

@@ -342,3 +342,7 @@
   }, { rootMargin: '0px 0px -10% 0px' });
   [].forEach.call(document.querySelectorAll('.rv'), function (el, i) { el.style.setProperty('--i', i % 6); io.observe(el); });
 })();
+
+/* sala:visto:inicio */
+(function(){try{if(!document.querySelector(".radar"))return;var u=location.pathname.split("/").pop(),n=document.querySelector("h1");if(!/^[a-z0-9-]+\.html$/.test(u)||!n)return;localStorage.setItem("bl-visto",JSON.stringify({url:u,nome:n.textContent.trim(),t:Date.now()}))}catch(e){}})();
+/* sala:visto:fim */

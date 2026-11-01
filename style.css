@@ -1391,3 +1391,45 @@ kbd{font:700 .85em var(--ff-mono,monospace);border:1px solid currentColor;border
 @media print{.mg-ctrl,.mg-capnav,.mg-dica{display:none}.mg-pag[hidden]{display:block}.mg-pag{break-inside:avoid;box-shadow:none}}
 
 /* manga:fim */
+
+/* sala:inicio */
+.sala{max-width:1240px;margin:0 auto;padding:clamp(1.5rem,4vw,3rem) clamp(.9rem,3vw,1.5rem)}
+.sala-cab{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:.4rem 1rem;margin-bottom:1rem}
+.sala-cab h2{font-family:Anton,Impact,sans-serif;font-weight:400;font-size:clamp(1.9rem,5vw,3.2rem);line-height:1;letter-spacing:.01em;margin:0;text-transform:uppercase}
+.sala-cab p{margin:0;color:#b9bfcc;max-width:46ch}
+.sala-grade{display:grid;gap:.9rem;grid-template-columns:repeat(12,minmax(0,1fr));list-style:none;margin:0;padding:0}
+.monitor{position:relative;grid-column:span 4;display:flex;flex-direction:column;gap:.45rem;min-width:0;background:#0b0e16;border:2px solid #e9e6df;border-radius:4px;padding:1rem 1rem .9rem;box-shadow:5px 5px 0 #000;overflow:hidden}
+.monitor.m-largo{grid-column:span 8}
+.monitor h3{font-family:Anton,Impact,sans-serif;font-weight:400;font-size:1rem;letter-spacing:.08em;text-transform:uppercase;margin:0;color:#e9e6df;display:flex;align-items:center;gap:.45rem}
+.monitor h3::before{content:"";width:.55rem;height:.55rem;border-radius:50%;background:#e9e6df;flex:none}
+.monitor.m-ok h3::before{background:#2f7bff}
+.m-status{font-family:Anton,Impact,sans-serif;font-size:clamp(1.35rem,2.6vw,1.9rem);line-height:1.1;margin:0;overflow-wrap:anywhere}
+.m-det{margin:0;color:#c5cad6;font-size:.95rem}
+.m-cta{margin-top:auto;align-self:flex-start;color:#fff;font-weight:700;text-decoration:underline;text-underline-offset:.2em;padding:.2rem 0}
+.m-cta:focus-visible,.m-pausa:focus-visible{outline:3px solid #2f7bff;outline-offset:3px}
+.m-alta{display:flex;gap:.8rem;align-items:center;min-width:0}
+.m-alta>div{min-width:0}
+.m-foto{width:72px;height:83px;object-fit:cover;border:2px solid #e9e6df;filter:grayscale(1) contrast(1.1);flex:none}
+.m-placar{font-family:Anton,Impact,sans-serif;font-size:clamp(1.3rem,3vw,2.1rem);margin:0;overflow-wrap:anywhere}
+.m-narra{margin:0;min-height:3em;color:#e9e6df;border-left:3px solid #e9e6df;padding-left:.6rem}
+.m-x1-acoes{display:flex;flex-wrap:wrap;gap:.6rem 1.2rem;align-items:center;margin-top:auto}
+.m-x1-acoes .m-cta{margin-top:0}
+.m-pausa{font:inherit;font-weight:700;background:#e9e6df;color:#05070d;border:0;border-radius:3px;padding:.4rem .8rem;cursor:pointer;min-height:44px}
+.m-frase{font-family:Anton,Impact,sans-serif;font-size:clamp(1.25rem,2.4vw,1.7rem);line-height:1.2;margin:0}
+.m-rot{font-size:.78rem;color:#9aa1b0;margin:0;text-transform:uppercase;letter-spacing:.08em}
+.m-nums{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:.4rem 1.1rem}
+.m-nums b{font-family:Anton,Impact,sans-serif;font-weight:400;font-size:1.6rem;margin-right:.3rem}
+.m-grupos{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:.4rem}
+.m-grupos a{display:inline-block;border:1.5px solid #e9e6df;color:#e9e6df;text-decoration:none;padding:.3rem .6rem;border-radius:3px;font-size:.9rem}
+.m-grupos a:hover,.m-grupos a:focus-visible{background:#e9e6df;color:#05070d}
+@media (prefers-reduced-motion:no-preference){
+ html:not([data-mov="reduzir"]) .monitor::after{content:"";position:absolute;inset:0;pointer-events:none;background:repeating-linear-gradient(0deg,rgba(255,255,255,.035) 0 1px,transparent 1px 3px);animation:sala-scan 8s linear infinite}
+ @keyframes sala-scan{to{background-position:0 60px}}
+}
+html[data-flow] .monitor h3::before{background:#3ff3ff}
+@media (max-width:1023px){.monitor,.monitor.m-largo{grid-column:span 6}}
+@media (max-width:640px){.sala-grade{grid-template-columns:1fr}.monitor,.monitor.m-largo{grid-column:1/-1}}
+@media (forced-colors:active){.monitor{border:2px solid CanvasText;box-shadow:none}.monitor h3::before{background:CanvasText}.m-pausa{border:2px solid ButtonText}}
+
+.arq-cab{max-width:1240px;margin:0 auto;padding:2rem clamp(.9rem,3vw,1.5rem) .5rem}.arq-cab h1{font-family:Anton,Impact,sans-serif;font-weight:400;font-size:clamp(2.2rem,7vw,4.5rem);line-height:1;margin:0;text-transform:uppercase}.arq-cab h1 span{display:block;font-size:.45em}.arq-cab p{color:#c5cad6;margin:.5rem 0 0}
+/* sala:fim */
