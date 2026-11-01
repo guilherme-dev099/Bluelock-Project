@@ -1630,3 +1630,27 @@ html[data-mov=reduzir] .sil-cor{transition:none}
 .nr-ini p{max-width:65ch;line-height:1.7}
 
 /* narrativa:fim */
+
+/* fabrica:inicio */
+.fabrica{max-width:900px;margin:0 auto}
+.fab-tipos{border:0;padding:0;margin:1rem 0;display:grid;gap:.5rem;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr))}
+.fab-tipos legend{font-weight:700;margin-bottom:.4rem;font-size:1.05rem}
+.fab-tipos label{border:2px solid #3a4459;padding:.7rem;display:flex;flex-direction:column;gap:.2rem;cursor:pointer;background:#0c1018}
+.fab-tipos label:has(input:checked){border-color:#e9e6df;box-shadow:4px 4px 0 #2f7bff}.fab-tipos input{accent-color:#2f7bff;width:18px;height:18px}
+.fab-tipos span{font-size:.85rem;color:#aab2c3}
+.fab-sel{list-style:none;margin:.6rem 0;padding:0;display:grid;gap:.5rem}
+.fab-sel li{display:grid;grid-template-columns:40px minmax(0,1fr) auto;gap:.7rem;align-items:start;border:1px solid #2a3346;padding:.6rem;background:#0c1018}
+.fab-sel img{filter:grayscale(1);object-fit:cover}.fab-sel .btn{padding:6px 12px}.fab-vazio{display:block!important;color:#8f98ab}
+.fab-pistas{border:0;padding:0;margin:.3rem 0 0;display:flex;flex-wrap:wrap;gap:.2rem .9rem}.fab-pistas legend{font-size:.8rem;color:#aab2c3;padding:0}
+.fab-pistas label{font-size:.88rem;display:inline-flex;gap:.3rem;align-items:center}.fab-pistas input{accent-color:#2f7bff;width:17px;height:17px}
+.fabrica input[type=text],.fabrica select{width:100%;max-width:100%;padding:.55rem;background:#0c1018;color:#fff;border:1px solid #3a4459;font:inherit}.fab-glim select{width:auto}
+.fabrica label{font-weight:700}
+.fab-msg.erro{color:#ffd0d8;font-weight:700}.fab-msg.ok{color:#9fd0ff;font-weight:700}
+.fab-saida{border:2px solid #2f7bff;padding:.8rem;margin:.6rem 0}
+.dsf-aviso{border-left:4px solid #ffd166;padding:.4rem .7rem;background:#1a160a;color:#ffe7a8}
+.dsf-pistas{font-size:1.1rem;line-height:1.7}.dsf-prog{color:#9fb8ff;font-weight:700}.dsf-fb{font-weight:700;min-height:1.4em}
+.dsf-ps{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:.5rem}.dsf-ps li{display:flex;gap:.4rem;align-items:center;border:1px solid #2a3346;padding:.3rem .6rem}.dsf-ps img{filter:grayscale(1);object-fit:cover}
+.dsf-palpite{border:1px solid #2a3346;margin:.6rem 0}.dsf-palpite label{margin-right:1rem}
+.dsf-corpo h3{font-family:Anton,Impact,sans-serif;font-weight:400;font-size:2rem;margin:.4rem 0}
+
+/* fabrica:fim */
