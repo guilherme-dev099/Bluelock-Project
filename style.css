@@ -1738,7 +1738,7 @@ body:has(.anel-h) :focus-visible{outline:3px solid var(--a-ac);outline-offset:3p
 .anel-h{position:relative;border:0;border-radius:12px;grid-template-columns:minmax(0,1fr);min-height:calc(100svh - 64px);overflow:hidden;display:grid;grid-template-rows:1fr auto;isolation:isolate;
  background:radial-gradient(ellipse 70% 60% at 50% 55%,#13204a 0,#06070b 72%)}
 /* grão + vinheta, sutis */
-.anel-h::before{content:"";position:absolute;inset:0;z-index:4;pointer-events:none;opacity:.07;mix-blend-mode:overlay;
+.anel-h::before{content:"";position:absolute;inset:0;z-index:4;pointer-events:none;opacity:.05;
  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)'/%3E%3C/svg%3E")}
 .anel-h::after{content:"";position:absolute;inset:0;z-index:4;pointer-events:none;background:radial-gradient(ellipse at center,transparent 55%,rgba(0,0,0,.55) 100%)}
 .anel-nome{position:absolute;left:0;right:0;top:46%;transform:translateY(-50%);margin:0;text-align:center;font-family:Anton,Impact,sans-serif;font-size:clamp(70px,17vw,270px);line-height:.85;text-transform:uppercase;color:transparent;-webkit-text-stroke:1.5px var(--a-t);opacity:.95;pointer-events:none;z-index:2;mix-blend-mode:difference}
@@ -1784,11 +1784,13 @@ body:has(.anel-h) .abertura{background:none;border:0;padding:48px 32px;color:var
 body:has(.anel-h) .abertura a{color:var(--a-t)}
 @media (max-width:700px){
  .anel-nome{mix-blend-mode:normal;top:8px;transform:none;font-size:clamp(56px,20vw,110px);color:var(--a-t);-webkit-text-stroke:0;opacity:1}
- .anel-h.is-3d .anel-palco{height:min(58vh,440px);margin-top:70px}
- .anel-h.is-3d .anel-cil li{--w:min(50vw,34vh)}
+ .anel-h.is-3d .anel-palco{height:min(44svh,380px);margin-top:60px;touch-action:pan-y}
+ .anel-h.is-3d .anel-cil li{--w:min(48vw,30svh)}
+ .anel-h.is-3d .anel-c,.anel-h.is-3d .anel-cil li{-webkit-backface-visibility:hidden;backface-visibility:hidden}
+ .anel-h{min-height:calc(100svh - 64px)}
  .anel-ctas{position:relative;right:auto;top:auto;padding:0 20px 24px;z-index:5}
  .anel-leg{padding:0 20px 14px}.anel-h.is-3d .anel-dica{display:none}.anel-h.is-3d .anel-cont{right:20px;bottom:auto;top:24px;font-size:22px}
- .anel-h{grid-template-rows:1fr auto auto}
+ .anel-h{grid-template-rows:auto auto auto;align-content:start}
 body:has(.anel-h) .anel-palco{cursor:grab}
 body:has(.anel-h) .sala{padding:48px 20px 16px}
 }
