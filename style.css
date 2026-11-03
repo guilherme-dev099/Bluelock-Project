@@ -1724,3 +1724,68 @@ main label:not([class]):has(> select,> input:not([type=checkbox]):not([type=radi
 .rv-js .gl-item.rv:not(.is-in),.rv-js .al-grade.rv:not(.is-in){opacity:1}
 
 /* lapida:fim */
+
+/* homestyle:inicio */
+/* Home · direção de arte da Sala de controle (Tinta & Ego). Só .sala / .abertura da home. */
+.sala{position:relative;counter-reset:cam;padding-top:clamp(2.5rem,6vw,4.5rem)}
+.sala::before{content:"";position:absolute;left:0;right:0;top:0;height:clamp(18px,3vw,34px);pointer-events:none;
+ background:radial-gradient(circle,rgba(233,230,223,.22) 1.1px,transparent 1.4px) 0 0/7px 7px;
+ -webkit-mask:linear-gradient(90deg,transparent,#000 15%,#000 85%,transparent);mask:linear-gradient(90deg,transparent,#000 15%,#000 85%,transparent)}
+.sala-cab{position:relative;align-items:end;padding-bottom:1rem;margin-bottom:1.6rem;border-bottom:3px solid #e9e6df}
+.sala-cab::after{content:"";position:absolute;left:0;bottom:-9px;width:38%;height:3px;background:#e9e6df;transform:skewX(-30deg);opacity:.5}
+.sala-cab h2{font-size:clamp(2.3rem,7vw,5rem);letter-spacing:-.005em;line-height:.92}
+.sala-cab::before{content:"REC ● CAM 00 · Vigilância do Ego";flex:0 0 100%;order:-1;font-family:Archivo,system-ui,sans-serif;font-weight:700;font-size:.72rem;letter-spacing:.22em;color:#b9bfcc;margin-bottom:.2rem}
+.sala-cab p{font-size:1rem;line-height:1.5;border-left:3px solid #e9e6df;padding-left:.8rem}
+.sala-grade{gap:clamp(.9rem,1.6vw,1.4rem)}
+.sala .monitor{counter-increment:cam;padding:0 1.1rem 1.1rem;gap:.55rem;border-width:2.5px;border-radius:2px;box-shadow:7px 7px 0 #000,7px 7px 0 2.5px #e9e6df;
+transition:transform .18s cubic-bezier(.3,.7,.2,1),box-shadow .18s}
+.sala .monitor{background:linear-gradient(200deg,rgba(11,14,22,0) 0 30%,#0b0e16 62%),radial-gradient(rgba(233,230,223,.12) 1px,transparent 1.35px) 0 0/6px 6px,#0b0e16}
+.sala .monitor h3{margin:0 -1.1rem .35rem;padding:.55rem 1.1rem;border-bottom:2px solid #e9e6df;background:#05070d;font-size:.95rem;letter-spacing:.12em;justify-content:flex-start}
+.sala .monitor h3::after{content:"CAM " counter(cam,decimal-leading-zero);margin-left:auto;font-family:Archivo,system-ui,sans-serif;font-weight:700;font-size:.68rem;letter-spacing:.18em;color:#9aa1b0;padding-left:.6rem}
+.sala .monitor h3::before{width:.6rem;height:.6rem}
+.sala .m-status,.sala .m-placar{font-size:clamp(1.6rem,3vw,2.4rem);line-height:1.02;letter-spacing:.005em}
+.sala .m-cta{font-family:Anton,Impact,sans-serif;font-weight:400;text-transform:uppercase;letter-spacing:.06em;text-decoration:none;border-bottom:2px solid currentColor;padding:.35rem 0 .15rem}
+.sala .m-cta:hover{border-bottom-width:4px}
+.sala .m-foto{width:88px;height:101px;box-shadow:4px 4px 0 #000}
+/* grade editorial assimétrica */
+@media (min-width:1024px){
+ .sala-grade{grid-auto-flow:row dense}
+ .sala .monitor[data-monitor=desafio]{grid-column:span 4}
+ .sala .monitor[data-monitor=x1]{grid-column:span 8}
+ .sala .monitor[data-monitor=alta]{grid-column:span 5}
+ .sala .monitor[data-monitor=ego]{grid-column:span 7}
+ .sala .monitor[data-monitor=lendo],.sala .monitor[data-monitor=visto],.sala .monitor[data-monitor=progresso]{grid-column:span 4}
+ .sala .monitor[data-monitor=arquivo]{grid-column:1/-1;display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:2rem;align-items:center}
+ .sala .monitor[data-monitor=arquivo] h3{grid-column:1/-1}
+ .sala .monitor[data-monitor=arquivo] .m-grupos{grid-column:1}
+ .sala .monitor[data-monitor=arquivo] .m-cta{grid-column:2;grid-row:2/4;align-self:center;font-size:1.5rem;margin:0}
+ .sala .monitor[data-monitor=x1] .m-placar{font-size:clamp(2.2rem,3.6vw,3.2rem)}
+}
+/* monitor “Ego fala” em papel, como um quadro de mangá */
+.sala .monitor[data-monitor=ego]{background:radial-gradient(rgba(5,7,13,.13) 1px,transparent 1.35px) 0 0/6px 6px,#e9e6df;color:#05070d}
+.sala .monitor[data-monitor=ego] h3{background:#05070d;color:#e9e6df}
+.sala .monitor[data-monitor=ego] .m-frase{color:#05070d;font-size:clamp(1.5rem,3vw,2.4rem);line-height:1.08;margin-top:.3rem}
+.sala .monitor[data-monitor=ego] .m-rot{color:#3c414d}
+.sala .monitor[data-monitor=ego]::after{display:none}
+.sala .m-grupos a{border-width:2px;font-weight:600;transition:background .15s,color .15s,transform .15s}
+.sala .m-grupos a:hover,.sala .m-grupos a:focus-visible{transform:translate(-2px,-2px);box-shadow:2px 2px 0 #000}
+.sala .monitor:focus-within{box-shadow:7px 7px 0 #000,7px 7px 0 2.5px #2f7bff}
+@media (hover:hover){.sala .monitor:hover{transform:translate(-3px,-3px);box-shadow:10px 10px 0 #000,10px 10px 0 2.5px #e9e6df}}
+/* o x1 ao vivo: ponto de gravação pulsando */
+@media (prefers-reduced-motion:no-preference){
+ html:not([data-mov="reduzir"]) .sala .monitor[data-monitor=x1] h3::before{animation:sala-rec 1.6s steps(2,jump-none) infinite}
+ @keyframes sala-rec{50%{opacity:.15}}
+ html.js:not([data-mov="reduzir"]) .sala .monitor{animation:sala-in .6s cubic-bezier(.2,.8,.2,1) both}
+ html.js:not([data-mov="reduzir"]) .sala .monitor:nth-child(2){animation-delay:.06s}
+ html.js:not([data-mov="reduzir"]) .sala .monitor:nth-child(3){animation-delay:.12s}
+ html.js:not([data-mov="reduzir"]) .sala .monitor:nth-child(4){animation-delay:.18s}
+ html.js:not([data-mov="reduzir"]) .sala .monitor:nth-child(5){animation-delay:.24s}
+ html.js:not([data-mov="reduzir"]) .sala .monitor:nth-child(n+6){animation-delay:.3s}
+ @keyframes sala-in{from{opacity:0;transform:translateY(14px)}}
+}
+html[data-mov="reduzir"] .sala .monitor{transition:none}
+/* fecho editorial */
+.abertura{border-top:3px solid #e9e6df}
+@media (forced-colors:active){.sala .monitor,.sala .monitor:hover,.sala .monitor:focus-within{box-shadow:none;background:Canvas;color:CanvasText}.sala .monitor h3{background:Canvas;border-color:CanvasText}.sala-cab::after,.sala::before{display:none}}
+
+/* homestyle:fim */
