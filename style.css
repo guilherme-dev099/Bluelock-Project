@@ -1726,144 +1726,78 @@ main label:not([class]):has(> select,> input:not([type=checkbox]):not([type=radi
 /* lapida:fim */
 
 /* homestyle:inicio */
-/* Home · NEON FLOW (estilo game/HUD). Só na home: escopo body:has(.sala[data-sala]). Estilo anterior: /workspace/lapida/homestyle.tinta.css */
-body:has(.sala[data-sala]){--nf:#3ff0ff;--nf2:#00b8d4;--nf-bg:#03060c;--nf-p:#07101c;--nf-t:#d9f7ff;--nf-t2:#9fc4d2;--hud:ui-monospace,"Cascadia Mono","SFMono-Regular",Consolas,"Liberation Mono",monospace;
- background:radial-gradient(120% 70% at 50% -10%,#0a2233 0,transparent 60%),linear-gradient(#03060c,#020409) fixed;background-color:#03060c;color:var(--nf-t)}
-html:has(.sala[data-sala]){background:#03060c;scrollbar-color:#3ff0ff #03060c}
-body:has(.sala[data-sala])::before,body:has(.sala[data-sala])::after{display:none}
-/* cabeçalho / rodapé */
-body:has(.sala[data-sala]) .top{background:rgba(3,6,12,.86);border-bottom:1px solid var(--nf);box-shadow:0 1px 0 rgba(63,240,255,.25),0 6px 24px -12px rgba(63,240,255,.6)}
-body:has(.sala[data-sala]) .top .logo{color:var(--nf-t);text-shadow:0 0 12px rgba(63,240,255,.55)}
-body:has(.sala[data-sala]) .top .logo span{color:var(--nf)}
-body:has(.sala[data-sala]) .top nav a:hover,body:has(.sala[data-sala]) .top summary:hover{color:var(--nf)}
-body:has(.sala[data-sala]) footer{border-top:1px solid rgba(63,240,255,.45);color:var(--nf-t2);font-family:var(--hud);font-size:.78rem;letter-spacing:.04em;background:linear-gradient(rgba(63,240,255,.05),transparent)}
-body:has(.sala[data-sala]) footer a{color:var(--nf)}
-body:has(.sala[data-sala]) :focus-visible{outline:2px solid var(--nf);outline-offset:3px;box-shadow:0 0 0 5px rgba(63,240,255,.25)}
-/* HERO: campo em perspectiva + scanlines */
-.hx{position:relative;isolation:isolate;background:radial-gradient(60% 50% at 50% 45%,rgba(0,184,212,.16),transparent 70%),var(--nf-bg,#03060c);overflow:hidden}
-.hx::before{content:"";position:absolute;left:-50%;right:-50%;bottom:-10%;height:62%;z-index:-1;pointer-events:none;
- background:linear-gradient(rgba(63,240,255,.55) 1px,transparent 1px) 0 0/80px 46px,linear-gradient(90deg,rgba(63,240,255,.55) 1px,transparent 1px) 0 0/80px 46px;
- transform:perspective(420px) rotateX(62deg);transform-origin:50% 100%;-webkit-mask:linear-gradient(transparent,#000 55%);mask:linear-gradient(transparent,#000 55%);opacity:.45}
-.hx::after{content:"";position:absolute;inset:0;z-index:3;pointer-events:none;background:repeating-linear-gradient(transparent 0 2px,rgba(0,0,0,.28) 2px 3px)}
-.hx-kicker{font-family:var(--hud);color:var(--nf-t2);letter-spacing:.14em}
-.hx-kicker::before{content:"▶ P1 · ";color:var(--nf)}
-.hx-kicker b{color:var(--nf)}
-.hx-t{color:#effdff;text-shadow:0 0 6px rgba(63,240,255,.9),0 0 22px rgba(63,240,255,.55),0 0 60px rgba(0,184,212,.45)}
-.hx-t .w2{color:var(--nf)}
-.hx-sfx{color:var(--nf);text-shadow:0 0 14px rgba(63,240,255,.8)}
-/* olhares em moldura HUD, duotone ciano */
-.hx-eye{background:#020c14;outline:1px solid rgba(63,240,255,.7);box-shadow:0 0 0 4px rgba(3,6,12,1),0 0 0 5px rgba(63,240,255,.35),0 0 40px -6px rgba(63,240,255,.6)}
-.hx-o img{filter:grayscale(1) contrast(1.1)}
-.hx-o::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,#1fb8d6,#7ff6ff 50%,#1fb8d6);mix-blend-mode:multiply}
-.hx-o{border-left-color:var(--nf)!important}
-.hx-quem{font-family:var(--hud);color:#03060c;background:var(--nf);letter-spacing:.12em;box-shadow:0 0 18px rgba(63,240,255,.7)}
-.hx-quem::before{content:"LOCK-ON › "}
-.hx-glint{background:radial-gradient(circle,rgba(63,240,255,.9),transparent 60%)!important}
-.hx-tag{color:#effdff}
-.hx-tag em{color:var(--nf);text-shadow:0 0 14px rgba(63,240,255,.6)}
-.hx-stats li{font-family:var(--hud);color:var(--nf-t2);text-transform:uppercase;font-size:.72rem;letter-spacing:.14em;border:1px solid rgba(63,240,255,.45);padding:.4rem .7rem;background:rgba(7,16,28,.8);clip-path:polygon(8px 0,100% 0,100% calc(100% - 8px),calc(100% - 8px) 100%,0 100%,0 8px)}
-.hx-stats b{display:block;font-family:Anton,Impact,sans-serif;font-size:1.7rem;color:var(--nf);text-shadow:0 0 10px rgba(63,240,255,.6);letter-spacing:.02em}
-body:has(.sala[data-sala]) .btn{background:var(--nf);color:#02121a;font-family:var(--hud);text-transform:uppercase;letter-spacing:.14em;font-weight:700;clip-path:polygon(12px 0,100% 0,100% calc(100% - 12px),calc(100% - 12px) 100%,0 100%,0 12px);box-shadow:0 0 22px rgba(63,240,255,.55);transition:filter .15s,transform .15s}
-body:has(.sala[data-sala]) .btn:first-child::before{content:"▶ "}
-body:has(.sala[data-sala]) .btn-2{background:rgba(3,6,12,.6);color:var(--nf);border:1px solid var(--nf);box-shadow:inset 0 0 14px rgba(63,240,255,.25)}
-body:has(.sala[data-sala]) .btn:hover,body:has(.sala[data-sala]) .btn:focus-visible{filter:brightness(1.15);transform:translateY(-2px)}
-body:has(.sala[data-sala]) .btn-2:hover{background:var(--nf);color:#02121a}
-/* faixa = barra de energia */
-body:has(.sala[data-sala]) .faixa{background:#04111b;border-block:1px solid var(--nf);color:var(--nf-t);box-shadow:0 0 24px -6px rgba(63,240,255,.7)}
-body:has(.sala[data-sala]) .faixa i{color:var(--nf)}
-body:has(.sala[data-sala]) .faixa-pausa{font-family:var(--hud);background:#03060c;color:var(--nf);border:1px solid var(--nf)}
-/* SALA = menu de game */
-.sala{position:relative;counter-reset:cam;padding-top:clamp(2.5rem,6vw,4.5rem)}
-.sala::before{content:"";position:absolute;inset:0 calc(50% - 50vw);z-index:-1;pointer-events:none;
- background:linear-gradient(rgba(63,240,255,.06) 1px,transparent 1px) 0 0/40px 40px,linear-gradient(90deg,rgba(63,240,255,.06) 1px,transparent 1px) 0 0/40px 40px}
-.sala-cab{position:relative;align-items:end;padding-bottom:1rem;margin-bottom:1.8rem;border-bottom:1px solid rgba(63,240,255,.5)}
-.sala-cab::after{content:"";position:absolute;left:0;bottom:-2px;width:min(38%,320px);height:3px;background:var(--nf);box-shadow:0 0 12px var(--nf)}
-.sala-cab::before{content:"◆ SELECT MODE · EGO.SYS v3.00";flex:0 0 100%;order:-1;font-family:var(--hud);font-weight:700;font-size:.74rem;letter-spacing:.22em;color:var(--nf);margin-bottom:.3rem}
-.sala-cab h2{font-size:clamp(2.3rem,7vw,5rem);line-height:.92;color:#effdff;text-shadow:0 0 8px rgba(63,240,255,.7),0 0 28px rgba(63,240,255,.35)}
-.sala-cab p{font-size:1rem;line-height:1.5;color:var(--nf-t2);border-left:2px solid var(--nf);padding-left:.8rem}
-.sala-grade{gap:clamp(.9rem,1.6vw,1.4rem)}
-.sala .monitor{counter-increment:cam;position:relative;padding:0 1.1rem 1.1rem;gap:.55rem;border:0;border-radius:0;color:var(--nf-t);
- background:linear-gradient(160deg,rgba(63,240,255,.09),transparent 40%),repeating-linear-gradient(transparent 0 3px,rgba(63,240,255,.025) 3px 4px),#061019;
- clip-path:polygon(18px 0,100% 0,100% calc(100% - 18px),calc(100% - 18px) 100%,0 100%,0 18px);
- box-shadow:inset 0 0 0 1px rgba(63,240,255,.45),inset 0 0 30px -12px rgba(63,240,255,.5);transition:box-shadow .18s,transform .18s,background-color .18s}
-.sala .monitor::before{content:"";position:absolute;right:0;top:0;width:44px;height:44px;pointer-events:none;background:linear-gradient(225deg,var(--nf) 0 2px,transparent 2px) ,linear-gradient(var(--nf),var(--nf)) right 0 top 0/26px 2px no-repeat,linear-gradient(var(--nf),var(--nf)) right 0 top 0/2px 26px no-repeat;background:linear-gradient(var(--nf),var(--nf)) right 0 top 0/26px 2px no-repeat,linear-gradient(var(--nf),var(--nf)) right 0 top 0/2px 26px no-repeat}
-.sala .monitor h3{margin:0 -1.1rem .35rem;padding:.6rem 1.1rem .6rem 1.6rem;border-bottom:1px solid rgba(63,240,255,.4);background:linear-gradient(90deg,rgba(63,240,255,.16),rgba(63,240,255,0) 70%);color:#effdff;font-size:.95rem;letter-spacing:.12em;justify-content:flex-start}
-.sala .monitor h3::after{content:"SLOT " counter(cam,decimal-leading-zero);margin-left:auto;font-family:var(--hud);font-weight:700;font-size:.68rem;letter-spacing:.16em;color:var(--nf);padding-left:.6rem}
-.sala .monitor h3::before{width:.55rem;height:.55rem;background:var(--nf)!important;border-radius:0;transform:rotate(45deg);box-shadow:0 0 8px var(--nf)}
-.sala .m-status,.sala .m-placar{font-size:clamp(1.6rem,3vw,2.4rem);line-height:1.02;color:#effdff}
-.sala .m-placar{font-family:var(--hud);font-weight:700;color:var(--nf);text-shadow:0 0 12px rgba(63,240,255,.6);letter-spacing:.02em}
-.sala .m-det,.sala .m-narra,.sala .m-rot{color:var(--nf-t2)}
-.sala .m-narra{font-family:var(--hud);font-size:.88rem}
-.sala .m-narra::before{content:"> "; color:var(--nf)}
-.sala .m-cta{font-family:var(--hud);font-weight:700;text-transform:uppercase;letter-spacing:.14em;font-size:.85rem;text-decoration:none;color:var(--nf);border:1px solid rgba(63,240,255,.6);padding:.5rem .8rem;align-self:flex-start;background:rgba(63,240,255,.06);transition:background .15s,color .15s,box-shadow .15s}
-.sala .m-cta::before{content:"[A] ";opacity:.75}
-.sala .m-cta:hover,.sala .m-cta:focus-visible{background:var(--nf);color:#02121a;box-shadow:0 0 18px rgba(63,240,255,.7)}
-.sala .m-pausa{font-family:var(--hud);background:transparent;color:var(--nf);border:1px solid rgba(63,240,255,.6)}
-.sala .m-foto{width:88px;height:101px;outline:1px solid var(--nf);outline-offset:3px;filter:grayscale(1) brightness(.85) sepia(1) hue-rotate(150deg) saturate(3);box-shadow:0 0 16px rgba(63,240,255,.5)}
-/* estado selecionado (menu) */
-.sala .monitor:focus-within,.sala .monitor:hover{box-shadow:inset 0 0 0 2px var(--nf),inset 0 0 40px -10px rgba(63,240,255,.8),0 0 0 0 transparent;background-color:#08192a}
-.sala .monitor:focus-within h3,.sala .monitor:hover h3{background:linear-gradient(90deg,rgba(63,240,255,.38),rgba(63,240,255,0) 80%)}
-.sala .monitor:focus-within h3::before,.sala .monitor:hover h3::before{content:""}
-@media (hover:hover){.sala .monitor:hover{transform:translateY(-3px)}}
-/* barra de status HUD em cada painel */
-.sala .monitor::after{content:"";display:block;height:4px;margin-top:auto;background:linear-gradient(90deg,var(--nf) 0 var(--hp,62%),rgba(63,240,255,.15) var(--hp,62%));box-shadow:0 0 8px rgba(63,240,255,.5)}
-.sala .monitor:nth-child(2){--hp:88%}.sala .monitor:nth-child(3){--hp:74%}.sala .monitor:nth-child(4){--hp:46%}.sala .monitor:nth-child(5){--hp:58%}.sala .monitor:nth-child(6){--hp:35%}.sala .monitor:nth-child(7){--hp:80%}.sala .monitor:nth-child(8){--hp:100%}
-@media (min-width:1024px){
- .sala-grade{grid-auto-flow:row dense}
- .sala .monitor[data-monitor=desafio]{grid-column:span 4}
- .sala .monitor[data-monitor=x1]{grid-column:span 8}
- .sala .monitor[data-monitor=alta]{grid-column:span 5}
- .sala .monitor[data-monitor=ego]{grid-column:span 7}
- .sala .monitor[data-monitor=lendo],.sala .monitor[data-monitor=visto],.sala .monitor[data-monitor=progresso]{grid-column:span 4}
- .sala .monitor[data-monitor=arquivo]{grid-column:1/-1;display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:2rem;align-items:center}
- .sala .monitor[data-monitor=arquivo] h3,.sala .monitor[data-monitor=arquivo]::after{grid-column:1/-1}
- .sala .monitor[data-monitor=arquivo] .m-grupos{grid-column:1}
- .sala .monitor[data-monitor=arquivo] .m-cta{grid-column:2;grid-row:2/4;align-self:center;font-size:1rem;margin:0}
- .sala .monitor[data-monitor=x1] .m-placar{font-size:clamp(2.2rem,3.6vw,3.2rem)}
+/* Home · ANEL IMERSIVO (ref. Motley Crowd/Dogstudio). Só na home: body:has(.anel-h). Anteriores: /workspace/lapida/homestyle.neon.css, homestyle.tinta.css */
+body:has(.anel-h){--a-bg:#06070b;--a-t:#eef2ff;--a-t2:#c3cbe0;--a-ac:#9fb4ff;--a-ln:#39425c;background:var(--a-bg);color:var(--a-t)}
+html:has(.anel-h){background:#06070b}
+body:has(.anel-h)::before,body:has(.anel-h)::after{display:none}
+body:has(.anel-h) .top{background:rgba(6,7,11,.82);border-bottom:1px solid var(--a-ln);box-shadow:none}
+body:has(.anel-h) .top .logo{color:var(--a-t)}body:has(.anel-h) .top .logo span{color:var(--a-ac)}
+body:has(.anel-h) footer{border-top:1px solid var(--a-ln);color:var(--a-t2);background:none}
+body:has(.anel-h) footer a,body:has(.anel-h) .abertura p a{color:var(--a-t);text-decoration:underline;text-underline-offset:3px}
+body:has(.anel-h) :focus-visible{outline:3px solid var(--a-ac);outline-offset:3px}
+.anel-h{position:relative;border:0;border-radius:12px;grid-template-columns:minmax(0,1fr);min-height:calc(100svh - 64px);overflow:hidden;display:grid;grid-template-rows:1fr auto;isolation:isolate;
+ background:radial-gradient(ellipse 70% 60% at 50% 55%,#13204a 0,#06070b 72%)}
+/* grão + vinheta, sutis */
+.anel-h::before{content:"";position:absolute;inset:0;z-index:4;pointer-events:none;opacity:.07;mix-blend-mode:overlay;
+ background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)'/%3E%3C/svg%3E")}
+.anel-h::after{content:"";position:absolute;inset:0;z-index:4;pointer-events:none;background:radial-gradient(ellipse at center,transparent 55%,rgba(0,0,0,.55) 100%)}
+.anel-nome{position:absolute;left:0;right:0;top:46%;transform:translateY(-50%);margin:0;text-align:center;font-family:Anton,Impact,sans-serif;font-size:clamp(70px,17vw,270px);line-height:.85;text-transform:uppercase;color:transparent;-webkit-text-stroke:1.5px var(--a-t);opacity:.95;pointer-events:none;z-index:2;mix-blend-mode:difference}
+.anel-palco{position:relative;z-index:1;align-self:center;padding:24px 0}
+.anel-cil{list-style:none;margin:0;padding:0 24px;display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory}
+.anel-cil li{flex:0 0 220px;scroll-snap-align:center}
+.anel-c{display:block;position:relative;aspect-ratio:3/4;border-radius:8px;overflow:hidden;background:#111;text-decoration:none;color:var(--a-t)}
+.anel-c img{width:100%;height:100%;object-fit:cover;display:block}
+.anel-c span:not(.sr-only){position:absolute;left:10px;bottom:8px;font-size:12px;letter-spacing:.2em;text-transform:uppercase;background:rgba(6,7,11,.75);padding:2px 6px;border-radius:3px}
+/* modo 3D (com JS) */
+.anel-h.is-3d .anel-palco{height:min(62vh,560px);perspective:1400px;cursor:grab;touch-action:pan-y;user-select:none}
+.anel-h.is-3d.arr .anel-palco{cursor:grabbing}
+.anel-h.is-3d .anel-cil{display:block;overflow:visible;position:absolute;left:50%;top:50%;width:0;height:0;padding:0;transform-style:preserve-3d;transition:transform .9s cubic-bezier(.2,.8,.2,1)}
+.anel-h.is-3d.arr .anel-cil{transition:none}
+.anel-h.is-3d .anel-cil li{position:absolute;--w:min(24vw,290px,42vh);width:var(--w);left:calc(var(--w)/-2);top:calc(var(--w)*-.666);backface-visibility:hidden}
+.anel-h.is-3d .anel-c img{filter:grayscale(.65) brightness(.5);transition:filter .6s}
+.anel-h.is-3d .anel-c.on img{filter:none}
+.anel-leg{position:relative;z-index:5;padding:0 32px 28px;max-width:420px}
+.anel-kick{margin:0;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--a-t2)}
+.anel-big{overflow-wrap:anywhere;font-family:Anton,Impact,sans-serif;font-size:clamp(30px,3.2vw,44px);line-height:1;margin:6px 0}
+.anel-arma{margin:0;color:var(--a-t2)}
+.anel-ctas{position:absolute;right:32px;top:24px;z-index:5;display:flex;gap:10px}
+.anel-ctas .btn{border-radius:40px;text-transform:uppercase;letter-spacing:.1em;font-size:13px}
+.anel-dica,.anel-cont{display:none}
+.anel-h.is-3d .anel-dica{display:block;position:absolute;left:50%;bottom:30px;transform:translateX(-50%);margin:0;z-index:5;font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:var(--a-t2)}
+.anel-h.is-3d .anel-cont{display:block;position:absolute;right:32px;bottom:28px;margin:0;z-index:5;font-family:Anton,Impact,sans-serif;font-size:28px}
+.anel-cur{position:fixed;left:-42px;top:-42px;width:84px;height:84px;border:1px solid var(--a-t);border-radius:50%;display:grid;place-items:center;font-size:11px;letter-spacing:.2em;pointer-events:none;z-index:9;opacity:0;transition:opacity .3s}
+.anel-h.is-3d:has(.anel-palco:hover) .anel-cur{opacity:1}
+@media (hover:none){.anel-cur{display:none}}
+/* Sala e resto da home em faixas editoriais */
+body:has(.anel-h) .anel-palco{cursor:grab}
+body:has(.anel-h) .sala{background:none;border:0;padding:64px 32px 24px}
+body:has(.anel-h) .sala-cab h2,body:has(.anel-h) .abertura h2{font-family:Anton,Impact,sans-serif;font-weight:400;font-size:clamp(40px,7vw,110px);line-height:.9;text-transform:uppercase;color:var(--a-t);text-shadow:none}
+body:has(.anel-h) .sala-cab p{color:var(--a-t2)}
+body:has(.anel-h) .sala-grade{display:flex;gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;padding:8px 0 24px}
+body:has(.anel-h) .monitor{flex:0 0 min(80vw,340px);scroll-snap-align:start;background:none;border:0;border-top:1px solid var(--a-ln);border-radius:0;box-shadow:none;padding:18px 0;color:var(--a-t)}
+body:has(.anel-h) .monitor h3{font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--a-ac)}
+body:has(.anel-h) .monitor p,body:has(.anel-h) .monitor .m-det,body:has(.anel-h) .monitor .m-rot{color:var(--a-t2)}
+body:has(.anel-h) .monitor .m-status,body:has(.anel-h) .monitor .m-placar,body:has(.anel-h) .monitor .m-frase{color:var(--a-t)}
+body:has(.anel-h) .monitor a{color:var(--a-t)}
+body:has(.anel-h) .m-grupos a{border:1px solid var(--a-ln);border-radius:30px;background:none;color:var(--a-t)}
+body:has(.anel-h) .abertura{background:none;border:0;padding:48px 32px;color:var(--a-t2)}
+body:has(.anel-h) .abertura a{color:var(--a-t)}
+@media (max-width:700px){
+ .anel-nome{mix-blend-mode:normal;top:8px;transform:none;font-size:clamp(56px,20vw,110px);color:var(--a-t);-webkit-text-stroke:0;opacity:1}
+ .anel-h.is-3d .anel-palco{height:min(58vh,440px);margin-top:70px}
+ .anel-h.is-3d .anel-cil li{--w:min(50vw,34vh)}
+ .anel-ctas{position:relative;right:auto;top:auto;padding:0 20px 24px;z-index:5}
+ .anel-leg{padding:0 20px 14px}.anel-h.is-3d .anel-dica{display:none}.anel-h.is-3d .anel-cont{right:20px;bottom:auto;top:24px;font-size:22px}
+ .anel-h{grid-template-rows:1fr auto auto}
+body:has(.anel-h) .anel-palco{cursor:grab}
+body:has(.anel-h) .sala{padding:48px 20px 16px}
 }
-/* x1 ao vivo: painel principal */
-.sala .monitor[data-monitor=x1]{background:radial-gradient(80% 90% at 80% 0,rgba(63,240,255,.16),transparent 60%),repeating-linear-gradient(transparent 0 3px,rgba(63,240,255,.03) 3px 4px),#061522}
-.sala .monitor[data-monitor=x1] h3::after{content:"● LIVE";color:#ff5c7a}
-/* Ego fala: tela de diálogo de RPG */
-.sala .monitor[data-monitor=ego]{background:linear-gradient(rgba(63,240,255,.07),transparent),#040b13}
-.sala .monitor[data-monitor=ego] h3{background:var(--nf);color:#02121a}
-.sala .monitor[data-monitor=ego] h3::after{color:#02121a}
-.sala .monitor[data-monitor=ego] h3::before{background:#02121a!important;box-shadow:none}
-.sala .monitor[data-monitor=ego] .m-frase{color:#effdff;font-size:clamp(1.4rem,2.8vw,2.2rem);line-height:1.12;margin-top:.3rem}
-.sala .monitor[data-monitor=ego] .m-frase::after{content:" ▼";color:var(--nf);font-size:.6em}
-.sala .m-grupos a{font-family:var(--hud);font-size:.8rem;text-transform:uppercase;letter-spacing:.08em;color:var(--nf-t);background:rgba(63,240,255,.05);border:1px solid rgba(63,240,255,.5);border-radius:0;font-weight:600;transition:background .15s,color .15s,box-shadow .15s}
-.sala .m-grupos a:hover,.sala .m-grupos a:focus-visible{background:var(--nf);color:#02121a;box-shadow:0 0 14px rgba(63,240,255,.6);transform:none}
-/* fecho */
-.abertura{border-top:1px solid rgba(63,240,255,.5);box-shadow:0 -1px 0 rgba(63,240,255,.15)}
-.abertura h2{color:#effdff}.abertura h2 span{color:var(--nf);text-shadow:0 0 14px rgba(63,240,255,.5)}
-.abertura p{color:var(--nf-t2)}.abertura .mais a{color:var(--nf);font-family:var(--hud);font-size:.85rem;letter-spacing:.06em}
-/* movimento: press start, varredura, entrada */
-@media (prefers-reduced-motion:no-preference){
- html:not([data-mov="reduzir"]) .hx::before{animation:nf-campo 3s linear infinite}
- @keyframes nf-campo{to{background-position:0 46px,0 46px}}
- html:not([data-mov="reduzir"]) .hx-ctas .btn:first-child{animation:nf-start 1.4s steps(2,jump-none) infinite}
- @keyframes nf-start{50%{box-shadow:0 0 4px rgba(63,240,255,.3)}}
- html:not([data-mov="reduzir"]) .sala .monitor[data-monitor=x1] h3::after{animation:nf-live 1.2s steps(2,jump-none) infinite}
- @keyframes nf-live{50%{opacity:.35}}
- html.js:not([data-mov="reduzir"]) .sala .monitor{animation:nf-in .5s cubic-bezier(.2,.8,.2,1) both}
- html.js:not([data-mov="reduzir"]) .sala .monitor:nth-child(2){animation-delay:.05s}
- html.js:not([data-mov="reduzir"]) .sala .monitor:nth-child(3){animation-delay:.1s}
- html.js:not([data-mov="reduzir"]) .sala .monitor:nth-child(4){animation-delay:.15s}
- html.js:not([data-mov="reduzir"]) .sala .monitor:nth-child(5){animation-delay:.2s}
- html.js:not([data-mov="reduzir"]) .sala .monitor:nth-child(n+6){animation-delay:.25s}
- @keyframes nf-in{from{opacity:0;transform:translateY(10px)}}
+@media (max-height:500px) and (orientation:landscape){
+ .anel-h{min-height:calc(100svh - 64px)}.anel-kick{display:none}.anel-nome{font-size:22vh;top:42%;transform:translateY(-50%);color:transparent;-webkit-text-stroke:1.2px var(--a-t)}
+ .anel-h.is-3d .anel-palco{height:52vh;margin-top:0}.anel-h.is-3d .anel-cil li{--w:30vh}
+ .anel-ctas{position:absolute;top:12px;right:20px;padding:0}.anel-leg{padding:0 20px 10px}.anel-big{overflow-wrap:anywhere;font-size:24px}
 }
-html[data-mov="reduzir"] .sala .monitor,html[data-mov="reduzir"] body:has(.sala[data-sala]) .btn{transition:none}
-@media (prefers-reduced-motion:reduce){.sala .monitor,body:has(.sala[data-sala]) .btn{transition:none}}
-@media (forced-colors:active){
- .hx::before,.hx::after,.sala::before,.sala-cab::after,.sala .monitor::before,.sala .monitor::after,.hx-o::after{display:none}
- .sala .monitor,.hx-stats li,body:has(.sala[data-sala]) .btn{clip-path:none;border:1px solid CanvasText;box-shadow:none;background:Canvas;color:CanvasText}
- .sala .monitor h3,.sala .monitor[data-monitor=ego] h3{background:Canvas;color:CanvasText}
- .hx-t,.sala-cab h2,.hx-sfx{text-shadow:none}
- .hx-o img,.sala .m-foto{filter:none}
-}
-
-body:has(.sala[data-sala]) .sala-cab h2::before{background:var(--nf);box-shadow:0 0 10px var(--nf)}
-body:has(.sala[data-sala]) .mapa-btn{background:var(--nf);color:#02121a}
+@media (prefers-reduced-motion:reduce){.anel-h .anel-cil,.anel-h .anel-c img,.anel-cur{transition:none!important}}
+@media (forced-colors:active){.anel-nome{color:CanvasText;-webkit-text-stroke:0}.anel-h::before,.anel-h::after{display:none}}
 
 /* homestyle:fim */
